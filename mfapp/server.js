@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 const users = require('./routes/users');
+const schroutes = require('./routes/schroutes');
 const config = require('./config/database');
 
 const port = 3000;
@@ -31,6 +32,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use('/users',users);
+app.use('/schemes',schroutes);
+
 require('./config/passport')(passport);
 
 
