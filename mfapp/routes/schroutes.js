@@ -14,16 +14,16 @@ router.get('/all', async (req,res,next) => {
 	try
 	{
 		schemes = await schmodel.findAll();
-		debugger;
+		
 		res.send(schemes);
 	}
 	catch(err)
 	{
-		debugger;
+		
 		 return res.status(500).send(err);
 	}
 	
-//	res.send('profile');
+
 });
 
 module.exports = router;

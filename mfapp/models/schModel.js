@@ -14,11 +14,11 @@ async function findAll()
 try{
       let schemes 	    
       schemes = await mfschemesModel.find();
-      debugger;
+    
       return schemes;
   } catch (err) 
   {
-	debugger;  
+	
     return err;
   }
 };
