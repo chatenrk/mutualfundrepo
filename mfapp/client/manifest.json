@@ -77,16 +77,28 @@
 	             "name": "dashboard",
 	             "target": "dashboard"
 
+	         },
+	         {
+	        	 "pattern": "register",
+	             "name": "register",
+	             "target": "register"
+
 	         }],
 	         "targets": {
 	             "login": {
 	                "viewName": "login",
 	                "viewLevel" : 1
 	             },
-	             "dashboard": {
+	             "dashboard": 
+	             {
 		                "viewName": "dashboard",
 		                "viewLevel" : 1
-		             }
+		         },
+		         "register": 
+	             {
+		                "viewName": "register",
+		                "viewLevel" : 1
+		         }
 	          }
 
 

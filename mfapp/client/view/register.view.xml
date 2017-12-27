@@ -1,17 +1,12 @@
-<mvc:View controllerName="simple_hello.controller.login"
-    xmlns="sap.m" 
-    xmlns:f="sap.ui.layout.form"
-    xmlns:l="sap.ui.layout" 
-    xmlns:core="sap.ui.core"
-    xmlns:tnt = "sap.tnt"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
-
-
-				
-				<Panel width="auto" class="sapUiSmallMargin border-0">
+<View
+	xmlns="sap.m"
+	xmlns:layout="sap.ui.layout"
+	controllerName="simple_hello.Controller.register">
+		
+		<Panel width="auto" class="sapUiSmallMargin border-0">
 				<headerToolbar class="sapUiTinyMargin">
 					<Toolbar>
-						<Title level="H4" text="Login Page" />
+						<Title level="H4" text="Registration Page" />
 					</Toolbar>
 				</headerToolbar>
 				
@@ -29,12 +24,40 @@
 					<HBox width="100%" >
 						<items>
 							<HBox width="20%" class="alignDropdownAlign sapMFlexItemAlignCenter">
+								<Label text="Full Name" width="auto" class="LabelText"/>
+							</HBox>
+					
+							<VBox width="30%" direction="Column">
+								<items>
+									<input id = "name_ip" />
+								</items>
+							</VBox>
+						</items>
+					</HBox>
+					
+					<HBox width="100%" >
+						<items>
+							<HBox width="20%" class="alignDropdownAlign sapMFlexItemAlignCenter">
 								<Label text="UserName" width="auto" class="LabelText"/>
 							</HBox>
 					
-							<VBox width="30%" direction="Column" id="__vbox15">
+							<VBox width="30%" direction="Column">
 								<items>
-									<input id = "user_ip" type="password" />
+									<input id = "user_ip" />
+								</items>
+							</VBox>
+						</items>
+					</HBox>
+					
+					<HBox width="100%" >
+						<items>
+							<HBox width="20%" class="alignDropdownAlign sapMFlexItemAlignCenter">
+								<Label text="Email" width="auto" class="LabelText"/>
+							</HBox>
+					
+							<VBox width="30%" direction="Column">
+								<items>
+									<input id = "email_ip" type="Email" />
 								</items>
 							</VBox>
 						</items>
@@ -48,6 +71,19 @@
 						<VBox width="30%" direction="Column" >
 							<items>
 								<input id = "pwd_ip" type="Password" />
+							</items>
+						</VBox>
+					</items>
+				</HBox>
+				
+				<HBox width="100%" >
+					<items>
+						<HBox width="20%" class="alignDropdownAlign sapMFlexItemAlignCenter">
+							<Label text="Confirm Password" width="auto" class="LabelText" />
+						</HBox>
+						<VBox width="30%" direction="Column" >
+							<items>
+								<input id = "cpwd_ip" type="Password" />
 							</items>
 						</VBox>
 					</items>
@@ -71,6 +107,4 @@
 		
 	</VBox>
 			</Panel>
-		
-				
-</mvc:View>
+</View>

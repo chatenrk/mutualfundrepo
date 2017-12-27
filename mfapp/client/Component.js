@@ -18,6 +18,38 @@ function(UIComponent) {
             this.getRouter().initialize();
 
 		},
+		
+		_adjustNavItems:function(usr_log_flag)
+		{
+			
+			
+			var nbar_model = this.getModel("navbar_model");
+        	var data = nbar_model.getData();
+        	
+        	var nview_model = new sap.ui.model.json.JSONModel();
+        	
+        	var itms = [];
+        	
+        	for(var i=0;i<data.length;i++){
+        		if(data[i].usr_log_flag === usr_log_flag)
+        		{
+        			itms.push(data[i]);
+        		}
+        	}
+			
+			
+
+			nview_model.setData(itms);
+			this.setModel(nview_model,"nview_model");
+		},
+		
+		_adjustButtons:function(usrlgndata)
+		{
+			var usrlgnmodel = this.getModel("usrlgn_model");
+			usrlgnmodel.setData(null);
+			usrlgnmodel.setData(usrlgndata);
+			
+		},
 
 		metadata : {
 			manifest :"json"

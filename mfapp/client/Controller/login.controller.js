@@ -4,6 +4,10 @@ sap.ui
                 	'sap/m/MessageStrip','sap/m/MessageToast'],
                 function(BaseController, MessageToast,Popover,Button,MessageStrip) {
                     "use strict";
+                    
+                    var _oStorage,_oMessageStrip;
+                    
+                    jQuery.sap.require("jquery.sap.storage");
                     return BaseController
                             .extend(
                                     "simple_hello.controller.login",
@@ -12,15 +16,9 @@ sap.ui
                                     
                                         onInit : function() 
                                         {
-                                        	
-                                        	var usrlgndata = {
-                                        			user_visible:false
-                                        	}
-                                        	
-                                        	this._adjustNavItems(false);
-                                        	this._adjustButtons(usrlgndata);
-
+                                        	this._oMessageStrip = this.getView().byId("msgstrp");
                                         },
+                                        
                                         onSubmit: function(oEvt){
                                         	
                                         	var viewId = this.getView().getId();
@@ -35,7 +33,7 @@ sap.ui
                                         	{
                                         		this.getView().byId("user_ip").setValue("");
                                         		this.getView().byId("pwd_ip").setValue("");
-                                        		this._destroyMsgStrip();
+//                                        		this._destroyMsgStrip();
                                         		
                                         		var data = {
                                         				username:username,
@@ -47,7 +45,7 @@ sap.ui
                                         },
                                         onRefresh: function()
                                         {
-                                        	this._destroyMsgStrip();
+                                        	this._destroyMsgStrip(false);
                                         	this.getView().byId("user_ip").setValue("");
                                     		this.getView().byId("pwd_ip").setValue("");
                                         },
@@ -68,62 +66,30 @@ sap.ui
                                 				toggleButton.setTooltip('Small Size Navigation');
                                 			}
                                 		},
-
-                                    	onItemSelect : function(oEvent) {
-                                			var item = oEvent.getParameter('item');
-                                			var selkey = item.getKey();
-                                			var viewId = this.getView().getId();
-                                			var pageContainer = sap.ui.getCore().byId(viewId + "--pageContainer");
-//                                			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + item.getKey());
-                                		},
-                                    	handleUserNamePress: function (oEvent) {
-                                    		
-                                    		
-                                    		// create popover
-                                			if (!this._oPopover) {
-                                				this._oPopover = sap.ui.xmlfragment("simple_hello.view.usrpopover", this);
-                                				this.getView().addDependent(this._oPopover);
-//                                				this._oPopover.bindElement("/ProductCollection/0");
-                                			}
-
-                                			// delay because addDependent will do a async rerendering and the actionSheet will immediately close without it.
-                                			var oButton = oEvent.getSource();
-                                			jQuery.sap.delayedCall(0, this, function () {
-                                				this._oPopover.openBy(oButton);
-                                			});
-
-                                		},
+                                    	
                                 		
-                                		handleLogoutPress:function(){
-                                			
-                                			var data = {};
-                                			this._oPopover.close();
-                                			
-                                			this._adjustNavItems(false);
-                            				
-                            				data.user_visible = false;
-                            				this._adjustButtons(data);
-                                			
-                                		},
+                                		
                                 		
                                 		_getMsgStrip: function()
                                 		{
                                 			return this.getView().byId("msgstrp");
                                 		},
                                 		
-                                		_generateMsgStrip: function (msgtext) {
+                                		_generateMsgStrip: function (msgtext,visible) {
                                 			
-                                			window.msgstrp.setVisible(true);
-                                			window.msgstrp.setText(msgtext);
+                                			if(this._oMessageStrip){
+                                				this._oMessageStrip.setVisible(visible);
+                                				this._oMessageStrip.setText(msgtext);
+                                			}
 
                                 		},
                                 		
-                                		_destroyMsgStrip: function()
+                                		_destroyMsgStrip: function(visible)
                                 		{
-//                                			var msgstrp = this.getView().byId("msgstrp");
-                                			if(window.msgstrp)
+                                			if(this._oMessageStrip)
                                 			{
-                                				window.msgstrp.destroy();
+                                				this._oMessageStrip.setVisible(visible);
+//                            				
                                 			}
                                 		},
                                 		_loginrestcall:function(logdata)
@@ -156,63 +122,57 @@ sap.ui
                                 			if(data.success === false)
                                 				// Error with login, display message
                                 			{
-                                				MessageToast.show(data.msg);
+                                				that._generateMsgStrip("Error with login, please contact administrator",true)
+//                                				MessageToast.show(data.msg);
                                 			}
                                 			else
                                 				// Successful login, navigate to profile page
                                 			{
                                 				MessageToast.show("Welcome " +data.user.name)
-//                                				var oJSONModel = this.getView().getModel();
-//                                				var data = oJSONModel.getData();
-                                				
-                                				that._adjustNavItems(true);
+                                				that._destroyMsgStrip(false);
+
+                                				that._putAuthtoken(data.token);
                                 				
                                 				data.user_visible = true;
-                                				that._adjustButtons(data);
+                                				this.getOwnerComponent()._adjustButtons(data);
+                                				
+                                				
+                                    			this.getOwnerComponent()._adjustNavItems(true);
+                                    			
                                 				
                                 				var oRouter = that.getRouter();
                                 				oRouter.navTo("dashboard");
+                                				
+                                				
                                 				
                                 			}
                                 		},
                                 		_loginfailure:function(err,that)
                                 		{
-//                                			this._generateMsgStrip(data.msg);
+                                			that._generateMsgStrip("Incorrect UserID or password",true);
+                                		
                                 		},
                                 		
-// Use this function to adjust the navigation bar items. Display Login and register if user is logged out. Else
-// display Dashboard etc                                		
-                                		_adjustNavItems:function(usr_log_flag){
-                                			
-                                			
-                                			var nbar_model = this.getOwnerComponent().getModel("navbar_model");
-                                        	var data = nbar_model.getData();
-                                        	
-                                        	var nview_model = this.getJSONModel();
-                                        	
-                                        	var itms = [];
-                                        	
-                                        	for(var i=0;i<data.length;i++){
-                                        		if(data[i].usr_log_flag === usr_log_flag)
-                                        		{
-                                        			itms.push(data[i]);
-                                        		}
-                                        	}
-                                			
-                                			
-                                			var nlitems = this.getView().byId("nlitems");
-                                			nlitems.destroyItems();
-                                			
-                                			nview_model.setData(null);
-                                			nview_model.setData(itms);
-                                			this.getView().setModel(nview_model,"nview_model");
-                                		},
-                                		_adjustButtons:function(usrlgndata)
+
+                                		
+                                		
+                                		_putAuthtoken:function(token)
                                 		{
-                                			var usrlgnmodel = this.getOwnerComponent().getModel("usrlgn_model");
-                                			usrlgnmodel.setData(null);
-                                			usrlgnmodel.setData(usrlgndata);
-                            				
+                                			if(!this._oStorage)
+                                			{
+                                				this._oStorage = jQuery.sap.storage(jQuery.sap.storage.Type.local);
+                                				
+                                			}
+                                			
+                                			this._oStorage.put('authtoken',token);
+                                		},
+                                		_getAuthtoken:function()
+                                		{
+                                			return this._oStorage.get('authtoken');
+                                		},
+                                		_removeAuthtoken:function()
+                                		{
+                                			this._oStorage.remove('authtoken');
                                 		}
  
                                     });
