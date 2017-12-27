@@ -1,1 +1,40 @@
-HELLO world
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+
+<script id="sap-ui-bootstrap"
+	src="resources/sap-ui-core.js"
+	data-sap-ui-libs="sap.m" data-sap-ui-theme="sap_bluecrystal"
+	data-sap-ui-xx-bindingSyntax="complex"
+	data-sap-ui-resourceroots='{
+            "simple_hello": "./"
+        }'>
+	
+</script>
+
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+<script>
+	sap.ui.getCore().attachInit(function() {
+		var oComponentContainer = new sap.ui.core.ComponentContainer({
+			height : "100%",
+			name : "simple_hello"
+		});
+		var shell = new sap.m.Shell({
+			id : "myshell",
+			app :oComponentContainer
+		});
+		shell.placeAt("content");
+	});
+</script>
+
+</head>
+<body class="sapUiBody" role="application">
+	<div id="content"></div>
+</body>
+</html>

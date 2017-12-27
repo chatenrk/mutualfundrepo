@@ -1,0 +1,10 @@
+.sapMPanelBGTranslucent {
+    background-color: #bfbfbf; !important
+}
+
+.sapMNav {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    background-color: seashell; !important
+}

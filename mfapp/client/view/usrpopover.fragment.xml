@@ -1,0 +1,16 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Popover
+		class="sapMOTAPopover sapTntToolHeaderPopover"
+		placement="Bottom"
+			initialFocus="logout">
+		<content>
+				<Button
+					id="logout"
+					text="Log Out"
+					press="handleLogoutPress" />
+		</content>	
+		
+	</Popover>
+</core:FragmentDefinition>

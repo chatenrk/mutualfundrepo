@@ -1,0 +1,14 @@
+<View
+	xmlns="sap.m"
+	xmlns:layout="sap.ui.layout"
+	controllerName="simple_hello.Controller.dashboard">
+	<Page
+		title="First Page">
+		<content>
+			<layout:VerticalLayout>
+				<Button text="To the second Page" press="onToPage2"/>
+		
+			</layout:VerticalLayout>
+		</content>
+	</Page>
+</View>

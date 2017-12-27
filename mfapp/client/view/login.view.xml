@@ -1,0 +1,129 @@
+<mvc:View controllerName="simple_hello.controller.login"
+    xmlns="sap.m" 
+    xmlns:f="sap.ui.layout.form"
+    xmlns:l="sap.ui.layout" 
+    xmlns:core="sap.ui.core"
+    xmlns:tnt = "sap.tnt"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+
+	<tnt:ToolPage id="toolPage">
+		<tnt:header>
+			<tnt:ToolHeader>
+				<Button id="sideNavigationToggleButton"
+						icon="sap-icon://menu2"
+						type="Transparent"
+						press="onSideNavButtonPress">
+					<layoutData>
+						<OverflowToolbarLayoutData priority="NeverOverflow" />
+					</layoutData>
+				</Button>
+				
+				<ToolbarSpacer width="650px" />
+				
+				<Title level="H1" text="{i18n>DemoApp}" TextAlign="Center" />
+				
+
+				<ToolbarSpacer width="300px" />
+				
+						
+				<Button text="{usrlgn_model>/user/name}" type="Transparent" press="handleUserNamePress" visible="{usrlgn_model>/user_visible}">
+					<layoutData>
+						<OverflowToolbarLayoutData priority="NeverOverflow" />
+					</layoutData>
+				</Button>
+
+			</tnt:ToolHeader>
+		</tnt:header>
+
+
+		<tnt:sideContent>
+			<tnt:SideNavigation expanded="true"
+								itemSelect="onItemSelect">
+				<tnt:NavigationList id="nlitems" items="{path: 'nview_model>/'}">
+					
+						<tnt:NavigationListItem Id="{nview_model>id}"
+												text="{nview_model>text}"
+												key="{nview_model>key}"
+												icon="{nview_model>icon}"
+												>
+						</tnt:NavigationListItem>
+					 
+				</tnt:NavigationList>
+				
+			</tnt:SideNavigation>
+		</tnt:sideContent>
+
+		<tnt:mainContents>
+			<NavContainer id="pageContainer">
+				<pages id="page1">
+				
+				<Panel width="auto" class="sapUiSmallMargin border-0">
+				<headerToolbar class="sapUiTinyMargin">
+					<Toolbar>
+						<Title level="H4" text="Login Page" />
+					</Toolbar>
+				</headerToolbar>
+				
+				<MessageStrip
+					id="msgstrp"
+					showIcon="false"
+					showCloseButton="false"
+					visible= "false"
+					type="Error"
+					text="{errmsg>/msg}"
+					class="sapUiMediumMarginBottom">
+				</MessageStrip>
+				
+				<VBox class="sapUiSmallMargin" id="MainFlexBox">
+					<HBox width="100%" >
+						<items>
+							<HBox width="20%" class="alignDropdownAlign sapMFlexItemAlignCenter">
+								<Label text="UserName" width="auto" class="LabelText"/>
+							</HBox>
+					
+							<VBox width="30%" direction="Column" id="__vbox15">
+								<items>
+									<input id = "user_ip" type="password" />
+								</items>
+							</VBox>
+						</items>
+					</HBox>
+		
+				<HBox width="100%" >
+					<items>
+						<HBox width="20%" class="alignDropdownAlign sapMFlexItemAlignCenter">
+							<Label text="Password" width="auto" class="LabelText" />
+						</HBox>
+						<VBox width="30%" direction="Column" >
+							<items>
+								<input id = "pwd_ip" type="Password" />
+							</items>
+						</VBox>
+					</items>
+				</HBox>
+		
+				<HBox width="100%" justifyContent="End" class="sapUiSmallMarginTop" >
+				<items>
+					<Button text="Submit" type="Submit" class="sapUiSmallMarginEnd" press="onSubmit" >
+						<layoutData>
+							<OverflowToolbarLayoutData priority="NeverOverflow" />
+						</layoutData>
+					</Button>
+					<Button text="Refresh" type="Refresh" press="onRefresh">
+						<layoutData>
+							<OverflowToolbarLayoutData priority="NeverOverflow" />
+						</layoutData>
+					</Button>
+				</items>
+				</HBox>
+		
+		
+	</VBox>
+			</Panel>
+		
+				</pages>
+			</NavContainer>
+		</tnt:mainContents>
+	</tnt:ToolPage>
+	
+</mvc:View>

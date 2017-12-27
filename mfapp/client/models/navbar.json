@@ -1,0 +1,26 @@
+[{
+	
+
+				"id":"lgn_id",
+				"text": "Login",
+				"key": "Login",
+				"icon": "sap-icon://account",
+				"usr_log_flag":false	
+			}, 
+			{
+				"id":"rgstr_id",
+				"text": "Register",
+				"key": "register",
+				"icon": "sap-icon://role",
+				"usr_log_flag":false
+			},
+			{
+				
+				"id":"dshbrd_id",
+				"text": "Dashboard",
+				"key": "dashboard",
+				"icon": "sap-icon://bbyd-dashboard",
+				"usr_log_flag":true
+			}
+		
+]
