@@ -2,13 +2,41 @@
 	xmlns="sap.m"
 	xmlns:layout="sap.ui.layout"
 	controllerName="simple_hello.Controller.dashboard">
+	<ObjectHeader
+		title="Scheme related" />
+	<HeaderContainer orientation="Horizontal">
 	
-		<TileContainer id="container" tileDelete="handleTileDelete"
-            tiles="{dbtiles_model>/TileCollection}">
- 
-            <StandardTile icon="{dbtiles_model>icon}" type="{dbtiles_model>type}" number="{dbtiles_model>number}"
-                numberUnit="{dbtiles_model>numberUnit}" title="{dbtiles_model>title}" info="{dbtiles_model>info}" infoState="{dbtiles_model>infoState}"
-                press="onTilePressed" />
-        </TileContainer>
+	
+	
+	<content>
+	<FlexBox items = "{dbtiles_model>/SchemeCollection}">
+	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+				 header="{dbtiles_model>title}"
+				 press="onTilePress">
+		<TileContent>
+			<ImageContent src="{dbtiles_model>icon}" />
+		</TileContent>
+	</GenericTile>
+	</FlexBox>	
+	</content>
+	
+	</HeaderContainer>
+	
+	<ObjectHeader
+		title="AMC related" />
+	<HeaderContainer orientation="Horizontal">
+	<content>
+	<FlexBox items = "{dbtiles_model>/AMCCollection}">
+	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+				 header="{dbtiles_model>title}"
+				 press="onTilePress">
+		<TileContent>
+			<ImageContent src="{dbtiles_model>icon}" />
+		</TileContent>
+	</GenericTile>
+	</FlexBox>	
+	</content>
+	
+	</HeaderContainer>
 	
 </View>

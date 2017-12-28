@@ -2,7 +2,7 @@
     xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
   
- 	<Page id ="Get Schemes" showNavButton = "true"
+ 	<Page id ="testPage" title = "Get Scheme Details" showNavButton = "true"
        navButtonPress = "onNavBack">
 		
 		<content>

@@ -5,12 +5,11 @@ sap.ui
                     "use strict";
                     return BaseController
                             .extend(
-                                    "simple_hello.Controller.test",
+                                    "simple_hello.Controller.getschemes",
                                     {
                                         onInit : function() 
                                         {
-                                           var page = this.getView().byId("testPage");
-                                           var ownerComponent = this.getOwnerComponent();
+                                          
                                         }
                                          
  

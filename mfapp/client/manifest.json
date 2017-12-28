@@ -86,10 +86,23 @@
 	             "target": "dashboard"
 
 	         },
+	         
 	         {
 	        	 "pattern": "register",
 	             "name": "register",
 	             "target": "register"
+
+	         },
+	         {
+	        	 "pattern": "getschemes",
+	             "name": "getschemes",
+	             "target": "getschemes"
+
+	         },
+	         {
+	        	 "pattern": "addschemes",
+	             "name": "addschemes",
+	             "target": "addschemes"
 
 	         }],
 	         "targets": {
@@ -105,6 +118,16 @@
 		         "register": 
 	             {
 		                "viewName": "register",
+		                "viewLevel" : 1
+		         },
+		         "getschemes": 
+	             {
+		                "viewName": "getschemes",
+		                "viewLevel" : 1
+		         },
+		         "addschemes": 
+	             {
+		                "viewName": "addschemes",
 		                "viewLevel" : 1
 		         }
 	          }
