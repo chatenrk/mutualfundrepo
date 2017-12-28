@@ -13,6 +13,10 @@
 			"navbar_ds": {
 				"uri": "models/navbar.json",
 				"type": "JSON"
+			},
+			"dbrdtiles_ds": {
+				"uri": "models/dboardtiles.json",
+				"type": "JSON"
 			}
 
 		}
@@ -50,6 +54,10 @@
 			"navbar_model":{
 				"type":"sap.ui.model.json.JSONModel",
 				"dataSource":"navbar_ds"
+			},
+			"dbtiles_model":{
+				"type":"sap.ui.model.json.JSONModel",
+				"dataSource":"dbrdtiles_ds"
 			},
 			"usrlgn_model":{
 				"type":"sap.ui.model.json.JSONModel"

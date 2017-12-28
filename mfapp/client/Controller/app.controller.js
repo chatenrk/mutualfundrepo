@@ -58,17 +58,23 @@ sap.ui
                                 		
 
 
-                                    	onItemSelect : function(oEvent) {
+                                    	onItemSelect : function(oEvent) 
+                                    	{
                                 			var item = oEvent.getParameter('item');
                                 			var selkey = item.getKey();
-                                			
                                 			var oRouter = this.getRouter();
-                            				oRouter.navTo(selkey);
-                                			
-//                                			var viewId = this.getView().getId();
-//                                			var pageContainer = sap.ui.getCore().byId(viewId + "--pageContainer");
-//                                			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + item.getKey());
-                                		}
+                                			oRouter.navTo(selkey);
+                                		},
+                                		
+                                		 onSideNavButtonPress : function() {
+                                 			var viewId = this.getView().getId();
+                                 			var toolPage = sap.ui.getCore().byId(viewId + "--toolPage");
+                                 			var sideExpanded = toolPage.getSideExpanded();
+
+//                                 			this._setToggleButtonTooltip(sideExpanded);
+
+                                 			toolPage.setSideExpanded(!toolPage.getSideExpanded());
+                                 		},
 
                                 		
                                 		

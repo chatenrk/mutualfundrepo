@@ -1,0 +1,37 @@
+{
+    "TileCollection" : [
+        {
+            "id": "schdet",
+            "icon" : "sap-icon://display",
+            "type" : "Monitor",
+            "title" : "Scheme Details"
+        },
+        {
+            "id": "schdet1",
+            "icon" : "sap-icon://display",
+            "type" : "Monitor",
+            "title" : "Scheme Details"
+        },
+        {
+            "id": "schdet2",
+            "icon" : "sap-icon://display",
+            "type" : "Monitor",
+            "title" : "Scheme Details"
+        },
+        {
+            "id": "schdet3",
+            "icon" : "sap-icon://display",
+            "type" : "Monitor",
+            "title" : "Scheme Details"
+        },
+        {
+            "id": "schdet4",
+            "icon" : "sap-icon://display",
+            "type" : "Monitor",
+            "title" : "Scheme Details"
+        }
+         
+         
+         
+    ]
+}

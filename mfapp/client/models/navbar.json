@@ -3,7 +3,7 @@
 
 				"id":"lgn_id",
 				"text": "Login",
-				"key": "Login",
+				"key": "login",
 				"icon": "sap-icon://account",
 				"usr_log_flag":false	
 			}, 

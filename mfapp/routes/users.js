@@ -8,45 +8,86 @@ const mongoose = require('mongoose');
 const userModel = require('../models/userModel');
 const config = require('../config/database');
 
-router.post('/register',function(req,res,next){
+router.post('/register',function(req,res,next)
+{
 	
-	let newUser = new userModel({
-		name: req.body.name,
-		email:  req.body.email,
-		username:  req.body.username,
-		password: req.body.password
-	});
+// Check if the user is already registered, use the email as it is the index of the table
 	
-	userModel.addUser(newUser,function(err,callback){
+	userModel.getUserByEmail(req.body.email,function(err,data)
+	{
 		if(err)
-		{	
-			if(err.code===11000){
+		{
+			debugger;
 			res.status(200).json(
 					{
 						success:false,
-						name: err.name,
-						msg:"This email is already registered. Please login"
+						msg:"Error please contact admin"
 					});
-			}else{
-				res.status(200).json(
+		}
+		else
+		{
+			debugger;
+			if(data !== null){
+// Check if data is empty
+				if(data.id)
+				{
+					res.status(200).json(
 						{
 							success:false,
-							name: err.name,
-							msg:err.message
+							name: "Duplicate Email",
+							msg:"This email is already registered. Please use the login page"
 						});
+				
+				}
 			}
-		
-		}else
-		
-		{
-			res.status(200).json(
+			else
+			{
+				let newUser = new userModel({
+					name: req.body.name,
+					email:  req.body.email,
+					username:  req.body.username,
+					password: req.body.password
+				});
+				
+				userModel.addUser(newUser,function(err,callback)
+				{
+					if(err)
+					{	
+						if(err.code===11000)
+						{
+							res.status(200).json(
+								{
+									success:false,
+									name: err.name,
+									msg:"This email is already registered. Please login"
+								});
+						}else
+						{
+							res.status(200).json(
+									{
+										success:false,
+										name: err.name,
+										msg:err.message
+									});
+						}
+					
+					}
+					else
+					
 					{
-						success:true,
-						msg:"User Registered"
-					});
+						res.status(200).json(
+								{
+									success:true,
+									msg:"User Registered"
+								});
+					}
+				});
+				
+			}
 		}
 	});
 	
+ 
 });
 
 router.post('/authenticate',function(req,res,next){

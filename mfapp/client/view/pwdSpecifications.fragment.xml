@@ -1,0 +1,14 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Popover
+		title="Password Specifications"
+		class="sapUiContentPadding"
+		placement="PreferredRightOrFlip"
+			initialFocus="logout">
+		<content>
+				<FormattedText htmlText="{/HTML}"/>
+		</content>	
+		
+	</Popover>
+</core:FragmentDefinition>

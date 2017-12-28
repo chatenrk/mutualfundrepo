@@ -1,4 +1,4 @@
-<mvc:View controllerName="simple_hello.controller.login"
+<mvc:View controllerName="simple_hello.Controller.login"
     xmlns="sap.m" 
     xmlns:f="sap.ui.layout.form"
     xmlns:l="sap.ui.layout" 

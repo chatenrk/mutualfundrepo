@@ -10,13 +10,18 @@ sap.ui
                     jQuery.sap.require("jquery.sap.storage");
                     return BaseController
                             .extend(
-                                    "simple_hello.controller.login",
+                                    "simple_hello.Controller.login",
                                     {
                                     			
                                     
                                         onInit : function() 
                                         {
                                         	this._oMessageStrip = this.getView().byId("msgstrp");
+                                        },
+                                        
+                                        onBeforeRendering:function()
+                                        {
+                                        	this._destroyMsgStrip(false);
                                         },
                                         
                                         onSubmit: function(oEvt){
@@ -49,33 +54,8 @@ sap.ui
                                         	this.getView().byId("user_ip").setValue("");
                                     		this.getView().byId("pwd_ip").setValue("");
                                         },
-                                        onSideNavButtonPress : function() {
-                                			var viewId = this.getView().getId();
-                                			var toolPage = sap.ui.getCore().byId(viewId + "--toolPage");
-                                			var sideExpanded = toolPage.getSideExpanded();
-
-                                			this._setToggleButtonTooltip(sideExpanded);
-
-                                			toolPage.setSideExpanded(!toolPage.getSideExpanded());
-                                		},
-                                		_setToggleButtonTooltip : function(bLarge) {
-                                			var toggleButton = this.getView().byId('sideNavigationToggleButton');
-                                			if (bLarge) {
-                                				toggleButton.setTooltip('Large Size Navigation');
-                                			} else {
-                                				toggleButton.setTooltip('Small Size Navigation');
-                                			}
-                                		},
-                                    	
-                                		
-                                		
-                                		
-                                		_getMsgStrip: function()
-                                		{
-                                			return this.getView().byId("msgstrp");
-                                		},
-                                		
-                                		_generateMsgStrip: function (msgtext,visible) {
+                                       
+                                	    _generateMsgStrip: function (msgtext,visible) {
                                 			
                                 			if(this._oMessageStrip){
                                 				this._oMessageStrip.setVisible(visible);
@@ -122,7 +102,7 @@ sap.ui
                                 			if(data.success === false)
                                 				// Error with login, display message
                                 			{
-                                				that._generateMsgStrip("Error with login, please contact administrator",true)
+                                				that._generateMsgStrip(data.msg,true)
 //                                				MessageToast.show(data.msg);
                                 			}
                                 			else
