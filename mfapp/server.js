@@ -5,6 +5,7 @@ const cors = require('cors');
 const passport = require('passport');
 const mongoose = require('mongoose');
 
+
 const app = express();
 
 const users = require('./routes/users');
@@ -26,7 +27,19 @@ app.use(cors());
 app.use(express.static(path.join(__dirname,'client')));
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+
+// BodyParser does not handle file uploads prpoperly. So need to check content type
+var isMultipart = /^multipart\//i;
+var urlencodedMiddleware = bodyParser.urlencoded({ extended: true });
+
+app.use(function (req, res, next) 
+{
+  var type = req.get('Content-Type');
+  if (isMultipart.test(type)) return next();
+  return urlencodedMiddleware(req, res, next);
+	});
+
+//app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(passport.initialize());
 app.use(passport.session());

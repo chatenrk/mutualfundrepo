@@ -61,6 +61,15 @@
 			},
 			"usrlgn_model":{
 				"type":"sap.ui.model.json.JSONModel"
+			},
+			"scheme_model":{
+				"type":"sap.ui.model.json.JSONModel"
+			},
+			"post_scheme_model":{
+				"type":"sap.ui.model.json.JSONModel"
+			},
+			"vis_model":{
+				"type":"sap.ui.model.json.JSONModel"
 			}
 		},
 		"routing":
@@ -104,6 +113,11 @@
 	             "name": "addschemes",
 	             "target": "addschemes"
 
+	         },
+	         {
+	        	 "pattern": "schdet/{scode}",
+				 "name": "schdet",
+				 "target": "schdetails"
 	         }],
 	         "targets": {
 	             "login": {
@@ -129,7 +143,13 @@
 	             {
 		                "viewName": "addschemes",
 		                "viewLevel" : 1
+		         },
+		         "schdetails": 
+	             {
+		                "viewName": "schdetails",
+		                "viewLevel" : 1
 		         }
+		         
 	          }
 
 

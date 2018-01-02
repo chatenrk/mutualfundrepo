@@ -8,3 +8,14 @@
     height: 100%;
     background-color: seashell; !important
 }
+
+.sapMListTblCell {
+
+    border-left: 1px solid #ccc;
+    
+    font-weight: bold; !important
+
+},
+.textbold{
+	font-weight: bold; !important
+}

@@ -1,0 +1,14 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ViewSettingsDialog
+		confirm="handleVSConfirm">
+		
+		<sortItems>
+			<ViewSettingsItem text="Scheme Code" key="scode" selected="true" />
+			<ViewSettingsItem text="Scheme Name" key="sname" />
+		</sortItems>
+		
+		
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

@@ -1,3 +1,8 @@
+var parse = require('csv-parse');
+var async = require('async');
+const util = require('util');
+const Promise = require('bluebird');
+
 function parseOutput(errflag,parseObject,operation)
 {	
 	
@@ -23,6 +28,25 @@ function parseOutput(errflag,parseObject,operation)
 	
 }
 
+
+	async function csvtojson(file)
+	{
+	
+		var mfschemes = [];
+		
+		var fs = Promise.promisifyAll(require("fs"));
+		var Converter = require('csvtojson').Converter;
+		Promise.promisifyAll(Converter.prototype);
+		
+		var converter = new Converter();
+		mfschemes = await converter.fromStringAsync(fs.readFileSync(file.originalname, 'utf8'));
+		
+		return mfschemes;
+		
+	
+	}
+	
+
 async function asyncForEach(array, callback) {
 	  for (let index = 0; index < array.length; index++) 
 	  { 
@@ -31,10 +55,11 @@ async function asyncForEach(array, callback) {
 		 await callback(array[index], index, array)
 		  }
 		  catch(err){
-			  debugger;
+			  
 		  }
 	  }
 	}
 
 module.exports.parseOutput = parseOutput;
 module.exports.asyncForEach = asyncForEach;
+module.exports.csvtojson = csvtojson;

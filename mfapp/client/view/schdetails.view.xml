@@ -1,0 +1,9 @@
+<View
+	xmlns="sap.m"
+	xmlns:layout="sap.ui.layout"
+	controllerName="simple_hello.Controller.schdetails">
+	<ObjectHeader
+		title="Scheme Details" />
+
+	
+</View>

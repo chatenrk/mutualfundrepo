@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Upload Scheme Details</title>
+</head>
+<body>
+    <p>Use the form below to upload a list of schemes.
+        Click <a href="/template">here</a> for an example template.</p>
+    <form action="/schemes/csv" method="POST" encType="multipart/form-data">
+        <input type="file" name="file" accept="*.csv" /><br/><br/>
+        <input type="submit" value="Upload Scheme Details" />
+    </form>
+</body>
+</html>

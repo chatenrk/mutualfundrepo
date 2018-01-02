@@ -17,7 +17,7 @@ router.post('/register',function(req,res,next)
 	{
 		if(err)
 		{
-			debugger;
+			
 			res.status(200).json(
 					{
 						success:false,
@@ -26,7 +26,7 @@ router.post('/register',function(req,res,next)
 		}
 		else
 		{
-			debugger;
+			
 			if(data !== null){
 // Check if data is empty
 				if(data.id)
@@ -105,7 +105,7 @@ router.post('/authenticate',function(req,res,next){
 	var password = req.body.password;
 	
 	userModel.getUserByUsername(username,function(err,user){
-		debugger;
+		
 		if(err) throw err;
 		if(!user){
 			res.status(200).json(
