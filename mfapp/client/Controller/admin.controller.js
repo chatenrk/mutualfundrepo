@@ -31,7 +31,10 @@ sap.ui
                                         	    case "onAddSchDet":
                                          	       this._oRouter.navTo("addschemes");
                                          	        break;
-                                        	    
+                                        	   
+                                        	    case "addamcdet":
+                                          	       this._oRouter.navTo("addamcs");
+                                          	        break;
                                         	    default:
                                         	        break;
                                         	}

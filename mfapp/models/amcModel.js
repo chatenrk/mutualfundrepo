@@ -50,7 +50,7 @@ try{
 //This route posts a single AMC to database
 async function postOne(mfamc)
 {
-	debugger;
+	
 	
 	try
 	{
@@ -62,6 +62,7 @@ async function postOne(mfamc)
 					amcname:mfamc.amcname
 				});
 				
+		
 		var parseResult = helpers.parseOutput(errflag,amc);
 		
 	} 
@@ -80,7 +81,7 @@ async function postOne(mfamc)
 //This route posts a multiple AMC's to database
 async function postMany(amcs)
 {
-	debugger;
+	
 	var resArray= [];
 	await helpers.asyncForEach(amcs,async (item,index,array) => 
     {
