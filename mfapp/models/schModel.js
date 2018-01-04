@@ -125,7 +125,7 @@ async function postOne(mfscheme)
 async function postOneSchDet(mfschdet)
 {
 	
-	debugger;
+	
 	try
 	{
 		let schDet 
@@ -164,7 +164,7 @@ async function postOneSchDet(mfschdet)
 	} 
 	catch (err) 
 	{	
-		debugger;
+		
 		var operation = err.getOperation();
 		var errflag = true;
 		var parseResult = helpers.parseOutput(errflag,err,operation);

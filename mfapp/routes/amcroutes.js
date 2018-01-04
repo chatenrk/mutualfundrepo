@@ -19,7 +19,7 @@ const helpers = require('../helpers/helpers.js');
 //Route to find one AMC
 router.get('/amcdet', async (req,res,next) => {
 	
-	debugger;
+
 	var amccode = req.query.amccode;
 	
 	var id = {
@@ -110,7 +110,7 @@ router.post('/pmany', async (req, res) =>
 router.post('/csv', upload.single('file'),async (req, res) => 
 {
 	
-	debugger;
+	
 		
 	if (!req.file)
 		        return res.status(400).send('No files were uploaded.');

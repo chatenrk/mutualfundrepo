@@ -68,7 +68,7 @@ async function postOne(mfamc)
 	} 
 	catch (err) 
 	{	
-		debugger;
+		
 		var operation = err.getOperation();
 		var errflag = true;
 		var parseResult = helpers.parseOutput(errflag,err,operation);

@@ -19,7 +19,7 @@ const helpers = require('../helpers/helpers.js');
 //Route to get all scheme details
 router.get('/sdet', async (req,res,next) => {
 	
-	debugger;
+
 	var scode = req.query.scode;
 	
 	var id = {
@@ -44,7 +44,7 @@ router.get('/sdet', async (req,res,next) => {
 
 router.post('/sdet/pone', async (req,res,next) => {
 	
-	debugger;
+	
 	var mfscheme = {
 			scode:req.body.scode,
 			sname:req.body.sname,

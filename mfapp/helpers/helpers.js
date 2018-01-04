@@ -5,7 +5,7 @@ const Promise = require('bluebird');
 
 function parseOutput(errflag,parseObject,operation)
 {	
-	debugger;
+	
 	var parseResult = {};
 	
 	// Error Parsing
@@ -38,7 +38,7 @@ function parseOutput(errflag,parseObject,operation)
 		var Converter = require('csvtojson').Converter;
 		Promise.promisifyAll(Converter.prototype);
 		
-		debugger;
+	
 		var converter = new Converter();
 		mfschemes = await converter.fromStringAsync(fs.readFileSync(file.originalname, 'utf8'));
 		
