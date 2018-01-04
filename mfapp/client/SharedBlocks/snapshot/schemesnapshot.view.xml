@@ -1,0 +1,24 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:layout="sap.ui.layout" xmlns:forms="sap.ui.layout.form" xmlns="sap.m">
+	<forms:SimpleForm
+			maxContainerCols="1"
+			layout="ResponsiveGridLayout">
+		<layout:HorizontalLayout>
+		
+		<layout:VerticalLayout class="sapUiLargeMarginEnd">
+			<Label text="Scheme Code" design="Bold"/>
+			<Text text="{schdet_model>/scode}"/>
+			<Text text=""/>
+			<Label text="Category" design="Bold"/>
+			<Text text="{schdet_model>/category}"/>
+		</layout:VerticalLayout>
+		
+		<layout:VerticalLayout class="sapUiSmallMarginEnd">
+			<Label text="Assets" design="Bold"/>
+			<Text  text="{schdet_model>/assets} (As on {schdet_model>/assetdate}) " />
+			<Text text=""/>
+			<Label text="Expense Ratio" design="Bold"/>
+			<Text  text="{schdet_model>/expense}% (As on {schdet_model>/expensedate}) " />
+		</layout:VerticalLayout>
+		</layout:HorizontalLayout>
+	</forms:SimpleForm>
+</mvc:View>

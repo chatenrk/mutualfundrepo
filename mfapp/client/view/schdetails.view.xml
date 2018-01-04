@@ -1,9 +1,64 @@
 <View
-	xmlns="sap.m"
+	xmlns="sap.uxap"
+	xmlns:m="sap.m"
 	xmlns:layout="sap.ui.layout"
+	xmlns:snapshot="simple_hello.SharedBlocks.snapshot"
 	controllerName="simple_hello.Controller.schdetails">
-	<ObjectHeader
-		title="Scheme Details" />
-
+	<m:Page id ="addSchemePage" title = "{i18n>schdet}" showNavButton = "true"
+       navButtonPress = "onNavBack">
 	
+	<ObjectPageLayout id="ObjectPageLayout"
+					  enableLazyLoading="false"
+					  showTitleInHeaderContent="true">
+					  
+	<headerTitle>
+			<ObjectPageHeader id = "objpghdr"
+							  objectImageURI="{schdet_model>/imgpath}"
+							  objectTitle="{schdet_model>/sname}"
+							  objectImageShape="Square"
+							  objectImageAlt="{schdet_model>/fhouse}"
+							 
+
+							  isObjectIconAlwaysVisible="false"
+							  isObjectTitleAlwaysVisible="false"
+							  isObjectSubtitleAlwaysVisible="false">
+			</ObjectPageHeader>				  
+		
+	</headerTitle>		
+	<headerContent>
+		
+			<layout:VerticalLayout>	
+			<m:ObjectAttribute  text="{schdet_model>/ptype} - {schdet_model>/schtype}" />
+			<m:ObjectAttribute title="Fund House" text="{schdet_model>/fhouse}"/>
+			<m:ObjectAttribute
+				text="Scheme Link"
+				active="true"
+				press="handleSchLinkPressed" />
+			</layout:VerticalLayout>
+			
+	
+	</headerContent>
+	<sections>
+		<ObjectPageSection id="snapshot" title="Snapshot Section">
+				<subSections>
+						<ObjectPageSubSection id="snapshotSS1" title="">
+							<blocks>
+								<snapshot:schemesnapshot id="schemesnapshot"/>
+							</blocks>
+						</ObjectPageSubSection>
+				</subSections>
+		</ObjectPageSection>
+		
+		<ObjectPageSection id="snapshot1" title="NAV Section">
+				<subSections>
+						<ObjectPageSubSection id="snapshotSS11" title="">
+							<blocks>
+								<snapshot:schemesnapshot1 id="schemesnapshot1"/>
+							</blocks>
+						</ObjectPageSubSection>
+				</subSections>
+		</ObjectPageSection>
+	</sections>		  
+	</ObjectPageLayout>
+	</m:Page>
 </View>

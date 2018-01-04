@@ -51,6 +51,8 @@ router.post('/sdet/pone', async (req,res,next) => {
 			category:req.body.category,
 		    assets:req.body.assets,
 		    assetdate:req.body.assetdate,
+		    assetcurr:req.body.assetcurr,
+		    assetqual:req.body.assetqual,
 		    expense:req.body.expense,
 		    expensedate:req.body.expensedate,
 		    fhouse:req.body.fhouse,
@@ -64,7 +66,11 @@ router.post('/sdet/pone', async (req,res,next) => {
 		    minwith:req.body.minwith,
 		    minswpwith:req.body.minswpwith,
 		    minbal:req.body.minbal,
-		    exitload:req.body.exitload
+		    exitload:req.body.exitload,
+		    ptype:req.body.ptype,
+		    schtype:req.body.schtype,
+		    imgpath:req.body.imgpath,
+		    schurl:req.body.schurl
 	};
 	
 	

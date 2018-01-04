@@ -70,6 +70,9 @@
 			},
 			"vis_model":{
 				"type":"sap.ui.model.json.JSONModel"
+			},
+			"schdet_model":{
+				"type":"sap.ui.model.json.JSONModel"
 			}
 		},
 		"routing":

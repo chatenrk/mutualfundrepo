@@ -23,6 +23,8 @@ var mfschdetSchema = mongoose.Schema({
     },
    
     assetdate:String,
+    assetcurr:String,
+    assetqual:String,
     expense: SchemaTypes.Double,
     expensedate:String,
     fhouse: String,
@@ -51,7 +53,11 @@ var mfschdetSchema = mongoose.Schema({
         type: Number,
         integer: true
     },
-    exitload:String
+    exitload:String,
+    ptype:String,
+    schtype:String,
+    imgpath:String,
+    schurl:String
 });
 
 mfschdetSchema.plugin(integerValidator);
@@ -131,6 +137,8 @@ async function postOneSchDet(mfschdet)
 					category:mfschdet.category,
 				    assets:mfschdet.assets,
 				    assetdate:mfschdet.assetdate,
+				    assetcurr:mfschdet.assetcurr,
+				    assetqual:mfschdet.assetqual,
 				    expense:mfschdet.expense,
 				    expensedate:mfschdet.expensedate,
 				    fhouse:mfschdet.fhouse,
@@ -144,7 +152,11 @@ async function postOneSchDet(mfschdet)
 				    minwith:mfschdet.minwith,
 				    minswpwith:mfschdet.minswpwith,
 				    minbal:mfschdet.minbal,
-				    exitload:mfschdet.exitload
+				    exitload:mfschdet.exitload,
+				    ptype:mfschdet.ptype,
+				    schtype:mfschdet.schtype,
+				    imgpath:mfschdet.imgpath,
+				    schurl:mfschdet.schurl
 				});
 				
 		var parseResult = helpers.parseOutput(errflag,schDet);
