@@ -65,6 +65,9 @@
 			"scheme_model":{
 				"type":"sap.ui.model.json.JSONModel"
 			},
+			"amc_model":{
+				"type":"sap.ui.model.json.JSONModel"
+			},
 			"post_scheme_model":{
 				"type":"sap.ui.model.json.JSONModel"
 			},
@@ -119,6 +122,12 @@
 
 	         },
 	         {
+	        	 "pattern": "getamcs",
+	             "name": "getamcs",
+	             "target": "getamcs"
+
+	         },
+	         {
 	        	 "pattern": "addschemes",
 	             "name": "addschemes",
 	             "target": "addschemes"
@@ -152,6 +161,11 @@
 		         "getschemes": 
 	             {
 		                "viewName": "getschemes",
+		                "viewLevel" : 1
+		         },
+		         "getamcs": 
+	             {
+		                "viewName": "getamcs",
 		                "viewLevel" : 1
 		         },
 		         "addschemes": 

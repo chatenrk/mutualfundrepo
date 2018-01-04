@@ -27,7 +27,11 @@ sap.ui
                                         	    case "onGetSchdet":
                                         	       this._oRouter.navTo("getschemes");
                                         	        break;
-                                        	  
+                                        	    
+                                        	    case "getamcdet":
+                                         	       this._oRouter.navTo("getamcs");
+                                         	        break;
+                                        	        
                                         	    case "onAddSchDet":
                                          	       this._oRouter.navTo("addschemes");
                                          	        break;
