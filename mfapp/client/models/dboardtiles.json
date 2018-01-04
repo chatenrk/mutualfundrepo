@@ -5,25 +5,26 @@
 			"icon": "sap-icon://show",
 			"type": "Monitor",
 			"title": "Get Scheme Details"
-		}, {
-			"id": "onAddSchDet",
-			"icon": "sap-icon://add",
-			"type": "Create",
-			"title": "Add Scheme Details"
-
-		}
-
-
-
-	],
-	
-	"AMCCollection": [
+		},
 		{
 			"id": "getamcdet",
 			"icon": "sap-icon://show",
 			"type": "Monitor",
 			"title": "Get AMC Details"
-		}, {
+		}
+
+	],
+	
+		
+	"AdminCollection": [
+		{
+			"id": "onAddSchDet",
+			"icon": "sap-icon://add",
+			"type": "Create",
+			"title": "Add Scheme Details"
+
+		}, 
+		{
 			"id": "addamcdet",
 			"icon": "sap-icon://add",
 			"type": "Create",

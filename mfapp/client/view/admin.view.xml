@@ -1,7 +1,7 @@
 <View
 	xmlns="sap.m"
 	xmlns:layout="sap.ui.layout"
-	controllerName="simple_hello.Controller.dashboard">
+	controllerName="simple_hello.Controller.admin">
 	<ObjectHeader
 		title="Scheme related" />
 	<HeaderContainer orientation="Horizontal">
@@ -9,7 +9,7 @@
 	
 	
 	<content>
-	<FlexBox items = "{dbtiles_model>/SchemeCollection}">
+	<FlexBox items = "{dbtiles_model>/AdminCollection}">
 	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
 				 header="{dbtiles_model>title}"
 				 press="onTilePress">

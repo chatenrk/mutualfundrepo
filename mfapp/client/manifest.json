@@ -100,6 +100,13 @@
 	         },
 	         
 	         {
+	        	 "pattern": "admin",
+	             "name": "admin",
+	             "target": "admin"
+
+	         },
+	         
+	         {
 	        	 "pattern": "register",
 	             "name": "register",
 	             "target": "register"
@@ -130,6 +137,11 @@
 	             "dashboard": 
 	             {
 		                "viewName": "dashboard",
+		                "viewLevel" : 1
+		         },
+		         "admin": 
+	             {
+		                "viewName": "admin",
 		                "viewLevel" : 1
 		         },
 		         "register": 

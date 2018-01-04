@@ -21,6 +21,14 @@
 				"key": "dashboard",
 				"icon": "sap-icon://bbyd-dashboard",
 				"usr_log_flag":true
+			},
+			{
+				
+				"id":"admin_id",
+				"text": "Admin",
+				"key": "admin",
+				"icon": "sap-icon://bbyd-dashboard",
+				"usr_log_flag":true
 			}
 		
 ]

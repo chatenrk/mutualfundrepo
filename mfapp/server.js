@@ -10,6 +10,8 @@ const app = express();
 
 const users = require('./routes/users');
 const schroutes = require('./routes/schroutes');
+const amcroutes = require('./routes/amcroutes');
+
 const config = require('./config/database');
 
 const port = 3000;
@@ -46,6 +48,7 @@ app.use(passport.session());
 
 app.use('/users',users);
 app.use('/schemes',schroutes);
+app.use('/amc',amcroutes);
 
 require('./config/passport')(passport);
 
