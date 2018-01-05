@@ -11,6 +11,7 @@ const app = express();
 const users = require('./routes/users');
 const schroutes = require('./routes/schroutes');
 const amcroutes = require('./routes/amcroutes');
+const navroutes = require('./routes/navroutes');
 
 const config = require('./config/database');
 
@@ -49,6 +50,7 @@ app.use(passport.session());
 app.use('/users',users);
 app.use('/schemes',schroutes);
 app.use('/amc',amcroutes);
+app.use('/nav',navroutes);
 
 require('./config/passport')(passport);
 
