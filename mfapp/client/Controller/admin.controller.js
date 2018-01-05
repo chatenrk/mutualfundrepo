@@ -35,6 +35,9 @@ sap.ui
                                         	    case "addamcdet":
                                           	       this._oRouter.navTo("addamcs");
                                           	        break;
+                                        	    case "addnavdet":
+                                           	       this._oRouter.navTo("addnav");
+                                           	        break;    
                                         	    default:
                                         	        break;
                                         	}

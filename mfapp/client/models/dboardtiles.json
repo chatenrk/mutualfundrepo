@@ -29,6 +29,12 @@
 			"icon": "sap-icon://add",
 			"type": "Create",
 			"title": "Add AMC Details"
+		},
+		{
+			"id": "addnavdet",
+			"icon": "sap-icon://add",
+			"type": "Create",
+			"title": "Add NAV Details"
 		}
 
 	]

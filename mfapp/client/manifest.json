@@ -74,6 +74,9 @@
 			"post_amc_model":{
 				"type":"sap.ui.model.json.JSONModel"
 			},
+			"post_nav_model":{
+				"type":"sap.ui.model.json.JSONModel"
+			},
 			"vis_model":{
 				"type":"sap.ui.model.json.JSONModel"
 			},
@@ -143,6 +146,12 @@
 
 	         },
 	         {
+	        	 "pattern": "addnav",
+	             "name": "addnav",
+	             "target": "addnav"
+
+	         },
+	         {
 	        	 "pattern": "schdet/{scode}",
 				 "name": "schdet",
 				 "target": "schdetails"
@@ -185,6 +194,11 @@
 		         "addamcs": 
 	             {
 		                "viewName": "addamcs",
+		                "viewLevel" : 1
+		         },
+		         "addnav": 
+	             {
+		                "viewName": "addnav",
 		                "viewLevel" : 1
 		         },
 		         "schdetails": 
