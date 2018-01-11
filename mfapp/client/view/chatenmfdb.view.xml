@@ -1,0 +1,25 @@
+<View
+	xmlns="sap.m"
+	xmlns:layout="sap.ui.layout"
+	controllerName="simple_hello.Controller.chatenmfdashboard">
+	<ObjectHeader
+		title="Chaitanya's MF Dashboard" />
+	<HeaderContainer orientation="Horizontal">
+	
+	
+	
+	<content>
+	<FlexBox items = "{dbtiles_model>/ChatenCollection}">
+	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+				 header="{dbtiles_model>title}"
+				 press="onTilePress">
+		<TileContent>
+			<ImageContent src="{dbtiles_model>icon}" />
+		</TileContent>
+	</GenericTile>
+	</FlexBox>	
+	</content>
+	
+	</HeaderContainer>
+
+</View>

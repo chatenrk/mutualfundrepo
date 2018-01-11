@@ -40,6 +40,33 @@ router.get('/sdet', async (req,res,next) => {
 
 });
 
+
+//Route to get all scheme by AMC Code
+router.get('/sdet/amc', async (req,res,next) => {
+	
+
+//	var amccode = req.query.amccode;
+	
+	var amccode  = parseInt(req.query.amccode, 10);
+	debugger;
+	var id = {
+			amccode:amccode
+	}
+	
+	try
+	{
+		schemes = await schmodel.findOneSch(id);
+		res.send(schemes);
+	}
+	catch(err)
+	{
+		
+		 return res.status(500).send(err);
+	}
+	
+
+});
+
 // Route to insert scheme detail
 
 router.post('/sdet/pone', async (req,res,next) => {
@@ -165,7 +192,7 @@ router.post('/csv', upload.single('file'),async (req, res) =>
 	 try
 		{	
 		 	 var mfschemes = await helpers.csvtojson(mfschemeFile);
-		 	 
+		 	 debugger;
 		 	 var result = await schmodel.postMany(mfschemes);
 		 	 
 		 	 res.send(result);

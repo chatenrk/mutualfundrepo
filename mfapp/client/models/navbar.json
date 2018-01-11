@@ -29,6 +29,14 @@
 				"key": "admin",
 				"icon": "sap-icon://bbyd-dashboard",
 				"usr_log_flag":true
+			},
+			{
+				
+				"id":"chatenmf_id",
+				"text": "Chaitanya MF Dashboard",
+				"key": "chatenmf",
+				"icon": "sap-icon://bbyd-dashboard",
+				"usr_log_flag":true
 			}
 		
 ]

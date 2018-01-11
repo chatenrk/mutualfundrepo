@@ -12,6 +12,7 @@ const users = require('./routes/users');
 const schroutes = require('./routes/schroutes');
 const amcroutes = require('./routes/amcroutes');
 const navroutes = require('./routes/navroutes');
+const mfinvroutes = require('./routes/mfinvroutes');
 
 const config = require('./config/database');
 
@@ -51,6 +52,7 @@ app.use('/users',users);
 app.use('/schemes',schroutes);
 app.use('/amc',amcroutes);
 app.use('/nav',navroutes);
+app.use('/mfinv',mfinvroutes);
 
 require('./config/passport')(passport);
 

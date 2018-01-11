@@ -7,7 +7,8 @@ const helpers = require('../helpers/helpers.js');
 var mfschemeSchema = mongoose.Schema({
 
     scode: Number,
-    sname: String
+    sname: String,
+    amccode:Number
 });
 
 var SchemaTypes = mongoose.Schema.Types;
@@ -81,9 +82,27 @@ try{
 };
 
 
-//This route gets all the documents inside the schemes collection in MongoDB
+//This route finds schemes based on the query passed to it
+async function findOneSch(id)
+{
+	
+debugger;
+try{
+      let schemes 	    
+      schemes = await mfschemesModel.find(id);
+      return schemes;
+  } catch (err) 
+  {
+	
+    return err;
+  }
+};
+
+//This route finds scheme details based on the query passed to it
 async function findOneSchDet(id)
 {
+	
+debugger;
 try{
       let schemes 	    
       schemes = await mfschdetModel.find(id);
@@ -105,7 +124,7 @@ async function postOne(mfscheme)
 	{
 		let schemes 
 		var _id = new mongoose.Types.ObjectId();	
-		schemes = await mfschemesModel.create({scode:mfscheme.scode,sname:mfscheme.sname});
+		schemes = await mfschemesModel.create({scode:mfscheme.scode,sname:mfscheme.sname,amccode:mfscheme.amccode});
 		var parseResult = helpers.parseOutput(errflag,schemes);
 		
 	} 
@@ -204,3 +223,4 @@ module.exports.postOne = postOne;
 module.exports.postMany = postMany;
 module.exports.postOneSchDet = postOneSchDet;
 module.exports.findOneSchDet = findOneSchDet;
+module.exports.findOneSch = findOneSch;
