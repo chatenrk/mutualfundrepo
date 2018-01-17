@@ -27,6 +27,10 @@ sap.ui
                                         	    case "addmfinv":
                                         	       this._oRouter.navTo("mfinvlog");
                                         	        break;
+                                        	        
+                                        	    case "test":
+                                         	       this._oRouter.navTo("test");
+                                         	        break;    
                                         	    
                                         	    default:
                                         	        break;

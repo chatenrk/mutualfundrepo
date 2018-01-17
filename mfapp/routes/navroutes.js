@@ -5,6 +5,9 @@ var jwt = require('jsonwebtoken');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const csv=require('csvtojson');
+const request = require('request');
+const moment = require('moment');
+
 
 var multer  = require('multer')
 var upload = multer({ dest: 'uploads/' })
@@ -21,7 +24,8 @@ router.get('/navdet', async (req,res,next) => {
 	debugger;
 	var scode = req.query.scode;
 	var date = req.query.date;
-	var isodate = new Date(date).toISOString();
+//	var isodate = new Date(date).toISOString();
+	var isodate = moment(date).toISOString();
 	var query = {
 			
 			$and: [{scode:scode},{date:isodate}]
@@ -128,5 +132,20 @@ router.post('/csv', upload.single('file'),async (req, res) =>
 	   
 });
 
+
+//Test route 
+
+router.get('/navtest', async (req,res,next) => {
+	
+	debugger;
+	request({
+		  'url': 'https://www.google.com',
+		  'proxy':'https://proxy.cognizant.com:6050'
+		}, function(error, response, body) 
+		{
+			debugger;
+			console.log(body);
+		});
+});
 
 module.exports = router;

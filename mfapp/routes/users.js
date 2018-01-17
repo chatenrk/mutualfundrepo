@@ -7,9 +7,24 @@ const mongoose = require('mongoose');
 
 const userModel = require('../models/userModel');
 const config = require('../config/database');
+const helpers = require('../helpers/helpers.js');
+
 
 router.post('/register',function(req,res,next)
 {
+
+// Check if the password matches the compliance requirements
+	
+	var password = req.body.password;
+	if(helpers.checkpwd(password) === "insuff pwd")
+		{
+			return res.status(200).json(
+					{
+						success:false,
+						msg:"Password not complaint with specifications.Please check the information popup for more details"
+					});
+		}
+	
 	
 // Check if the user is already registered, use the email as it is the index of the table
 	
@@ -96,7 +111,7 @@ router.post('/authenticate',function(req,res,next){
 		res.status(200).json(
 				{
 					success:false,
-					msg:"Unable to connect to database. Please contact Admins"
+					msg:"Unable to connect to database. Please contact Admin"
 				});
 	}
 	else

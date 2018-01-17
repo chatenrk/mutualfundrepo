@@ -19,3 +19,23 @@
 .textbold{
 	font-weight: bold; !important
 }
+.pw {
+    border-width: 1;
+    border-color: #000000;
+    padding: 5;
+    margin: 5;
+}
+
+.pw-none { }
+
+.pw-weak {
+    background-color: red;
+}
+
+.pw-medium {
+    background-color: yellow;
+}
+
+.pw-strong {
+    background-color: green;
+}

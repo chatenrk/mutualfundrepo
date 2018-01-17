@@ -93,6 +93,9 @@
 			},
 			"selSchModel":{
 				"type":"sap.ui.model.json.JSONModel"
+			},
+			"mfins_model":{
+				"type":"sap.ui.model.json.JSONModel"
 			}
 		},
 		"routing":
@@ -177,6 +180,12 @@
 
 	         },
 	         {
+	        	 "pattern": "test",
+	             "name": "test",
+	             "target": "test"
+
+	         },
+	         {
 	        	 "pattern": "schdet/{scode}",
 				 "name": "schdet",
 				 "target": "schdetails"
@@ -239,6 +248,11 @@
 		         "mfinvlog": 
 	             {
 		                "viewName": "mfinvlog",
+		                "viewLevel" : 1
+		         },
+		         "test": 
+	             {
+		                "viewName": "test",
 		                "viewLevel" : 1
 		         }
 		         

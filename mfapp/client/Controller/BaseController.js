@@ -20,6 +20,14 @@ sap.ui
 											return  sap.ui.core.UIComponent
 													.getRouterFor(this);
 										},
+										
+										setPanelExpanded:function(panelName,expanded)
+										{
+											if(panelName.getExpanded() !== expanded)
+											{
+												panelName.setExpanded(expanded);
+											}
+										},
 
 										onNavBack : function(oEvent) {
 											var oHistory, sPreviousHash;

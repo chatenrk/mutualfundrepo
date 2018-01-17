@@ -5,6 +5,7 @@ var jwt = require('jsonwebtoken');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const csv=require('csvtojson');
+const moment = require('moment');
 
 var multer  = require('multer')
 var upload = multer({ dest: 'uploads/' })
@@ -19,17 +20,33 @@ const helpers = require('../helpers/helpers.js');
 //Route to find one MF Investment
 router.get('/mfinvdet', async (req,res,next) => {
 	
-debugger;
+	debugger;
 	var scode = req.query.scode;
 	var date = req.query.invdate;
-	var isodate = new Date(date).toISOString();
+	var invBy = req.query.invBy;
 	
-	// Determine which model to use
+	// Determine which query to use based on passed details
 	
-	var query =
-				{
-					$and: [{scode:scode},{invdate:isodate}]
-				}
+	if(date)
+	{
+		var isodate = new Date(date).toISOString();
+		var query =
+		{
+			$and: [{scode:scode},{invdate:isodate}]
+		}
+	}
+	else if(invBy)
+	{
+		var query =
+		{
+			$and: [{scode:scode},{invBy:invBy}]
+		}
+	}
+	else
+	{
+		return res.status(500).send("Invalid Get Parameters");
+	}	
+	
 	
 	try
 	{
@@ -69,7 +86,8 @@ router.get('/all', async (req,res,next) => {
 //Route to post a single Investment Detail to database
 router.post('/pone', async (req,res,next) => {
 	debugger;
-	var invdate = new Date(req.body.invdate).toISOString();
+//	var invdate = new Date(req.body.invdate).toISOString();
+	var invdate = moment(req.body.invdate).toISOString();
 	var mfinvdet = {
 			amccode:req.body.amccode,
 			amcname:req.body.amcname,

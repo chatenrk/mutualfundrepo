@@ -1,12 +1,12 @@
 sap.ui
         .define(
                 [ "simple_hello/Controller/BaseController", "sap/m/MessageToast", 'sap/m/Popover','sap/m/Button',
-                	'sap/m/MessageStrip','sap/m/MessageToast','sap/ui/model/Filter'],
-                function(BaseController, MessageToast,Popover,Button,MessageStrip,Filter) {
+                	'sap/m/MessageStrip','sap/m/MessageToast','sap/ui/model/Filter','simple_hello/libs/Moment',],
+                function(BaseController, MessageToast,Popover,Button,MessageStrip,Filter,Moment) {
                     "use strict";
                     
-                    var _oStorage,_oMessageStrip,_amcdata,_scode,_sname;
-                    
+                    var _oStorage,_oMessageStrip,_amcdata,_schdata,_sname,_scode,_amccode,_navdata;
+                    var _invdetPanel,_invtabPanel;
                     jQuery.sap.require("jquery.sap.storage");
                     return BaseController
                             .extend(
@@ -20,6 +20,14 @@ sap.ui
                                         	var oRouter = this.getRouter();
                                         	oRouter.attachRouteMatched(this._handleRouteMatched, this);
                                         	this.oSF = this.getView().byId("searchField");
+                                        	
+                                        	this._invdetPanel = this.getView().byId("mfinvdet");
+                                        	this._invdetPanel.setExpandable(true);
+                                        	this.setPanelExpanded(this._invdetPanel,true);
+                                        	
+                                        	this._invtabPanel = this.getView().byId("mfinvtab");
+                                        	this._invtabPanel.setExpandable(true);
+                                        	this.setPanelExpanded(this._invtabPanel,false);
                                         },
                                     	onExit : function () 
                                     	{
@@ -68,7 +76,7 @@ sap.ui
                                         
                                         _getamcsuccess: function(data,that){
                                        	  
-                                        	this._amcdata = data;
+                                        	
                                         	
                                        	 // Set the data to AMC model
                                        	var amcModel =  this.getView().getModel("amc_model");
@@ -81,6 +89,7 @@ sap.ui
                                         onFHChange:function(oEvt){
                                         	// Get the current selected key
                                            var amccode = oEvt.getParameter("selectedItem").getKey();
+                                           this._amccode = amccode;
                                           this._getSchemes(amccode);
                                         },
                                         
@@ -117,7 +126,9 @@ sap.ui
                                         
                                         _getschsuccess:function(data,that)
                                         {
-                                        	 // Set the data to Scheme model
+                                        	 
+                                        	this._schdata = data;
+                                        	// Set the data to Scheme model
                                            	var selschModel =  this.getView().getModel("selSchModel");
                                            	selschModel.setData([]);
                                            	selschModel.setData(data);
@@ -169,27 +180,78 @@ sap.ui
                                         onSubmit: function(oEvt){
                                         	
                                         	var data = {};
+                                        	var that = this;
+                                        	data.amccode = this._amccode;
                                         	data.amcname = this.getView().byId("cbfname").getValue();
-                                    		data.mfname = this.getView().byId("mfname").getValue();
+                                        	data.scode = this._scode[0];
+                                        	data.sname = this.getView().byId("mfname").getValue();
                                     		data.invdate = this.getView().byId("mfinvdate").getValue();
                                     		data.amntinv = this.getView().byId("amntinv").getValue();
-                                    		data.remarks = this.getView().byId("remarks").getValue();
-                                    		data.invfor = this.getView().byId("cbinvfor").getValue();
-                                    		data.assettype = this.getView().byId("cbassettype").getValue();
                                     		
-                                    		//Retrieve NAV according to date and scode
-                                        	 
-                                        	if (data.amcname === "" || data.mfname === "" ||data.invdate === ""||data.amntinv === ""||data.invfor === ""||data.assettype === "")
-                                        	{
-                                        		this._generateMsgStrip("Please provide all the details on the form");
-                                        	}
-                                        	else
-                                        	{
-                                        		this._destroyMsgStrip(false);
-//                                        		this._loginrestcall(data);
-                                        	}
-                                        	
+                                    		data.remarks = this.getView().byId("remarks").getValue();
+                                    		data.invFor = this.getView().byId("cbinvfor").getValue();
+                                    		data.assetType = this.getView().byId("cbassettype").getValue();
+                                    		
+                                    		//This needs to be adjusted
+                                    		data.invBy = "Chaitanya"
+                                    		
+                                    			if (data.amcname === "" || data.mfname === "" ||data.invdate === ""||data.amntinv === ""||data.invfor === ""||data.assettype === "")
+                                            	{
+                                            		this._generateMsgStrip("Please provide all the details on the form");
+                                            	}
+                                            	else
+                                            	{
+                                            		//NAV data
+                                            		var navdata = this._getNAVData(data.scode,data.invdate);
+                                            		
+                                            		navdata.done(function(pdata)
+                                            				{
+                                            					if(pdata.length>0)
+                                            					{
+                                            						data.nav = pdata[0].nav;
+                                            						data.units = data.amntinv / data.nav;
+                                            						that._destroyMsgStrip(false);
+                                            						that._invrestcall(data);
+                                            					}
+                                            					else
+                                            					{
+                                            						//Error fetching NAV Data
+                                            						that._generateMsgStrip("Error fetching NAV. Please contact Admin")
+                                            					}
+                                            				});
+                                            		
+                                            	}
+                                    			
+                                  },
+                                        _getNAVData:function(scode,invdate)
+                                        {
+
+                                        	var authurl = "http://localhost:3000/nav/navdet?scode="+scode+"&date="+invdate;
+                                			var that = this;
+                                		
+                                			
+                                			 return $.ajax(
+                              				      {
+                              				        url:authurl,
+                              				        type: 'GET',
+                              				        dataType:'json',
+                              				        success:function(data)
+                              				        {
+                              				        	
+                              				       
+                              				        },
+                              				        error:function(err)
+                              				        {
+                              				         
+                              				       
+                              				        }
+                              			
+                              				      });			//AJAX call close
+                                			
+                                			
+                                			
                                         },
+                                        
                                         onRefresh: function()
                                         {
                                         	this._destroyMsgStrip(false);
@@ -219,90 +281,89 @@ sap.ui
                            				
                                 			}
                                 		},
-                                		_loginrestcall:function(logdata)
+                                		_invrestcall:function(logdata)
                                 		{
                                 			
-//                                			var authurl = "http://localhost:3000/users/authenticate";
-//                                			var that = this;
-//                                			
-//                                			$.ajax(
-//                                				      {
-//                                				        url:authurl,
-//                                				        type: 'POST',
-//                                				        data: logdata,
-//                                				        dataType:'json',
-//                                				        success:function(data)
-//                                				        {
-//                                				        	that._loginsuccess(data,that);
-//                                				        	var msgstrp = that.getView().byId("pageContainer");
-//                                				        },
-//                                				        error:function(err)
-//                                				        {
-//                                				         that._loginfailure(err,that);
-//                                				         var msgstrp = view.byId("msgstrp");
-//                                				        }
-//                                			
-//                                				      });			//AJAX call close		
+                                			var authurl = "http://localhost:3000/mfinv/pone";
+                                			var that = this;
+                                			
+                                			$.ajax(
+                                				      {
+                                				        url:authurl,
+                                				        type: 'POST',
+                                				        data: logdata,
+                                				        dataType:'json',
+                                				        success:function(data)
+                                				        {
+                                				        	that._invsuccess(data,that);
+                                				        	
+                                				        },
+                                				        error:function(err)
+                                				        {
+                                				         that._invfailure(err,that);
+                                				         
+                                				        }
+                                			
+                                				      });			//AJAX call close		
                                 		},
-                                		_loginsuccess: function(data,that)
+                                		_invsuccess: function(data,that)
                                 		{
-//                                			if(data.success === false)
-//                                				// Error with login, display message
-//                                			{
-//                                				that._generateMsgStrip(data.msg,true)
-////                                				MessageToast.show(data.msg);
-//                                			}
-//                                			else
-//                                				// Successful login, navigate to profile page
-//                                			{
-//                                				MessageToast.show("Welcome " +data.user.name)
-//                                				that._destroyMsgStrip(false);
-//
-//                                				that._putAuthtoken(data.token);
-//                                				
-//                                				data.user_visible = true;
-//                                				this.getOwnerComponent()._adjustButtons(data);
-//                                				
-//                                				
-//                                    			this.getOwnerComponent()._adjustNavItems(true);
-//                                    			
-//                                				
-//                                				var oRouter = that.getRouter();
-//                                				var oTargets = this.getRouter().getTargets();
-////                                				oTargets.display("dashboard");
-//                                				oRouter.navTo("dashboard");
-//                                				
-//                                				
+                                			// Change date from ISODate format to normal date. We are using the Moment JS framewrok for this
+                                			data.operation.pdate = this._isodatetodate(data.operation.invdate);
+                                			
+                                			var pdata = that._parseData(data,that);
+                                			var mfinsmodel = this.getView().getModel("mfins_model");
+                            			    mfinsmodel.setData(data);
+                            				mfinsmodel.updateBindings();
+                            				this.setPanelExpanded(this._invdetPanel,false);
+                            				this.setPanelExpanded(this._invtabPanel,true);
+                                			
+                                		},
+                                		_invfailure:function(err,that)
+                                		{
+                                			
+                                		
+                                		},
+                                		_parseData:function(data,that)
+                                		{
+                                			
+                                		
+                                			
+                                			if(data.opsuccess === false)
                                 				
-//                                			}
+                                			{
+                                				switch(data.errcode)
+                                				{
+                                				case 11000:
+                                					// Error inserting data. Display the same in the message strip
+                                					data.msg = "Data already exists for combination of "+data.operation.sname +" and "+data.operation.pdate+". Please recheck"
+                                					break;
+                                				default:
+                                					data.msg = "Error Occured. Please contact Admin"
+                                				}
+                                				that._generateMsgStrip(data.msg,true)
+                                			}
+                                			else
+                                			{
+                                				// Data inserted successfully
+                                				var pdata ={};
+                                				that._destroyMsgStrip(false);
+                                				pdata.amcname = data.operation.amcname;
+                                				pdata.sname = data.operation.sname;
+                                				pdata.date = data.operation.pdate;
+                                				pdata.nav = data.operation.nav;
+                                				pdata.units = data.operation.units;
+                                				pdata.invFor = data.operation.invFor;
+                                				pdata.assetType = data.operation.assetType;
+                                				return pdata;
+                                				
+                                			}
                                 		},
-                                		_loginfailure:function(err,that)
-                                		{
-//                                			that._generateMsgStrip("Incorrect UserID or password",true);
                                 		
-                                		},
-                                		
-
-                                		
-                                		
-                                		_putAuthtoken:function(token)
+                                		_isodatetodate:function(isodate)
                                 		{
-//                                			if(!this._oStorage)
-//                                			{
-//                                				this._oStorage = jQuery.sap.storage(jQuery.sap.storage.Type.local);
-//                                				
-//                                			}
-                                			
-//                                			this._oStorage.put('authtoken',token);
-                                		},
-                                		_getAuthtoken:function()
-                                		{
-//                                			return this._oStorage.get('authtoken');
-                                		},
-                                		_removeAuthtoken:function()
-                                		{
-//                                			this._oStorage.remove('authtoken');
+                                			 var pdate = moment(isodate).utcOffset("+05:30").format('DD-MMM-YYYY');
+                                			 return pdate;
                                 		}
- 
                                     });
                 });

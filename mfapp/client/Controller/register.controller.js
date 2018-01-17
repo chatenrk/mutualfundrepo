@@ -83,7 +83,7 @@ sap.ui
                                         	var email = this._oView.byId("email_ip").getValue();
                                         	var cpassword = this._oView.byId("cpwd_ip").getValue();
                                         	
-                                        	var pwdStrength = this._checkpwd(password);
+//                                        	var pwdStrength = this._checkpwd(password);
  
 // Validate the email address using email regex                                        	
                                         	if(this._validateEmail(email) === false)
@@ -101,11 +101,11 @@ sap.ui
                                         		this._generateMsgStrip("Password and confirm password dont match",true);
                                         	}
                                         	
-                                        	else if(pwdStrength === "insuffpwd")
-                                        	{
-// Check for password strength                
-                                        		this._generateMsgStrip("Password not complaint with specifications.Please check the information popup for more details",true);
-                                        	}
+//                                        	else if(pwdStrength === "insuffpwd")
+//                                        	{
+//// Check for password strength                
+//                                        		this._generateMsgStrip("Password not complaint with specifications.Please check the information popup for more details",true);
+//                                        	}
 // Pass the input to server for database insert                                        	
                                         	else
                                         	{

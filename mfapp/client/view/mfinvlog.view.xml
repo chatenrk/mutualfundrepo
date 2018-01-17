@@ -5,10 +5,11 @@
     xmlns:core="sap.ui.core"
     xmlns:tnt = "sap.tnt"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
-
+<Page id ="invlog">
+<content>
 
 <!-- This is the panel which holds all the elements -->				
-				<Panel width="auto" class="sapUiSmallMargin border-0">
+				<Panel id="mfinvdet" width="auto" class="sapUiSmallMargin border-0">
 
 <!-- Header Toolbar -->	
 				<headerToolbar class="sapUiTinyMargin">
@@ -79,7 +80,7 @@
 									<DatePicker
 												id="mfinvdate"
 												displayFormat="dd-MM-yyyy"
-												valueFormat="dd-MM-yyyy"
+												valueFormat="yyyy-MM-dd"
 												change="handleChange"/>
 								</items>
 							</VBox>
@@ -181,6 +182,66 @@
 				</HBox>
 		</VBox>
 	</Panel>
+<!-- This is the panel which table to show the logged details -->
+<Panel id="mfinvtab" width="auto" class="sapUiSmallMargin border-0">	
+<!-- Header Toolbar -->	
+				<headerToolbar class="sapUiTinyMargin">
+					<Toolbar>
+						<Title level="H4" text="{i18n>mfinvtable}" />
+					</Toolbar>
+				</headerToolbar>
+<Table
+				id = "mfinvtable"
+				items="{mfins_model>/}"
+				title="Investment Details">
+			
+			<headerToolbar>
+			<Toolbar>
+				<Title text="Investment Details" level="H2"/>
+			</Toolbar>
+		</headerToolbar>	
+					
+		   <columns>
+            <Column hAlign="Center" vAlign="Center">
+                <Text text="{i18n>amcname}" class="textbold"/>
+            </Column>
+            <Column hAlign="Center" vAlign="Center">
+                <Text text="{i18n>sname}" />
+            </Column>
+             <Column hAlign="Center" vAlign="Center">
+                <Text text="{i18n>invdate}" />
+            </Column>
+             <Column hAlign="Center" vAlign="Center">
+                <Text text="{i18n>nav}" />
+            </Column>
+             <Column hAlign="Center" vAlign="Center">
+                <Text text="{i18n>units}" />
+            </Column>
+            <Column hAlign="Center" vAlign="Center">
+                <Text text="{i18n>invFor}" />
+            </Column>
+             <Column hAlign="Center" vAlign="Center">
+                <Text text="{i18n>assetType}" />
+            </Column>
+        </columns>
+       
+        <items>
+            <ColumnListItem hAlign="Center" vAlign="Center">
+                <cells>
+                    <Text text="{mfins_model>amcname}" />
+                    <Text text="{mfins_model>sname}" />
+                    <Text text="{mfins_model>pdate}" />
+                    <Text text="{mfins_model>nav}" />
+                    <Text text="{mfins_model>units}" />
+                    <Text text="{mfins_model>invFor}" />
+                    <Text text="{mfins_model>assetType}" />
+              </cells>
+            </ColumnListItem>
+        </items>
 		
-				
+		</Table>	
+	
+</Panel>
+</content>	
+</Page>			
 </mvc:View>
