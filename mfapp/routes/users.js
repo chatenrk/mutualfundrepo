@@ -13,7 +13,7 @@ const helpers = require('../helpers/helpers.js');
 router.post('/register',function(req,res,next)
 {
 
-// Check if the password matches the compliance requirements
+// Check if the password matches the compliance requirements.
 	
 	var password = req.body.password;
 	if(helpers.checkpwd(password) === "insuff pwd")
