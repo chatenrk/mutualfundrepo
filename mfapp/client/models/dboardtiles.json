@@ -14,8 +14,8 @@
 		}
 
 	],
-	
-		
+
+
 	"AdminCollection": [
 		{
 			"id": "onAddSchDet",
@@ -23,7 +23,7 @@
 			"type": "Create",
 			"title": "Add Scheme Details"
 
-		}, 
+		},
 		{
 			"id": "addamcdet",
 			"icon": "sap-icon://add",
@@ -35,10 +35,16 @@
 			"icon": "sap-icon://add",
 			"type": "Create",
 			"title": "Add NAV Details"
+		},
+		{
+			"id": "addmultnav",
+			"icon": "sap-icon://add",
+			"type": "Create",
+			"title": "Add Multiple NAV"
 		}
 
 	],
-	
+
 	"ChatenCollection": [
 		{
 			"id": "addmfinv",
@@ -46,21 +52,15 @@
 			"type": "Create",
 			"title": "Add MF Investment"
 
-		}, 
-		
+		},
+
 		{
-			"id": "dispdbtinv",
+			"id": "dispallinv",
 			"icon": "sap-icon://add",
 			"type": "Monitor",
-			"title": "Display Debt Investments"
-		},
-		{
-			"id": "test",
-			"icon": "sap-icon://add",
-			"type": "Create",
-			"title": "Test View"
-
+			"title": "Display All My Investments"
 		}
+
 
 	]
 }

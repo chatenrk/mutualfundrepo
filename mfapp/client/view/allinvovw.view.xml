@@ -1,0 +1,69 @@
+<mvc:View
+    controllerName="simple_hello.Controller.allinvovw"
+    xmlns:m="sap.m"
+    xmlns="sap.uxap"
+    xmlns:layout="sap.ui.layout"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:invovw="simple_hello.SharedBlocks.invovw"
+    displayBlock="true">
+
+ 	<m:Page id ="allinvovw" showNavButton = "true"
+       navButtonPress = "onNavBack">
+
+       <ObjectPageLayout id="ObjectPageLayout"
+      					  enableLazyLoading="false"
+                  subSectionLayout="titleOnTop">
+          <headerTitle>
+    			<ObjectPageHeader id="headerForTest"
+    							  headerDesign="Light"
+    							  objectTitle="{i18n>invOvw}">
+    			</ObjectPageHeader>
+    		</headerTitle>
+
+        <headerContent>
+      			<layout:VerticalLayout>
+      			<m:ObjectAttribute  title="Investment for" text="{loggedin_user>/user/name}" />
+            <m:ObjectAttribute  title="Investment Overview Date" text="{current_date>/date}" />
+          </layout:VerticalLayout>
+      </headerContent>
+
+      <sections>
+    		<ObjectPageSection id="allinv" title="All Investments">
+    				<subSections>
+    						<ObjectPageSubSection id="allinvss1" title="">
+    							<blocks>
+    								<invovw:allinv id="allinvs">
+                      <ModelMapping externalModelName="allinvModel" externalPath="{allinvModel>/allinvpath}" internalModelName="allinv" />
+                       <!-- <ModelMapping externalModelName="loggedin_user" externalPath="{loggedin_user>/user}" internalModelName="User" /> -->
+
+                    </invovw:allinv>
+    							</blocks>
+    						</ObjectPageSubSection>
+    				</subSections>
+    		</ObjectPageSection>
+
+        <ObjectPageSection id="debtinv" title="Debt Investments">
+    				<subSections>
+    						<ObjectPageSubSection id="debtinvss1" title="">
+    							<blocks>
+    								<invovw:debtinv id="debtinvs"/>
+    							</blocks>
+    						</ObjectPageSubSection>
+    				</subSections>
+    		</ObjectPageSection>
+
+        <ObjectPageSection id="eqinv" title="Equity Investments">
+    				<subSections>
+    						<ObjectPageSubSection id="eqinvss1" title="">
+    							<blocks>
+    								<invovw:eqinv id="eqinvs"/>
+    							</blocks>
+    						</ObjectPageSubSection>
+    				</subSections>
+    		</ObjectPageSection>
+  	</sections>
+
+       </ObjectPageLayout>
+	</m:Page>
+</mvc:View>

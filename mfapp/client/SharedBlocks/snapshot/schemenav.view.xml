@@ -3,7 +3,7 @@
 			maxContainerCols="1"
 			layout="ResponsiveGridLayout">
 		<layout:VerticalLayout>
-	
+			<Text text="This section holds the NAV values for the scheme" />
 		</layout:VerticalLayout>
 	</forms:SimpleForm>
 </mvc:View>

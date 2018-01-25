@@ -13,6 +13,7 @@ const schroutes = require('./routes/schroutes');
 const amcroutes = require('./routes/amcroutes');
 const navroutes = require('./routes/navroutes');
 const mfinvroutes = require('./routes/mfinvroutes');
+const goalroute = require('./routes/goalroute');
 
 const config = require('./config/database');
 
@@ -30,13 +31,14 @@ app.use(cors());
 
 app.use(express.static(path.join(__dirname,'client')));
 
-app.use(bodyParser.json());
+app.use(bodyParser.json({limit: '50mb', parameterLimit: 1000000}));
+
 
 // BodyParser does not handle file uploads prpoperly. So need to check content type
 var isMultipart = /^multipart\//i;
-var urlencodedMiddleware = bodyParser.urlencoded({ extended: true });
+var urlencodedMiddleware = bodyParser.urlencoded({ limit: '50mb', parameterLimit: 1000000, extended: true });
 
-app.use(function (req, res, next) 
+app.use(function (req, res, next)
 {
   var type = req.get('Content-Type');
   if (isMultipart.test(type)) return next();
@@ -53,6 +55,7 @@ app.use('/schemes',schroutes);
 app.use('/amc',amcroutes);
 app.use('/nav',navroutes);
 app.use('/mfinv',mfinvroutes);
+app.use('/goal',goalroute);
 
 require('./config/passport')(passport);
 

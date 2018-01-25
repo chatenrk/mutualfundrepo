@@ -15,7 +15,7 @@ var mfnavSchema = mongoose.Schema({
 
 
 
- 
+
 var mfnavModel = mongoose.model('navdetls', mfnavSchema);
 
 
@@ -23,13 +23,13 @@ var mfnavModel = mongoose.model('navdetls', mfnavSchema);
 async function findAll()
 {
 try{
-      let navdetls 	    
+      let navdetls
       navdetls = await mfnavModel.find();
-    
+
       return navdetls;
-  } catch (err) 
+  } catch (err)
   {
-	
+
     return err;
   }
 };
@@ -39,12 +39,12 @@ try{
 async function findOneNav(id)
 {
 try{
-      let navdetls 	    
+      let navdetls
       navdetls = await mfnavModel.find(id);
       return navdetls;
-  } catch (err) 
+  } catch (err)
   {
-	
+
     return err;
   }
 };
@@ -53,12 +53,12 @@ try{
 //This route posts a single scheme to database
 async function postOne(mfnav)
 {
-	
-	
+
+
 	try
 	{
-		let navdetls 
-		var _id = new mongoose.Types.ObjectId();	
+		let navdetls
+		var _id = new mongoose.Types.ObjectId();
 		navdetls = await mfnavModel.create(
 				{
 					scode:mfnav.scode,
@@ -66,19 +66,19 @@ async function postOne(mfnav)
 					nav:mfnav.nav,
 					date:mfnav.date
 					});
-		
-	
+
+
 		var parseResult = helpers.parseOutput(errflag,navdetls);
-		
-	} 
-	catch (err) 
-	{	
-		
+
+	}
+	catch (err)
+	{
+
 		var operation = err.getOperation();
 		var errflag = true;
 		var parseResult = helpers.parseOutput(errflag,err,operation);
 
-	}	
+	}
 	return parseResult;
 }
 
@@ -86,30 +86,31 @@ async function postOne(mfnav)
 //This route posts a multiple schemes to database
 async function postMany(mfnavs)
 {
+
 	var resArray= [];
-	await helpers.asyncForEach(mfnavs,async (item,index,array) => 
+	await helpers.asyncForEach(mfnavs,async (item,index,array) =>
     {
   	  try
-  	  {	
+  	  {
   		  result = await postOne(mfnavs[index]);
-  		  
+
   		  resArray.push(result);
-  		  
+
   	  }
   	  catch(err)
   	  {
-  		  	
+
   		  	resArray.push(err);
 
   	  }
     });
-	
+
 	return resArray;
 }
-    
 
 
-module.exports.findAll = findAll; 
+
+module.exports.findAll = findAll;
 module.exports.postOne = postOne;
 module.exports.postMany = postMany;
 module.exports.findOneNav = findOneNav;

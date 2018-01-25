@@ -1,24 +1,24 @@
 <mvc:View controllerName="simple_hello.Controller.mfinvlog"
-    xmlns="sap.m" 
+    xmlns="sap.m"
     xmlns:f="sap.ui.layout.form"
-    xmlns:l="sap.ui.layout" 
+    xmlns:l="sap.ui.layout"
     xmlns:core="sap.ui.core"
     xmlns:tnt = "sap.tnt"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
 <Page id ="invlog">
 <content>
 
-<!-- This is the panel which holds all the elements -->				
+<!-- This is the panel which holds all the elements -->
 				<Panel id="mfinvdet" width="auto" class="sapUiSmallMargin border-0">
 
-<!-- Header Toolbar -->	
+<!-- Header Toolbar -->
 				<headerToolbar class="sapUiTinyMargin">
 					<Toolbar>
 						<Title level="H4" text="{i18n>mfinvlog}" />
 					</Toolbar>
 				</headerToolbar>
 
-<!-- Message strip to display all errors. Hidden by default, rendered on errors-->					
+<!-- Message strip to display all errors. Hidden by default, rendered on errors-->
 				<MessageStrip
 					id="msgstrp"
 					showIcon="false"
@@ -29,16 +29,35 @@
 					class="sapUiMediumMarginBottom">
 				</MessageStrip>
 
-<!-- Main Flex Box -->					
+<!-- Main Flex Box -->
 				<VBox class="sapUiSmallMargin" id="MainFlexBox">
 
-<!-- AMC Name -->						
+<!-- Buy / Sell -->
+          					<HBox width="100%" >
+          						<items>
+          							<HBox width="20%" class="alignDropdownAlign sapMFlexItemAlignCenter">
+          								<Label text="{i18n>transaction}" width="auto" class="LabelText"/>
+          							</HBox>
+
+          							<VBox width="80%" direction="Column">
+          								<items>
+          									<ComboBox id="cbtran"  width = "100px" items="{tran_model>/}">
+                        						  <items>
+                             						 <core:Item key="{tran_model>key}" text="{tran_model>text}" />
+                         						  </items>
+                      						</ComboBox>
+          								</items>
+          							</VBox>
+          						</items>
+          					</HBox>
+
+<!-- AMC Name -->
 					<HBox width="100%" >
 						<items>
 							<HBox width="20%" class="alignDropdownAlign sapMFlexItemAlignCenter">
 								<Label text="{i18n>amcname}" width="auto" class="LabelText"/>
 							</HBox>
-					
+
 							<VBox width="80%" direction="Column">
 								<items>
 									<ComboBox id="cbfname"  width = "300px" items="{amc_model>/}" selectionChange="onFHChange">
@@ -51,14 +70,14 @@
 						</items>
 					</HBox>
 
-<!-- MF Name. This is greyed out and is loaded with data selected from Select Dialog -->						
+<!-- MF Name. This is greyed out and is loaded with data selected from Select Dialog -->
 					<HBox width="100%" >
 						<items>
 							<HBox width="20%" class="alignDropdownAlign sapMFlexItemAlignCenter">
 								<Label text="{i18n>mfname}" width="auto" class="LabelText"/>
-								
+
 							</HBox>
-					
+
 							<VBox width="80%" direction="Column">
 								<items>
 									<Input id="mfname" width = "600px" enabled="false" />
@@ -66,35 +85,35 @@
 							</VBox>
 						</items>
 					</HBox>
-					
-<!-- Date of investment -->						
+
+<!-- Date of investment -->
 					<HBox width="100%" >
 						<items>
 							<HBox width="20%" class="alignDropdownAlign sapMFlexItemAlignCenter">
 								<Label text="{i18n>dinv}" width="auto" class="LabelText"/>
-								
+
 							</HBox>
-					
+
 							<VBox width="15%" direction="Column">
 								<items>
 									<DatePicker
 												id="mfinvdate"
-												displayFormat="dd-MM-yyyy"
+												displayFormat="dd-MMM-yyyy"
 												valueFormat="yyyy-MM-dd"
 												change="handleChange"/>
 								</items>
 							</VBox>
 						</items>
 					</HBox>
-					
-<!-- Amount of investment -->						
+
+<!-- Amount of investment -->
 					<HBox width="100%" >
 						<items>
 							<HBox width="20%" class="alignDropdownAlign sapMFlexItemAlignCenter">
 								<Label text="{i18n>amntinv}" width="auto" class="LabelText"/>
-								
+
 							</HBox>
-					
+
 							<VBox width="25%" direction="Column">
 								<items>
 									<Input
@@ -108,14 +127,14 @@
 						</items>
 					</HBox>
 
-<!-- Remarks -->					
+<!-- Remarks -->
 					<HBox width="100%" >
 						<items>
 							<HBox width="20%" class="alignDropdownAlign sapMFlexItemAlignCenter">
 								<Label text="Remarks" width="auto" class="LabelText"/>
-								
+
 							</HBox>
-					
+
 							<VBox width="25%" direction="Column">
 								<items>
 									<Input
@@ -127,18 +146,18 @@
 						</items>
 					</HBox>
 
-<!-- Investment For. Loaded from Model(mfinvmodel) -->		
+<!-- Investment For. Loaded from Model(mfinvmodel) -->
 				<HBox width="100%" >
 						<items>
 							<HBox width="20%" class="alignDropdownAlign sapMFlexItemAlignCenter">
 								<Label text="Investment For" width="auto" class="LabelText"/>
 							</HBox>
-					
+
 							<VBox width="80%" direction="Column">
 								<items>
-									<ComboBox id="cbinvfor"  width ="300px" items="{mfinv_model>/rk_invest_for}" selectionChange="onInvForChange">
+									<ComboBox id="cbinvfor"  width ="300px" items="{mfinvfor_model>/invFor}" selectionChange="onInvForChange">
               						  <items>
-                   						 <core:Item key="{mfinv_model>key}" text="{mfinv_model>text}" />
+                   						 <core:Item key="{mfinvfor_model>key}" text="{mfinvfor_model>text}" />
                						  </items>
             						</ComboBox>
 								</items>
@@ -146,18 +165,37 @@
 						</items>
 					</HBox>
 
-<!-- Asset Type. Loaded from Model(mfinvmodel) -->			
+          <!-- Create new Goals Hyperlink -->
+          				<!-- <HBox width="100%" >
+          						<items>
+          							<HBox width="20%" class="alignDropdownAlign sapMFlexItemAlignCenter">
+          								<Label text="Investment For" width="auto" class="LabelText"/>
+          							</HBox>
+
+          							<VBox width="80%" direction="Column">
+          								<items>
+          									<ComboBox id="cbinvfor"  width ="300px" items="{mfinvfor_model>/invFor}" selectionChange="onInvForChange">
+                        						  <items>
+                             						 <core:Item key="{mfinvfor_model>key}" text="{mfinvfor_model>text}" />
+                         						  </items>
+                      						</ComboBox>
+          								</items>
+          							</VBox>
+          						</items>
+          					</HBox> -->
+
+<!-- Asset Type. Loaded from Model(mfinvmodel) -->
 				<HBox width="100%" >
 						<items>
 							<HBox width="20%" class="alignDropdownAlign sapMFlexItemAlignCenter">
 								<Label text="{i18n>assetType}" width="auto" class="LabelText"/>
 							</HBox>
-					
+
 							<VBox width="80%" direction="Column">
 								<items>
-									<ComboBox id="cbassettype"  width ="100px" items="{mfinv_model>/asset_type}" selectionChange="onAssetTypeChange">
+									<ComboBox id="cbassettype"  width ="100px" items="{mfinvfor_model>/assetType}" selectionChange="onAssetTypeChange">
               						  <items>
-                   						 <core:Item key="{mfinv_model>key}" text="{mfinv_model>text}" />
+                   						 <core:Item key="{mfinvfor_model>key}" text="{mfinvfor_model>text}" />
                						  </items>
             						</ComboBox>
 								</items>
@@ -165,7 +203,7 @@
 						</items>
 					</HBox>
 
-<!-- Buttons for the form -->					
+<!-- Buttons for the form -->
 				<HBox width="100%" justifyContent="End" class="sapUiSmallMarginTop" >
 				<items>
 					<Button text="Submit" type="Submit" class="sapUiSmallMarginEnd" press="onSubmit" >
@@ -183,8 +221,8 @@
 		</VBox>
 	</Panel>
 <!-- This is the panel which table to show the logged details -->
-<Panel id="mfinvtab" width="auto" class="sapUiSmallMargin border-0">	
-<!-- Header Toolbar -->	
+<Panel id="mfinvtab" width="auto" class="sapUiSmallMargin border-0">
+<!-- Header Toolbar -->
 				<headerToolbar class="sapUiTinyMargin">
 					<Toolbar>
 						<Title level="H4" text="{i18n>mfinvtable}" />
@@ -194,16 +232,19 @@
 				id = "mfinvtable"
 				items="{mfins_model>/}"
 				title="Investment Details">
-			
+
 			<headerToolbar>
 			<Toolbar>
 				<Title text="Investment Details" level="H2"/>
 			</Toolbar>
-		</headerToolbar>	
-					
+		</headerToolbar>
+
 		   <columns>
             <Column hAlign="Center" vAlign="Center">
-                <Text text="{i18n>amcname}" class="textbold"/>
+              <Text text="{i18n>transaction}" />
+            </Column>
+            <Column hAlign="Center" vAlign="Center">
+                <Text text="{i18n>amcname}" />
             </Column>
             <Column hAlign="Center" vAlign="Center">
                 <Text text="{i18n>sname}" />
@@ -215,7 +256,7 @@
                 <Text text="{i18n>nav}" />
             </Column>
              <Column hAlign="Center" vAlign="Center">
-                <Text text="{i18n>units}" />
+                <Text text="{i18n>amount}" />
             </Column>
             <Column hAlign="Center" vAlign="Center">
                 <Text text="{i18n>invFor}" />
@@ -224,24 +265,25 @@
                 <Text text="{i18n>assetType}" />
             </Column>
         </columns>
-       
+
         <items>
             <ColumnListItem hAlign="Center" vAlign="Center">
                 <cells>
+                    <Text text="{mfins_model>transaction}" />
                     <Text text="{mfins_model>amcname}" />
                     <Text text="{mfins_model>sname}" />
                     <Text text="{mfins_model>pdate}" />
                     <Text text="{mfins_model>nav}" />
-                    <Text text="{mfins_model>units}" />
+                    <Text text="{mfins_model>amount}" />
                     <Text text="{mfins_model>invFor}" />
                     <Text text="{mfins_model>assetType}" />
               </cells>
             </ColumnListItem>
         </items>
-		
-		</Table>	
-	
+
+		</Table>
+
 </Panel>
-</content>	
-</Page>			
+</content>
+</Page>
 </mvc:View>

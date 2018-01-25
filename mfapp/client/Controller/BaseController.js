@@ -9,10 +9,11 @@ sap.ui
 									"simple_hello.Controller.BaseController",
 									{
 
-										onInit : function() 
+										onInit : function()
 										{
+											this.ownerComponent = this.getOwnerComponent();
 										},
-									
+
 										getJSONModel : function() {
 											return new sap.ui.model.json.JSONModel();
 										},
@@ -20,7 +21,7 @@ sap.ui
 											return  sap.ui.core.UIComponent
 													.getRouterFor(this);
 										},
-										
+
 										setPanelExpanded:function(panelName,expanded)
 										{
 											if(panelName.getExpanded() !== expanded)

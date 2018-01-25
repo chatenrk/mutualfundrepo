@@ -9,11 +9,11 @@ sap.ui
                             .extend(
                                     "simple_hello.Controller.admin",
                                     {
-                                    			
-                                    
-                                        onInit : function() 
+
+
+                                        onInit : function()
                                         {
-                                        	
+
                                         	this._oRouter = this.getRouter();
                                         },
                                         onTilePress:function(oEvt)
@@ -21,23 +21,26 @@ sap.ui
                                         	// Get the binding context. Pass the attached model name for this
                                         	var oBindingContext = oEvt.getSource().getBindingContext("dbtiles_model");
                                         	var tileid = oBindingContext.getProperty("id");
-                                        	
-                                        	switch(tileid) 
+
+                                        	switch(tileid)
                                         	{
                                         	    case "onGetSchdet":
                                         	       this._oRouter.navTo("getschemes");
                                         	        break;
-                                        	  
+
                                         	    case "onAddSchDet":
                                          	       this._oRouter.navTo("addschemes");
                                          	        break;
-                                        	   
+
                                         	    case "addamcdet":
                                           	       this._oRouter.navTo("addamcs");
                                           	        break;
                                         	    case "addnavdet":
                                            	       this._oRouter.navTo("addnav");
-                                           	        break;    
+                                           	        break;
+                                              case "addmultnav":
+                                                   this._oRouter.navTo("addmultnav");
+                                                    break;        
                                         	    default:
                                         	        break;
                                         	}
@@ -45,8 +48,8 @@ sap.ui
 
 
                                         }
-                                        
-                                       
- 
+
+
+
                                     });
                 });

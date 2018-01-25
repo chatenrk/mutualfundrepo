@@ -3,7 +3,7 @@
 			maxContainerCols="1"
 			layout="ResponsiveGridLayout">
 		<layout:VerticalLayout>
-	
+			<Text text="This section holds Equity Investments" />
 		</layout:VerticalLayout>
 	</forms:SimpleForm>
 </mvc:View>

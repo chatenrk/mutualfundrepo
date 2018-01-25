@@ -1,0 +1,31 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:layout="sap.ui.layout" xmlns:forms="sap.ui.layout.form" xmlns="sap.m">
+		<Table
+					id = "allinvtable"
+					items="{allinv>/}"
+					selectionMode = "None"
+					title="AMC Data"
+					growing="true"
+					growingThreshold="8">
+
+		 <columns>
+							<Column hAlign="Center" vAlign="Center">
+									<Text text="{i18n>scode}" class="textbold"/>
+							</Column>
+							<Column hAlign="Center" vAlign="Center">
+									<Text text="{i18n>amccode}" />
+							</Column>
+
+					</columns>
+					<items>
+							<ColumnListItem hAlign="Center" vAlign="Center">
+									<cells>
+											<Text text="{allinv>scode}" />
+											<Text text="{allinv>amccode}" />
+								</cells>
+							</ColumnListItem>
+					</items>
+
+			</Table>
+
+
+</mvc:View>

@@ -19,14 +19,14 @@ const helpers = require('../helpers/helpers.js');
 
 //Route to find one MF Investment
 router.get('/mfinvdet', async (req,res,next) => {
-	
+
 	debugger;
 	var scode = req.query.scode;
 	var date = req.query.invdate;
 	var invBy = req.query.invBy;
-	
+
 	// Determine which query to use based on passed details
-	
+
 	if(date)
 	{
 		var isodate = new Date(date).toISOString();
@@ -35,19 +35,26 @@ router.get('/mfinvdet', async (req,res,next) => {
 			$and: [{scode:scode},{invdate:isodate}]
 		}
 	}
-	else if(invBy)
+	else if(invBy&&scode)
 	{
 		var query =
 		{
 			$and: [{scode:scode},{invBy:invBy}]
 		}
 	}
+	else if(invBy)
+	{
+		var query =
+		{
+			invBy:invBy
+		}
+	}
 	else
 	{
 		return res.status(500).send("Invalid Get Parameters");
-	}	
-	
-	
+	}
+
+
 	try
 	{
 		invdet = await mfinvmodel.findOneInvDet(query);
@@ -55,10 +62,10 @@ router.get('/mfinvdet', async (req,res,next) => {
 	}
 	catch(err)
 	{
-		
+
 		 return res.status(500).send(err);
 	}
-	
+
 
 });
 
@@ -67,19 +74,19 @@ router.get('/mfinvdet', async (req,res,next) => {
 
 //Route to get all amcs
 router.get('/all', async (req,res,next) => {
-	
+
 	try
 	{
 		invdets = await mfinvmodel.findAll();
-		
+
 		res.send(invdets);
 	}
 	catch(err)
 	{
-		
+
 		 return res.status(500).send(err);
 	}
-	
+
 
 });
 
@@ -89,6 +96,7 @@ router.post('/pone', async (req,res,next) => {
 //	var invdate = new Date(req.body.invdate).toISOString();
 	var invdate = moment(req.body.invdate).toISOString();
 	var mfinvdet = {
+			transaction:req.body.transaction,
 			amccode:req.body.amccode,
 			amcname:req.body.amcname,
 			scode:req.body.scode,
@@ -102,69 +110,24 @@ router.post('/pone', async (req,res,next) => {
 			assetType:req.body.assetType,
 			invBy:req.body.invBy
 	};
-	
-	
+
+
 	try
 	{
 		invdet = await mfinvmodel.postOne(mfinvdet);
-		
+
 		res.send(invdet);
 	}
 	catch(err)
 	{
-		
+
 		 return res.status(500).send(err);
 	}
-	
+
 
 });
 
-////Route to post a multiple schemes to database
-//router.post('/pmany', async (req, res) => 
-//{
-//	
-//	
-//	try
-//	{
-//	
-//		
-//		var mfamcs = req.body;
-//		var result = await schmodel.postMany(mfamcs);
-//		res.send(result);
-//	}
-//	catch(err)
-//	{
-//		
-//		return res.status(500).send(err);
-//	}
-//});
-//
-//
-////Route to post a multiple schemes sent via csv
-//router.post('/csv', upload.single('file'),async (req, res) => 
-//{
-//	
-//	
-//		
-//	if (!req.file)
-//		        return res.status(400).send('No files were uploaded.');
-//	
-//	 var mfamcFile = req.file;
-//	 
-//	 try
-//		{	
-//		 	 var mfamcs = await helpers.csvtojson(mfamcFile);
-//		 	 
-//		 	 var result = await amcmodel.postMany(mfamcs);
-//		 	 
-//		 	 res.send(result);
-//		}
-//		catch(err)
-//		{
-//			 return res.status(500).send(err);
-//		}
-//	   
-//});
+
 
 
 module.exports = router;

@@ -1,39 +1,14 @@
-{
-	"rk_invest_for": [
-		{
-			"key":"1-3 Years Fund",
-			"text":"1-3 Years Fund"
-		},
-		{
-			"key":"3-5 Years Fund",
-			"text":"3-5 Years Fund"
-		},
-		{
-			"key":"5 Years Plus Fund",
-			"text":"5 Years Plus Fund"
-		},
-		{
-			"key":"Ishanth Shreenika Investment Fund",
-			"text":"Ishanth Shreenika Investment Fund"
-		},
-		{
-			"key":"POMIS Investment",
-			"text":"POMIS Investment"
-		}
-
-	],
-	"asset_type": [
+	[
 		{
 			"key":"equity",
 			"text":"Equity"
 		},
 		{
-			"key":"Debt",
+			"key":"debt",
 			"text":"Debt"
 		},
 		{
-			"key":"Gold",
+			"key":"gold",
 			"text":"Gold"
 		}
-		]
-}
+]
