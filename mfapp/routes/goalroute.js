@@ -18,7 +18,7 @@ const helpers = require('../helpers/helpers.js');
 //Route to find one MF Investment
 router.get('/goaldet', async (req,res,next) => {
 
-	debugger;
+
 	var inv_for = req.query.inv_for;
 
 
@@ -56,7 +56,7 @@ router.get('/goaldet', async (req,res,next) => {
 
 //Route to post a single Investment Detail to database
 router.post('/ponegoal', async (req,res,next) => {
-	debugger;
+	
 //	var invdate = new Date(req.body.invdate).toISOString();
 
 	var mfinvfor = {

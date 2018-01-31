@@ -32,6 +32,10 @@ sap.ui
                                          	       this._oRouter.navTo("dispallinv");
                                          	        break;
 
+                                              case "showallinv":
+                                                 this._oRouter.navTo("showallinv");
+                                                 break;
+
                                         	    default:
                                         	        break;
                                         	}

@@ -22,7 +22,7 @@ var mfschdetSchema = mongoose.Schema({
         type: Number,
         integer: true
     },
-   
+
     assetdate:String,
     assetcurr:String,
     assetqual:String,
@@ -62,7 +62,7 @@ var mfschdetSchema = mongoose.Schema({
 });
 
 mfschdetSchema.plugin(integerValidator);
- 
+
 var mfschemesModel = mongoose.model('schemes', mfschemeSchema);
 var mfschdetModel = mongoose.model('schdetail', mfschdetSchema);
 
@@ -70,13 +70,13 @@ var mfschdetModel = mongoose.model('schdetail', mfschdetSchema);
 async function findAll()
 {
 try{
-      let schemes 	    
+      let schemes
       schemes = await mfschemesModel.find();
-    
+
       return schemes;
-  } catch (err) 
+  } catch (err)
   {
-	
+
     return err;
   }
 };
@@ -85,15 +85,15 @@ try{
 //This route finds schemes based on the query passed to it
 async function findOneSch(id)
 {
-	
-debugger;
+
+
 try{
-      let schemes 	    
+      let schemes
       schemes = await mfschemesModel.find(id);
       return schemes;
-  } catch (err) 
+  } catch (err)
   {
-	
+
     return err;
   }
 };
@@ -101,15 +101,15 @@ try{
 //This route finds scheme details based on the query passed to it
 async function findOneSchDet(id)
 {
-	
-debugger;
+
+
 try{
-      let schemes 	    
+      let schemes
       schemes = await mfschdetModel.find(id);
       return schemes;
-  } catch (err) 
+  } catch (err)
   {
-	
+
     return err;
   }
 };
@@ -118,24 +118,24 @@ try{
 //This route posts a single scheme to database
 async function postOne(mfscheme)
 {
-	
-	
+
+
 	try
 	{
-		let schemes 
-		var _id = new mongoose.Types.ObjectId();	
+		let schemes
+		var _id = new mongoose.Types.ObjectId();
 		schemes = await mfschemesModel.create({scode:mfscheme.scode,sname:mfscheme.sname,amccode:mfscheme.amccode});
 		var parseResult = helpers.parseOutput(errflag,schemes);
-		
-	} 
-	catch (err) 
-	{	
-		
+
+	}
+	catch (err)
+	{
+
 		var operation = err.getOperation();
 		var errflag = true;
 		var parseResult = helpers.parseOutput(errflag,err,operation);
 
-	}	
+	}
 	return parseResult;
 }
 
@@ -143,12 +143,12 @@ async function postOne(mfscheme)
 //This route posts a single scheme details to database
 async function postOneSchDet(mfschdet)
 {
-	
-	
+
+
 	try
 	{
-		let schDet 
-		var _id = new mongoose.Types.ObjectId();	
+		let schDet
+		var _id = new mongoose.Types.ObjectId();
 		schDet = await mfschdetModel.create(
 				{
 					scode:mfschdet.scode,
@@ -177,18 +177,18 @@ async function postOneSchDet(mfschdet)
 				    imgpath:mfschdet.imgpath,
 				    schurl:mfschdet.schurl
 				});
-				
+
 		var parseResult = helpers.parseOutput(errflag,schDet);
-		
-	} 
-	catch (err) 
-	{	
-		
+
+	}
+	catch (err)
+	{
+
 		var operation = err.getOperation();
 		var errflag = true;
 		var parseResult = helpers.parseOutput(errflag,err,operation);
 
-	}	
+	}
 	return parseResult;
 }
 
@@ -196,29 +196,29 @@ async function postOneSchDet(mfschdet)
 async function postMany(mfschemes)
 {
 	var resArray= [];
-	await helpers.asyncForEach(mfschemes,async (item,index,array) => 
+	await helpers.asyncForEach(mfschemes,async (item,index,array) =>
     {
   	  try
-  	  {	
+  	  {
   		  result = await postOne(mfschemes[index]);
-  		  
+
   		  resArray.push(result);
-  		  
+
   	  }
   	  catch(err)
   	  {
-  		  	
+
   		  	resArray.push(err);
 
   	  }
     });
-	
+
 	return resArray;
 }
-    
 
 
-module.exports.findAll = findAll; 
+
+module.exports.findAll = findAll;
 module.exports.postOne = postOne;
 module.exports.postMany = postMany;
 module.exports.postOneSchDet = postOneSchDet;

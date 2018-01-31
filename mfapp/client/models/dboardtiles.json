@@ -59,6 +59,12 @@
 			"icon": "sap-icon://add",
 			"type": "Monitor",
 			"title": "Display All My Investments"
+		},
+		{
+			"id": "showallinv",
+			"icon": "sap-icon://add",
+			"type": "Monitor",
+			"title": "Show All My Investments"
 		}
 
 

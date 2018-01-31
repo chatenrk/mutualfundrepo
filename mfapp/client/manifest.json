@@ -105,6 +105,9 @@
 			},
 			"current_date": {
 				"type": "sap.ui.model.json.JSONModel"
+			},
+			"allinvModel": {
+				"type": "sap.ui.model.json.JSONModel"
 			}
 		},
 		"routing": {
@@ -193,6 +196,12 @@
 
 				},
 				{
+					"pattern": "showallinv",
+					"name": "showallinv",
+					"target": "showallinv"
+
+				},
+				{
 					"pattern": "schdet/{scode}",
 					"name": "schdet",
 					"target": "schdetails"
@@ -249,6 +258,10 @@
 				},
 				"dispallinv": {
 					"viewName": "allinvovw",
+					"viewLevel": 1
+				},
+				"showallinv": {
+					"viewName": "showallinv",
 					"viewLevel": 1
 				}
 

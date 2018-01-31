@@ -1,69 +1,138 @@
 <mvc:View
     controllerName="simple_hello.Controller.allinvovw"
-    xmlns:m="sap.m"
-    xmlns="sap.uxap"
+    xmlns="sap.m"
+    xmlns:uxap="sap.uxap"
     xmlns:layout="sap.ui.layout"
     xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:invovw="simple_hello.SharedBlocks.invovw"
     displayBlock="true">
 
- 	<m:Page id ="allinvovw" showNavButton = "true"
+ 	<Page id ="allinvovw" showNavButton = "true"
        navButtonPress = "onNavBack">
+   <content>
+     <Table
+       selectionChange="handleSelectionChange"
+       inset="false"
+       id="idProductsTable">
 
-       <ObjectPageLayout id="ObjectPageLayout"
-      					  enableLazyLoading="false"
-                  subSectionLayout="titleOnTop">
-          <headerTitle>
-    			<ObjectPageHeader id="headerForTest"
-    							  headerDesign="Light"
-    							  objectTitle="{i18n>invOvw}">
-    			</ObjectPageHeader>
-    		</headerTitle>
+       <headerToolbar>
+					<Toolbar
+						id="idCrumbToolbar" />
+				</headerToolbar>
 
-        <headerContent>
-      			<layout:VerticalLayout>
-      			<m:ObjectAttribute  title="Investment for" text="{loggedin_user>/user/name}" />
-            <m:ObjectAttribute  title="Investment Overview Date" text="{current_date>/date}" />
-          </layout:VerticalLayout>
-      </headerContent>
+      <columns>
 
-      <sections>
-    		<ObjectPageSection id="allinv" title="All Investments">
-    				<subSections>
-    						<ObjectPageSubSection id="allinvss1" title="">
-    							<blocks>
-    								<invovw:allinv id="allinvs">
-                      <ModelMapping externalModelName="allinvModel" externalPath="{allinvModel>/allinvpath}" internalModelName="allinv" />
-                       <!-- <ModelMapping externalModelName="loggedin_user" externalPath="{loggedin_user>/user}" internalModelName="User" /> -->
+        <Column
+          id="transactionColumn"
+          minScreenWidth="Tablet"
+          demandPopin="true"
+          hAlign="End"
+          visible="false">
+          <Text text="{i18n>transaction}" />
+        </Column>
 
-                    </invovw:allinv>
-    							</blocks>
-    						</ObjectPageSubSection>
-    				</subSections>
-    		</ObjectPageSection>
+        <Column
+          id="scodeColumn"
+          minScreenWidth="Tablet"
+          demandPopin="true"
+          hAlign="End"
+          visible="false">
+          <Text text="{i18n>scode}" />
+        </Column>
 
-        <ObjectPageSection id="debtinv" title="Debt Investments">
-    				<subSections>
-    						<ObjectPageSubSection id="debtinvss1" title="">
-    							<blocks>
-    								<invovw:debtinv id="debtinvs"/>
-    							</blocks>
-    						</ObjectPageSubSection>
-    				</subSections>
-    		</ObjectPageSection>
+        <Column
+          id="snameColumn"
+          minScreenWidth="Tablet"
+          demandPopin="true"
+          hAlign="End"
+          visible="false">
+          <Text text="{i18n>sname}" />
+        </Column>
 
-        <ObjectPageSection id="eqinv" title="Equity Investments">
-    				<subSections>
-    						<ObjectPageSubSection id="eqinvss1" title="">
-    							<blocks>
-    								<invovw:eqinv id="eqinvs"/>
-    							</blocks>
-    						</ObjectPageSubSection>
-    				</subSections>
-    		</ObjectPageSection>
-  	</sections>
+        <Column
+          id="amccodeColumn"
+          minScreenWidth="Tablet"
+          demandPopin="true"
+          hAlign="End"
+          visible="false">
+          <Text text="{i18n>amccode}" />
+        </Column>
 
-       </ObjectPageLayout>
-	</m:Page>
+        <Column
+          id="amcnameColumn"
+          hAlign="Center"
+          vAlign="Center"
+          visible="true">
+          <Text text="{i18n>amcname}" />
+        </Column>
+
+        <Column
+          id="dinvColumn"
+          minScreenWidth="Tablet"
+          demandPopin="true"
+          hAlign="End"
+          visible="false">
+          <Text text="{i18n>dinv}" />
+        </Column>
+
+        <Column
+          id="navColumn"
+          minScreenWidth="Tablet"
+          demandPopin="true"
+          hAlign="End"
+          visible="false">
+          <Text text="{i18n>nav}" />
+        </Column>
+
+        <Column
+          id="unitsColumn"
+          minScreenWidth="Tablet"
+          demandPopin="true"
+          hAlign="End"
+          visible="false">
+          <Text text="{i18n>units}" />
+        </Column>
+
+        <Column
+          id="amountColumn"
+          minScreenWidth="Tablet"
+          demandPopin="true"
+          hAlign="End"
+          visible="false">
+          <Text text="{i18n>amount}" />
+        </Column>
+
+        <Column
+          id="invForColumn"
+          minScreenWidth="Tablet"
+          demandPopin="true"
+          hAlign="End"
+          visible="false">
+          <Text text="{i18n>invFor}" />
+        </Column>
+
+        <Column
+          id="assetTypeColumn"
+          minScreenWidth="Tablet"
+          demandPopin="true"
+          hAlign="End"
+          visible="false">
+          <Text text="{i18n>assetType}" />
+        </Column>
+
+        <Column
+          id="totValColumn"
+          hAlign="Center"
+          vAlign="Center"
+          visible="true"
+          width="200px">
+          <Text text="{i18n>tamnt}" />
+        </Column>
+
+      </columns>
+
+     </Table>
+     		</content>
+	</Page>
 </mvc:View>

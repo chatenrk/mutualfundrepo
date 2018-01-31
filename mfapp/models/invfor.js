@@ -35,7 +35,7 @@ try{
 //This route finds Investment Details based on the Query sent
 async function findOneGoal(query)
 {
-debugger;
+
 try
   {
       let invdet;

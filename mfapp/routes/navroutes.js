@@ -25,7 +25,7 @@ const helpers = require('../helpers/helpers.js');
 
 router.get('/navdet', async (req,res,next) => {
 
-	debugger;
+
 	var scode = req.query.scode;
 	var date = req.query.date;
 //	var isodate = new Date(date).toISOString();
@@ -112,14 +112,14 @@ router.get('/all', async (req,res,next) => {
 
 router.post('/navpost', async (req, res) =>
 {
-	debugger;
+
 	// if (!req.file)
 	// 					return res.status(400).send('No files were uploaded.');
 	try
 		{
 				let results;
 				results = await navmodel.postMany(narray);
-				debugger;
+
 				res.json(results);
 		}
 		catch (err)
@@ -132,7 +132,7 @@ router.post('/navpost', async (req, res) =>
 //Route to post a multiple nav details sent via csv
 router.post('/navfile', upload.single('file'),async (req, res) =>
 {
-debugger;
+
 // var narray = [];
 	if (!req.file)
 		        return res.status(400).send('No files were uploaded.');
@@ -150,7 +150,7 @@ debugger;
 					{
 							let results;
 							results = await navmodel.postMany(narray);
-							debugger;
+
 							res.json(results);
 					}
 					catch (err)
@@ -164,7 +164,7 @@ debugger;
 		 }
 		 catch(err)
 		 {
-			 debugger;
+
 				return res.status(500).send(err);
 		 }
 	 }
@@ -193,13 +193,13 @@ debugger;
 
 router.get('/navtest', async (req,res,next) => {
 
-	debugger;
+
 	request({
 		  'url': 'https://www.google.com',
 		  'proxy':'https://proxy.cognizant.com:6050'
 		}, function(error, response, body)
 		{
-			debugger;
+			
 			console.log(body);
 		});
 });

@@ -1,7 +1,7 @@
 sap.ui
         .define(
                 [ "simple_hello/Controller/BaseController", "sap/m/MessageToast", 'sap/m/Popover','sap/m/Button',
-                	'sap/m/MessageStrip','sap/m/MessageToast','sap/ui/model/Filter','simple_hello/libs/Moment',],
+                	'sap/m/MessageStrip','sap/m/MessageToast','sap/ui/model/Filter','simple_hello/libs/Moment'],
                 function(BaseController, MessageToast,Popover,Button,MessageStrip,Filter,Moment) {
                     "use strict";
 
@@ -54,7 +54,7 @@ sap.ui
                                                  return;
 
                                              }
-
+                                           this.onRefresh();
                                         	 this._getAMCs();
 
 
@@ -198,7 +198,12 @@ sap.ui
                                         	data.scode = this._scode[0];
                                         	data.sname = this.getView().byId("mfname").getValue();
                                     		  data.invdate = this.getView().byId("mfinvdate").getValue();
-                                    		  data.amount = this.getView().byId("amntinv").getValue();
+                                          data.amount = this.getView().byId("amntinv").getValue();
+                                          if (data.transaction === "Sell")
+                                          {
+                                              data.amount = data.amount * -1;
+                                          }
+                                    		  // data.amount = this.getView().byId("amntinv").getValue();
 
                                     		  data.remarks = this.getView().byId("remarks").getValue();
                                     		  data.invFor = this.getView().byId("cbinvfor").getValue();
@@ -284,14 +289,24 @@ sap.ui
 
                                         onRefresh: function()
                                         {
-                                        	this._destroyMsgStrip(false);
-                                        	this.getView().byId("cbfname").setValue("");
+                                        this._destroyMsgStrip(false);
+                                        this.getView().byId("cbtran").setValue("");
+                                        this.getView().byId("cbfname").setValue("");
                                     		this.getView().byId("mfname").setValue("");
                                     		this.getView().byId("mfinvdate").setValue("");
                                     		this.getView().byId("amntinv").setValue("");
                                     		this.getView().byId("remarks").setValue("");
                                     		this.getView().byId("cbinvfor").setValue("");
                                     		this.getView().byId("cbassettype").setValue("");
+
+                                        // Set the table binding to empty
+                                        var mfinsmodel = this.getView().getModel("mfins_model");
+                                			  mfinsmodel.setData([]);
+                                				mfinsmodel.updateBindings();
+
+                                        // Collapse the table panel and Expand the input panel
+                                        this.setPanelExpanded(this._invdetPanel,true);
+                                        this.setPanelExpanded(this._invtabPanel,false);
                                         },
 
                                 	    _generateMsgStrip: function (msgtext,visible) {
@@ -342,8 +357,8 @@ sap.ui
                                 			data.operation.pdate = this._isodatetodate(data.operation.invdate);
 
                                 			var pdata = that._parseData(data,that);
-                                			var mfinsmodel = this.getView().getModel("mfins_model");
-                            			    mfinsmodel.setData(data);
+                                		var mfinsmodel = this.getView().getModel("mfins_model");
+                            			  mfinsmodel.setData(data);
                             				mfinsmodel.updateBindings();
                             				this.setPanelExpanded(this._invdetPanel,false);
                             				this.setPanelExpanded(this._invtabPanel,true);

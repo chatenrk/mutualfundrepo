@@ -20,7 +20,7 @@ const helpers = require('../helpers/helpers.js');
 //Route to find one MF Investment
 router.get('/mfinvdet', async (req,res,next) => {
 
-	debugger;
+
 	var scode = req.query.scode;
 	var date = req.query.invdate;
 	var invBy = req.query.invBy;
@@ -40,6 +40,13 @@ router.get('/mfinvdet', async (req,res,next) => {
 		var query =
 		{
 			$and: [{scode:scode},{invBy:invBy}]
+		}
+	}
+	else if(invBy&&sname)
+	{
+		var query =
+		{
+			$and: [{sname:sname},{invBy:invBy}]
 		}
 	}
 	else if(invBy)
@@ -92,7 +99,7 @@ router.get('/all', async (req,res,next) => {
 
 //Route to post a single Investment Detail to database
 router.post('/pone', async (req,res,next) => {
-	debugger;
+debugger;
 //	var invdate = new Date(req.body.invdate).toISOString();
 	var invdate = moment(req.body.invdate).toISOString();
 	var mfinvdet = {
@@ -127,7 +134,27 @@ router.post('/pone', async (req,res,next) => {
 
 });
 
+//Route for aggregations
+router.get('/aggr', async (req,res,next) => {
 
+if(req.query.id !== "" && req.query.totcol !==""&&req.query.invBy!=="")
+{
+	var aggr = {}
+	aggr.id = req.query.id;
+	aggr.totcol = req.query.totcol;
+	aggr.invBy = req.query.invBy;
+	var aggrres = await mfinvmodel.getAggregation(aggr);
+	res.send(aggrres);
+}
+else
+{
+	return res.status(500).send("Improperly formed Aggregation query");
+}
+
+
+
+
+});
 
 
 module.exports = router;

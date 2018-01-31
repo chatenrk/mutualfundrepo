@@ -105,35 +105,40 @@ async function postOne(mfinvdet)
 	return parseResult;
 }
 
+async function getAggregation(aggr)
+{
+  try
+  {
 
-////This route posts a multiple AMC's to database
-//async function postMany(amcs)
-//{
-//
-//	var resArray= [];
-//	await helpers.asyncForEach(amcs,async (item,index,array) =>
-//    {
-//  	  try
-//  	  {
-//  		  result = await postOne(amcs[index]);
-//
-//  		  resArray.push(result);
-//
-//  	  }
-//  	  catch(err)
-//  	  {
-//
-//  		  	resArray.push(err);
-//
-//  	  }
-//    });
-//
-//	return resArray;
-//}
+    let aggrres;
+    aggrres = await mfinvModel.aggregate([
+
+
+              { $match: {invBy: {$eq: aggr.invBy}} },
+              {
+                $group: {
+                        _id: aggr.id,
+                        count: {$sum: 1},
+                        total:{$sum:aggr.totcol},
+                        schdet: { $push: "$$ROOT" }
+                      }
+              }
+    //
+        ]);
+
+    return aggrres;
+  }
+  catch (err)
+  {
+
+    return err;
+  }
+}
 
 
 
 module.exports.findAll = findAll;
 module.exports.postOne = postOne;
+module.exports.getAggregation = getAggregation;
 //module.exports.postMany = postMany;
 module.exports.findOneInvDet = findOneInvDet;
