@@ -1,0 +1,38 @@
+{
+	"goals": [{
+		"goalName": "Debt Funds",
+		"goalTotal": "300000",
+		"goalCount": "12",
+    "goalCurr":"INR"
+	},
+  {
+    "goalName": "Education Funds",
+    "goalTotal": "550000",
+    "goalCount": "45",
+    "goalCurr":"INR"
+  },
+  {
+		"goalName": "Gold Funds",
+		"goalTotal": "210000",
+		"goalCount": "4",
+    "goalCurr":"INR"
+	},
+  {
+    "goalName": "Long Term Investment Funds",
+    "goalTotal": "750000",
+    "goalCount": "62",
+    "goalCurr":"INR"
+  },
+  {
+    "goalName": "Shreenika Funds",
+    "goalTotal": "40000",
+    "goalCount": "5",
+    "goalCurr":"INR"
+  },
+  {
+    "goalName": "Theme Funds",
+    "goalTotal": "100000",
+    "goalCount": "6",
+    "goalCurr":"INR"
+  }]
+}

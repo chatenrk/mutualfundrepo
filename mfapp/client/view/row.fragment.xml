@@ -1,0 +1,42 @@
+<core:FragmentDefinition
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m">
+	<ColumnListItem
+		type="{
+			path: 'amcname',
+			formatter: 'simple_hello.Controller.Formatter.listItemType'
+		}"
+		selected="{
+			path: 'amcname',
+			formatter: 'simple_hello.Controller.Formatter.isProductSelected'
+		}">
+		<cells>
+			<ObjectIdentifier
+				title="{Name}"
+				text="{scode}" />
+			<!-- <Text
+				text="{
+					parts: [
+						{ path: 'Width' },
+						{ path: 'Depth' },
+						{ path: 'Height' },
+						{ path: 'DimUnit' }
+					],
+					formatter: 'simple_hello.Controller.Formatter.dimensions'
+				}" /> -->
+			<ObjectNumber
+				number="{WeightMeasure}"
+				unit="{WeightUnit}"
+				state="{
+					path: 'WeightMeasure',
+					formatter: 'simple_hello.Controller.Formatter.weightState'
+				}" />
+			<ObjectNumber
+				number="{
+					path: 'Price',
+					formatter: 'simple_hello.Controller.Formatter.round2DP'
+				}"
+				unit="{CurrencyCode}" />
+		</cells>
+	</ColumnListItem>
+</core:FragmentDefinition>

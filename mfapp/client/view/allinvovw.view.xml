@@ -1,138 +1,58 @@
 <mvc:View
-    controllerName="simple_hello.Controller.allinvovw"
-    xmlns="sap.m"
-    xmlns:uxap="sap.uxap"
-    xmlns:layout="sap.ui.layout"
-    xmlns:core="sap.ui.core"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns:invovw="simple_hello.SharedBlocks.invovw"
-    displayBlock="true">
-
- 	<Page id ="allinvovw" showNavButton = "true"
-       navButtonPress = "onNavBack">
-   <content>
-     <Table
-       selectionChange="handleSelectionChange"
-       inset="false"
-       id="idProductsTable">
-
-       <headerToolbar>
+	height="100%"
+	controllerName="simple_hello.Controller.allinvovw"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<Page showHeader="false">
+		<content>
+			<Table
+				selectionChange="handleSelectionChange"
+				inset="false"
+				id="idProductsTable">
+				<headerToolbar>
 					<Toolbar
 						id="idCrumbToolbar" />
 				</headerToolbar>
-
-      <columns>
-
-        <Column
-          id="transactionColumn"
-          minScreenWidth="Tablet"
-          demandPopin="true"
-          hAlign="End"
-          visible="false">
-          <Text text="{i18n>transaction}" />
-        </Column>
-
-        <Column
-          id="scodeColumn"
-          minScreenWidth="Tablet"
-          demandPopin="true"
-          hAlign="End"
-          visible="false">
-          <Text text="{i18n>scode}" />
-        </Column>
-
-        <Column
-          id="snameColumn"
-          minScreenWidth="Tablet"
-          demandPopin="true"
-          hAlign="End"
-          visible="false">
-          <Text text="{i18n>sname}" />
-        </Column>
-
-        <Column
-          id="amccodeColumn"
-          minScreenWidth="Tablet"
-          demandPopin="true"
-          hAlign="End"
-          visible="false">
-          <Text text="{i18n>amccode}" />
-        </Column>
-
-        <Column
-          id="amcnameColumn"
-          hAlign="Center"
-          vAlign="Center"
-          visible="true">
-          <Text text="{i18n>amcname}" />
-        </Column>
-
-        <Column
-          id="dinvColumn"
-          minScreenWidth="Tablet"
-          demandPopin="true"
-          hAlign="End"
-          visible="false">
-          <Text text="{i18n>dinv}" />
-        </Column>
-
-        <Column
-          id="navColumn"
-          minScreenWidth="Tablet"
-          demandPopin="true"
-          hAlign="End"
-          visible="false">
-          <Text text="{i18n>nav}" />
-        </Column>
-
-        <Column
-          id="unitsColumn"
-          minScreenWidth="Tablet"
-          demandPopin="true"
-          hAlign="End"
-          visible="false">
-          <Text text="{i18n>units}" />
-        </Column>
-
-        <Column
-          id="amountColumn"
-          minScreenWidth="Tablet"
-          demandPopin="true"
-          hAlign="End"
-          visible="false">
-          <Text text="{i18n>amount}" />
-        </Column>
-
-        <Column
-          id="invForColumn"
-          minScreenWidth="Tablet"
-          demandPopin="true"
-          hAlign="End"
-          visible="false">
-          <Text text="{i18n>invFor}" />
-        </Column>
-
-        <Column
-          id="assetTypeColumn"
-          minScreenWidth="Tablet"
-          demandPopin="true"
-          hAlign="End"
-          visible="false">
-          <Text text="{i18n>assetType}" />
-        </Column>
-
-        <Column
-          id="totValColumn"
-          hAlign="Center"
-          vAlign="Center"
-          visible="true"
-          width="200px">
-          <Text text="{i18n>tamnt}" />
-        </Column>
-
-      </columns>
-
-     </Table>
-     		</content>
+				<!-- <infoToolbar>
+					<Toolbar visible="{Order>/hasCounts}">
+						<Label text="{Order>/count} Products Selected" />
+					</Toolbar>
+				</infoToolbar> -->
+				<columns>
+					<Column>
+						<Text text="AMC Name" />
+					</Column>
+					<Column
+						id="invdateColumn"
+						minScreenWidth="Tablet"
+						demandPopin="true"
+						hAlign="End"
+						visible="false">
+						<Text text="Invested Date" />
+					</Column>
+					<Column
+						id="totalColumn"
+						visible="true">
+						<Text text="Total Investment" />
+					</Column>
+					<Column
+						hAlign="End">
+						<Text text="Count" />
+					</Column>
+				</columns>
+			</Table>
+		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button
+					text="Order"
+					enabled="{
+						path: 'Order>/',
+						formatter: 'simple_hello.Controller.Formatter.isAnyProductSelected'
+					}"
+					press="handleOrderPress" />
+			</Toolbar>
+		</footer>
 	</Page>
 </mvc:View>

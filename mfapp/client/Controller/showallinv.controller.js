@@ -101,6 +101,14 @@ sap.ui
                                               return parray;
 
                                           },
+                                          _parseSchData:function(data)
+                                          {
+                                              var parray = []
+                                              var pdata = {};
+
+                                              
+
+                                          },
                                           onItemSelected: function(oEvent)
                                           {
                                             /**
@@ -171,6 +179,17 @@ sap.ui
 
 
                                             var schdet = oBindingContext.getProperty("schdet");
+                                            var parseData = this._parseSchData(schdet);
+                                            var oModel = this.getView().getModel("dispinvdetl");
+                                            oModel.setData([]);
+                                            oModel.setData(parseData);
+                                            oModel.updateBindings();
+
+                                            // Navigate to show details
+                                            var oRouter = this.getRouter();
+                                            oRouter.navTo("invdetldisp");
+
+
 
                                             // switch (tabId) {
                                             //   case "grpfname":
