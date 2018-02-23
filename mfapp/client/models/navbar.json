@@ -1,12 +1,12 @@
 [{
-	
+
 
 				"id":"lgn_id",
 				"text": "Login",
 				"key": "login",
 				"icon": "sap-icon://account",
-				"usr_log_flag":false	
-			}, 
+				"usr_log_flag":false
+			},
 			{
 				"id":"rgstr_id",
 				"text": "Register",
@@ -15,7 +15,7 @@
 				"usr_log_flag":false
 			},
 			{
-				
+
 				"id":"dshbrd_id",
 				"text": "Dashboard",
 				"key": "dashboard",
@@ -23,7 +23,7 @@
 				"usr_log_flag":true
 			},
 			{
-				
+
 				"id":"admin_id",
 				"text": "Admin",
 				"key": "admin",
@@ -31,12 +31,12 @@
 				"usr_log_flag":true
 			},
 			{
-				
+
 				"id":"chatenmf_id",
-				"text": "Chaitanya MF Dashboard",
+				"text": "MF Dashboard",
 				"key": "chatenmf",
 				"icon": "sap-icon://bbyd-dashboard",
 				"usr_log_flag":true
 			}
-		
+
 ]

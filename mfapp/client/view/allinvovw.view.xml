@@ -1,0 +1,58 @@
+<mvc:View
+	height="100%"
+	controllerName="simple_hello.Controller.allinvovw"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<Page showHeader="false">
+		<content>
+			<Table
+				selectionChange="handleSelectionChange"
+				inset="false"
+				id="idProductsTable">
+				<headerToolbar>
+					<Toolbar
+						id="idCrumbToolbar" />
+				</headerToolbar>
+				<!-- <infoToolbar>
+					<Toolbar visible="{Order>/hasCounts}">
+						<Label text="{Order>/count} Products Selected" />
+					</Toolbar>
+				</infoToolbar> -->
+				<columns>
+					<Column>
+						<Text text="AMC Name" />
+					</Column>
+					<Column
+						id="invdateColumn"
+						minScreenWidth="Tablet"
+						demandPopin="true"
+						hAlign="End"
+						visible="false">
+						<Text text="Invested Date" />
+					</Column>
+					<Column
+						id="totalColumn"
+						visible="true">
+						<Text text="Total Investment" />
+					</Column>
+					<Column
+						hAlign="End">
+						<Text text="Count" />
+					</Column>
+				</columns>
+			</Table>
+		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button
+					text="Order"
+					enabled="{
+						path: 'Order>/',
+						formatter: 'simple_hello.Controller.Formatter.isAnyProductSelected'
+					}"
+					press="handleOrderPress" />
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

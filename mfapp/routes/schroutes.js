@@ -18,14 +18,14 @@ const helpers = require('../helpers/helpers.js');
 
 //Route to get all scheme details
 router.get('/sdet', async (req,res,next) => {
-	
+
 
 	var scode = req.query.scode;
-	
+
 	var id = {
 			scode:scode
 	}
-	
+
 	try
 	{
 		schemes = await schmodel.findOneSchDet(id);
@@ -33,26 +33,26 @@ router.get('/sdet', async (req,res,next) => {
 	}
 	catch(err)
 	{
-		
+
 		 return res.status(500).send(err);
 	}
-	
+
 
 });
 
 
 //Route to get all scheme by AMC Code
 router.get('/sdet/amc', async (req,res,next) => {
-	
+
 
 //	var amccode = req.query.amccode;
-	
+
 	var amccode  = parseInt(req.query.amccode, 10);
-	debugger;
+
 	var id = {
 			amccode:amccode
 	}
-	
+
 	try
 	{
 		schemes = await schmodel.findOneSch(id);
@@ -60,18 +60,18 @@ router.get('/sdet/amc', async (req,res,next) => {
 	}
 	catch(err)
 	{
-		
+
 		 return res.status(500).send(err);
 	}
-	
+
 
 });
 
 // Route to insert scheme detail
 
 router.post('/sdet/pone', async (req,res,next) => {
-	
-	
+
+
 	var mfscheme = {
 			scode:req.body.scode,
 			sname:req.body.sname,
@@ -99,109 +99,109 @@ router.post('/sdet/pone', async (req,res,next) => {
 		    imgpath:req.body.imgpath,
 		    schurl:req.body.schurl
 	};
-	
-	
+
+
 	try
 	{
 		schemes = await schmodel.postOneSchDet(mfscheme);
-		
+
 		res.send(schemes);
 	}
 	catch(err)
 	{
-		
+
 		 return res.status(500).send(err);
 	}
-	
+
 
 });
 
 
 //Route to get all schemes
 router.get('/all', async (req,res,next) => {
-	
+
 	try
 	{
 		schemes = await schmodel.findAll();
-		
+
 		res.send(schemes);
 	}
 	catch(err)
 	{
-		
+
 		 return res.status(500).send(err);
 	}
-	
+
 
 });
 
 //Route to post a single scheme to database
 router.post('/pone', async (req,res,next) => {
-	
+
 	var mfscheme = {
 			scode:req.body.scode,
 			sname:req.body.sname
 	};
-	
-	
+
+
 	try
 	{
 		schemes = await schmodel.postOne(mfscheme);
-		
+
 		res.send(schemes);
 	}
 	catch(err)
 	{
-		
+
 		 return res.status(500).send(err);
 	}
-	
+
 
 });
 
 //Route to post a multiple schemes to database
-router.post('/pmany', async (req, res) => 
+router.post('/pmany', async (req, res) =>
 {
-	
-	
+
+
 	try
 	{
-	
-		
+
+
 		var mfschemes = req.body;
 		var result = await schmodel.postMany(mfschemes);
 		res.send(result);
 	}
 	catch(err)
 	{
-		
+
 		return res.status(500).send(err);
 	}
 });
 
 
 //Route to post a multiple schemes sent via csv
-router.post('/csv', upload.single('file'),async (req, res) => 
+router.post('/csv', upload.single('file'),async (req, res) =>
 {
-		
+
 	if (!req.file)
 		        return res.status(400).send('No files were uploaded.');
-	
+
 	 var mfschemeFile = req.file;
-	 
+
 	 try
-		{	
+		{
 		 	 var mfschemes = await helpers.csvtojson(mfschemeFile);
-		 	 debugger;
-		 	 var result = await schmodel.postMany(mfschemes);
 		 	 
+		 	 var result = await schmodel.postMany(mfschemes);
+
 		 	 res.send(result);
 		}
 		catch(err)
 		{
 			 return res.status(500).send(err);
 		}
-	   
+
 });
 
 

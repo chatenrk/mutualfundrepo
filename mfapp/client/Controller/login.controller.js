@@ -4,32 +4,32 @@ sap.ui
                 	'sap/m/MessageStrip','sap/m/MessageToast'],
                 function(BaseController, MessageToast,Popover,Button,MessageStrip) {
                     "use strict";
-                    
+
                     var _oStorage,_oMessageStrip;
-                    
+
                     jQuery.sap.require("jquery.sap.storage");
                     return BaseController
                             .extend(
                                     "simple_hello.Controller.login",
                                     {
-                                    			
-                                    
-                                        onInit : function() 
+
+
+                                        onInit : function()
                                         {
                                         	this._oMessageStrip = this.getView().byId("msgstrp");
                                         },
-                                        
+
                                         onBeforeRendering:function()
                                         {
                                         	this._destroyMsgStrip(false);
                                         },
-                                        
+
                                         onSubmit: function(oEvt){
-                                        	
+
                                         	var viewId = this.getView().getId();
                                         	var username = this.getView().byId("user_ip").getValue();
                                         	var password = this.getView().byId("pwd_ip").getValue();
-                                        	
+
                                         	if (username === "" || password === "")
                                         	{
                                         		this._generateMsgStrip("Please provide username and password");
@@ -39,14 +39,14 @@ sap.ui
                                         		this.getView().byId("user_ip").setValue("");
                                         		this.getView().byId("pwd_ip").setValue("");
 //                                        		this._destroyMsgStrip();
-                                        		
+
                                         		var data = {
                                         				username:username,
                                         				password:password
                                         		}
                                         		this._loginrestcall(data);
                                         	}
-                                        	
+
                                         },
                                         onRefresh: function()
                                         {
@@ -54,30 +54,30 @@ sap.ui
                                         	this.getView().byId("user_ip").setValue("");
                                     		this.getView().byId("pwd_ip").setValue("");
                                         },
-                                       
+
                                 	    _generateMsgStrip: function (msgtext,visible) {
-                                			
+
                                 			if(this._oMessageStrip){
                                 				this._oMessageStrip.setVisible(visible);
                                 				this._oMessageStrip.setText(msgtext);
                                 			}
 
                                 		},
-                                		
+
                                 		_destroyMsgStrip: function(visible)
                                 		{
                                 			if(this._oMessageStrip)
                                 			{
                                 				this._oMessageStrip.setVisible(visible);
-//                            				
+//
                                 			}
                                 		},
                                 		_loginrestcall:function(logdata)
                                 		{
-                                			
+
                                 			var authurl = "http://localhost:3000/users/authenticate";
                                 			var that = this;
-                                			
+
                                 			$.ajax(
                                 				      {
                                 				        url:authurl,
@@ -94,8 +94,8 @@ sap.ui
                                 				         that._loginfailure(err,that);
                                 				         var msgstrp = view.byId("msgstrp");
                                 				        }
-                                			
-                                				      });			//AJAX call close		
+
+                                				      });			//AJAX call close
                                 		},
                                 		_loginsuccess: function(data,that)
                                 		{
@@ -112,40 +112,45 @@ sap.ui
                                 				that._destroyMsgStrip(false);
 
                                 				that._putAuthtoken(data.token);
-                                				
+
                                 				data.user_visible = true;
                                 				this.getOwnerComponent()._adjustButtons(data);
-                                				
-                                				
+
+
                                     			this.getOwnerComponent()._adjustNavItems(true);
-                                    			
-                                				
+
+                                        // Store the logged in user data
+                                        var loginuser = this.getView().getModel("loggedin_user");
+                                        loginuser.setData(data);
+                                        loginuser.updateBindings();
+
+                                        // Navigate to route
                                 				var oRouter = that.getRouter();
                                 				var oTargets = this.getRouter().getTargets();
 //                                				oTargets.display("dashboard");
                                 				oRouter.navTo("dashboard");
-                                				
-                                				
-                                				
+
+
+
                                 			}
                                 		},
                                 		_loginfailure:function(err,that)
                                 		{
                                 			that._generateMsgStrip("Incorrect UserID or password",true);
-                                		
-                                		},
-                                		
 
-                                		
-                                		
+                                		},
+
+
+
+
                                 		_putAuthtoken:function(token)
                                 		{
                                 			if(!this._oStorage)
                                 			{
                                 				this._oStorage = jQuery.sap.storage(jQuery.sap.storage.Type.local);
-                                				
+
                                 			}
-                                			
+
                                 			this._oStorage.put('authtoken',token);
                                 		},
                                 		_getAuthtoken:function()
@@ -156,6 +161,6 @@ sap.ui
                                 		{
                                 			this._oStorage.remove('authtoken');
                                 		}
- 
+
                                     });
                 });

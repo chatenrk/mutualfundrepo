@@ -9,11 +9,11 @@ sap.ui
                             .extend(
                                     "simple_hello.Controller.chatenmfdashboard",
                                     {
-                                    			
-                                    
-                                        onInit : function() 
+
+
+                                        onInit : function()
                                         {
-                                        	
+
                                         	this._oRouter = this.getRouter();
                                         },
                                         onTilePress:function(oEvt)
@@ -21,13 +21,21 @@ sap.ui
                                         	// Get the binding context. Pass the attached model name for this
                                         	var oBindingContext = oEvt.getSource().getBindingContext("dbtiles_model");
                                         	var tileid = oBindingContext.getProperty("id");
-                                        	
-                                        	switch(tileid) 
+
+                                        	switch(tileid)
                                         	{
                                         	    case "addmfinv":
                                         	       this._oRouter.navTo("mfinvlog");
                                         	        break;
-                                        	    
+
+                                        	    case "dispallinv":
+                                         	       this._oRouter.navTo("dispallinv");
+                                         	        break;
+
+                                              case "showallinv":
+                                                 this._oRouter.navTo("showallinv");
+                                                 break;
+
                                         	    default:
                                         	        break;
                                         	}
@@ -35,8 +43,8 @@ sap.ui
 
 
                                         }
-                                        
-                                       
- 
+
+
+
                                     });
                 });

@@ -1,15 +1,13 @@
 {
 	"_version": "1.3.0",
-	"sap.app": 
-	{
+	"sap.app": {
 		"_version": "1.3.0",
 		"id": "simple_hello",
 		"type": "application",
-		"applicationVersion": 
-		{
+		"applicationVersion": {
 			"version": "1.0.0"
 		},
-		"dataSources":{
+		"dataSources": {
 			"navbar_ds": {
 				"uri": "models/navbar.json",
 				"type": "JSON"
@@ -21,231 +19,312 @@
 			"mfinvmodel_ds": {
 				"uri": "models/mfinvmodel.json",
 				"type": "JSON"
+			},
+			"transaction_ds": {
+				"uri": "models/transaction.json",
+				"type": "JSON"
+			},
+			"allinv_ds": {
+				"uri": "models/allinvmodel.json",
+				"type": "JSON"
+			},
+			"splitapp_ds": {
+				"uri": "models/splitapp.json",
+				"type": "JSON"
 			}
 
 		}
 	},
-	"sap.ui": 
-	{
+	"sap.ui": {
 		"_version": "1.3.0",
 		"technology": "UI5",
-		"deviceTypes": 
-		{
+		"deviceTypes": {
 			"desktop": true,
 			"tablet": true,
 			"phone": true
 		},
-		"supportedThemes": 
-		[
+		"supportedThemes": [
 			"sap_bluecrystal"
 		]
 	},
-	"sap.ui5": 
-	{
+	"sap.ui5": {
 		"_version": "1.2.0",
 		"rootView": "simple_hello.view.app",
-		
-		"models":
-		{
-			"i18n":
-			{
-				"type":"sap.ui.model.resource.ResourceModel",
-				"settings":
-				{
-					"bundleName":"simple_hello.i18n.i18n"
+
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "simple_hello.i18n.i18n"
 				}
 			},
-			"navbar_model":{
-				"type":"sap.ui.model.json.JSONModel",
-				"dataSource":"navbar_ds"
+			"navbar_model": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "navbar_ds"
 			},
-			"dbtiles_model":{
-				"type":"sap.ui.model.json.JSONModel",
-				"dataSource":"dbrdtiles_ds"
+			"dbtiles_model": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "dbrdtiles_ds"
 			},
-			"mfinv_model":{
-				"type":"sap.ui.model.json.JSONModel",
-				"dataSource":"mfinvmodel_ds"
+			"mfasset_model": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "mfinvmodel_ds"
 			},
-			"usrlgn_model":{
-				"type":"sap.ui.model.json.JSONModel"
+			"mfinvfor_model": {
+				"type": "sap.ui.model.json.JSONModel"
+
 			},
-			"scheme_model":{
-				"type":"sap.ui.model.json.JSONModel"
+			"tran_model": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "transaction_ds"
 			},
-			"amc_model":{
-				"type":"sap.ui.model.json.JSONModel"
+			"usrlgn_model": {
+				"type": "sap.ui.model.json.JSONModel"
 			},
-			"post_scheme_model":{
-				"type":"sap.ui.model.json.JSONModel"
+			"scheme_model": {
+				"type": "sap.ui.model.json.JSONModel"
 			},
-			"post_amc_model":{
-				"type":"sap.ui.model.json.JSONModel"
+			"manageinv_model": {
+				"type": "sap.ui.model.json.JSONModel"
 			},
-			"post_nav_model":{
-				"type":"sap.ui.model.json.JSONModel"
+			"amc_model": {
+				"type": "sap.ui.model.json.JSONModel"
 			},
-			"vis_model":{
-				"type":"sap.ui.model.json.JSONModel"
+			"post_scheme_model": {
+				"type": "sap.ui.model.json.JSONModel"
 			},
-			"schdet_model":{
-				"type":"sap.ui.model.json.JSONModel"
+			"post_amc_model": {
+				"type": "sap.ui.model.json.JSONModel"
 			},
-			"selSchModel":{
-				"type":"sap.ui.model.json.JSONModel"
+			"post_nav_model": {
+				"type": "sap.ui.model.json.JSONModel"
+			},
+			"vis_model": {
+				"type": "sap.ui.model.json.JSONModel"
+			},
+			"schdet_model": {
+				"type": "sap.ui.model.json.JSONModel"
+			},
+			"selSchModel": {
+				"type": "sap.ui.model.json.JSONModel"
+			},
+			"mfins_model": {
+				"type": "sap.ui.model.json.JSONModel"
+			},
+			"loggedin_user": {
+				"type": "sap.ui.model.json.JSONModel"
+			},
+			"current_date": {
+				"type": "sap.ui.model.json.JSONModel"
+			},
+			"allinvModel": {
+				"type": "sap.ui.model.json.JSONModel"
+			},
+			"allinvdemomodel":
+			{
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "allinv_ds"
+			},
+			"dispinvdetl":
+			{
+				"type": "sap.ui.model.json.JSONModel"
+
+			},
+			"splitapp":
+			{
+				"type": "sap.ui.model.json.JSONModel"
 			}
 		},
-		"routing":
-		{
-			"config":
-			{
+		"routing": {
+			"config": {
 				"routerClass": "sap.m.routing.Router",
-	            "viewType": "XML",
-	            "viewPath": "simple_hello.view",
-	            "controlId": "rootControl",
-	            "controlAggregation": "pages",
-	            "transition": "slide"
-	         },
-	         "routes":[{
-	        	 "pattern": "",
-	             "name": "login",
-	             "target": "login"
+				"viewType": "XML",
+				"viewPath": "simple_hello.view",
+				"controlId": "rootControl",
+				"controlAggregation": "pages",
+				"transition": "slide"
+			},
+			"routes": [{
+					"pattern": "",
+					"name": "login",
+					"target": "login"
 
-	         },
-	         
-	         {
-	        	 "pattern": "dashboard",
-	             "name": "dashboard",
-	             "target": "dashboard"
+				},
 
-	         },
-	         
-	         {
-	        	 "pattern": "chatenmf",
-	             "name": "chatenmf",
-	             "target": "chatenmf"
+				{
+					"pattern": "dashboard",
+					"name": "dashboard",
+					"target": "dashboard"
 
-	         },
-	         
-	         {
-	        	 "pattern": "admin",
-	             "name": "admin",
-	             "target": "admin"
+				},
 
-	         },
-	         
-	         {
-	        	 "pattern": "register",
-	             "name": "register",
-	             "target": "register"
+				{
+					"pattern": "chatenmf",
+					"name": "chatenmf",
+					"target": "chatenmf"
 
-	         },
-	         {
-	        	 "pattern": "getschemes",
-	             "name": "getschemes",
-	             "target": "getschemes"
+				},
 
-	         },
-	         {
-	        	 "pattern": "getamcs",
-	             "name": "getamcs",
-	             "target": "getamcs"
+				{
+					"pattern": "admin",
+					"name": "admin",
+					"target": "admin"
 
-	         },
-	         {
-	        	 "pattern": "addschemes",
-	             "name": "addschemes",
-	             "target": "addschemes"
+				},
 
-	         },
-	         {
-	        	 "pattern": "addamcs",
-	             "name": "addamcs",
-	             "target": "addamcs"
+				{
+					"pattern": "register",
+					"name": "register",
+					"target": "register"
 
-	         },
-	         {
-	        	 "pattern": "addnav",
-	             "name": "addnav",
-	             "target": "addnav"
+				},
+				{
+					"pattern": "getschemes",
+					"name": "getschemes",
+					"target": "getschemes"
 
-	         },
-	         {
-	        	 "pattern": "mfinvlog",
-	             "name": "mfinvlog",
-	             "target": "mfinvlog"
+				},
+				{
+					"pattern": "getamcs",
+					"name": "getamcs",
+					"target": "getamcs"
 
-	         },
-	         {
-	        	 "pattern": "schdet/{scode}",
-				 "name": "schdet",
-				 "target": "schdetails"
-	         }],
-	         "targets": {
-	             "login": {
-	                "viewName": "login",
-	                "viewLevel" : 1
-	             },
-	             "dashboard": 
-	             {
-		                "viewName": "dashboard",
-		                "viewLevel" : 1
-		         },
-		         "chatenmf": 
-	             {
-		                "viewName": "chatenmfdb",
-		                "viewLevel" : 1
-		         },
-		         "admin": 
-	             {
-		                "viewName": "admin",
-		                "viewLevel" : 1
-		         },
-		         "register": 
-	             {
-		                "viewName": "register",
-		                "viewLevel" : 1
-		         },
-		         "getschemes": 
-	             {
-		                "viewName": "getschemes",
-		                "viewLevel" : 1
-		         },
-		         "getamcs": 
-	             {
-		                "viewName": "getamcs",
-		                "viewLevel" : 1
-		         },
-		         "addschemes": 
-	             {
-		                "viewName": "addschemes",
-		                "viewLevel" : 1
-		         },
-		         "addamcs": 
-	             {
-		                "viewName": "addamcs",
-		                "viewLevel" : 1
-		         },
-		         "addnav": 
-	             {
-		                "viewName": "addnav",
-		                "viewLevel" : 1
-		         },
-		         "schdetails": 
-	             {
-		                "viewName": "schdetails",
-		                "viewLevel" : 1
-		         },
-		         "mfinvlog": 
-	             {
-		                "viewName": "mfinvlog",
-		                "viewLevel" : 1
-		         }
-		         
-	          }
+				},
+				{
+					"pattern": "addschemes",
+					"name": "addschemes",
+					"target": "addschemes"
+
+				},
+				{
+					"pattern": "addamcs",
+					"name": "addamcs",
+					"target": "addamcs"
+
+				},
+				{
+					"pattern": "addnav",
+					"name": "addnav",
+					"target": "addnav"
+
+				},
+				{
+					"pattern": "mfinvlog",
+					"name": "mfinvlog",
+					"target": "mfinvlog"
+
+				},
+				{
+					"pattern": "dispallinv",
+					"name": "dispallinv",
+					"target": "dispallinv"
+
+				},
+				{
+					"pattern": "showallinv",
+					"name": "showallinv",
+					"target": "showallinv"
+
+				},
+				{
+					"pattern": "schdet/{scode}",
+					"name": "schdet",
+					"target": "schdetails"
+				},
+				{
+					"pattern": "invdetldisp",
+					"name": "invdetldisp",
+					"target": "invdetldisp"
+
+				},
+				{
+					"pattern": "dispallinv/{goal}",
+					"name": "dispallinvgoals",
+					"target": "dispallinvgoals"
+
+				},
+				{
+					"pattern": "manageinv",
+					"name": "manageinv",
+					"target": "manageinv"
+
+				}
+
+			],
+			"targets": {
+				"login": {
+					"viewName": "login",
+					"viewLevel": 1
+				},
+				"dashboard": {
+					"viewName": "dashboard",
+					"viewLevel": 1
+				},
+				"chatenmf": {
+					"viewName": "chatenmfdb",
+					"viewLevel": 1
+				},
+				"admin": {
+					"viewName": "admin",
+					"viewLevel": 1
+				},
+				"register": {
+					"viewName": "register",
+					"viewLevel": 1
+				},
+				"getschemes": {
+					"viewName": "getschemes",
+					"viewLevel": 1
+				},
+				"getamcs": {
+					"viewName": "getamcs",
+					"viewLevel": 1
+				},
+				"addschemes": {
+					"viewName": "addschemes",
+					"viewLevel": 1
+				},
+				"addamcs": {
+					"viewName": "addamcs",
+					"viewLevel": 1
+				},
+				"addnav": {
+					"viewName": "addnav",
+					"viewLevel": 1
+				},
+				"schdetails": {
+					"viewName": "schdetails",
+					"viewLevel": 1
+				},
+				"mfinvlog": {
+					"viewName": "mfinvlog",
+					"viewLevel": 1
+				},
+				"dispallinv": {
+					"viewName": "showallinvsplit",
+					"viewLevel": 1
+				},
+				"showallinv": {
+					"viewName": "showallinv",
+					"viewLevel": 1
+				},
+				"invdetldisp": {
+					"viewName": "invdetldisp",
+					"viewLevel": 1
+				},
+				"manageinv": {
+					"viewName": "manageinv",
+					"viewLevel": 1
+				},
+				"dispallinvgoals": {
+					"viewName": "showallinvsplit.master2",
+					"viewLevel": 1
+				}
+
+			}
 
 
-			
+
 		}
 	}
 }

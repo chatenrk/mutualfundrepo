@@ -3,8 +3,7 @@
 			maxContainerCols="1"
 			layout="ResponsiveGridLayout">
 		<layout:VerticalLayout>
-			
-			<Text text="This is in snapshot1 section"/>
+	
 		</layout:VerticalLayout>
 	</forms:SimpleForm>
 </mvc:View>

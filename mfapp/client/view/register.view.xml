@@ -3,7 +3,8 @@
 	xmlns:core="sap.ui.core"
 	xmlns:layout="sap.ui.layout"
 	controllerName="simple_hello.Controller.register">
-		
+	<Page>
+	<content>	
 		<Panel width="auto" class="sapUiSmallMargin border-0">
 				<headerToolbar class="sapUiTinyMargin">
 					<Toolbar>
@@ -77,6 +78,15 @@
 						</VBox>
 						
 						<HBox width="20%" class="sapUiTinyMargin alignDropdownAlign sapMFlexItemAlignCenter">
+						<core:Icon id="pwdicon1" src="sap-icon://status-critical">
+									<core:layoutData>
+										<FlexItemData growFactor="1" />
+									</core:layoutData>
+								</core:Icon>
+						</HBox>		
+						
+						
+						<HBox width="20%" class="sapUiTinyMargin alignDropdownAlign sapMFlexItemAlignCenter">
 						<core:Icon id="pwdicon" src="sap-icon://message-information" press="onPwdPopoverPress" size="20px" color="white">
 									<core:layoutData>
 										<FlexItemData growFactor="1" />
@@ -117,4 +127,6 @@
 		
 	</VBox>
 			</Panel>
+			</content>
+			</Page>
 </View>

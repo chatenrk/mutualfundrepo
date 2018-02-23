@@ -8,27 +8,27 @@ sap.ui
                             .extend(
                                     "simple_hello.Controller.app",
                                     {
-                                    			
-                                    
-                                        onInit : function() 
+
+
+                                        onInit : function()
                                         {
-                                        	var usrlgndata = 
+                                        	var usrlgndata =
                                         	{
                                         			user_visible:false
                                         	};
-                                        	
-                                        	this.getOwnerComponent()._adjustNavItems(false);
+
+                                        	this.getOwnerComponent()._adjustNavItems(false,this._lgndata);
                                         	this.getOwnerComponent()._adjustButtons(usrlgndata);
 
                                         },
                                     	handleUserNamePress: function (oEvent) {
-                                    		
-                                    		
+
+
                                     		// create popover
                                 			if (!this._oPopover) {
                                 				this._oPopover = sap.ui.xmlfragment("simple_hello.view.usrpopover", this);
                                 				this.getView().addDependent(this._oPopover);
-                                				
+
                                 			}
 
                                 			// delay because addDependent will do a async rerendering and the actionSheet will immediately close without it.
@@ -38,34 +38,34 @@ sap.ui
                                 			});
 
                                 		},
-                                		
+
                                 		handleLogoutPress:function(){
-                                			
+
                                 			var data = {};
                                 			this._oPopover.close();
-                                			
-                                			this.getOwnerComponent()._adjustNavItems(false);
-                            				
+
+                                			this.getOwnerComponent()._adjustNavItems(false,this._lgndata);
+
                             				data.user_visible = false;
                             				this.getOwnerComponent()._adjustButtons(data);
-                            				
+
                             				var oRouter = this.getRouter();
                             				oRouter.navTo("login");
-                            				
+
 //                            				this._removeAuthtoken();
-                                			
+
                                 		},
-                                		
 
 
-                                    	onItemSelect : function(oEvent) 
+
+                                    	onItemSelect : function(oEvent)
                                     	{
                                 			var item = oEvent.getParameter('item');
                                 			var selkey = item.getKey();
                                 			var oRouter = this.getRouter();
                                 			oRouter.navTo(selkey);
                                 		},
-                                		
+
                                 		 onSideNavButtonPress : function() {
                                  			var viewId = this.getView().getId();
                                  			var toolPage = sap.ui.getCore().byId(viewId + "--toolPage");
@@ -76,9 +76,9 @@ sap.ui
                                  			toolPage.setSideExpanded(!toolPage.getSideExpanded());
                                  		},
 
-                                		
-                                		
-                                       
- 
+
+
+
+
                                     });
                 });

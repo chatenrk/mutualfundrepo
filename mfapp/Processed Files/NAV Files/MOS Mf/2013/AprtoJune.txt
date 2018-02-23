@@ -1,0 +1,641 @@
+﻿Scheme Code;Scheme Name;Net Asset Value;Repurchase Price;Sale Price;Date
+
+Open Ended Schemes ( Growth )
+
+
+Motilal Oswal Mutual Fund
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;10.0708;10.0708;10.0708;15-May-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;10.0636;10.0636;10.0636;16-May-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;10.0719;10.0719;10.0719;17-May-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;10.0222;10.0222;10.0222;20-May-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.9544;9.9544;9.9544;21-May-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.9199;9.9199;9.9199;22-May-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.7936;9.7936;9.7936;23-May-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.8067;9.8067;9.8067;24-May-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.9040;9.9040;9.9040;27-May-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.9224;9.9224;9.9224;28-May-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.9200;9.9200;9.9200;29-May-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.9346;9.9346;9.9346;30-May-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.8005;9.8005;9.8005;31-May-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.7334;9.7334;9.7334;03-Jun-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.7599;9.7599;9.7599;04-Jun-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.7626;9.7626;9.7626;05-Jun-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.7413;9.7413;9.7413;06-Jun-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.6899;9.6899;9.6899;07-Jun-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.6584;9.6584;9.6584;10-Jun-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.4865;9.4865;9.4865;11-Jun-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.4233;9.4233;9.4233;12-Jun-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.3543;9.3543;9.3543;13-Jun-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.4809;9.4809;9.4809;14-Jun-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.5666;9.5666;9.5666;17-Jun-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.5228;9.5228;9.5228;18-Jun-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.5813;9.5813;9.5813;19-Jun-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.3835;9.3835;9.3835;20-Jun-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.3696;9.3696;9.3696;21-Jun-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.2544;9.2544;9.2544;24-Jun-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.3161;9.3161;9.3161;25-Jun-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.2522;9.2522;9.2522;26-Jun-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.3237;9.3237;9.3237;27-Jun-2013
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;9.5109;9.5109;9.5109;28-Jun-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;10.0708;10.0708;10.0708;15-May-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;10.0636;10.0636;10.0636;16-May-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;10.0719;10.0719;10.0719;17-May-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;10.0222;10.0222;10.0222;20-May-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.9544;9.9544;9.9544;21-May-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.9199;9.9199;9.9199;22-May-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.7936;9.7936;9.7936;23-May-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.8067;9.8067;9.8067;24-May-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.9040;9.9040;9.9040;27-May-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.9224;9.9224;9.9224;28-May-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.9200;9.9200;9.9200;29-May-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.9346;9.9346;9.9346;30-May-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.8005;9.8005;9.8005;31-May-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.7334;9.7334;9.7334;03-Jun-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.7599;9.7599;9.7599;04-Jun-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.7626;9.7626;9.7626;05-Jun-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.7413;9.7413;9.7413;06-Jun-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.6899;9.6899;9.6899;07-Jun-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.6584;9.6584;9.6584;10-Jun-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.4865;9.4865;9.4865;11-Jun-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.4233;9.4233;9.4233;12-Jun-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.3543;9.3543;9.3543;13-Jun-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.4809;9.4809;9.4809;14-Jun-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.5666;9.5666;9.5666;17-Jun-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.5228;9.5228;9.5228;18-Jun-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.5813;9.5813;9.5813;19-Jun-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.3835;9.3835;9.3835;20-Jun-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.3696;9.3696;9.3696;21-Jun-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.2544;9.2544;9.2544;24-Jun-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.3161;9.3161;9.3161;25-Jun-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.2522;9.2522;9.2522;26-Jun-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.3237;9.3237;9.3237;27-Jun-2013
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;9.5109;9.5109;9.5109;28-Jun-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;10.0704;10.0704;10.0704;15-May-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;10.0628;10.0628;10.0628;16-May-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;10.0707;10.0707;10.0707;17-May-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;10.0197;10.0197;10.0197;20-May-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.9516;9.9516;9.9516;21-May-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.9166;9.9166;9.9166;22-May-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.7900;9.7900;9.7900;23-May-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.8027;9.8027;9.8027;24-May-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.8987;9.8987;9.8987;27-May-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.9166;9.9166;9.9166;28-May-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.9138;9.9138;9.9138;29-May-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.9279;9.9279;9.9279;30-May-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.7935;9.7935;9.7935;31-May-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.7252;9.7252;9.7252;03-Jun-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.7513;9.7513;9.7513;04-Jun-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.7535;9.7535;9.7535;05-Jun-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.7318;9.7318;9.7318;06-Jun-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.6800;9.6800;9.6800;07-Jun-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.6472;9.6472;9.6472;10-Jun-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.4751;9.4751;9.4751;11-Jun-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.4116;9.4116;9.4116;12-Jun-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.3422;9.3422;9.3422;13-Jun-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.4683;9.4683;9.4683;14-Jun-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.5526;9.5526;9.5526;17-Jun-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.5085;9.5085;9.5085;18-Jun-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.5665;9.5665;9.5665;19-Jun-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.3686;9.3686;9.3686;20-Jun-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.3543;9.3543;9.3543;21-Jun-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.2381;9.2381;9.2381;24-Jun-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.2992;9.2992;9.2992;25-Jun-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.2351;9.2351;9.2351;26-Jun-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.3060;9.3060;9.3060;27-Jun-2013
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;9.4924;9.4924;9.4924;28-Jun-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;10.0704;10.0704;10.0704;15-May-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;10.0628;10.0628;10.0628;16-May-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;10.0707;10.0707;10.0707;17-May-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;10.0197;10.0197;10.0197;20-May-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.9516;9.9516;9.9516;21-May-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.9166;9.9166;9.9166;22-May-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.7900;9.7900;9.7900;23-May-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.8027;9.8027;9.8027;24-May-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.8987;9.8987;9.8987;27-May-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.9166;9.9166;9.9166;28-May-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.9138;9.9138;9.9138;29-May-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.9279;9.9279;9.9279;30-May-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.7935;9.7935;9.7935;31-May-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.7252;9.7252;9.7252;03-Jun-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.7513;9.7513;9.7513;04-Jun-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.7535;9.7535;9.7535;05-Jun-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.7318;9.7318;9.7318;06-Jun-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.6800;9.6800;9.6800;07-Jun-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.6472;9.6472;9.6472;10-Jun-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.4751;9.4751;9.4751;11-Jun-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.4116;9.4116;9.4116;12-Jun-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.3422;9.3422;9.3422;13-Jun-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.4683;9.4683;9.4683;14-Jun-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.5526;9.5526;9.5526;17-Jun-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.5085;9.5085;9.5085;18-Jun-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.5665;9.5665;9.5665;19-Jun-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.3686;9.3686;9.3686;20-Jun-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.3543;9.3543;9.3543;21-Jun-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.2381;9.2381;9.2381;24-Jun-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.2992;9.2992;9.2992;25-Jun-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.2351;9.2351;9.2351;26-Jun-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.3060;9.3060;9.3060;27-Jun-2013
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;9.4924;9.4924;9.4924;28-Jun-2013
+
+Open Ended Schemes ( Gilt )
+
+
+Motilal Oswal Mutual Fund
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;10.9206;10.8933;10.9206;02-Apr-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;10.9426;10.9152;10.9426;03-Apr-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;10.9457;10.9183;10.9457;04-Apr-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;10.9680;10.9406;10.9680;05-Apr-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;10.9888;10.9613;10.9888;08-Apr-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.0101;10.9826;11.0101;09-Apr-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.0006;10.9731;11.0006;10-Apr-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.0249;10.9973;11.0249;12-Apr-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.0574;11.0298;11.0574;15-Apr-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.0649;11.0372;11.0649;16-Apr-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.0807;11.0530;11.0807;17-Apr-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.1001;11.0723;11.1001;18-Apr-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.1258;11.0980;11.1258;22-Apr-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.1405;11.1126;11.1405;23-Apr-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.1193;11.0915;11.1193;25-Apr-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.1402;11.1123;11.1402;26-Apr-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.1348;11.1070;11.1348;29-Apr-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.1573;11.1294;11.1573;30-Apr-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.1673;11.1394;11.1673;02-May-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.1609;11.1330;11.1609;03-May-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.1579;11.1300;11.1579;06-May-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.1643;11.1364;11.1643;07-May-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.1994;11.1714;11.1994;08-May-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.2632;11.2350;11.2632;09-May-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.2775;11.2493;11.2775;10-May-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.2895;11.2613;11.2895;13-May-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.3701;11.3417;11.3701;14-May-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.3832;11.3547;11.3832;15-May-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4360;11.4074;11.4360;16-May-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4244;11.3958;11.4244;17-May-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4758;11.4471;11.4758;20-May-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4680;11.4393;11.4680;21-May-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4588;11.4302;11.4588;22-May-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4543;11.4257;11.4543;23-May-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4835;11.4548;11.4835;24-May-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4891;11.4604;11.4891;27-May-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4850;11.4563;11.4850;28-May-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4536;11.4250;11.4536;29-May-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4301;11.4015;11.4301;30-May-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4061;11.3776;11.4061;31-May-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4033;11.3748;11.4033;03-Jun-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4383;11.4097;11.4383;04-Jun-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4317;11.4031;11.4317;05-Jun-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4339;11.4053;11.4339;06-Jun-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4198;11.3913;11.4198;07-Jun-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.3944;11.3659;11.3944;10-Jun-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.3835;11.3550;11.3835;11-Jun-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.3777;11.3493;11.3777;12-Jun-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.3797;11.3513;11.3797;13-Jun-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.3815;11.3530;11.3815;14-Jun-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.3808;11.3523;11.3808;17-Jun-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.3636;11.3352;11.3636;18-Jun-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.3782;11.3498;11.3782;19-Jun-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.2810;11.2528;11.2810;20-Jun-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.2533;11.2252;11.2533;21-Jun-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.1943;11.1663;11.1943;24-Jun-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.2120;11.1840;11.2120;25-Jun-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.1523;11.1244;11.1523;26-Jun-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.1711;11.1432;11.1711;27-Jun-2013
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.2631;11.2349;11.2631;28-Jun-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.1295;11.1017;11.1295;02-Apr-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.1520;11.1241;11.1520;03-Apr-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.1552;11.1273;11.1552;04-Apr-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.1778;11.1499;11.1778;05-Apr-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.1991;11.1711;11.1991;08-Apr-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.2207;11.1926;11.2207;09-Apr-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.2110;11.1830;11.2110;10-Apr-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.2357;11.2076;11.2357;12-Apr-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.2689;11.2407;11.2689;15-Apr-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.2764;11.2482;11.2764;16-Apr-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.2924;11.2642;11.2924;17-Apr-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.3123;11.2840;11.3123;18-Apr-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.3384;11.3101;11.3384;22-Apr-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.3533;11.3249;11.3533;23-Apr-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.3317;11.3034;11.3317;25-Apr-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.3530;11.3246;11.3530;26-Apr-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.3474;11.3190;11.3474;29-Apr-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.3703;11.3419;11.3703;30-Apr-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.3805;11.3520;11.3805;02-May-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.3740;11.3456;11.3740;03-May-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.3710;11.3426;11.3710;06-May-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.3774;11.3490;11.3774;07-May-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.4132;11.3847;11.4132;08-May-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.4781;11.4494;11.4781;09-May-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.4927;11.4640;11.4927;10-May-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.5050;11.4762;11.5050;13-May-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.5871;11.5581;11.5871;14-May-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.6004;11.5714;11.6004;15-May-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.6542;11.6251;11.6542;16-May-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.6424;11.6133;11.6424;17-May-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.6948;11.6656;11.6948;20-May-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.6868;11.6576;11.6868;21-May-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.6774;11.6482;11.6774;22-May-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.6728;11.6436;11.6728;23-May-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.7026;11.6733;11.7026;24-May-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.7083;11.6790;11.7083;27-May-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.7042;11.6749;11.7042;28-May-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.6721;11.6429;11.6721;29-May-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.6482;11.6191;11.6482;30-May-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.6237;11.5946;11.6237;31-May-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.6209;11.5918;11.6209;03-Jun-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.6566;11.6275;11.6566;04-Jun-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.6498;11.6207;11.6498;05-Jun-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.6520;11.6229;11.6520;06-Jun-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.6377;11.6086;11.6377;07-Jun-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.6118;11.5828;11.6118;10-Jun-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.6007;11.5717;11.6007;11-Jun-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.5948;11.5658;11.5948;12-Jun-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.5968;11.5678;11.5968;13-Jun-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.5987;11.5697;11.5987;14-Jun-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.5980;11.5690;11.5980;17-Jun-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.5804;11.5514;11.5804;18-Jun-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.5953;11.5663;11.5953;19-Jun-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.4963;11.4676;11.4963;20-Jun-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.4680;11.4393;11.4680;21-Jun-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.4079;11.3794;11.4079;24-Jun-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.4259;11.3973;11.4259;25-Jun-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.3651;11.3367;11.3651;26-Jun-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.3843;11.3558;11.3843;27-Jun-2013
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;11.4783;11.4496;11.4783;28-Jun-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.3274;10.3016;10.3274;02-Apr-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.3481;10.3222;10.3481;03-Apr-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.3511;10.3252;10.3511;04-Apr-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.3721;10.3462;10.3721;05-Apr-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.3917;10.3657;10.3917;08-Apr-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.4118;10.3858;10.4118;09-Apr-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.4028;10.3768;10.4028;10-Apr-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.4256;10.3995;10.4256;12-Apr-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.4563;10.4302;10.4563;15-Apr-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.4633;10.4371;10.4633;16-Apr-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.4781;10.4519;10.4781;17-Apr-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.4965;10.4703;10.4965;18-Apr-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.5206;10.4943;10.5206;22-Apr-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.5345;10.5082;10.5345;23-Apr-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.5143;10.4880;10.5143;25-Apr-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.5340;10.5077;10.5340;26-Apr-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.5288;10.5025;10.5288;29-Apr-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.5500;10.5236;10.5500;30-Apr-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.5594;10.5330;10.5594;02-May-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.5533;10.5269;10.5533;03-May-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.5505;10.5241;10.5505;06-May-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.5564;10.5300;10.5564;07-May-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.5896;10.5631;10.5896;08-May-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.6498;10.6232;10.6498;09-May-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.6634;10.6367;10.6634;10-May-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.6746;10.6479;10.6746;13-May-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.7508;10.7239;10.7508;14-May-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.7631;10.7362;10.7631;15-May-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.8130;10.7860;10.8130;16-May-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.8020;10.7750;10.8020;17-May-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.8506;10.8235;10.8506;20-May-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.8432;10.8161;10.8432;21-May-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.8344;10.8073;10.8344;22-May-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.8301;10.8030;10.8301;23-May-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.8577;10.8306;10.8577;24-May-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.8629;10.8357;10.8629;27-May-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.8591;10.8320;10.8591;28-May-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.8293;10.8022;10.8293;29-May-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.8070;10.7800;10.8070;30-May-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.7843;10.7573;10.7843;31-May-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.7816;10.7546;10.7816;03-Jun-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.8147;10.7877;10.8147;04-Jun-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.8084;10.7814;10.8084;05-Jun-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.8104;10.7834;10.8104;06-Jun-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.7971;10.7701;10.7971;07-Jun-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.7730;10.7461;10.7730;10-Jun-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.7626;10.7357;10.7626;11-Jun-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.7572;10.7303;10.7572;12-Jun-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.7590;10.7321;10.7590;13-Jun-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.7607;10.7338;10.7607;14-Jun-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.7600;10.7331;10.7600;17-Jun-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.7436;10.7167;10.7436;18-Jun-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.7575;10.7306;10.7575;19-Jun-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.6656;10.6389;10.6656;20-Jun-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.6393;10.6127;10.6393;21-Jun-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.5835;10.5570;10.5835;24-Jun-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.6002;10.5737;10.6002;25-Jun-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.5437;10.5173;10.5437;26-Jun-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.5615;10.5351;10.5615;27-Jun-2013
+116205;MOSt 10 Year Gilt Fund - Dividend;10.6484;10.6218;10.6484;28-Jun-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.1271;11.0993;11.1271;02-Apr-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.1495;11.1216;11.1495;03-Apr-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.1526;11.1247;11.1526;04-Apr-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.1752;11.1473;11.1752;05-Apr-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.1964;11.1684;11.1964;08-Apr-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.2181;11.1901;11.2181;09-Apr-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.2083;11.1803;11.2083;10-Apr-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.2329;11.2048;11.2329;12-Apr-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.2660;11.2378;11.2660;15-Apr-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.2735;11.2453;11.2735;16-Apr-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.2895;11.2613;11.2895;17-Apr-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.3093;11.2810;11.3093;18-Apr-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.3353;11.3070;11.3353;22-Apr-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.3502;11.3218;11.3502;23-Apr-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.3285;11.3002;11.3285;25-Apr-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.3497;11.3213;11.3497;26-Apr-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.3441;11.3157;11.3441;29-Apr-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.3670;11.3386;11.3670;30-Apr-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.3771;11.3487;11.3771;02-May-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.3706;11.3422;11.3706;03-May-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.3675;11.3391;11.3675;06-May-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.3738;11.3454;11.3738;07-May-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.4096;11.3811;11.4096;08-May-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.4745;11.4458;11.4745;09-May-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.4891;11.4604;11.4891;10-May-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.5012;11.4724;11.5012;13-May-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.5833;11.5543;11.5833;14-May-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.5966;11.5676;11.5966;15-May-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.6503;11.6212;11.6503;16-May-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.6385;11.6094;11.6385;17-May-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.6908;11.6616;11.6908;20-May-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.6828;11.6536;11.6828;21-May-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.6734;11.6442;11.6734;22-May-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.6688;11.6396;11.6688;23-May-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.6985;11.6693;11.6985;24-May-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.7041;11.6748;11.7041;27-May-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.6999;11.6707;11.6999;28-May-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.6679;11.6387;11.6679;29-May-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.6439;11.6148;11.6439;30-May-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.6194;11.5904;11.6194;31-May-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.6165;11.5875;11.6165;03-Jun-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.6521;11.6230;11.6521;04-Jun-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.6453;11.6162;11.6453;05-Jun-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.6475;11.6184;11.6475;06-Jun-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.6332;11.6041;11.6332;07-Jun-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.6072;11.5782;11.6072;10-Jun-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.5961;11.5671;11.5961;11-Jun-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.5902;11.5612;11.5902;12-Jun-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.5921;11.5631;11.5921;13-Jun-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.5940;11.5650;11.5940;14-Jun-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.5932;11.5642;11.5932;17-Jun-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.5756;11.5467;11.5756;18-Jun-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.5905;11.5615;11.5905;19-Jun-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.4915;11.4628;11.4915;20-Jun-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.4632;11.4345;11.4632;21-Jun-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.4030;11.3745;11.4030;24-Jun-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.4210;11.3924;11.4210;25-Jun-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.3602;11.3318;11.3602;26-Jun-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.3793;11.3509;11.3793;27-Jun-2013
+116203;MOSt 10 Year Gilt Fund - Growth;11.4730;11.4443;11.4730;28-Jun-2013
+
+Open Ended Schemes ( GOLD ETFs )
+
+
+Motilal Oswal Mutual Fund
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2957.3865;2957.3865;2957.3865;01-Apr-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2946.3342;2946.3342;2946.3342;02-Apr-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2898.7342;2898.7342;2898.7342;03-Apr-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2871.1306;2871.1306;2871.1306;04-Apr-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2895.4411;2895.4411;2895.4411;05-Apr-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2929.5616;2929.5616;2929.5616;08-Apr-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2908.2881;2908.2881;2908.2881;09-Apr-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2927.2622;2927.2622;2927.2622;10-Apr-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2882.8201;2882.8201;2882.8201;11-Apr-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2864.8794;2864.8794;2864.8794;12-Apr-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2646.2252;2646.2252;2646.2252;15-Apr-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2560.4024;2560.4024;2560.4024;16-Apr-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2545.1480;2545.1480;2545.1480;17-Apr-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2562.7975;2562.7975;2562.7975;18-Apr-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2615.0957;2615.0957;2615.0957;22-Apr-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2607.7026;2607.7026;2607.7026;23-Apr-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2651.6929;2651.6929;2651.6929;25-Apr-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2684.1703;2684.1703;2684.1703;26-Apr-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2708.1772;2708.1772;2708.1772;29-Apr-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2705.7890;2705.7890;2705.7890;30-Apr-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2656.4126;2656.4126;2656.4126;02-May-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2701.4371;2701.4371;2701.4371;03-May-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2701.0068;2701.0068;2701.0068;06-May-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2693.0808;2693.0808;2693.0808;07-May-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2672.2201;2672.2201;2672.2201;08-May-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2702.3123;2702.3123;2702.3123;09-May-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2681.3220;2681.3220;2681.3220;10-May-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2664.3359;2664.3359;2664.3359;13-May-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2662.8530;2662.8530;2662.8530;14-May-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2627.9677;2627.9677;2627.9677;15-May-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2562.8851;2562.8851;2562.8851;16-May-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2569.1469;2569.1469;2569.1469;17-May-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2535.4670;2535.4670;2535.4670;20-May-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2578.8100;2578.8100;2578.8100;21-May-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2602.3260;2602.3260;2602.3260;22-May-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2624.0491;2624.0491;2624.0491;23-May-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2605.8337;2605.8337;2605.8337;24-May-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2606.0240;2606.0240;2606.0240;27-May-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2600.2926;2600.2926;2600.2926;28-May-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2631.7251;2631.7251;2631.7251;29-May-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2663.7689;2663.7689;2663.7689;30-May-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2688.3668;2688.3668;2688.3668;31-May-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2673.8234;2673.8234;2673.8234;03-Jun-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2691.8827;2691.8827;2691.8827;04-Jun-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2666.5155;2666.5155;2666.5155;05-Jun-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2742.8684;2742.8684;2742.8684;06-Jun-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2761.7831;2761.7831;2761.7831;07-Jun-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2747.0892;2747.0892;2747.0892;10-Jun-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2783.2254;2783.2254;2783.2254;11-Jun-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2769.1514;2769.1514;2769.1514;12-Jun-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2791.6774;2791.6774;2791.6774;13-Jun-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2750.2698;2750.2698;2750.2698;14-Jun-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2756.6832;2756.6832;2756.6832;17-Jun-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2774.2863;2774.2863;2774.2863;18-Jun-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2763.7791;2763.7791;2763.7791;19-Jun-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2687.2930;2687.2930;2687.2930;20-Jun-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2657.1909;2657.1909;2657.1909;21-Jun-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2659.2829;2659.2829;2659.2829;24-Jun-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2647.3267;2647.3267;2647.3267;25-Jun-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2548.1876;2548.1876;2548.1876;26-Jun-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2582.1526;2582.1526;2582.1526;27-Jun-2013
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2493.7790;2493.7790;2493.7790;28-Jun-2013
+
+Open Ended Schemes ( Other ETFs )
+
+
+Motilal Oswal Mutual Fund
+113069;MOSt Shares M50;74.8220;74.8220;74.8220;01-Apr-2013
+113069;MOSt Shares M50;75.5110;75.5110;75.5110;02-Apr-2013
+113069;MOSt Shares M50;74.2067;74.2067;74.2067;03-Apr-2013
+113069;MOSt Shares M50;73.0236;73.0236;73.0236;04-Apr-2013
+113069;MOSt Shares M50;72.9193;72.9193;72.9193;05-Apr-2013
+113069;MOSt Shares M50;72.9829;72.9829;72.9829;08-Apr-2013
+113069;MOSt Shares M50;72.5461;72.5461;72.5461;09-Apr-2013
+113069;MOSt Shares M50;73.3221;73.3221;73.3221;10-Apr-2013
+113069;MOSt Shares M50;73.7080;73.7080;73.7080;11-Apr-2013
+113069;MOSt Shares M50;73.6242;73.6242;73.6242;12-Apr-2013
+113069;MOSt Shares M50;73.9469;73.9469;73.9469;15-Apr-2013
+113069;MOSt Shares M50;75.4989;75.4989;75.4989;16-Apr-2013
+113069;MOSt Shares M50;75.7684;75.7684;75.7684;17-Apr-2013
+113069;MOSt Shares M50;76.8712;76.8712;76.8712;18-Apr-2013
+113069;MOSt Shares M50;77.3024;77.3024;77.3024;22-Apr-2013
+113069;MOSt Shares M50;77.1641;77.1641;77.1641;23-Apr-2013
+113069;MOSt Shares M50;78.1766;78.1766;78.1766;25-Apr-2013
+113069;MOSt Shares M50;77.3531;77.3531;77.3531;26-Apr-2013
+113069;MOSt Shares M50;78.0144;78.0144;78.0144;29-Apr-2013
+113069;MOSt Shares M50;78.8563;78.8563;78.8563;30-Apr-2013
+113069;MOSt Shares M50;79.6944;79.6944;79.6944;02-May-2013
+113069;MOSt Shares M50;78.7500;78.7500;78.7500;03-May-2013
+113069;MOSt Shares M50;79.3011;79.3011;79.3011;06-May-2013
+113069;MOSt Shares M50;80.0035;80.0035;80.0035;07-May-2013
+113069;MOSt Shares M50;80.0751;80.0751;80.0751;08-May-2013
+113069;MOSt Shares M50;80.1946;80.1946;80.1946;09-May-2013
+113069;MOSt Shares M50;81.0256;81.0256;81.0256;10-May-2013
+113069;MOSt Shares M50;79.4189;79.4189;79.4189;13-May-2013
+113069;MOSt Shares M50;79.6056;79.6056;79.6056;14-May-2013
+113069;MOSt Shares M50;81.3620;81.3620;81.3620;15-May-2013
+113069;MOSt Shares M50;81.6865;81.6865;81.6865;16-May-2013
+113069;MOSt Shares M50;82.0423;82.0423;82.0423;17-May-2013
+113069;MOSt Shares M50;81.6524;81.6524;81.6524;20-May-2013
+113069;MOSt Shares M50;80.8538;80.8538;80.8538;21-May-2013
+113069;MOSt Shares M50;80.4583;80.4583;80.4583;22-May-2013
+113069;MOSt Shares M50;78.5191;78.5191;78.5191;23-May-2013
+113069;MOSt Shares M50;78.6875;78.6875;78.6875;24-May-2013
+113069;MOSt Shares M50;79.4739;79.4739;79.4739;27-May-2013
+113069;MOSt Shares M50;79.9437;79.9437;79.9437;28-May-2013
+113069;MOSt Shares M50;79.7859;79.7859;79.7859;29-May-2013
+113069;MOSt Shares M50;80.2894;80.2894;80.2894;30-May-2013
+113069;MOSt Shares M50;78.6490;78.6490;78.6490;31-May-2013
+113069;MOSt Shares M50;78.3092;78.3092;78.3092;03-Jun-2013
+113069;MOSt Shares M50;78.1338;78.1338;78.1338;04-Jun-2013
+113069;MOSt Shares M50;78.0999;78.0999;78.0999;05-Jun-2013
+113069;MOSt Shares M50;78.4588;78.4588;78.4588;06-Jun-2013
+113069;MOSt Shares M50;77.9010;77.9010;77.9010;07-Jun-2013
+113069;MOSt Shares M50;77.5969;77.5969;77.5969;10-Jun-2013
+113069;MOSt Shares M50;76.4068;76.4068;76.4068;11-Jun-2013
+113069;MOSt Shares M50;76.0899;76.0899;76.0899;12-Jun-2013
+113069;MOSt Shares M50;75.2457;75.2457;75.2457;13-Jun-2013
+113069;MOSt Shares M50;76.9625;76.9625;76.9625;14-Jun-2013
+113069;MOSt Shares M50;77.4919;77.4919;77.4919;17-Jun-2013
+113069;MOSt Shares M50;77.1633;77.1633;77.1633;18-Jun-2013
+113069;MOSt Shares M50;77.1872;77.1872;77.1872;19-Jun-2013
+113069;MOSt Shares M50;74.9537;74.9537;74.9537;20-Jun-2013
+113069;MOSt Shares M50;74.7021;74.7021;74.7021;21-Jun-2013
+113069;MOSt Shares M50;73.5849;73.5849;73.5849;24-Jun-2013
+113069;MOSt Shares M50;73.9276;73.9276;73.9276;25-Jun-2013
+113069;MOSt Shares M50;73.4595;73.4595;73.4595;26-Jun-2013
+113069;MOSt Shares M50;74.3049;74.3049;74.3049;27-Jun-2013
+113069;MOSt Shares M50;76.3291;76.3291;76.3291;28-Jun-2013
+114456;MOSt Shares M100;7.6522;7.6522;7.6522;01-Apr-2013
+114456;MOSt Shares M100;7.7686;7.7686;7.7686;02-Apr-2013
+114456;MOSt Shares M100;7.7112;7.7112;7.7112;03-Apr-2013
+114456;MOSt Shares M100;7.5692;7.5692;7.5692;04-Apr-2013
+114456;MOSt Shares M100;7.5896;7.5896;7.5896;05-Apr-2013
+114456;MOSt Shares M100;7.5966;7.5966;7.5966;08-Apr-2013
+114456;MOSt Shares M100;7.5378;7.5378;7.5378;09-Apr-2013
+114456;MOSt Shares M100;7.6015;7.6015;7.6015;10-Apr-2013
+114456;MOSt Shares M100;7.5922;7.5922;7.5922;11-Apr-2013
+114456;MOSt Shares M100;7.5867;7.5867;7.5867;12-Apr-2013
+114456;MOSt Shares M100;7.5879;7.5879;7.5879;15-Apr-2013
+114456;MOSt Shares M100;7.6912;7.6912;7.6912;16-Apr-2013
+114456;MOSt Shares M100;7.7082;7.7082;7.7082;17-Apr-2013
+114456;MOSt Shares M100;7.7916;7.7916;7.7916;18-Apr-2013
+114456;MOSt Shares M100;7.9335;7.9335;7.9335;22-Apr-2013
+114456;MOSt Shares M100;7.9025;7.9025;7.9025;23-Apr-2013
+114456;MOSt Shares M100;7.9460;7.9460;7.9460;25-Apr-2013
+114456;MOSt Shares M100;7.8822;7.8822;7.8822;26-Apr-2013
+114456;MOSt Shares M100;7.9775;7.9775;7.9775;29-Apr-2013
+114456;MOSt Shares M100;7.9864;7.9864;7.9864;30-Apr-2013
+114456;MOSt Shares M100;8.0809;8.0809;8.0809;02-May-2013
+114456;MOSt Shares M100;8.0650;8.0650;8.0650;03-May-2013
+114456;MOSt Shares M100;8.1373;8.1373;8.1373;06-May-2013
+114456;MOSt Shares M100;8.2093;8.2093;8.2093;07-May-2013
+114456;MOSt Shares M100;8.2125;8.2125;8.2125;08-May-2013
+114456;MOSt Shares M100;8.1544;8.1544;8.1544;09-May-2013
+114456;MOSt Shares M100;8.1799;8.1799;8.1799;10-May-2013
+114456;MOSt Shares M100;8.0535;8.0535;8.0535;13-May-2013
+114456;MOSt Shares M100;8.0951;8.0951;8.0951;14-May-2013
+114456;MOSt Shares M100;8.2642;8.2642;8.2642;15-May-2013
+114456;MOSt Shares M100;8.3130;8.3130;8.3130;16-May-2013
+114456;MOSt Shares M100;8.3584;8.3584;8.3584;17-May-2013
+114456;MOSt Shares M100;8.3008;8.3008;8.3008;20-May-2013
+114456;MOSt Shares M100;8.2268;8.2268;8.2268;21-May-2013
+114456;MOSt Shares M100;8.1343;8.1343;8.1343;22-May-2013
+114456;MOSt Shares M100;7.9667;7.9667;7.9667;23-May-2013
+114456;MOSt Shares M100;7.9850;7.9850;7.9850;24-May-2013
+114456;MOSt Shares M100;8.0805;8.0805;8.0805;27-May-2013
+114456;MOSt Shares M100;8.1254;8.1254;8.1254;28-May-2013
+114456;MOSt Shares M100;8.0764;8.0764;8.0764;29-May-2013
+114456;MOSt Shares M100;8.0673;8.0673;8.0673;30-May-2013
+114456;MOSt Shares M100;7.9856;7.9856;7.9856;31-May-2013
+114456;MOSt Shares M100;7.9784;7.9784;7.9784;03-Jun-2013
+114456;MOSt Shares M100;8.0121;8.0121;8.0121;04-Jun-2013
+114456;MOSt Shares M100;8.0368;8.0368;8.0368;05-Jun-2013
+114456;MOSt Shares M100;8.0341;8.0341;8.0341;06-Jun-2013
+114456;MOSt Shares M100;7.9728;7.9728;7.9728;07-Jun-2013
+114456;MOSt Shares M100;7.8673;7.8673;7.8673;10-Jun-2013
+114456;MOSt Shares M100;7.7213;7.7213;7.7213;11-Jun-2013
+114456;MOSt Shares M100;7.6938;7.6938;7.6938;12-Jun-2013
+114456;MOSt Shares M100;7.5506;7.5506;7.5506;13-Jun-2013
+114456;MOSt Shares M100;7.6579;7.6579;7.6579;14-Jun-2013
+114456;MOSt Shares M100;7.7079;7.7079;7.7079;17-Jun-2013
+114456;MOSt Shares M100;7.7487;7.7487;7.7487;18-Jun-2013
+114456;MOSt Shares M100;7.7855;7.7855;7.7855;19-Jun-2013
+114456;MOSt Shares M100;7.6134;7.6134;7.6134;20-Jun-2013
+114456;MOSt Shares M100;7.5010;7.5010;7.5010;21-Jun-2013
+114456;MOSt Shares M100;7.3056;7.3056;7.3056;24-Jun-2013
+114456;MOSt Shares M100;7.2640;7.2640;7.2640;25-Jun-2013
+114456;MOSt Shares M100;7.2654;7.2654;7.2654;26-Jun-2013
+114456;MOSt Shares M100;7.3208;7.3208;7.3208;27-Jun-2013
+114456;MOSt Shares M100;7.5288;7.5288;7.5288;28-Jun-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);152.5263;152.5263;152.5263;01-Apr-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);151.3675;151.3675;151.3675;02-Apr-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);152.5697;152.5697;152.5697;03-Apr-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);151.6530;151.6530;151.6530;04-Apr-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);152.9063;152.9063;152.9063;05-Apr-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);151.4455;151.4455;151.4455;08-Apr-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);151.5464;151.5464;151.5464;09-Apr-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);152.6069;152.6069;152.6069;10-Apr-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);155.3802;155.3802;155.3802;11-Apr-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);155.3683;155.3683;155.3683;12-Apr-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);155.2490;155.2490;155.2490;15-Apr-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);152.3090;152.3090;152.3090;16-Apr-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);153.1424;153.1424;153.1424;17-Apr-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);150.2366;150.2366;150.2366;18-Apr-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);149.6603;149.6603;149.6603;22-Apr-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);151.6078;151.6078;151.6078;23-Apr-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);153.5263;153.5263;153.5263;25-Apr-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);153.8664;153.8664;153.8664;26-Apr-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);153.8858;153.8858;153.8858;29-Apr-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);154.9310;154.9310;154.9310;30-Apr-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);154.0423;154.0423;154.0423;02-May-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);156.1455;156.1455;156.1455;03-May-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);158.3127;158.3127;158.3127;06-May-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);159.5406;159.5406;159.5406;07-May-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);159.2651;159.2651;159.2651;08-May-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);160.0988;160.0988;160.0988;09-May-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);160.1508;160.1508;160.1508;10-May-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);162.7746;162.7746;162.7746;13-May-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);162.7022;162.7022;162.7022;14-May-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);163.7618;163.7618;163.7618;15-May-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);164.0982;164.0982;164.0982;16-May-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);163.8700;163.8700;163.8700;17-May-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);165.7730;165.7730;165.7730;20-May-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);166.0184;166.0184;166.0184;21-May-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);167.1855;167.1855;167.1855;22-May-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);165.9689;165.9689;165.9689;23-May-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);165.8258;165.8258;165.8258;24-May-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);165.9639;165.9639;165.9639;27-May-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);165.7381;165.7381;165.7381;28-May-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);167.9637;167.9637;167.9637;29-May-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);167.6885;167.6885;167.6885;30-May-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);169.0829;169.0829;169.0829;31-May-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);167.9702;167.9702;167.9702;03-Jun-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);169.2889;169.2889;169.2889;04-Jun-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);167.3499;167.3499;167.3499;05-Jun-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);166.1818;166.1818;166.1818;06-Jun-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);167.1576;167.1576;167.1576;07-Jun-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);170.1346;170.1346;170.1346;10-Jun-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);173.2622;173.2622;173.2622;11-Jun-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);172.1658;172.1658;172.1658;12-Jun-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);168.5467;168.5467;168.5467;13-Jun-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);171.2803;171.2803;171.2803;14-Jun-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);168.8802;168.8802;168.8802;17-Jun-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);171.4438;171.4438;171.4438;18-Jun-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);175.5716;175.5716;175.5716;19-Jun-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);173.3276;173.3276;173.3276;20-Jun-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);171.8186;171.8186;171.8186;21-Jun-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);170.0735;170.0735;170.0735;24-Jun-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);169.5613;169.5613;169.5613;25-Jun-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);170.7036;170.7036;170.7036;26-Jun-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);174.9610;174.9610;174.9610;27-Jun-2013
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);174.4336;174.4336;174.4336;28-Jun-2013

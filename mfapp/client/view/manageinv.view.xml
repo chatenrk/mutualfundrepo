@@ -1,0 +1,66 @@
+<mvc:View controllerName="simple_hello.Controller.manageinv" xmlns="sap.m" xmlns:t="sap.ui.table" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+
+  <Page id="schtable" title="Manage Investments" showNavButton="true" navButtonPress="onNavBack">
+
+    <content>
+      <MessageStrip id="msgstrp" showIcon="false" showCloseButton="true" visible="false" type="Error" class="sapUiMediumMarginBottom"></MessageStrip>
+
+      <Table id="manageinvtable" items="{manageinv_model>/}" visibleRowCount="7" title="Manage Investments">
+
+        <headerToolbar>
+          <Toolbar>
+            <Title text="Manage Investments for User" level="H2"/>
+            <ToolbarSpacer/>
+            <SearchField width="35%" liveChange="onInvSearch"/>
+            <Button tooltip="View Settings" icon="sap-icon://drop-down-list" press="handleViewSettingsDialogButtonPressed"/>
+          </Toolbar>
+        </headerToolbar>
+        <columns>
+          <Column hAlign="Center" vAlign="Center">
+            <Text text="{i18n>transaction}" class="textbold"/>
+          </Column>
+          <Column hAlign="Center" vAlign="Center">
+            <Text text="{i18n>sname}"/>
+          </Column>
+          <Column hAlign="Center" vAlign="Center">
+            <Text text="{i18n>dinv}"/>
+          </Column>
+
+          <Column hAlign="Center" vAlign="Center">
+            <Text text="{i18n>amount}"/>
+          </Column>
+
+          <Column hAlign="Center" vAlign="Center">
+            <Text text="{i18n>invFor}"/>
+          </Column>
+
+          <Column hAlign="Center" vAlign="Center">
+            <header>
+              <Label text="{i18n>action}"/>
+            </header>
+          </Column>
+
+        </columns>
+        <items>
+          <ColumnListItem hAlign="Center" vAlign="Center" press="handleSchemePress">
+            <cells>
+              <Text text="{manageinv_model>transaction}"/>
+              <Link text="{manageinv_model>sname}" press="handlePopOverPress" wrapping="true"/>
+              <Text text="{manageinv_model>invdatefmtd}"/>
+              <Text text="{manageinv_model>amount}"/>
+              <Text text="{manageinv_model>invFor}"/>
+              <SegmentedButton selectedKey="kids">
+                <items>
+                  <SegmentedButtonItem icon="sap-icon://delete" press="handleDeleteRow"/>
+                  <SegmentedButtonItem icon="sap-icon://copy" press="handleCopyRow"/>
+                </items>
+              </SegmentedButton>
+            </cells>
+          </ColumnListItem>
+        </items>
+
+      </Table>
+    </content>
+
+  </Page>
+</mvc:View>

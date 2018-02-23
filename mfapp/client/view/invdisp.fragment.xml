@@ -1,0 +1,38 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+  <Table
+  				id = "mfinvtable"
+  				items="{allinvModel>/}"
+  				title="Investment Details">
+
+  			<headerToolbar>
+  			<Toolbar>
+  				<Title text="{i18n>invbyfund}" level="H2"/>
+  			</Toolbar>
+  		</headerToolbar>
+
+  		   <columns>
+             <Column hAlign="Center" vAlign="Center">
+                  <Text text="{i18n>grp}" />
+              </Column>
+              <Column hAlign="Center" vAlign="Center">
+                  <Text text="{i18n>tamnt}" />
+              </Column>
+               <Column hAlign="Center" vAlign="Center">
+                  <Text text="{i18n>fcnt}" />
+              </Column>
+          </columns>
+
+          <items>
+              <ColumnListItem hAlign="Center" vAlign="Center" type="Navigation" press="handleColumnPress">
+                  <cells>
+                      <Text text="{allinvModel>group}" />
+                      <Text text="{allinvModel>tamnt}" />
+                      <Text text="{allinvModel>count}" />
+                </cells>
+              </ColumnListItem>
+          </items>
+
+  		</Table>
+</core:FragmentDefinition>

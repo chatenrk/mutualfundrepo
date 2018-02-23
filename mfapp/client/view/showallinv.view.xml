@@ -1,0 +1,49 @@
+<mvc:View
+    controllerName="simple_hello.Controller.showallinv"
+    xmlns="sap.m"
+    xmlns:uxap="sap.uxap"
+    xmlns:layout="sap.ui.layout"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true">
+
+<Page id ="showallinv" showNavButton = "true"
+         navButtonPress = "onNavBack">
+<content>
+
+<Panel id="mfinvdet" width="auto" class="sapUiSmallMargin border-0">
+
+  <!-- Header Toolbar -->
+  				<headerToolbar class="sapUiTinyMargin">
+  					<Toolbar>
+  						<Title level="H4" text="{loggedin_user>/user/name}'s {i18n>invdetls}" />
+  					</Toolbar>
+  				</headerToolbar>
+
+
+    <IconTabBar
+		id="idIconTabBarFiori2"
+		upperCase="true"
+		expanded="{device>/isNoPhone}"
+    select = "onItemSelected"
+		class="sapUiResponsiveContentPadding">
+		<items>
+			<IconTabFilter
+        id = "grpfname"
+				text="{i18n>grpfname}">
+			</IconTabFilter>
+			<IconTabFilter
+        id = "grpasttype"
+				text="{i18n>grpasttype}">
+			</IconTabFilter>
+			<IconTabFilter
+        id = "grpgoal"
+				text="{i18n>grpgoal}">
+			</IconTabFilter>
+
+		</items>
+	</IconTabBar>
+</Panel>
+</content>
+</Page>
+</mvc:View>

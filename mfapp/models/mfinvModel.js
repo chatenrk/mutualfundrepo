@@ -7,7 +7,7 @@ const helpers = require('../helpers/helpers.js');
 
 var SchemaTypes = mongoose.Schema.Types;
 var mfinvSchema = mongoose.Schema({
-
+    transaction:String,
     amccode: Number,
     amcname: String,
     scode: Number,
@@ -29,7 +29,7 @@ mfinvSchema.plugin(integerValidator);
 
 
 
- 
+
 var mfinvModel = mongoose.model('mfinvdetl', mfinvSchema);
 
 
@@ -37,13 +37,13 @@ var mfinvModel = mongoose.model('mfinvdetl', mfinvSchema);
 async function findAll()
 {
 try{
-      let invdet 	    
+      let invdet
       invdet = await mfinvModel.find();
-    
+
       return invdet;
-  } catch (err) 
+  } catch (err)
   {
-	
+
     return err;
   }
 };
@@ -53,12 +53,12 @@ try{
 async function findOneInvDet(query)
 {
 try{
-      let invdet; 	    
-      invdet = await mfinvModel.find(query);
+      let invdet;
+      invdet = await mfinvModel.find(query).sort({amcname:1,sname:1});
       return invdet;
-  } catch (err) 
+  } catch (err)
   {
-	
+
     return err;
   }
 };
@@ -67,15 +67,16 @@ try{
 //This route posts a single Inv Detail to database
 async function postOne(mfinvdet)
 {
-	
-	
+
+
 	try
 	{
-		let invdet 
-		var _id = new mongoose.Types.ObjectId();	
+		let invdet
+		var _id = new mongoose.Types.ObjectId();
 		invdet = await mfinvModel.create(
 				{
-					amccode:mfinvdet.amccode,
+          transaction:mfinvdet.transaction,
+          amccode:mfinvdet.amccode,
 					amcname:mfinvdet.amcname,
 					scode:mfinvdet.scode,
 					sname:mfinvdet.sname,
@@ -88,51 +89,139 @@ async function postOne(mfinvdet)
 					assetType:mfinvdet.assetType,
 					invBy:mfinvdet.invBy
 				});
-				
-		
+
+
 		var parseResult = helpers.parseOutput(errflag,invdet);
-		
-	} 
-	catch (err) 
-	{	
-		
+
+	}
+	catch (err)
+	{
+
 		var operation = err.getOperation();
 		var errflag = true;
 		var parseResult = helpers.parseOutput(errflag,err,operation);
 
-	}	
+	}
 	return parseResult;
 }
 
+async function getAggregation(aggr)
+{
+  try
+  {
 
-////This route posts a multiple AMC's to database
-//async function postMany(amcs)
-//{
-//	
-//	var resArray= [];
-//	await helpers.asyncForEach(amcs,async (item,index,array) => 
-//    {
-//  	  try
-//  	  {	
-//  		  result = await postOne(amcs[index]);
-//  		  
-//  		  resArray.push(result);
-//  		  
-//  	  }
-//  	  catch(err)
-//  	  {
-//  		  	
-//  		  	resArray.push(err);
-//
-//  	  }
-//    });
-//	
-//	return resArray;
-//}
-    
+    let aggrres;
+    aggrres = await mfinvModel.aggregate([
 
 
-module.exports.findAll = findAll; 
+              { $match: {invBy: {$eq: aggr.invBy}} },
+              {
+                $group: {
+                        _id: aggr.id,
+                        count: {$sum: 1},
+                        total:{$sum:aggr.totcol},
+                        schdet: { $push: "$$ROOT" }
+                      }
+              }
+    //
+        ]);
+
+    return aggrres;
+  }
+  catch (err)
+  {
+
+    return err;
+  }
+}
+
+async function grpGoalAggregation(aggr)
+{
+  try
+  {
+
+    let aggrres;
+    aggrres = await mfinvModel.aggregate([
+
+
+              { $match: {invBy: {$eq: aggr.invBy}} },
+              {
+                $group:
+                {
+                        _id: "$invFor",
+                        count: {$sum: 1},
+                        total:{$sum:"$amount"},
+
+                }
+              },
+              {$sort:{_id:1}}
+    //
+        ]);
+
+    return aggrres;
+  }
+  catch (err)
+  {
+
+    return err;
+  }
+}
+
+async function grpGoalSchemeAggregation(aggr)
+{
+  try
+  {
+    debugger;
+    let aggrres;
+    aggrres = await mfinvModel.aggregate([
+
+
+              { $match: {invBy: {$eq: aggr.invBy}, invFor: {$eq: aggr.invFor}} },
+              {
+                $group:
+                {
+                        _id: {invFor: aggr.invFor,sname:"$sname",scode:"$scode"},
+                        count: {$sum: 1},
+                        total:{$sum:"$amount"},
+
+                }
+              },
+              {$sort:{_id:1}}
+    //
+        ]);
+
+    return aggrres;
+  }
+  catch (err)
+  {
+    debugger;
+    return err;
+  }
+}
+
+async function deleteInv(_id)
+{
+  try
+  {
+    debugger;
+    let delres;
+    delres = await mfinvModel.deleteOne({"_id":_id});
+    return delres;
+  }
+  catch (err)
+  {
+    debugger;
+    return err;
+  }
+}
+
+
+
+module.exports.findAll = findAll;
 module.exports.postOne = postOne;
+module.exports.getAggregation = getAggregation;
+module.exports.grpGoalAggregation = grpGoalAggregation;
+module.exports.grpGoalSchemeAggregation = grpGoalSchemeAggregation;
 //module.exports.postMany = postMany;
 module.exports.findOneInvDet = findOneInvDet;
+module.exports.deleteInv = deleteInv;
