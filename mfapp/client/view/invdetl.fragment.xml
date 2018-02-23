@@ -1,5 +1,59 @@
-<core:FragmentDefinition
-	xmlns="sap.m"
-	xmlns:core="sap.ui.core">
-  
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
+	<VBox class="sapUiSmallMargin">
+		<f:Form id="invDetailsForm" editable="false">
+			<f:title>
+				<core:Title text="{i18n>invOvw}"/>
+			</f:title>
+			<f:layout>
+				<f:ResponsiveGridLayout labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false"/>
+			</f:layout>
+			<f:formContainers>
+				<f:FormContainer>
+					<f:formElements>
+						<f:FormElement label="Scheme Name" design="sap.m.LabelDesign.Bold">
+							<f:fields>
+								<Text text="{manageinv_model>sname}" id="sname"/>
+							</f:fields>
+						</f:FormElement>
+
+						<f:FormElement label="Transaction" design="sap.m.LabelDesign.Bold">
+							<f:fields>
+								<Text text="{manageinv_model>transaction}" id="transaction"/>
+							</f:fields>
+						</f:FormElement>
+
+						<f:FormElement label="Investment Date" design="sap.m.LabelDesign.Bold">
+							<f:fields>
+								<Text text="{manageinv_model>invdatefmtd}"/>
+							</f:fields>
+						</f:FormElement>
+
+						<f:FormElement label="Amount" design="Bold">
+							<f:fields>
+								<Text text="{manageinv_model>amount}" id="amount"/>
+							</f:fields>
+						</f:FormElement>
+
+						<f:FormElement label="Invested For" design="sap.m.LabelDesign.Bold">
+							<f:fields>
+								<Text text="{manageinv_model>invFor}" id="invFor"/>
+							</f:fields>
+						</f:FormElement>
+
+						<f:FormElement label="Remarks" design="sap.m.LabelDesign.Bold">
+							<f:fields>
+								<Text text="{manageinv_model>remarks}" id="remarks"/>
+							</f:fields>
+						</f:FormElement>
+
+						<f:FormElement label="Asset Type" design="sap.m.LabelDesign.Bold">
+							<f:fields>
+								<Text text="{manageinv_model>assetType}" id="assetType"/>
+							</f:fields>
+						</f:FormElement>
+					</f:formElements>
+				</f:FormContainer>
+			</f:formContainers>
+		</f:Form>
+	</VBox>
 </core:FragmentDefinition>

@@ -36,7 +36,9 @@ sap.ui
                                          	       this._oRouter.navTo("addschemes");
                                          	        break;
 
-                                              
+                                            
+
+
                                         	    default:
                                         	        break;
                                         	}

@@ -84,6 +84,9 @@
 			"scheme_model": {
 				"type": "sap.ui.model.json.JSONModel"
 			},
+			"manageinv_model": {
+				"type": "sap.ui.model.json.JSONModel"
+			},
 			"amc_model": {
 				"type": "sap.ui.model.json.JSONModel"
 			},
@@ -129,8 +132,7 @@
 			},
 			"splitapp":
 			{
-				"type": "sap.ui.model.json.JSONModel",
-				"dataSource": "splitapp_ds"
+				"type": "sap.ui.model.json.JSONModel"
 			}
 		},
 		"routing": {
@@ -240,6 +242,12 @@
 					"name": "dispallinvgoals",
 					"target": "dispallinvgoals"
 
+				},
+				{
+					"pattern": "manageinv",
+					"name": "manageinv",
+					"target": "manageinv"
+
 				}
 
 			],
@@ -302,6 +310,10 @@
 				},
 				"invdetldisp": {
 					"viewName": "invdetldisp",
+					"viewLevel": 1
+				},
+				"manageinv": {
+					"viewName": "manageinv",
 					"viewLevel": 1
 				},
 				"dispallinvgoals": {

@@ -244,15 +244,16 @@ sap.ui
                                             					if(pdata.length>0)
                                             					{
                                             						data.nav = pdata[0].nav;
-                                            						data.units = data.amount / data.nav;
-                                            						that._destroyMsgStrip(false);
-                                            						that._invrestcall(data);
+
                                             					}
                                             					else
                                             					{
-                                            						//Error fetching NAV Data
-                                            						that._generateMsgStrip("Error fetching NAV. Please contact Admin")
+                                            						//Error fetching NAV Data. Popup for entry by user
+                                                        data.nav  = that._launchOWNNAVPopup();
                                             					}
+                                                      data.units = data.amount / data.nav;
+                                                      that._destroyMsgStrip(false);
+                                                      that._invrestcall(data);
                                             				});
 
                                             	}
@@ -494,6 +495,39 @@ sap.ui
 
                                         var loginuser = this.getOwnerComponent().getModel("loggedin_user");
                                         this._lgndata = loginuser.getData();
+
+                                    },
+                                    _launchOWNNAVPopup:function()
+                                    {
+                                      // create popover
+                                			if (!this._oPopover)
+                                      {
+                                				this._oPopover = sap.ui.xmlfragment("simple_hello.view.ownnav", this);
+                                				this.getView().addDependent(this._oPopover);
+
+                                			}
+
+                                      this._oPopover.attachAfterClose(this._oPopoverclose);
+
+                                      // delay because addDependent will do a async rerendering and the actionSheet will immediately close without it.
+                                        var odateinv = this.getView().byId("mfinvdate");
+                                        jQuery.sap.delayedCall(0, this, function ()
+                                        {
+                                				      this._oPopover.openBy(odateinv);
+                                			  });
+                                    },
+                                    handleCancelPress:function()
+                                    {
+                                      this._oPopover.close();
+                                      this._generateMsgStrip("Error fetching NAV. Please contact Admin")
+                                    },
+                                    handleSubmitPress:function()
+                                    {
+                                      var onavval = this.getView().byId("ownnavval");
+
+                                    },
+                                    _oPopoverclose:function(oEvt)
+                                    {
 
                                     }
 

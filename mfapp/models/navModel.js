@@ -13,9 +13,6 @@ var mfnavSchema = mongoose.Schema({
     date:Date
 });
 
-
-
-
 var mfnavModel = mongoose.model('navdetls', mfnavSchema);
 
 
@@ -35,7 +32,7 @@ try{
 };
 
 
-//This route gets all the documents inside the schemes collection in MongoDB
+//This route gets the NAV based on query passed to it
 async function findOneNav(id)
 {
 try{
@@ -109,7 +106,37 @@ async function postMany(mfnavs)
 }
 
 
+// Get Last NAV details for a scheme
+async function getLastNav(scode)
+{
+  try
+  {
 
+    let aggrres;
+    aggrres = await mfnavModel.aggregate([
+
+
+              { $match: {scode: {$eq: scode}} },
+              {
+                $group: {
+                            _id: {sname:"$sname",scode:"$scode"},
+                            lastNavDate: { $last: "$date" },
+                            lastNavValue:{$last:"$nav"}
+                      }
+              }
+
+        ]);
+
+    return aggrres;
+  }
+  catch (err)
+  {
+
+    return err;
+  }
+}
+
+module.exports.getLastNav = getLastNav;
 module.exports.findAll = findAll;
 module.exports.postOne = postOne;
 module.exports.postMany = postMany;

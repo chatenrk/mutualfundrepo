@@ -14,6 +14,7 @@ const amcroutes = require('./routes/amcroutes');
 const navroutes = require('./routes/navroutes');
 const mfinvroutes = require('./routes/mfinvroutes');
 const goalroute = require('./routes/goalroute');
+const projroute = require('./routes/projroute');
 
 const config = require('./config/database');
 
@@ -56,6 +57,7 @@ app.use('/amc',amcroutes);
 app.use('/nav',navroutes);
 app.use('/mfinv',mfinvroutes);
 app.use('/goal',goalroute);
+app.use('/proj',projroute);
 
 require('./config/passport')(passport);
 

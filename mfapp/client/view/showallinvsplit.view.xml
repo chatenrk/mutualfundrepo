@@ -46,19 +46,21 @@
 			</Page>
 		</detailPages>
 		<masterPages>
-			<Page id="pfmaster" title="Portfolio View" icon="sap-icon://action" class="sapUiStdPage">
+			<Page id="pfmaster" title="Portfolio View" icon="sap-icon://action" class="sapUiStdPage" showNavButton = "true"
+		       navButtonPress = "onNavBack">
 				<content>
-					<List headerText="Goals" items="{splitapp>/goals}" noDataText="{i18n>noDataText}">
+					<List headerText="Goals" items="{splitapp>/}" noDataText="{i18n>noDataText}">
 						<items>
-              <ObjectListItem title="{splitapp>goalName}"
+              <ObjectListItem id="MasterList"
+															title="{splitapp>name}"
                               number="{
-                                        	parts:[{path:'splitapp>goalTotal'},{path:'splitapp>goalCurr'}],
+                                        	parts:[{path:'splitapp>total'},{path:'splitapp>curr'}],
                                           type: 'sap.ui.model.type.Currency',
 					                                formatOptions: {showMeasure: false}
                                       }"
-                              numberUnit="{splitapp>goalCurr}"
+                              numberUnit="{splitapp>curr}"
                               type="Navigation"
-                              press="onPressGoToMaster">
+                              press="onMasterPress">
 
                     <attributes>
   					               <ObjectAttribute text="Total Investments: {splitapp>goalCount}"/>

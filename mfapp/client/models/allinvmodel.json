@@ -1,0 +1,201 @@
+{
+	"FundHierarchy": {
+		"AMC": [{
+				"amccode": "3",
+				"Name": "Aditya Birla Sun Life Mutual Fund",
+        "totalinv":"1000000",
+        "totalcount":"57",
+				"AssetTypes": [{
+						"Name": "Equity",
+            "totalinv":"500000",
+            "totalcount":"27",
+						"Goals": [{
+								"Name": "Education Funds",
+                "totalinv":"300000",
+                "totalcount":"15",
+								"funds": [{
+										"Name": "Aditya Birla Sun Life Equity Fund - Growth - Direct Plan",
+										"scode": "120564",
+                    "totalinv":"135000",
+                    "totalcount":"35",
+										"investments": [{
+												"invdate": "08-Dec-2017",
+												"amount": "3500",
+												"nav": "742.77",
+												"units": "4.712091226086137"
+											},
+											{
+												"invdate": "09-Nov-2017",
+												"amount": "3500",
+												"nav": "739.45",
+												"units": "4.733247684089526"
+											}
+										]
+
+									}
+
+								]
+							}
+
+						]
+					},
+					{
+						"Name": "Debt",
+            "totalinv":"300000",
+            "totalcount":"12",
+						"Goals": [{
+								"Name": "Education Funds",
+                "totalinv":"300000",
+                "totalcount":"15",
+								"funds": [{
+										"Name": "Aditya Birla Sun Life Equity Fund - Growth - Direct Plan",
+										"scode": "120564",
+                    "totalinv":"165000",
+                    "totalcount":"12",
+										"investments": [{
+												"invdate": "08-Dec-2017",
+												"amount": "3500",
+												"nav": "742.77",
+												"units": "4.712091226086137"
+											},
+											{
+												"invdate": "09-Nov-2017",
+												"amount": "3500",
+												"nav": "739.45",
+												"units": "4.733247684089526"
+											}
+										]
+
+									}
+
+								]
+							}
+
+						]
+					},
+					{
+						"Name": "Gold",
+            "totalinv":"400000",
+            "totalcount":"3",
+						"Goals": [{
+								"Name": "Gold Funds",
+                "totalinv":"300000",
+                "totalcount":"15",
+								"funds": [{
+										"Name": "Aditya Birla Sun Life Gold Fund - Growth - Direct Plan",
+										"scode": "120546",
+                    "totalinv":"265000",
+                    "totalcount":"3",
+										"investments": [{
+												"invdate": "17-Feb-2016",
+												"amount": "5000",
+												"nav": "9.3905",
+												"units": "532.4530110217773"
+											},
+											{
+												"invdate": "19-May-2016",
+												"amount": "25000",
+												"nav": "9.9697",
+												"units": "2507.5980220066804"
+											}
+										]
+
+									}
+
+								]
+							}
+
+						]
+					}
+				]
+
+			},
+			{
+				"amccode": "27",
+				"Name": "Franklin Templeton Mutual Fund",
+        "totalinv":"1030000",
+        "totalcount":"37",
+				"AssetTypes": [{
+						"Name": "Equity",
+            "totalinv":"300000",
+            "totalcount":"12",
+						"Goals": [{
+								"Name": "Long Term Investment",
+                "totalinv":"300000",
+                "totalcount":"15",
+								"funds": [{
+										"Name": "Franklin India Smaller Companies Fund - Direct - Growth",
+										"scode": "118525",
+                    "totalinv":"205000",
+                    "totalcount":"16",
+										"investments": [{
+											"invdate": "12-Jun-2016",
+											"amount": "5000",
+											"nav": "37.2881",
+											"units": "134.09103708689904"
+										}, {
+											"invdate": "10-May-2015",
+											"amount": "5000",
+											"nav": "38.5144",
+											"units": "129.82157322975303"
+										}]
+
+									}
+
+								]
+							}
+
+						]
+					},
+					{
+						"Name": "Debt",
+            "totalinv":"300000",
+            "totalcount":"12",
+						"Goals": [{
+								"Name": "Debt Investment",
+                "totalinv":"300000",
+                "totalcount":"15",
+								"funds": [{
+										"Name": "Franklin India Low Duration Fund - Direct - Growth",
+										"scode": "118530",
+                    "totalinv":"45000",
+                    "totalcount":"4",
+										"investments": [{
+											"invdate": "15-Aug-2017",
+											"amount": "5000",
+											"nav": "19.3994",
+											"units": "257.73993010093096"
+										}, {
+											"invdate": "17-Sep-2017",
+											"amount": "5000",
+											"nav": "19.5994",
+											"units": "253.73993010093096"
+										}]
+
+									}
+
+								]
+							}
+
+						]
+					},
+					{
+						"Name": "Gold",
+            "totalinv":"300000",
+            "totalcount":"12",
+						"Goals": [{
+								"Name": "Gold Funds",
+                "totalinv":"0",
+                "totalcount":"0"
+
+							}
+
+						]
+					}
+				]
+
+			}
+
+		]
+	}
+}

@@ -41,6 +41,12 @@
 			"icon": "sap-icon://add",
 			"type": "Create",
 			"title": "Add Multiple NAV"
+		},
+		{
+			"id": "manageinv",
+			"icon": "sap-icon://add",
+			"type": "Create",
+			"title": "Manage Investments"
 		}
 
 	],

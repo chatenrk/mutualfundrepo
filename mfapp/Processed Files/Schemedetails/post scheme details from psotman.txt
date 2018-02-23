@@ -1,0 +1,25 @@
+scode : 123864
+sname : Aditya Birla Sun Life Government Securities Fund - Short Term Plan - Weekly Dividend - Regular Plan
+fhouse : Aditya Birla Sun Life Mutual Fund
+ptype : Regular Plan
+schtype : Weekly Dividend Option
+category : Debt: Short Term
+assets : 1811
+assetdate : 31-Dec-2017
+expense : 0.70
+expensedate : 31-Dec-2017     
+ldate : 28-Oct-1999
+bmark : Crisil Short-Term Bond
+risk : Moderate
+return: 
+rlaunch: 9.25
+mininv : 1000
+minaddinv : 1000
+minwith : 500
+minswpwith : 1000
+minbal : 0
+exitload : 0
+imgpath : ./images/AB.jpg
+schurl : https://www.valueresearchonline.com/funds/newsnapshot.asp?schemecode=683
+assetcurr : Rupees
+assetqual : Crore

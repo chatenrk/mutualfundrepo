@@ -1,0 +1,1939 @@
+Scheme Code;Scheme Name;Net Asset Value;Repurchase Price;Sale Price;Date
+
+Open Ended Schemes ( Income )
+
+
+Motilal Oswal Mutual Fund
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.1587;11.1587;11.1587;01-Jan-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.1611;11.1611;11.1611;02-Jan-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.1679;11.1679;11.1679;05-Jan-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.1700;11.1700;11.1700;06-Jan-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.1723;11.1723;11.1723;07-Jan-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.1744;11.1744;11.1744;08-Jan-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.1770;11.1770;11.1770;09-Jan-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.1834;11.1834;11.1834;12-Jan-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.1857;11.1857;11.1857;13-Jan-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.1879;11.1879;11.1879;14-Jan-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.1911;11.1911;11.1911;15-Jan-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.1933;11.1933;11.1933;16-Jan-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.1999;11.1999;11.1999;19-Jan-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2023;11.2023;11.2023;20-Jan-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2042;11.2042;11.2042;21-Jan-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2063;11.2063;11.2063;22-Jan-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2086;11.2086;11.2086;23-Jan-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2173;11.2173;11.2173;27-Jan-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2195;11.2195;11.2195;28-Jan-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2216;11.2216;11.2216;29-Jan-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2236;11.2236;11.2236;30-Jan-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2300;11.2300;11.2300;02-Feb-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2321;11.2321;11.2321;03-Feb-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2346;11.2346;11.2346;04-Feb-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2368;11.2368;11.2368;05-Feb-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2388;11.2388;11.2388;06-Feb-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2442;11.2442;11.2442;09-Feb-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2466;11.2466;11.2466;10-Feb-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2473;11.2473;11.2473;11-Feb-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2456;11.2456;11.2456;12-Feb-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2486;11.2486;11.2486;13-Feb-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2556;11.2556;11.2556;16-Feb-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2603;11.2603;11.2603;18-Feb-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2657;11.2657;11.2657;20-Feb-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2740;11.2740;11.2740;23-Feb-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2763;11.2763;11.2763;24-Feb-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2790;11.2790;11.2790;25-Feb-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2814;11.2814;11.2814;26-Feb-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2834;11.2834;11.2834;27-Feb-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2901;11.2901;11.2901;02-Mar-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2923;11.2923;11.2923;03-Mar-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.2980;11.2980;11.2980;04-Mar-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.3006;11.3006;11.3006;05-Mar-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.3090;11.3090;11.3090;09-Mar-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.3109;11.3109;11.3109;10-Mar-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.3128;11.3128;11.3128;11-Mar-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.3150;11.3150;11.3150;12-Mar-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.3174;11.3174;11.3174;13-Mar-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.3241;11.3241;11.3241;16-Mar-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.3266;11.3266;11.3266;17-Mar-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.3286;11.3286;11.3286;18-Mar-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.3311;11.3311;11.3311;19-Mar-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.3332;11.3332;11.3332;20-Mar-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.3391;11.3391;11.3391;23-Mar-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.3404;11.3404;11.3404;24-Mar-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.3431;11.3431;11.3431;25-Mar-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.3457;11.3457;11.3457;26-Mar-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.3483;11.3483;11.3483;27-Mar-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.3557;11.3557;11.3557;30-Mar-2015
+124234;MOSt Ultra Short Term Bond Fund-Direct Plan- Growth;11.3655;11.3655;11.3655;31-Mar-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0012;10.0012;10.0012;01-Jan-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0013;10.0013;10.0013;02-Jan-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0012;10.0012;10.0012;05-Jan-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0010;10.0010;10.0010;06-Jan-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0011;10.0011;10.0011;07-Jan-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0009;10.0009;10.0009;08-Jan-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0012;10.0012;10.0012;09-Jan-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0007;10.0007;10.0007;12-Jan-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0007;10.0007;10.0007;13-Jan-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0007;10.0007;10.0007;14-Jan-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0016;10.0016;10.0016;15-Jan-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0015;10.0015;10.0015;16-Jan-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0013;10.0013;10.0013;19-Jan-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0014;10.0014;10.0014;20-Jan-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0011;10.0011;10.0011;21-Jan-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0010;10.0010;10.0010;22-Jan-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0010;10.0010;10.0010;23-Jan-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0008;10.0008;10.0008;27-Jan-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0007;10.0007;10.0007;28-Jan-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0006;10.0006;10.0006;29-Jan-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0003;10.0003;10.0003;30-Jan-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;02-Feb-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;03-Feb-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;04-Feb-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;05-Feb-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;06-Feb-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;09-Feb-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;10-Feb-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;11-Feb-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;9.9985;9.9985;9.9985;12-Feb-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;13-Feb-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;16-Feb-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;18-Feb-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;20-Feb-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;23-Feb-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;24-Feb-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;25-Feb-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;26-Feb-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;27-Feb-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;02-Mar-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;03-Mar-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;04-Mar-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;05-Mar-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;09-Mar-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;10-Mar-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;11-Mar-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;12-Mar-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;13-Mar-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;16-Mar-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;17-Mar-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;18-Mar-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;19-Mar-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;20-Mar-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;23-Mar-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;24-Mar-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;25-Mar-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;26-Mar-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;27-Mar-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0000;10.0000;10.0000;30-Mar-2015
+124316;MOSt Ultra Short Term Bond Fund-Direct Plan-Daily Dividend Option;10.0035;10.0035;10.0035;31-Mar-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0041;10.0041;10.0041;18-Feb-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0089;10.0089;10.0089;20-Feb-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0000;10.0000;10.0000;23-Feb-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0021;10.0021;10.0021;24-Feb-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0045;10.0045;10.0045;25-Feb-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0066;10.0066;10.0066;26-Feb-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0084;10.0084;10.0084;27-Feb-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0000;10.0000;10.0000;02-Mar-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0019;10.0019;10.0019;03-Mar-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0070;10.0070;10.0070;04-Mar-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0093;10.0093;10.0093;05-Mar-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0000;10.0000;10.0000;09-Mar-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0016;10.0016;10.0016;10-Mar-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0033;10.0033;10.0033;11-Mar-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0052;10.0052;10.0052;12-Mar-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0073;10.0073;10.0073;13-Mar-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0000;10.0000;10.0000;16-Mar-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0022;10.0022;10.0022;17-Mar-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0040;10.0040;10.0040;18-Mar-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0062;10.0062;10.0062;19-Mar-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0080;10.0080;10.0080;20-Mar-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0000;10.0000;10.0000;23-Mar-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0012;10.0012;10.0012;24-Mar-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0035;10.0035;10.0035;25-Mar-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0058;10.0058;10.0058;26-Mar-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0081;10.0081;10.0081;27-Mar-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0000;10.0000;10.0000;30-Mar-2015
+124306;MOSt Ultra Short Term Bond Fund-Direct Plan-Weekly Dividend Option;10.0087;10.0087;10.0087;31-Mar-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.0482;11.0482;11.0482;01-Jan-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.0503;11.0503;11.0503;02-Jan-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.0564;11.0564;11.0564;05-Jan-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.0583;11.0583;11.0583;06-Jan-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.0603;11.0603;11.0603;07-Jan-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.0622;11.0622;11.0622;08-Jan-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.0645;11.0645;11.0645;09-Jan-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.0701;11.0701;11.0701;12-Jan-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.0721;11.0721;11.0721;13-Jan-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.0741;11.0741;11.0741;14-Jan-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.0771;11.0771;11.0771;15-Jan-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.0791;11.0791;11.0791;16-Jan-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.0849;11.0849;11.0849;19-Jan-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.0870;11.0870;11.0870;20-Jan-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.0887;11.0887;11.0887;21-Jan-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.0905;11.0905;11.0905;22-Jan-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.0926;11.0926;11.0926;23-Jan-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1003;11.1003;11.1003;27-Jan-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1022;11.1022;11.1022;28-Jan-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1041;11.1041;11.1041;29-Jan-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1058;11.1058;11.1058;30-Jan-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1115;11.1115;11.1115;02-Feb-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1133;11.1133;11.1133;03-Feb-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1156;11.1156;11.1156;04-Feb-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1175;11.1175;11.1175;05-Feb-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1192;11.1192;11.1192;06-Feb-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1239;11.1239;11.1239;09-Feb-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1260;11.1260;11.1260;10-Feb-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1265;11.1265;11.1265;11-Feb-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1246;11.1246;11.1246;12-Feb-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1274;11.1274;11.1274;13-Feb-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1336;11.1336;11.1336;16-Feb-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1378;11.1378;11.1378;18-Feb-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1426;11.1426;11.1426;20-Feb-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1502;11.1502;11.1502;23-Feb-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1523;11.1523;11.1523;24-Feb-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1547;11.1547;11.1547;25-Feb-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1568;11.1568;11.1568;26-Feb-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1586;11.1586;11.1586;27-Feb-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1645;11.1645;11.1645;02-Mar-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1664;11.1664;11.1664;03-Mar-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1719;11.1719;11.1719;04-Mar-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1742;11.1742;11.1742;05-Mar-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1816;11.1816;11.1816;09-Mar-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1832;11.1832;11.1832;10-Mar-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1849;11.1849;11.1849;11-Mar-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1868;11.1868;11.1868;12-Mar-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1889;11.1889;11.1889;13-Mar-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1949;11.1949;11.1949;16-Mar-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1971;11.1971;11.1971;17-Mar-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.1989;11.1989;11.1989;18-Mar-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.2012;11.2012;11.2012;19-Mar-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.2030;11.2030;11.2030;20-Mar-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.2081;11.2081;11.2081;23-Mar-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.2092;11.2092;11.2092;24-Mar-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.2116;11.2116;11.2116;25-Mar-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.2140;11.2140;11.2140;26-Mar-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.2164;11.2164;11.2164;27-Mar-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.2229;11.2229;11.2229;30-Mar-2015
+124233;MOSt Ultra Short Term Bond Fund-Regular Plan- Growth;11.2324;11.2324;11.2324;31-Mar-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0012;10.0012;10.0012;01-Jan-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0013;10.0013;10.0013;02-Jan-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0012;10.0012;10.0012;05-Jan-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0010;10.0010;10.0010;06-Jan-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0011;10.0011;10.0011;07-Jan-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0009;10.0009;10.0009;08-Jan-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0012;10.0012;10.0012;09-Jan-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0007;10.0007;10.0007;12-Jan-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0007;10.0007;10.0007;13-Jan-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0007;10.0007;10.0007;14-Jan-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0016;10.0016;10.0016;15-Jan-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0015;10.0015;10.0015;16-Jan-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0013;10.0013;10.0013;19-Jan-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0014;10.0014;10.0014;20-Jan-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0011;10.0011;10.0011;21-Jan-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0010;10.0010;10.0010;22-Jan-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0010;10.0010;10.0010;23-Jan-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0008;10.0008;10.0008;27-Jan-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0007;10.0007;10.0007;28-Jan-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0006;10.0006;10.0006;29-Jan-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0003;10.0003;10.0003;30-Jan-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;02-Feb-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;03-Feb-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;04-Feb-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;05-Feb-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;06-Feb-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;09-Feb-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;10-Feb-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;11-Feb-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;9.9983;9.9983;9.9983;12-Feb-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;13-Feb-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;16-Feb-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;18-Feb-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;20-Feb-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;23-Feb-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;24-Feb-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;25-Feb-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;26-Feb-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;27-Feb-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;02-Mar-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;03-Mar-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;04-Mar-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;05-Mar-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;09-Mar-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;10-Mar-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;11-Mar-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;12-Mar-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;13-Mar-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;16-Mar-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;17-Mar-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;18-Mar-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;19-Mar-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;20-Mar-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;23-Mar-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;24-Mar-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;25-Mar-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;26-Mar-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;27-Mar-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0000;10.0000;10.0000;30-Mar-2015
+124303;MOSt Ultra Short Term Bond Fund-Regular Plan-Daily Dividend Option;10.0035;10.0035;10.0035;31-Mar-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0073;10.0073;10.0073;01-Jan-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0092;10.0092;10.0092;02-Jan-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0147;10.0147;10.0147;05-Jan-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0164;10.0164;10.0164;06-Jan-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0183;10.0183;10.0183;07-Jan-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0200;10.0200;10.0200;08-Jan-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0222;10.0222;10.0222;09-Jan-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0008;10.0008;10.0008;12-Jan-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0026;10.0026;10.0026;13-Jan-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0044;10.0044;10.0044;14-Jan-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0071;10.0071;10.0071;15-Jan-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0088;10.0088;10.0088;16-Jan-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0141;10.0141;10.0141;19-Jan-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0160;10.0160;10.0160;20-Jan-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0175;10.0175;10.0175;21-Jan-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0192;10.0192;10.0192;22-Jan-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0211;10.0211;10.0211;23-Jan-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0008;10.0008;10.0008;27-Jan-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0025;10.0025;10.0025;28-Jan-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0042;10.0042;10.0042;29-Jan-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0057;10.0057;10.0057;30-Jan-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0109;10.0109;10.0109;02-Feb-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0125;10.0125;10.0125;03-Feb-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0146;10.0146;10.0146;04-Feb-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0163;10.0163;10.0163;05-Feb-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0179;10.0179;10.0179;06-Feb-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0221;10.0221;10.0221;09-Feb-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0240;10.0240;10.0240;10-Feb-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0245;10.0245;10.0245;11-Feb-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0228;10.0228;10.0228;12-Feb-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0253;10.0253;10.0253;13-Feb-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0000;10.0000;10.0000;16-Feb-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0037;10.0037;10.0037;18-Feb-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0081;10.0081;10.0081;20-Feb-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0149;10.0149;10.0149;23-Feb-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0168;10.0168;10.0168;24-Feb-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0190;10.0190;10.0190;25-Feb-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0209;10.0209;10.0209;26-Feb-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0225;10.0225;10.0225;27-Feb-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0000;10.0000;10.0000;02-Mar-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0018;10.0018;10.0018;03-Mar-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0066;10.0066;10.0066;04-Mar-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0087;10.0087;10.0087;05-Mar-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0154;10.0154;10.0154;09-Mar-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0208;10.0208;10.0208;10-Mar-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0224;10.0224;10.0224;11-Mar-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0241;10.0241;10.0241;12-Mar-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0260;10.0260;10.0260;13-Mar-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0000;10.0000;10.0000;16-Mar-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0019;10.0019;10.0019;17-Mar-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0036;10.0036;10.0036;18-Mar-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0056;10.0056;10.0056;19-Mar-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0072;10.0072;10.0072;20-Mar-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0118;10.0118;10.0118;23-Mar-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0127;10.0127;10.0127;24-Mar-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0149;10.0149;10.0149;25-Mar-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0171;10.0171;10.0171;26-Mar-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0192;10.0192;10.0192;27-Mar-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0000;10.0000;10.0000;30-Mar-2015
+124313;MOSt Ultra Short Term Bond Fund-Regular Plan-Fortnightly Dividend Option;10.0085;10.0085;10.0085;31-Mar-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0072;10.0072;10.0072;01-Jan-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0091;10.0091;10.0091;02-Jan-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0146;10.0146;10.0146;05-Jan-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0163;10.0163;10.0163;06-Jan-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0182;10.0182;10.0182;07-Jan-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0198;10.0198;10.0198;08-Jan-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0220;10.0220;10.0220;09-Jan-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0270;10.0270;10.0270;12-Jan-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0289;10.0289;10.0289;13-Jan-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0307;10.0307;10.0307;14-Jan-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0334;10.0334;10.0334;15-Jan-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0351;10.0351;10.0351;16-Jan-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0404;10.0404;10.0404;19-Jan-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0424;10.0424;10.0424;20-Jan-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0439;10.0439;10.0439;21-Jan-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0455;10.0455;10.0455;22-Jan-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0474;10.0474;10.0474;23-Jan-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0544;10.0544;10.0544;27-Jan-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0561;10.0561;10.0561;28-Jan-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0578;10.0578;10.0578;29-Jan-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0594;10.0594;10.0594;30-Jan-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0000;10.0000;10.0000;02-Feb-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0017;10.0017;10.0017;03-Feb-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0037;10.0037;10.0037;04-Feb-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0054;10.0054;10.0054;05-Feb-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0070;10.0070;10.0070;06-Feb-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0112;10.0112;10.0112;09-Feb-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0131;10.0131;10.0131;10-Feb-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0135;10.0135;10.0135;11-Feb-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0118;10.0118;10.0118;12-Feb-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0143;10.0143;10.0143;13-Feb-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0199;10.0199;10.0199;16-Feb-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0237;10.0237;10.0237;18-Feb-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0281;10.0281;10.0281;20-Feb-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0348;10.0348;10.0348;23-Feb-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0367;10.0367;10.0367;24-Feb-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0389;10.0389;10.0389;25-Feb-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0408;10.0408;10.0408;26-Feb-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0424;10.0424;10.0424;27-Feb-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0000;10.0000;10.0000;02-Mar-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0017;10.0017;10.0017;03-Mar-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0066;10.0066;10.0066;04-Mar-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0087;10.0087;10.0087;05-Mar-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0153;10.0153;10.0153;09-Mar-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0168;10.0168;10.0168;10-Mar-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0183;10.0183;10.0183;11-Mar-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0200;10.0200;10.0200;12-Mar-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0219;10.0219;10.0219;13-Mar-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0273;10.0273;10.0273;16-Mar-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0292;10.0292;10.0292;17-Mar-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0308;10.0308;10.0308;18-Mar-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0328;10.0328;10.0328;19-Mar-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0344;10.0344;10.0344;20-Mar-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0390;10.0390;10.0390;23-Mar-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0400;10.0400;10.0400;24-Mar-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0422;10.0422;10.0422;25-Mar-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0441;10.0441;10.0441;26-Mar-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0462;10.0462;10.0462;27-Mar-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0000;10.0000;10.0000;30-Mar-2015
+124315;MOSt Ultra Short Term Bond Fund-Regular Plan-Monthly Dividend Plan;10.0085;10.0085;10.0085;31-Mar-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0209;10.0209;10.0209;01-Jan-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0229;10.0229;10.0229;02-Jan-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0284;10.0284;10.0284;05-Jan-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0301;10.0301;10.0301;06-Jan-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0319;10.0319;10.0319;07-Jan-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0336;10.0336;10.0336;08-Jan-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0357;10.0357;10.0357;09-Jan-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0408;10.0408;10.0408;12-Jan-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0427;10.0427;10.0427;13-Jan-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0444;10.0444;10.0444;14-Jan-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0471;10.0471;10.0471;15-Jan-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0489;10.0489;10.0489;16-Jan-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0542;10.0542;10.0542;19-Jan-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0561;10.0561;10.0561;20-Jan-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0576;10.0576;10.0576;21-Jan-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0593;10.0593;10.0593;22-Jan-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0612;10.0612;10.0612;23-Jan-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0682;10.0682;10.0682;27-Jan-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0699;10.0699;10.0699;28-Jan-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0716;10.0716;10.0716;29-Jan-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0732;10.0732;10.0732;30-Jan-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0784;10.0784;10.0784;02-Feb-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0800;10.0800;10.0800;03-Feb-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0821;10.0821;10.0821;04-Feb-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0838;10.0838;10.0838;05-Feb-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0854;10.0854;10.0854;06-Feb-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0896;10.0896;10.0896;09-Feb-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0915;10.0915;10.0915;10-Feb-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0920;10.0920;10.0920;11-Feb-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0902;10.0902;10.0902;12-Feb-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0927;10.0927;10.0927;13-Feb-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0984;10.0984;10.0984;16-Feb-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1022;10.1022;10.1022;18-Feb-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1066;10.1066;10.1066;20-Feb-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1134;10.1134;10.1134;23-Feb-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1153;10.1153;10.1153;24-Feb-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1175;10.1175;10.1175;25-Feb-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1194;10.1194;10.1194;26-Feb-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1210;10.1210;10.1210;27-Feb-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1264;10.1264;10.1264;02-Mar-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1282;10.1282;10.1282;03-Mar-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1331;10.1331;10.1331;04-Mar-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1352;10.1352;10.1352;05-Mar-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1419;10.1419;10.1419;09-Mar-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1434;10.1434;10.1434;10-Mar-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1449;10.1449;10.1449;11-Mar-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1466;10.1466;10.1466;12-Mar-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1486;10.1486;10.1486;13-Mar-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1540;10.1540;10.1540;16-Mar-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1560;10.1560;10.1560;17-Mar-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1576;10.1576;10.1576;18-Mar-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1597;10.1597;10.1597;19-Mar-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1613;10.1613;10.1613;20-Mar-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1660;10.1660;10.1660;23-Mar-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1669;10.1669;10.1669;24-Mar-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1691;10.1691;10.1691;25-Mar-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1713;10.1713;10.1713;26-Mar-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.1734;10.1734;10.1734;27-Mar-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0194;10.0194;10.0194;30-Mar-2015
+124305;MOSt Ultra Short Term Bond Fund-Regular Plan-Quarterly Dividend Plan;10.0279;10.0279;10.0279;31-Mar-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0072;10.0072;10.0072;01-Jan-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0091;10.0091;10.0091;02-Jan-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0012;10.0012;10.0012;05-Jan-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0029;10.0029;10.0029;06-Jan-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0048;10.0048;10.0048;07-Jan-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0064;10.0064;10.0064;08-Jan-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0085;10.0085;10.0085;09-Jan-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0007;10.0007;10.0007;12-Jan-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0026;10.0026;10.0026;13-Jan-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0044;10.0044;10.0044;14-Jan-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0070;10.0070;10.0070;15-Jan-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0088;10.0088;10.0088;16-Jan-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0013;10.0013;10.0013;19-Jan-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0032;10.0032;10.0032;20-Jan-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0047;10.0047;10.0047;21-Jan-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0064;10.0064;10.0064;22-Jan-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0083;10.0083;10.0083;23-Jan-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0008;10.0008;10.0008;27-Jan-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0025;10.0025;10.0025;28-Jan-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0042;10.0042;10.0042;29-Jan-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0058;10.0058;10.0058;30-Jan-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0000;10.0000;10.0000;02-Feb-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0017;10.0017;10.0017;03-Feb-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0037;10.0037;10.0037;04-Feb-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0054;10.0054;10.0054;05-Feb-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0070;10.0070;10.0070;06-Feb-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0000;10.0000;10.0000;09-Feb-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0019;10.0019;10.0019;10-Feb-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0024;10.0024;10.0024;11-Feb-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0007;10.0007;10.0007;12-Feb-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0031;10.0031;10.0031;13-Feb-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0000;10.0000;10.0000;16-Feb-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0037;10.0037;10.0037;18-Feb-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0081;10.0081;10.0081;20-Feb-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0000;10.0000;10.0000;23-Feb-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0019;10.0019;10.0019;24-Feb-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0040;10.0040;10.0040;25-Feb-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0060;10.0060;10.0060;26-Feb-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0075;10.0075;10.0075;27-Feb-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0000;10.0000;10.0000;02-Mar-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0017;10.0017;10.0017;03-Mar-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0066;10.0066;10.0066;04-Mar-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0087;10.0087;10.0087;05-Mar-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0000;10.0000;10.0000;09-Mar-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0005;10.0005;10.0005;10-Mar-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0021;10.0021;10.0021;11-Mar-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0037;10.0037;10.0037;12-Mar-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0057;10.0057;10.0057;13-Mar-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0000;10.0000;10.0000;16-Mar-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0020;10.0020;10.0020;17-Mar-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0036;10.0036;10.0036;18-Mar-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0056;10.0056;10.0056;19-Mar-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0072;10.0072;10.0072;20-Mar-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0000;10.0000;10.0000;23-Mar-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0009;10.0009;10.0009;24-Mar-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0031;10.0031;10.0031;25-Mar-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0053;10.0053;10.0053;26-Mar-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0074;10.0074;10.0074;27-Mar-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0000;10.0000;10.0000;30-Mar-2015
+124310;MOSt Ultra Short Term Bond Fund-Regular Plan-Weekly Dividend Option;10.0085;10.0085;10.0085;31-Mar-2015
+
+Open Ended Schemes ( Growth )
+
+
+Motilal Oswal Mutual Fund
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;14.3195;14.3195;14.3195;01-Jan-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;14.4389;14.4389;14.4389;02-Jan-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;14.4327;14.4327;14.4327;05-Jan-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;14.0630;14.0630;14.0630;06-Jan-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;14.1286;14.1286;14.1286;07-Jan-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;14.3706;14.3706;14.3706;08-Jan-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;14.4275;14.4275;14.4275;09-Jan-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;14.5645;14.5645;14.5645;12-Jan-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;14.5702;14.5702;14.5702;13-Jan-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;14.6228;14.6228;14.6228;14-Jan-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;14.9335;14.9335;14.9335;15-Jan-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;14.9955;14.9955;14.9955;16-Jan-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.0524;15.0524;15.0524;19-Jan-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.1536;15.1536;15.1536;20-Jan-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.2554;15.2554;15.2554;21-Jan-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.3226;15.3226;15.3226;22-Jan-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.4100;15.4100;15.4100;23-Jan-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.6654;15.6654;15.6654;27-Jan-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.6795;15.6795;15.6795;28-Jan-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.7149;15.7149;15.7149;29-Jan-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.5439;15.5439;15.5439;30-Jan-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.5482;15.5482;15.5482;02-Feb-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.4173;15.4173;15.4173;03-Feb-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.2427;15.2427;15.2427;04-Feb-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.2552;15.2552;15.2552;05-Feb-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.0609;15.0609;15.0609;06-Feb-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;14.7879;14.7879;14.7879;09-Feb-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;14.8164;14.8164;14.8164;10-Feb-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.0672;15.0672;15.0672;11-Feb-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.2969;15.2969;15.2969;12-Feb-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.4880;15.4880;15.4880;13-Feb-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.4436;15.4436;15.4436;16-Feb-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.6299;15.6299;15.6299;18-Feb-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.6939;15.6939;15.6939;19-Feb-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.6559;15.6559;15.6559;20-Feb-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.5172;15.5172;15.5172;23-Feb-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.5544;15.5544;15.5544;24-Feb-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.5127;15.5127;15.5127;25-Feb-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.2978;15.2978;15.2978;26-Feb-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.5885;15.5885;15.5885;27-Feb-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.9754;15.9754;15.9754;02-Mar-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;16.0868;16.0868;16.0868;03-Mar-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;16.0440;16.0440;16.0440;04-Mar-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;16.1004;16.1004;16.1004;05-Mar-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.8382;15.8382;15.8382;09-Mar-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.7709;15.7709;15.7709;10-Mar-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.7563;15.7563;15.7563;11-Mar-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.8152;15.8152;15.8152;12-Mar-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.6104;15.6104;15.6104;13-Mar-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.6177;15.6177;15.6177;16-Mar-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.8068;15.8068;15.8068;17-Mar-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.8016;15.8016;15.8016;18-Mar-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.7248;15.7248;15.7248;19-Mar-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.5748;15.5748;15.5748;20-Mar-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.4344;15.4344;15.4344;23-Mar-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.4034;15.4034;15.4034;24-Mar-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.3500;15.3500;15.3500;25-Mar-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.0996;15.0996;15.0996;26-Mar-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.1494;15.1494;15.1494;27-Mar-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.3537;15.3537;15.3537;30-Mar-2015
+122390;MOSt Focused 25 Fund- Direct Plan Dividend Option;15.4084;15.4084;15.4084;31-Mar-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;15.4539;15.4539;15.4539;01-Jan-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;15.5827;15.5827;15.5827;02-Jan-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;15.5760;15.5760;15.5760;05-Jan-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;15.1770;15.1770;15.1770;06-Jan-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;15.2479;15.2479;15.2479;07-Jan-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;15.5091;15.5091;15.5091;08-Jan-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;15.5704;15.5704;15.5704;09-Jan-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;15.7183;15.7183;15.7183;12-Jan-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;15.7245;15.7245;15.7245;13-Jan-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;15.7812;15.7812;15.7812;14-Jan-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.1165;16.1165;16.1165;15-Jan-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.1834;16.1834;16.1834;16-Jan-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.2449;16.2449;16.2449;19-Jan-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.3541;16.3541;16.3541;20-Jan-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.4639;16.4639;16.4639;21-Jan-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.5365;16.5365;16.5365;22-Jan-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.6308;16.6308;16.6308;23-Jan-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.9064;16.9064;16.9064;27-Jan-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.9216;16.9216;16.9216;28-Jan-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.9599;16.9599;16.9599;29-Jan-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.7753;16.7753;16.7753;30-Jan-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.7800;16.7800;16.7800;02-Feb-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.6386;16.6386;16.6386;03-Feb-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.4502;16.4502;16.4502;04-Feb-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.4637;16.4637;16.4637;05-Feb-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.2540;16.2540;16.2540;06-Feb-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;15.9594;15.9594;15.9594;09-Feb-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;15.9902;15.9902;15.9902;10-Feb-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.2608;16.2608;16.2608;11-Feb-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.5087;16.5087;16.5087;12-Feb-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.7150;16.7150;16.7150;13-Feb-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.6670;16.6670;16.6670;16-Feb-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.8681;16.8681;16.8681;18-Feb-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.9371;16.9371;16.9371;19-Feb-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.8962;16.8962;16.8962;20-Feb-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.7465;16.7465;16.7465;23-Feb-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.7866;16.7866;16.7866;24-Feb-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.7416;16.7416;16.7416;25-Feb-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.5097;16.5097;16.5097;26-Feb-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.8235;16.8235;16.8235;27-Feb-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;17.2409;17.2409;17.2409;02-Mar-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;17.3612;17.3612;17.3612;03-Mar-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;17.3150;17.3150;17.3150;04-Mar-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;17.3759;17.3759;17.3759;05-Mar-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;17.0929;17.0929;17.0929;09-Mar-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;17.0203;17.0203;17.0203;10-Mar-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;17.0046;17.0046;17.0046;11-Mar-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;17.0680;17.0680;17.0680;12-Mar-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.8471;16.8471;16.8471;13-Mar-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.8550;16.8550;16.8550;16-Mar-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;17.0590;17.0590;17.0590;17-Mar-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;17.0534;17.0534;17.0534;18-Mar-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.9705;16.9705;16.9705;19-Mar-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.8086;16.8086;16.8086;20-Mar-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.6572;16.6572;16.6572;23-Mar-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.6237;16.6237;16.6237;24-Mar-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.5660;16.5660;16.5660;25-Mar-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.2958;16.2958;16.2958;26-Mar-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.3496;16.3496;16.3496;27-Mar-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.5700;16.5700;16.5700;30-Mar-2015
+122389;MOSt Focused 25 Fund- Direct Plan Growth Option;16.6290;16.6290;16.6290;31-Mar-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;13.9685;13.9685;13.9685;01-Jan-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.0844;14.0844;14.0844;02-Jan-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.0766;14.0766;14.0766;05-Jan-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;13.7155;13.7155;13.7155;06-Jan-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;13.7790;13.7790;13.7790;07-Jan-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.0144;14.0144;14.0144;08-Jan-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.0693;14.0693;14.0693;09-Jan-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.2012;14.2012;14.2012;12-Jan-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.2062;14.2062;14.2062;13-Jan-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.2569;14.2569;14.2569;14-Jan-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.5593;14.5593;14.5593;15-Jan-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.6191;14.6191;14.6191;16-Jan-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.6728;14.6728;14.6728;19-Jan-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.7709;14.7709;14.7709;20-Jan-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.8695;14.8695;14.8695;21-Jan-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.9345;14.9345;14.9345;22-Jan-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.0190;15.0190;15.0190;23-Jan-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.2655;15.2655;15.2655;27-Jan-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.2786;15.2786;15.2786;28-Jan-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.3126;15.3126;15.3126;29-Jan-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.1453;15.1453;15.1453;30-Jan-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.1477;15.1477;15.1477;02-Feb-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.0195;15.0195;15.0195;03-Feb-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.8488;14.8488;14.8488;04-Feb-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.8604;14.8604;14.8604;05-Feb-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.6705;14.6705;14.6705;06-Feb-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.4028;14.4028;14.4028;09-Feb-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.4300;14.4300;14.4300;10-Feb-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.6737;14.6737;14.6737;11-Feb-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.8968;14.8968;14.8968;12-Feb-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.0823;15.0823;15.0823;13-Feb-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.0372;15.0372;15.0372;16-Feb-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.2174;15.2174;15.2174;18-Feb-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.2791;15.2791;15.2791;19-Feb-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.2415;15.2415;15.2415;20-Feb-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.1046;15.1046;15.1046;23-Feb-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.1401;15.1401;15.1401;24-Feb-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.0990;15.0990;15.0990;25-Feb-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.8892;14.8892;14.8892;26-Feb-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.1716;15.1716;15.1716;27-Feb-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.5462;15.5462;15.5462;02-Mar-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.6540;15.6540;15.6540;03-Mar-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.6117;15.6117;15.6117;04-Mar-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.6539;15.6539;15.6539;05-Mar-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.3964;15.3964;15.3964;09-Mar-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.3303;15.3303;15.3303;10-Mar-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.3156;15.3156;15.3156;11-Mar-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.3721;15.3721;15.3721;12-Mar-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.1725;15.1725;15.1725;13-Mar-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.1778;15.1778;15.1778;16-Mar-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.3609;15.3609;15.3609;17-Mar-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.3552;15.3552;15.3552;18-Mar-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.2800;15.2800;15.2800;19-Mar-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;15.1336;15.1336;15.1336;20-Mar-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.9954;14.9954;14.9954;23-Mar-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.9647;14.9647;14.9647;24-Mar-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.9122;14.9122;14.9122;25-Mar-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.6683;14.6683;14.6683;26-Mar-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.7162;14.7162;14.7162;27-Mar-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.9128;14.9128;14.9128;30-Mar-2015
+122388;MOSt Focused 25 Fund- Regular Plan Dividend Option;14.9653;14.9653;14.9653;31-Mar-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;15.0708;15.0708;15.0708;01-Jan-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;15.1958;15.1958;15.1958;02-Jan-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;15.1875;15.1875;15.1875;05-Jan-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;14.7978;14.7978;14.7978;06-Jan-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;14.8663;14.8663;14.8663;07-Jan-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;15.1204;15.1204;15.1204;08-Jan-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;15.1795;15.1795;15.1795;09-Jan-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;15.3219;15.3219;15.3219;12-Jan-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;15.3273;15.3273;15.3273;13-Jan-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;15.3820;15.3820;15.3820;14-Jan-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;15.7082;15.7082;15.7082;15-Jan-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;15.7728;15.7728;15.7728;16-Jan-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;15.8307;15.8307;15.8307;19-Jan-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;15.9366;15.9366;15.9366;20-Jan-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.0430;16.0430;16.0430;21-Jan-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.1130;16.1130;16.1130;22-Jan-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.2042;16.2042;16.2042;23-Jan-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.4702;16.4702;16.4702;27-Jan-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.4843;16.4843;16.4843;28-Jan-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.5209;16.5209;16.5209;29-Jan-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.3405;16.3405;16.3405;30-Jan-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.3430;16.3430;16.3430;02-Feb-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.2047;16.2047;16.2047;03-Feb-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.0206;16.0206;16.0206;04-Feb-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.0331;16.0331;16.0331;05-Feb-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;15.8282;15.8282;15.8282;06-Feb-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;15.5394;15.5394;15.5394;09-Feb-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;15.5688;15.5688;15.5688;10-Feb-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;15.8317;15.8317;15.8317;11-Feb-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.0723;16.0723;16.0723;12-Feb-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.2725;16.2725;16.2725;13-Feb-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.2239;16.2239;16.2239;16-Feb-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.4183;16.4183;16.4183;18-Feb-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.4848;16.4848;16.4848;19-Feb-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.4443;16.4443;16.4443;20-Feb-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.2966;16.2966;16.2966;23-Feb-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.3350;16.3350;16.3350;24-Feb-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.2906;16.2906;16.2906;25-Feb-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.0643;16.0643;16.0643;26-Feb-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.3689;16.3689;16.3689;27-Feb-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.7731;16.7731;16.7731;02-Mar-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.8894;16.8894;16.8894;03-Mar-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.8438;16.8438;16.8438;04-Mar-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.9023;16.9023;16.9023;05-Mar-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.6244;16.6244;16.6244;09-Mar-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.5530;16.5530;16.5530;10-Mar-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.5371;16.5371;16.5371;11-Mar-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.5982;16.5982;16.5982;12-Mar-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.3826;16.3826;16.3826;13-Mar-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.3883;16.3883;16.3883;16-Mar-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.5861;16.5861;16.5861;17-Mar-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.5799;16.5799;16.5799;18-Mar-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.4986;16.4986;16.4986;19-Mar-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.3406;16.3406;16.3406;20-Mar-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.1914;16.1914;16.1914;23-Mar-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.1582;16.1582;16.1582;24-Mar-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.1015;16.1015;16.1015;25-Mar-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;15.8382;15.8382;15.8382;26-Mar-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;15.8899;15.8899;15.8899;27-Mar-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.1022;16.1022;16.1022;30-Mar-2015
+122387;MOSt Focused 25 Fund- Regular Plan Growth Option;16.1589;16.1589;16.1589;31-Mar-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;17.7302;17.7302;17.7302;01-Jan-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;17.8362;17.8362;17.8362;02-Jan-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;17.8567;17.8567;17.8567;05-Jan-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;17.5050;17.5050;17.5050;06-Jan-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;17.6277;17.6277;17.6277;07-Jan-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;17.9334;17.9334;17.9334;08-Jan-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;17.9539;17.9539;17.9539;09-Jan-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.0226;18.0226;18.0226;12-Jan-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.1000;18.1000;18.1000;13-Jan-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.2661;18.2661;18.2661;14-Jan-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.3739;18.3739;18.3739;15-Jan-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.5166;18.5166;18.5166;16-Jan-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.4865;18.4865;18.4865;19-Jan-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.3463;18.3463;18.3463;20-Jan-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.3489;18.3489;18.3489;21-Jan-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.4327;18.4327;18.4327;22-Jan-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.3991;18.3991;18.3991;23-Jan-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.6836;18.6836;18.6836;27-Jan-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.1319;19.1319;19.1319;28-Jan-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.8492;18.8492;18.8492;29-Jan-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.7743;18.7743;18.7743;30-Jan-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.6846;18.6846;18.6846;02-Feb-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.6895;18.6895;18.6895;03-Feb-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.7454;18.7454;18.7454;04-Feb-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.6379;18.6379;18.6379;05-Feb-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.4952;18.4952;18.4952;06-Feb-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.3379;18.3379;18.3379;09-Feb-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.5478;18.5478;18.5478;10-Feb-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.8565;18.8565;18.8565;11-Feb-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.1188;19.1188;19.1188;12-Feb-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.4168;19.4168;19.4168;13-Feb-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.5947;19.5947;19.5947;16-Feb-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.6771;19.6771;19.6771;18-Feb-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.5999;19.5999;19.5999;19-Feb-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.5340;19.5340;19.5340;20-Feb-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.3420;19.3420;19.3420;23-Feb-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.2740;19.2740;19.2740;24-Feb-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.2719;19.2719;19.2719;25-Feb-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.1747;19.1747;19.1747;26-Feb-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.3951;19.3951;19.3951;27-Feb-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.9224;19.9224;19.9224;02-Mar-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;20.4367;20.4367;20.4367;03-Mar-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;20.3543;20.3543;20.3543;04-Mar-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.5495;19.5495;19.5495;05-Mar-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.3226;19.3226;19.3226;09-Mar-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.2142;19.2142;19.2142;10-Mar-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.0903;19.0903;19.0903;11-Mar-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.5012;19.5012;19.5012;12-Mar-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.1472;19.1472;19.1472;13-Mar-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.0942;19.0942;19.0942;16-Mar-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.2147;19.2147;19.2147;17-Mar-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.1993;19.1993;19.1993;18-Mar-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;19.1323;19.1323;19.1323;19-Mar-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.9329;18.9329;18.9329;20-Mar-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.9023;18.9023;18.9023;23-Mar-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.7491;18.7491;18.7491;24-Mar-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.6739;18.6739;18.6739;25-Mar-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.6049;18.6049;18.6049;26-Mar-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.6462;18.6462;18.6462;27-Mar-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.8030;18.8030;18.8030;30-Mar-2015
+127044;MOSt Focused Midcap 30-Direct Plan-Dividend Option;18.7689;18.7689;18.7689;31-Mar-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;17.7302;17.7302;17.7302;01-Jan-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;17.8362;17.8362;17.8362;02-Jan-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;17.8567;17.8567;17.8567;05-Jan-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;17.5050;17.5050;17.5050;06-Jan-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;17.6277;17.6277;17.6277;07-Jan-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;17.9334;17.9334;17.9334;08-Jan-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;17.9539;17.9539;17.9539;09-Jan-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;18.0226;18.0226;18.0226;12-Jan-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;18.1000;18.1000;18.1000;13-Jan-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;18.2661;18.2661;18.2661;14-Jan-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;18.3739;18.3739;18.3739;15-Jan-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;18.5166;18.5166;18.5166;16-Jan-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;18.4865;18.4865;18.4865;19-Jan-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;18.3463;18.3463;18.3463;20-Jan-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;18.3489;18.3489;18.3489;21-Jan-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;18.4327;18.4327;18.4327;22-Jan-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;18.3991;18.3991;18.3991;23-Jan-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;18.6836;18.6836;18.6836;27-Jan-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;19.1319;19.1319;19.1319;28-Jan-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;18.8492;18.8492;18.8492;29-Jan-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;18.7743;18.7743;18.7743;30-Jan-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;18.6846;18.6846;18.6846;02-Feb-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;18.6895;18.6895;18.6895;03-Feb-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;18.7454;18.7454;18.7454;04-Feb-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;18.6379;18.6379;18.6379;05-Feb-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;18.4952;18.4952;18.4952;06-Feb-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;18.3379;18.3379;18.3379;09-Feb-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;18.5478;18.5478;18.5478;10-Feb-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;18.8565;18.8565;18.8565;11-Feb-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;19.1188;19.1188;19.1188;12-Feb-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;19.4168;19.4168;19.4168;13-Feb-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;19.5947;19.5947;19.5947;16-Feb-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;19.6771;19.6771;19.6771;18-Feb-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;19.5999;19.5999;19.5999;19-Feb-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;19.5340;19.5340;19.5340;20-Feb-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;19.3420;19.3420;19.3420;23-Feb-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;19.2740;19.2740;19.2740;24-Feb-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;19.2719;19.2719;19.2719;25-Feb-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;19.1747;19.1747;19.1747;26-Feb-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;19.3951;19.3951;19.3951;27-Feb-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;19.9224;19.9224;19.9224;02-Mar-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;20.4367;20.4367;20.4367;03-Mar-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;20.3543;20.3543;20.3543;04-Mar-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;20.5495;20.5495;20.5495;05-Mar-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;20.3110;20.3110;20.3110;09-Mar-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;20.1971;20.1971;20.1971;10-Mar-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;20.0668;20.0668;20.0668;11-Mar-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;20.4987;20.4987;20.4987;12-Mar-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;20.1266;20.1266;20.1266;13-Mar-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;20.0709;20.0709;20.0709;16-Mar-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;20.1976;20.1976;20.1976;17-Mar-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;20.1813;20.1813;20.1813;18-Mar-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;20.1109;20.1109;20.1109;19-Mar-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;19.9013;19.9013;19.9013;20-Mar-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;19.8691;19.8691;19.8691;23-Mar-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;19.7081;19.7081;19.7081;24-Mar-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;19.6291;19.6291;19.6291;25-Mar-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;19.5566;19.5566;19.5566;26-Mar-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;19.6000;19.6000;19.6000;27-Mar-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;19.7648;19.7648;19.7648;30-Mar-2015
+127042;MOSt Focused Midcap 30-Direct Plan-Growth Option;19.7290;19.7290;19.7290;31-Mar-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;17.5562;17.5562;17.5562;01-Jan-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;17.6604;17.6604;17.6604;02-Jan-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;17.6786;17.6786;17.6786;05-Jan-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;17.3297;17.3297;17.3297;06-Jan-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;17.4504;17.4504;17.4504;07-Jan-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;17.7524;17.7524;17.7524;08-Jan-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;17.7719;17.7719;17.7719;09-Jan-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;17.8378;17.8378;17.8378;12-Jan-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;17.9138;17.9138;17.9138;13-Jan-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.0774;18.0774;18.0774;14-Jan-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.1834;18.1834;18.1834;15-Jan-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.3238;18.3238;18.3238;16-Jan-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.2919;18.2919;18.2919;19-Jan-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.1523;18.1523;18.1523;20-Jan-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.1542;18.1542;18.1542;21-Jan-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.2364;18.2364;18.2364;22-Jan-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.2024;18.2024;18.2024;23-Jan-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.4810;18.4810;18.4810;27-Jan-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.9236;18.9236;18.9236;28-Jan-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.6432;18.6432;18.6432;29-Jan-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.5684;18.5684;18.5684;30-Jan-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.4774;18.4774;18.4774;02-Feb-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.4816;18.4816;18.4816;03-Feb-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.5361;18.5361;18.5361;04-Feb-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.4291;18.4291;18.4291;05-Feb-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.2872;18.2872;18.2872;06-Feb-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.1294;18.1294;18.1294;09-Feb-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.3362;18.3362;18.3362;10-Feb-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.6407;18.6407;18.6407;11-Feb-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.8992;18.8992;18.8992;12-Feb-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;19.1931;19.1931;19.1931;13-Feb-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;19.3666;19.3666;19.3666;16-Feb-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;19.4464;19.4464;19.4464;18-Feb-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;19.3693;19.3693;19.3693;19-Feb-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;19.3035;19.3035;19.3035;20-Feb-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;19.1115;19.1115;19.1115;23-Feb-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;19.0435;19.0435;19.0435;24-Feb-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;19.0407;19.0407;19.0407;25-Feb-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.9438;18.9438;18.9438;26-Feb-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;19.1608;19.1608;19.1608;27-Feb-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;19.6793;19.6793;19.6793;02-Mar-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;20.1866;20.1866;20.1866;03-Mar-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;20.1044;20.1044;20.1044;04-Mar-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;19.2964;19.2964;19.2964;05-Mar-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;19.0693;19.0693;19.0693;09-Mar-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.9616;18.9616;18.9616;10-Mar-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.8385;18.8385;18.8385;11-Mar-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;19.2433;19.2433;19.2433;12-Mar-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.8931;18.8931;18.8931;13-Mar-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.8386;18.8386;18.8386;16-Mar-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.9567;18.9567;18.9567;17-Mar-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.9407;18.9407;18.9407;18-Mar-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.8739;18.8739;18.8739;19-Mar-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.6764;18.6764;18.6764;20-Mar-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.6440;18.6440;18.6440;23-Mar-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.4921;18.4921;18.4921;24-Mar-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.4172;18.4172;18.4172;25-Mar-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.3485;18.3485;18.3485;26-Mar-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.3884;18.3884;18.3884;27-Mar-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.5408;18.5408;18.5408;30-Mar-2015
+127040;MOSt Focused Midcap 30-Regular Plan-Dividend Option;18.5065;18.5065;18.5065;31-Mar-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;17.5562;17.5562;17.5562;01-Jan-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;17.6604;17.6604;17.6604;02-Jan-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;17.6786;17.6786;17.6786;05-Jan-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;17.3297;17.3297;17.3297;06-Jan-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;17.4504;17.4504;17.4504;07-Jan-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;17.7524;17.7524;17.7524;08-Jan-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;17.7719;17.7719;17.7719;09-Jan-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;17.8378;17.8378;17.8378;12-Jan-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;17.9138;17.9138;17.9138;13-Jan-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;18.0774;18.0774;18.0774;14-Jan-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;18.1834;18.1834;18.1834;15-Jan-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;18.3238;18.3238;18.3238;16-Jan-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;18.2919;18.2919;18.2919;19-Jan-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;18.1523;18.1523;18.1523;20-Jan-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;18.1542;18.1542;18.1542;21-Jan-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;18.2364;18.2364;18.2364;22-Jan-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;18.2024;18.2024;18.2024;23-Jan-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;18.4810;18.4810;18.4810;27-Jan-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;18.9236;18.9236;18.9236;28-Jan-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;18.6432;18.6432;18.6432;29-Jan-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;18.5684;18.5684;18.5684;30-Jan-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;18.4774;18.4774;18.4774;02-Feb-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;18.4816;18.4816;18.4816;03-Feb-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;18.5361;18.5361;18.5361;04-Feb-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;18.4291;18.4291;18.4291;05-Feb-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;18.2872;18.2872;18.2872;06-Feb-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;18.1294;18.1294;18.1294;09-Feb-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;18.3362;18.3362;18.3362;10-Feb-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;18.6407;18.6407;18.6407;11-Feb-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;18.8992;18.8992;18.8992;12-Feb-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.1931;19.1931;19.1931;13-Feb-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.3666;19.3666;19.3666;16-Feb-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.4464;19.4464;19.4464;18-Feb-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.3693;19.3693;19.3693;19-Feb-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.3035;19.3035;19.3035;20-Feb-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.1115;19.1115;19.1115;23-Feb-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.0435;19.0435;19.0435;24-Feb-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.0407;19.0407;19.0407;25-Feb-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;18.9438;18.9438;18.9438;26-Feb-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.1608;19.1608;19.1608;27-Feb-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.6793;19.6793;19.6793;02-Mar-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;20.1866;20.1866;20.1866;03-Mar-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;20.1044;20.1044;20.1044;04-Mar-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;20.2964;20.2964;20.2964;05-Mar-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;20.0576;20.0576;20.0576;09-Mar-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.9443;19.9443;19.9443;10-Mar-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.8148;19.8148;19.8148;11-Mar-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;20.2405;20.2405;20.2405;12-Mar-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.8723;19.8723;19.8723;13-Mar-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.8149;19.8149;19.8149;16-Mar-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.9392;19.9392;19.9392;17-Mar-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.9223;19.9223;19.9223;18-Mar-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.8520;19.8520;19.8520;19-Mar-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.6443;19.6443;19.6443;20-Mar-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.6102;19.6102;19.6102;23-Mar-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.4505;19.4505;19.4505;24-Mar-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.3717;19.3717;19.3717;25-Mar-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.2993;19.2993;19.2993;26-Mar-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.3414;19.3414;19.3414;27-Mar-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.5017;19.5017;19.5017;30-Mar-2015
+127039;MOSt Focused Midcap 30-Regular Plan-Growth Option;19.4655;19.4655;19.4655;31-Mar-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;15.4845;15.4845;15.4845;01-Jan-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;15.6660;15.6660;15.6660;02-Jan-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;15.6235;15.6235;15.6235;05-Jan-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;15.3126;15.3126;15.3126;06-Jan-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;15.2773;15.2773;15.2773;07-Jan-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;15.4677;15.4677;15.4677;08-Jan-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;15.5077;15.5077;15.5077;09-Jan-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;15.6814;15.6814;15.6814;12-Jan-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;15.6926;15.6926;15.6926;13-Jan-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;15.6907;15.6907;15.6907;14-Jan-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;15.8831;15.8831;15.8831;15-Jan-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;15.9474;15.9474;15.9474;16-Jan-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;15.9980;15.9980;15.9980;19-Jan-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.0183;16.0183;16.0183;20-Jan-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.0988;16.0988;16.0988;21-Jan-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.1340;16.1340;16.1340;22-Jan-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.1776;16.1776;16.1776;23-Jan-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.4352;16.4352;16.4352;27-Jan-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.7511;16.7511;16.7511;28-Jan-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.7022;16.7022;16.7022;29-Jan-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.5825;16.5825;16.5825;30-Jan-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.5432;16.5432;16.5432;02-Feb-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.4158;16.4158;16.4158;03-Feb-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.3687;16.3687;16.3687;04-Feb-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.3257;16.3257;16.3257;05-Feb-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.1966;16.1966;16.1966;06-Feb-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;15.9578;15.9578;15.9578;09-Feb-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.1059;16.1059;16.1059;10-Feb-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.3631;16.3631;16.3631;11-Feb-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.5677;16.5677;16.5677;12-Feb-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.8290;16.8290;16.8290;13-Feb-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.7726;16.7726;16.7726;16-Feb-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.9864;16.9864;16.9864;18-Feb-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.8837;16.8837;16.8837;19-Feb-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.8660;16.8660;16.8660;20-Feb-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.6799;16.6799;16.6799;23-Feb-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.7223;16.7223;16.7223;24-Feb-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.6981;16.6981;16.6981;25-Feb-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.5902;16.5902;16.5902;26-Feb-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.8542;16.8542;16.8542;27-Feb-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;17.2856;17.2856;17.2856;02-Mar-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;17.5010;17.5010;17.5010;03-Mar-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;17.4338;17.4338;17.4338;04-Mar-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;17.5736;17.5736;17.5736;05-Mar-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;17.3633;17.3633;17.3633;09-Mar-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;17.3506;17.3506;17.3506;10-Mar-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;17.2807;17.2807;17.2807;11-Mar-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;17.5178;17.5178;17.5178;12-Mar-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;17.2659;17.2659;17.2659;13-Mar-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;17.2575;17.2575;17.2575;16-Mar-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;17.4795;17.4795;17.4795;17-Mar-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;17.4957;17.4957;17.4957;18-Mar-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;17.4992;17.4992;17.4992;19-Mar-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;17.3151;17.3151;17.3151;20-Mar-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;17.2138;17.2138;17.2138;23-Mar-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;17.2071;17.2071;17.2071;24-Mar-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;17.1491;17.1491;17.1491;25-Mar-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.9708;16.9708;16.9708;26-Mar-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;16.9808;16.9808;16.9808;27-Mar-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;17.2214;17.2214;17.2214;30-Mar-2015
+129047;MOSt Focused Multicap 35- Direct Plan-Dividend Option;17.2181;17.2181;17.2181;31-Mar-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;15.4845;15.4845;15.4845;01-Jan-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;15.6660;15.6660;15.6660;02-Jan-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;15.6235;15.6235;15.6235;05-Jan-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;15.3126;15.3126;15.3126;06-Jan-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;15.2773;15.2773;15.2773;07-Jan-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;15.4677;15.4677;15.4677;08-Jan-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;15.5077;15.5077;15.5077;09-Jan-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;15.6814;15.6814;15.6814;12-Jan-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;15.6926;15.6926;15.6926;13-Jan-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;15.6907;15.6907;15.6907;14-Jan-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;15.8831;15.8831;15.8831;15-Jan-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;15.9474;15.9474;15.9474;16-Jan-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;15.9980;15.9980;15.9980;19-Jan-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.0183;16.0183;16.0183;20-Jan-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.0988;16.0988;16.0988;21-Jan-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.1340;16.1340;16.1340;22-Jan-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.1776;16.1776;16.1776;23-Jan-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.4352;16.4352;16.4352;27-Jan-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.7511;16.7511;16.7511;28-Jan-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.7022;16.7022;16.7022;29-Jan-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.5825;16.5825;16.5825;30-Jan-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.5432;16.5432;16.5432;02-Feb-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.4158;16.4158;16.4158;03-Feb-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.3687;16.3687;16.3687;04-Feb-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.3257;16.3257;16.3257;05-Feb-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.1966;16.1966;16.1966;06-Feb-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;15.9578;15.9578;15.9578;09-Feb-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.1059;16.1059;16.1059;10-Feb-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.3631;16.3631;16.3631;11-Feb-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.5677;16.5677;16.5677;12-Feb-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.8290;16.8290;16.8290;13-Feb-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.7726;16.7726;16.7726;16-Feb-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.9864;16.9864;16.9864;18-Feb-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.8837;16.8837;16.8837;19-Feb-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.8660;16.8660;16.8660;20-Feb-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.6799;16.6799;16.6799;23-Feb-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.7223;16.7223;16.7223;24-Feb-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.6981;16.6981;16.6981;25-Feb-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.5902;16.5902;16.5902;26-Feb-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.8542;16.8542;16.8542;27-Feb-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;17.2856;17.2856;17.2856;02-Mar-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;17.5010;17.5010;17.5010;03-Mar-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;17.4338;17.4338;17.4338;04-Mar-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;17.5736;17.5736;17.5736;05-Mar-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;17.3633;17.3633;17.3633;09-Mar-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;17.3506;17.3506;17.3506;10-Mar-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;17.2807;17.2807;17.2807;11-Mar-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;17.5178;17.5178;17.5178;12-Mar-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;17.2659;17.2659;17.2659;13-Mar-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;17.2575;17.2575;17.2575;16-Mar-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;17.4795;17.4795;17.4795;17-Mar-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;17.4957;17.4957;17.4957;18-Mar-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;17.4992;17.4992;17.4992;19-Mar-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;17.3151;17.3151;17.3151;20-Mar-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;17.2138;17.2138;17.2138;23-Mar-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;17.2071;17.2071;17.2071;24-Mar-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;17.1491;17.1491;17.1491;25-Mar-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.9708;16.9708;16.9708;26-Mar-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;16.9808;16.9808;16.9808;27-Mar-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;17.2214;17.2214;17.2214;30-Mar-2015
+129046;MOSt Focused Multicap 35-Direct Plan-Growth Option;17.2181;17.2181;17.2181;31-Mar-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;15.3595;15.3595;15.3595;01-Jan-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;15.5389;15.5389;15.5389;02-Jan-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;15.4948;15.4948;15.4948;05-Jan-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;15.1859;15.1859;15.1859;06-Jan-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;15.1503;15.1503;15.1503;07-Jan-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;15.3384;15.3384;15.3384;08-Jan-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;15.3775;15.3775;15.3775;09-Jan-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;15.5480;15.5480;15.5480;12-Jan-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;15.5584;15.5584;15.5584;13-Jan-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;15.5559;15.5559;15.5559;14-Jan-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;15.7460;15.7460;15.7460;15-Jan-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;15.8092;15.8092;15.8092;16-Jan-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;15.8573;15.8573;15.8573;19-Jan-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;15.8769;15.8769;15.8769;20-Jan-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;15.9561;15.9561;15.9561;21-Jan-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;15.9903;15.9903;15.9903;22-Jan-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.0329;16.0329;16.0329;23-Jan-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.2855;16.2855;16.2855;27-Jan-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.5980;16.5980;16.5980;28-Jan-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.5488;16.5488;16.5488;29-Jan-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.4296;16.4296;16.4296;30-Jan-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.3886;16.3886;16.3886;02-Feb-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.2618;16.2618;16.2618;03-Feb-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.2144;16.2144;16.2144;04-Feb-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.1712;16.1712;16.1712;05-Feb-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.0426;16.0426;16.0426;06-Feb-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;15.8042;15.8042;15.8042;09-Feb-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;15.9503;15.9503;15.9503;10-Feb-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.2043;16.2043;16.2043;11-Feb-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.4062;16.4062;16.4062;12-Feb-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.6643;16.6643;16.6643;13-Feb-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.6065;16.6065;16.6065;16-Feb-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.8168;16.8168;16.8168;18-Feb-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.7145;16.7145;16.7145;19-Feb-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.6963;16.6963;16.6963;20-Feb-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.5101;16.5101;16.5101;23-Feb-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.5513;16.5513;16.5513;24-Feb-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.5267;16.5267;16.5267;25-Feb-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.4192;16.4192;16.4192;26-Feb-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.6799;16.6799;16.6799;27-Feb-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;17.1048;17.1048;17.1048;02-Mar-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;17.3173;17.3173;17.3173;03-Mar-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;17.2501;17.2501;17.2501;04-Mar-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;17.3876;17.3876;17.3876;05-Mar-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;17.1768;17.1768;17.1768;09-Mar-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;17.1636;17.1636;17.1636;10-Mar-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;17.0937;17.0937;17.0937;11-Mar-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;17.3276;17.3276;17.3276;12-Mar-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;17.0777;17.0777;17.0777;13-Mar-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;17.0674;17.0674;17.0674;16-Mar-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;17.2862;17.2862;17.2862;17-Mar-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;17.3015;17.3015;17.3015;18-Mar-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;17.3043;17.3043;17.3043;19-Mar-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;17.1215;17.1215;17.1215;20-Mar-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;17.0193;17.0193;17.0193;23-Mar-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;17.0120;17.0120;17.0120;24-Mar-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.9539;16.9539;16.9539;25-Mar-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.7770;16.7770;16.7770;26-Mar-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;16.7862;16.7862;16.7862;27-Mar-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;17.0220;17.0220;17.0220;30-Mar-2015
+129049;MOSt Focused Multicap 35-Regular Plan -Dividend Option;17.0181;17.0181;17.0181;31-Mar-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;15.3595;15.3595;15.3595;01-Jan-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;15.5389;15.5389;15.5389;02-Jan-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;15.4948;15.4948;15.4948;05-Jan-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;15.1859;15.1859;15.1859;06-Jan-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;15.1503;15.1503;15.1503;07-Jan-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;15.3384;15.3384;15.3384;08-Jan-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;15.3775;15.3775;15.3775;09-Jan-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;15.5480;15.5480;15.5480;12-Jan-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;15.5584;15.5584;15.5584;13-Jan-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;15.5559;15.5559;15.5559;14-Jan-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;15.7460;15.7460;15.7460;15-Jan-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;15.8092;15.8092;15.8092;16-Jan-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;15.8573;15.8573;15.8573;19-Jan-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;15.8769;15.8769;15.8769;20-Jan-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;15.9561;15.9561;15.9561;21-Jan-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;15.9903;15.9903;15.9903;22-Jan-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.0329;16.0329;16.0329;23-Jan-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.2855;16.2855;16.2855;27-Jan-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.5980;16.5980;16.5980;28-Jan-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.5488;16.5488;16.5488;29-Jan-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.4296;16.4296;16.4296;30-Jan-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.3886;16.3886;16.3886;02-Feb-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.2618;16.2618;16.2618;03-Feb-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.2144;16.2144;16.2144;04-Feb-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.1712;16.1712;16.1712;05-Feb-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.0426;16.0426;16.0426;06-Feb-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;15.8042;15.8042;15.8042;09-Feb-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;15.9503;15.9503;15.9503;10-Feb-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.2043;16.2043;16.2043;11-Feb-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.4062;16.4062;16.4062;12-Feb-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.6643;16.6643;16.6643;13-Feb-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.6065;16.6065;16.6065;16-Feb-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.8168;16.8168;16.8168;18-Feb-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.7145;16.7145;16.7145;19-Feb-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.6963;16.6963;16.6963;20-Feb-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.5101;16.5101;16.5101;23-Feb-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.5513;16.5513;16.5513;24-Feb-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.5267;16.5267;16.5267;25-Feb-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.4192;16.4192;16.4192;26-Feb-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.6799;16.6799;16.6799;27-Feb-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;17.1048;17.1048;17.1048;02-Mar-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;17.3173;17.3173;17.3173;03-Mar-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;17.2501;17.2501;17.2501;04-Mar-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;17.3876;17.3876;17.3876;05-Mar-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;17.1768;17.1768;17.1768;09-Mar-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;17.1636;17.1636;17.1636;10-Mar-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;17.0937;17.0937;17.0937;11-Mar-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;17.3276;17.3276;17.3276;12-Mar-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;17.0777;17.0777;17.0777;13-Mar-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;17.0674;17.0674;17.0674;16-Mar-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;17.2862;17.2862;17.2862;17-Mar-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;17.3015;17.3015;17.3015;18-Mar-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;17.3043;17.3043;17.3043;19-Mar-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;17.1215;17.1215;17.1215;20-Mar-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;17.0193;17.0193;17.0193;23-Mar-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;17.0120;17.0120;17.0120;24-Mar-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.9539;16.9539;16.9539;25-Mar-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.7770;16.7770;16.7770;26-Mar-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;16.7862;16.7862;16.7862;27-Mar-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;17.0220;17.0220;17.0220;30-Mar-2015
+129048;MOSt Focused Multicap 35-Regular Plan-Growth Option;17.0181;17.0181;17.0181;31-Mar-2015
+
+Open Ended Schemes ( Gilt )
+
+
+Motilal Oswal Mutual Fund
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.2534;11.2534;11.2534;01-Jan-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.2605;11.2605;11.2605;02-Jan-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.2545;11.2545;11.2545;05-Jan-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.2518;11.2518;11.2518;06-Jan-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.2825;11.2825;11.2825;07-Jan-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.2821;11.2821;11.2821;08-Jan-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.2953;11.2953;11.2953;09-Jan-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.3239;11.3239;11.3239;12-Jan-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.3561;11.3561;11.3561;13-Jan-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.3550;11.3550;11.3550;14-Jan-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4102;11.4102;11.4102;15-Jan-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4046;11.4046;11.4046;16-Jan-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.3995;11.3995;11.3995;19-Jan-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4018;11.4018;11.4018;20-Jan-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4267;11.4267;11.4267;21-Jan-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4143;11.4143;11.4143;22-Jan-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4212;11.4212;11.4212;23-Jan-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4307;11.4307;11.4307;27-Jan-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4321;11.4321;11.4321;28-Jan-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4306;11.4306;11.4306;29-Jan-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4438;11.4438;11.4438;30-Jan-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4766;11.4766;11.4766;02-Feb-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4283;11.4283;11.4283;03-Feb-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4378;11.4378;11.4378;04-Feb-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4526;11.4526;11.4526;05-Feb-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4537;11.4537;11.4537;06-Feb-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4413;11.4413;11.4413;09-Feb-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4432;11.4432;11.4432;10-Feb-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4424;11.4424;11.4424;11-Feb-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4370;11.4370;11.4370;12-Feb-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4717;11.4717;11.4717;13-Feb-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4708;11.4708;11.4708;16-Feb-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4745;11.4745;11.4745;18-Feb-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4892;11.4892;11.4892;20-Feb-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4908;11.4908;11.4908;23-Feb-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4828;11.4828;11.4828;24-Feb-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4924;11.4924;11.4924;25-Feb-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4720;11.4720;11.4720;26-Feb-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4841;11.4841;11.4841;27-Feb-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4826;11.4826;11.4826;02-Mar-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4764;11.4764;11.4764;03-Mar-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.5270;11.5270;11.5270;04-Mar-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.5149;11.5149;11.5149;05-Mar-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4996;11.4996;11.4996;09-Mar-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4960;11.4960;11.4960;10-Mar-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4907;11.4907;11.4907;11-Mar-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.5179;11.5179;11.5179;12-Mar-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4696;11.4696;11.4696;13-Mar-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4700;11.4700;11.4700;16-Mar-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4875;11.4875;11.4875;17-Mar-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4831;11.4831;11.4831;18-Mar-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.5097;11.5097;11.5097;19-Mar-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.5187;11.5187;11.5187;20-Mar-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.5186;11.5186;11.5186;23-Mar-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.5251;11.5251;11.5251;24-Mar-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.5119;11.5119;11.5119;25-Mar-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.4968;11.4968;11.4968;26-Mar-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.5135;11.5135;11.5135;27-Mar-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.5279;11.5279;11.5279;30-Mar-2015
+119860;MOSt 10 Year Gilt Fund - Direct Plan - Dividend;11.5456;11.5456;11.5456;31-Mar-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.0441;12.0441;12.0441;01-Jan-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.0516;12.0516;12.0516;02-Jan-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.0452;12.0452;12.0452;05-Jan-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.0423;12.0423;12.0423;06-Jan-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.0752;12.0752;12.0752;07-Jan-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.0748;12.0748;12.0748;08-Jan-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.0889;12.0889;12.0889;09-Jan-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.1195;12.1195;12.1195;12-Jan-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.1540;12.1540;12.1540;13-Jan-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.1527;12.1527;12.1527;14-Jan-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2118;12.2118;12.2118;15-Jan-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2058;12.2058;12.2058;16-Jan-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2003;12.2003;12.2003;19-Jan-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2027;12.2027;12.2027;20-Jan-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2294;12.2294;12.2294;21-Jan-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2162;12.2162;12.2162;22-Jan-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2235;12.2235;12.2235;23-Jan-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2337;12.2337;12.2337;27-Jan-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2352;12.2352;12.2352;28-Jan-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2335;12.2335;12.2335;29-Jan-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2477;12.2477;12.2477;30-Jan-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2828;12.2828;12.2828;02-Feb-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2311;12.2311;12.2311;03-Feb-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2413;12.2413;12.2413;04-Feb-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2569;12.2569;12.2569;05-Feb-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2581;12.2581;12.2581;06-Feb-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2448;12.2448;12.2448;09-Feb-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2468;12.2468;12.2468;10-Feb-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2460;12.2460;12.2460;11-Feb-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2402;12.2402;12.2402;12-Feb-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2773;12.2773;12.2773;13-Feb-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2764;12.2764;12.2764;16-Feb-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2804;12.2804;12.2804;18-Feb-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2961;12.2961;12.2961;20-Feb-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2978;12.2978;12.2978;23-Feb-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2892;12.2892;12.2892;24-Feb-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2995;12.2995;12.2995;25-Feb-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2777;12.2777;12.2777;26-Feb-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2907;12.2907;12.2907;27-Feb-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2890;12.2890;12.2890;02-Mar-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2824;12.2824;12.2824;03-Mar-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.3365;12.3365;12.3365;04-Mar-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.3236;12.3236;12.3236;05-Mar-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.3072;12.3072;12.3072;09-Mar-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.3033;12.3033;12.3033;10-Mar-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2977;12.2977;12.2977;11-Mar-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.3268;12.3268;12.3268;12-Mar-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2751;12.2751;12.2751;13-Mar-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2755;12.2755;12.2755;16-Mar-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2942;12.2942;12.2942;17-Mar-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.2896;12.2896;12.2896;18-Mar-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.3180;12.3180;12.3180;19-Mar-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.3277;12.3277;12.3277;20-Mar-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.3275;12.3275;12.3275;23-Mar-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.3346;12.3346;12.3346;24-Mar-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.3203;12.3203;12.3203;25-Mar-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.3042;12.3042;12.3042;26-Mar-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.3221;12.3221;12.3221;27-Mar-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.3375;12.3375;12.3375;30-Mar-2015
+119859;MOSt 10 Year Gilt Fund - Direct Plan - Growth;12.3565;12.3565;12.3565;31-Mar-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.1232;11.1232;11.1232;01-Jan-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.1299;11.1299;11.1299;02-Jan-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.1233;11.1233;11.1233;05-Jan-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.1205;11.1205;11.1205;06-Jan-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.1507;11.1507;11.1507;07-Jan-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.1500;11.1500;11.1500;08-Jan-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.1629;11.1629;11.1629;09-Jan-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.1905;11.1905;11.1905;12-Jan-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.2221;11.2221;11.2221;13-Jan-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.2207;11.2207;11.2207;14-Jan-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.2750;11.2750;11.2750;15-Jan-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.2693;11.2693;11.2693;16-Jan-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.2636;11.2636;11.2636;19-Jan-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.2656;11.2656;11.2656;20-Jan-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.2900;11.2900;11.2900;21-Jan-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.2776;11.2776;11.2776;22-Jan-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.2842;11.2842;11.2842;23-Jan-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.2927;11.2927;11.2927;27-Jan-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.2938;11.2938;11.2938;28-Jan-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.2921;11.2921;11.2921;29-Jan-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3049;11.3049;11.3049;30-Jan-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3367;11.3367;11.3367;02-Feb-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.2887;11.2887;11.2887;03-Feb-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.2979;11.2979;11.2979;04-Feb-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3124;11.3124;11.3124;05-Feb-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3132;11.3132;11.3132;06-Feb-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3004;11.3004;11.3004;09-Feb-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3019;11.3019;11.3019;10-Feb-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3010;11.3010;11.3010;11-Feb-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.2954;11.2954;11.2954;12-Feb-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3295;11.3295;11.3295;13-Feb-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3280;11.3280;11.3280;16-Feb-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3312;11.3312;11.3312;18-Feb-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3452;11.3452;11.3452;20-Feb-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3462;11.3462;11.3462;23-Feb-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3381;11.3381;11.3381;24-Feb-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3473;11.3473;11.3473;25-Feb-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3269;11.3269;11.3269;26-Feb-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3387;11.3387;11.3387;27-Feb-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3365;11.3365;11.3365;02-Mar-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3302;11.3302;11.3302;03-Mar-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3800;11.3800;11.3800;04-Mar-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3678;11.3678;11.3678;05-Mar-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3518;11.3518;11.3518;09-Mar-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3480;11.3480;11.3480;10-Mar-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3426;11.3426;11.3426;11-Mar-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3692;11.3692;11.3692;12-Mar-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3215;11.3215;11.3215;13-Mar-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3216;11.3216;11.3216;16-Mar-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3387;11.3387;11.3387;17-Mar-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3343;11.3343;11.3343;18-Mar-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3605;11.3605;11.3605;19-Mar-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3693;11.3693;11.3693;20-Mar-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3688;11.3688;11.3688;23-Mar-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3752;11.3752;11.3752;24-Mar-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3620;11.3620;11.3620;25-Mar-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3471;11.3471;11.3471;26-Mar-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3634;11.3634;11.3634;27-Mar-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3774;11.3774;11.3774;30-Mar-2015
+116205;MOSt 10 Year Gilt Fund - Dividend;11.3947;11.3947;11.3947;31-Mar-2015
+116203;MOSt 10 Year Gilt Fund - Growth;11.9845;11.9845;11.9845;01-Jan-2015
+116203;MOSt 10 Year Gilt Fund - Growth;11.9918;11.9918;11.9918;02-Jan-2015
+116203;MOSt 10 Year Gilt Fund - Growth;11.9847;11.9847;11.9847;05-Jan-2015
+116203;MOSt 10 Year Gilt Fund - Growth;11.9816;11.9816;11.9816;06-Jan-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.0141;12.0141;12.0141;07-Jan-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.0134;12.0134;12.0134;08-Jan-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.0273;12.0273;12.0273;09-Jan-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.0570;12.0570;12.0570;12-Jan-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.0911;12.0911;12.0911;13-Jan-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.0896;12.0896;12.0896;14-Jan-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.1481;12.1481;12.1481;15-Jan-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.1420;12.1420;12.1420;16-Jan-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.1358;12.1358;12.1358;19-Jan-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.1380;12.1380;12.1380;20-Jan-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.1643;12.1643;12.1643;21-Jan-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.1509;12.1509;12.1509;22-Jan-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.1580;12.1580;12.1580;23-Jan-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.1672;12.1672;12.1672;27-Jan-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.1684;12.1684;12.1684;28-Jan-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.1665;12.1665;12.1665;29-Jan-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.1803;12.1803;12.1803;30-Jan-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2146;12.2146;12.2146;02-Feb-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.1629;12.1629;12.1629;03-Feb-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.1728;12.1728;12.1728;04-Feb-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.1884;12.1884;12.1884;05-Feb-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.1893;12.1893;12.1893;06-Feb-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.1754;12.1754;12.1754;09-Feb-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.1771;12.1771;12.1771;10-Feb-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.1761;12.1761;12.1761;11-Feb-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.1701;12.1701;12.1701;12-Feb-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2068;12.2068;12.2068;13-Feb-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2052;12.2052;12.2052;16-Feb-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2086;12.2086;12.2086;18-Feb-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2238;12.2238;12.2238;20-Feb-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2248;12.2248;12.2248;23-Feb-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2160;12.2160;12.2160;24-Feb-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2260;12.2260;12.2260;25-Feb-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2041;12.2041;12.2041;26-Feb-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2168;12.2168;12.2168;27-Feb-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2144;12.2144;12.2144;02-Mar-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2076;12.2076;12.2076;03-Mar-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2612;12.2612;12.2612;04-Mar-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2481;12.2481;12.2481;05-Mar-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2308;12.2308;12.2308;09-Mar-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2268;12.2268;12.2268;10-Mar-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2209;12.2209;12.2209;11-Mar-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2496;12.2496;12.2496;12-Mar-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.1982;12.1982;12.1982;13-Mar-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.1983;12.1983;12.1983;16-Mar-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2168;12.2168;12.2168;17-Mar-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2120;12.2120;12.2120;18-Mar-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2402;12.2402;12.2402;19-Mar-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2497;12.2497;12.2497;20-Mar-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2492;12.2492;12.2492;23-Mar-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2561;12.2561;12.2561;24-Mar-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2418;12.2418;12.2418;25-Mar-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2258;12.2258;12.2258;26-Mar-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2434;12.2434;12.2434;27-Mar-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2584;12.2584;12.2584;30-Mar-2015
+116203;MOSt 10 Year Gilt Fund - Growth;12.2771;12.2771;12.2771;31-Mar-2015
+
+Open Ended Schemes ( ELSS )
+
+
+Motilal Oswal Mutual Fund
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.0975;10.0975;10.0975;22-Jan-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.1252;10.1252;10.1252;23-Jan-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.2768;10.2768;10.2768;27-Jan-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.4813;10.4813;10.4813;28-Jan-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.4646;10.4646;10.4646;29-Jan-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.3934;10.3934;10.3934;30-Jan-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.3612;10.3612;10.3612;02-Feb-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.2820;10.2820;10.2820;03-Feb-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.2454;10.2454;10.2454;04-Feb-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.2257;10.2257;10.2257;05-Feb-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.1410;10.1410;10.1410;06-Feb-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;9.9856;9.9856;9.9856;09-Feb-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.0788;10.0788;10.0788;10-Feb-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.2496;10.2496;10.2496;11-Feb-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.3825;10.3825;10.3825;12-Feb-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.5571;10.5571;10.5571;13-Feb-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.5176;10.5176;10.5176;16-Feb-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.6382;10.6382;10.6382;18-Feb-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.5581;10.5581;10.5581;19-Feb-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.5488;10.5488;10.5488;20-Feb-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.4226;10.4226;10.4226;23-Feb-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.4471;10.4471;10.4471;24-Feb-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.4346;10.4346;10.4346;25-Feb-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.3692;10.3692;10.3692;26-Feb-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.5412;10.5412;10.5412;27-Feb-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.8090;10.8090;10.8090;02-Mar-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.9391;10.9391;10.9391;03-Mar-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.8854;10.8854;10.8854;04-Mar-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.9725;10.9725;10.9725;05-Mar-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.8317;10.8317;10.8317;09-Mar-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.8191;10.8191;10.8191;10-Mar-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.8042;10.8042;10.8042;11-Mar-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.9416;10.9416;10.9416;12-Mar-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.7704;10.7704;10.7704;13-Mar-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.7623;10.7623;10.7623;16-Mar-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.8985;10.8985;10.8985;17-Mar-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.9222;10.9222;10.9222;18-Mar-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.9096;10.9096;10.9096;19-Mar-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.7931;10.7931;10.7931;20-Mar-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.7242;10.7242;10.7242;23-Mar-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.7137;10.7137;10.7137;24-Mar-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.6898;10.6898;10.6898;25-Mar-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.5748;10.5748;10.5748;26-Mar-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.5900;10.5900;10.5900;27-Mar-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.7260;10.7260;10.7260;30-Mar-2015
+133384;MOSt Focused Long Term - Direct Plan - Dividend Payout Option;10.7258;10.7258;10.7258;31-Mar-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.0975;10.0975;10.0975;22-Jan-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.1252;10.1252;10.1252;23-Jan-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.2768;10.2768;10.2768;27-Jan-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.4813;10.4813;10.4813;28-Jan-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.4646;10.4646;10.4646;29-Jan-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.3934;10.3934;10.3934;30-Jan-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.3612;10.3612;10.3612;02-Feb-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.2820;10.2820;10.2820;03-Feb-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.2454;10.2454;10.2454;04-Feb-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.2257;10.2257;10.2257;05-Feb-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.1410;10.1410;10.1410;06-Feb-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;9.9856;9.9856;9.9856;09-Feb-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.0788;10.0788;10.0788;10-Feb-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.2496;10.2496;10.2496;11-Feb-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.3825;10.3825;10.3825;12-Feb-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.5571;10.5571;10.5571;13-Feb-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.5176;10.5176;10.5176;16-Feb-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.6382;10.6382;10.6382;18-Feb-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.5581;10.5581;10.5581;19-Feb-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.5488;10.5488;10.5488;20-Feb-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.4226;10.4226;10.4226;23-Feb-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.4471;10.4471;10.4471;24-Feb-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.4346;10.4346;10.4346;25-Feb-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.3692;10.3692;10.3692;26-Feb-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.5412;10.5412;10.5412;27-Feb-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.8090;10.8090;10.8090;02-Mar-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.9391;10.9391;10.9391;03-Mar-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.8854;10.8854;10.8854;04-Mar-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.9725;10.9725;10.9725;05-Mar-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.8317;10.8317;10.8317;09-Mar-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.8191;10.8191;10.8191;10-Mar-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.8042;10.8042;10.8042;11-Mar-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.9416;10.9416;10.9416;12-Mar-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.7704;10.7704;10.7704;13-Mar-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.7623;10.7623;10.7623;16-Mar-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.8985;10.8985;10.8985;17-Mar-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.9222;10.9222;10.9222;18-Mar-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.9096;10.9096;10.9096;19-Mar-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.7931;10.7931;10.7931;20-Mar-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.7242;10.7242;10.7242;23-Mar-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.7137;10.7137;10.7137;24-Mar-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.6898;10.6898;10.6898;25-Mar-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.5748;10.5748;10.5748;26-Mar-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.5900;10.5900;10.5900;27-Mar-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.7260;10.7260;10.7260;30-Mar-2015
+133386;MOSt Focused Long Term - Direct Plan - Growth Option;10.7258;10.7258;10.7258;31-Mar-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.0969;10.0969;10.0969;22-Jan-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.1243;10.1243;10.1243;23-Jan-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.2749;10.2749;10.2749;27-Jan-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.4790;10.4790;10.4790;28-Jan-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.4621;10.4621;10.4621;29-Jan-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.3906;10.3906;10.3906;30-Jan-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.3575;10.3575;10.3575;02-Feb-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.2781;10.2781;10.2781;03-Feb-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.2412;10.2412;10.2412;04-Feb-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.2212;10.2212;10.2212;05-Feb-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.1363;10.1363;10.1363;06-Feb-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;9.9801;9.9801;9.9801;09-Feb-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.0730;10.0730;10.0730;10-Feb-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.2434;10.2434;10.2434;11-Feb-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.3759;10.3759;10.3759;12-Feb-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.5501;10.5501;10.5501;13-Feb-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.5098;10.5098;10.5098;16-Feb-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.6297;10.6297;10.6297;18-Feb-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.5494;10.5494;10.5494;19-Feb-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.5398;10.5398;10.5398;20-Feb-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.4128;10.4128;10.4128;23-Feb-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.4371;10.4371;10.4371;24-Feb-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.4242;10.4242;10.4242;25-Feb-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.3587;10.3587;10.3587;26-Feb-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.5302;10.5302;10.5302;27-Feb-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.7968;10.7968;10.7968;02-Mar-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.9265;10.9265;10.9265;03-Mar-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.8726;10.8726;10.8726;04-Mar-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.9593;10.9593;10.9593;05-Mar-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.8174;10.8174;10.8174;09-Mar-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.8046;10.8046;10.8046;10-Mar-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.7894;10.7894;10.7894;11-Mar-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.9263;10.9263;10.9263;12-Mar-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.7552;10.7552;10.7552;13-Mar-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.7463;10.7463;10.7463;16-Mar-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.8819;10.8819;10.8819;17-Mar-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.9053;10.9053;10.9053;18-Mar-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.8924;10.8924;10.8924;19-Mar-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.7758;10.7758;10.7758;20-Mar-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.7061;10.7061;10.7061;23-Mar-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.6954;10.6954;10.6954;24-Mar-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.6712;10.6712;10.6712;25-Mar-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.5561;10.5561;10.5561;26-Mar-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.5710;10.5710;10.5710;27-Mar-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.7059;10.7059;10.7059;30-Mar-2015
+133383;MOSt Focused Long Term - Regular Plan - Dividend Payout Option;10.7054;10.7054;10.7054;31-Mar-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.0969;10.0969;10.0969;22-Jan-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.1243;10.1243;10.1243;23-Jan-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.2749;10.2749;10.2749;27-Jan-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.4790;10.4790;10.4790;28-Jan-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.4621;10.4621;10.4621;29-Jan-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.3905;10.3905;10.3905;30-Jan-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.3575;10.3575;10.3575;02-Feb-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.2781;10.2781;10.2781;03-Feb-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.2412;10.2412;10.2412;04-Feb-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.2212;10.2212;10.2212;05-Feb-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.1363;10.1363;10.1363;06-Feb-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;9.9801;9.9801;9.9801;09-Feb-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.0730;10.0730;10.0730;10-Feb-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.2434;10.2434;10.2434;11-Feb-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.3759;10.3759;10.3759;12-Feb-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.5501;10.5501;10.5501;13-Feb-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.5098;10.5098;10.5098;16-Feb-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.6297;10.6297;10.6297;18-Feb-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.5494;10.5494;10.5494;19-Feb-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.5398;10.5398;10.5398;20-Feb-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.4128;10.4128;10.4128;23-Feb-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.4371;10.4371;10.4371;24-Feb-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.4242;10.4242;10.4242;25-Feb-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.3587;10.3587;10.3587;26-Feb-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.5302;10.5302;10.5302;27-Feb-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.7968;10.7968;10.7968;02-Mar-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.9265;10.9265;10.9265;03-Mar-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.8726;10.8726;10.8726;04-Mar-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.9593;10.9593;10.9593;05-Mar-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.8174;10.8174;10.8174;09-Mar-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.8046;10.8046;10.8046;10-Mar-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.7894;10.7894;10.7894;11-Mar-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.9263;10.9263;10.9263;12-Mar-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.7552;10.7552;10.7552;13-Mar-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.7463;10.7463;10.7463;16-Mar-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.8819;10.8819;10.8819;17-Mar-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.9053;10.9053;10.9053;18-Mar-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.8924;10.8924;10.8924;19-Mar-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.7758;10.7758;10.7758;20-Mar-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.7061;10.7061;10.7061;23-Mar-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.6954;10.6954;10.6954;24-Mar-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.6712;10.6712;10.6712;25-Mar-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.5561;10.5561;10.5561;26-Mar-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.5710;10.5710;10.5710;27-Mar-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.7059;10.7059;10.7059;30-Mar-2015
+133385;MOSt Focused Long Term - Regular Plan - Growth Option;10.7054;10.7054;10.7054;31-Mar-2015
+
+Open Ended Schemes ( GOLD ETFs )
+
+
+Motilal Oswal Mutual Fund
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2676.2899;2676.2899;2676.2899;01-Jan-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2645.6350;2645.6350;2645.6350;02-Jan-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2664.1444;2664.1444;2664.1444;05-Jan-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2700.7892;2700.7892;2700.7892;06-Jan-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2708.4926;2708.4926;2708.4926;07-Jan-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2675.8999;2675.8999;2675.8999;08-Jan-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2663.0819;2663.0819;2663.0819;09-Jan-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2674.2432;2674.2432;2674.2432;12-Jan-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2704.2184;2704.2184;2704.2184;13-Jan-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2686.5899;2686.5899;2686.5899;14-Jan-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2683.4877;2683.4877;2683.4877;15-Jan-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2731.9449;2731.9449;2731.9449;16-Jan-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2756.4939;2756.4939;2756.4939;19-Jan-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2794.0763;2794.0763;2794.0763;20-Jan-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2795.3029;2795.3029;2795.3029;21-Jan-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2777.5620;2777.5620;2777.5620;22-Jan-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2781.8934;2781.8934;2781.8934;23-Jan-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2752.7377;2752.7377;2752.7377;27-Jan-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2765.5105;2765.5105;2765.5105;28-Jan-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2747.3751;2747.3751;2747.3751;29-Jan-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2741.6890;2741.6890;2741.6890;30-Jan-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2766.7498;2766.7498;2766.7498;02-Feb-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2773.5656;2773.5656;2773.5656;03-Feb-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2748.9093;2748.9093;2748.9093;04-Feb-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2746.1749;2746.1749;2746.1749;05-Feb-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2741.6323;2741.6323;2741.6323;06-Feb-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2715.3471;2715.3471;2715.3471;09-Feb-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2699.4285;2699.4285;2699.4285;10-Feb-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2700.8116;2700.8116;2700.8116;11-Feb-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2692.1985;2692.1985;2692.1985;12-Feb-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2673.1451;2673.1451;2673.1451;13-Feb-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2689.5145;2689.5145;2689.5145;16-Feb-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2641.3058;2641.3058;2641.3058;18-Feb-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2661.8617;2661.8617;2661.8617;19-Feb-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2637.3275;2637.3275;2637.3275;20-Feb-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2615.9329;2615.9329;2615.9329;23-Feb-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2622.8799;2622.8799;2622.8799;24-Feb-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2634.6305;2634.6305;2634.6305;25-Feb-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2655.3459;2655.3459;2655.3459;26-Feb-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2619.8908;2619.8908;2619.8908;27-Feb-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2578.7784;2578.7784;2578.7784;02-Mar-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2562.7161;2562.7161;2562.7161;03-Mar-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2556.7682;2556.7682;2556.7682;04-Mar-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2556.5496;2556.5496;2556.5496;05-Mar-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2528.2835;2528.2835;2528.2835;09-Mar-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2507.4271;2507.4271;2507.4271;10-Mar-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2500.1306;2500.1306;2500.1306;11-Mar-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2497.6114;2497.6114;2497.6114;12-Mar-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2492.3859;2492.3859;2492.3859;13-Mar-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2487.3341;2487.3341;2487.3341;16-Mar-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2478.6507;2478.6507;2478.6507;17-Mar-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2467.2388;2467.2388;2467.2388;18-Mar-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2486.2392;2486.2392;2486.2392;19-Mar-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2503.5921;2503.5921;2503.5921;20-Mar-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2513.9487;2513.9487;2513.9487;23-Mar-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2532.4808;2532.4808;2532.4808;24-Mar-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2535.0117;2535.0117;2535.0117;25-Mar-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2574.7103;2574.7103;2574.7103;26-Mar-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2552.9557;2552.9557;2552.9557;27-Mar-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2527.2761;2527.2761;2527.2761;30-Mar-2015
+117141;Motilal Oswal MOSt Shares Gold ETF (MOSt Gold Shares);2529.5576;2529.5576;2529.5576;31-Mar-2015
+
+Open Ended Schemes ( Other ETFs )
+
+
+Motilal Oswal Mutual Fund
+113069;MOSt Shares M50;79.3513;79.3513;79.3513;01-Jan-2015
+113069;MOSt Shares M50;80.4092;80.4092;80.4092;02-Jan-2015
+113069;MOSt Shares M50;80.2407;80.2407;80.2407;05-Jan-2015
+113069;MOSt Shares M50;77.8497;77.8497;77.8497;06-Jan-2015
+113069;MOSt Shares M50;77.6074;77.6074;77.6074;07-Jan-2015
+113069;MOSt Shares M50;78.8661;78.8661;78.8661;08-Jan-2015
+113069;MOSt Shares M50;79.3393;79.3393;79.3393;09-Jan-2015
+113069;MOSt Shares M50;79.6985;79.6985;79.6985;12-Jan-2015
+113069;MOSt Shares M50;79.4722;79.4722;79.4722;13-Jan-2015
+113069;MOSt Shares M50;79.2623;79.2623;79.2623;14-Jan-2015
+113069;MOSt Shares M50;81.3185;81.3185;81.3185;15-Jan-2015
+113069;MOSt Shares M50;81.5021;81.5021;81.5021;16-Jan-2015
+113069;MOSt Shares M50;81.8432;81.8432;81.8432;19-Jan-2015
+113069;MOSt Shares M50;83.2168;83.2168;83.2168;20-Jan-2015
+113069;MOSt Shares M50;83.5355;83.5355;83.5355;21-Jan-2015
+113069;MOSt Shares M50;83.8443;83.8443;83.8443;22-Jan-2015
+113069;MOSt Shares M50;84.5463;84.5463;84.5463;23-Jan-2015
+113069;MOSt Shares M50;85.2514;85.2514;85.2514;27-Jan-2015
+113069;MOSt Shares M50;85.2843;85.2843;85.2843;28-Jan-2015
+113069;MOSt Shares M50;85.6428;85.6428;85.6428;29-Jan-2015
+113069;MOSt Shares M50;84.2763;84.2763;84.2763;30-Jan-2015
+113069;MOSt Shares M50;84.1575;84.1575;84.1575;02-Feb-2015
+113069;MOSt Shares M50;83.7662;83.7662;83.7662;03-Feb-2015
+113069;MOSt Shares M50;83.4615;83.4615;83.4615;04-Feb-2015
+113069;MOSt Shares M50;83.3440;83.3440;83.3440;05-Feb-2015
+113069;MOSt Shares M50;82.8594;82.8594;82.8594;06-Feb-2015
+113069;MOSt Shares M50;81.5696;81.5696;81.5696;09-Feb-2015
+113069;MOSt Shares M50;81.9387;81.9387;81.9387;10-Feb-2015
+113069;MOSt Shares M50;82.5232;82.5232;82.5232;11-Feb-2015
+113069;MOSt Shares M50;83.3192;83.3192;83.3192;12-Feb-2015
+113069;MOSt Shares M50;84.2067;84.2067;84.2067;13-Feb-2015
+113069;MOSt Shares M50;84.2345;84.2345;84.2345;16-Feb-2015
+113069;MOSt Shares M50;84.8051;84.8051;84.8051;18-Feb-2015
+113069;MOSt Shares M50;85.0505;85.0505;85.0505;19-Feb-2015
+113069;MOSt Shares M50;84.4609;84.4609;84.4609;20-Feb-2015
+113069;MOSt Shares M50;83.7033;83.7033;83.7033;23-Feb-2015
+113069;MOSt Shares M50;83.7680;83.7680;83.7680;24-Feb-2015
+113069;MOSt Shares M50;83.8137;83.8137;83.8137;25-Feb-2015
+113069;MOSt Shares M50;83.0181;83.0181;83.0181;26-Feb-2015
+113069;MOSt Shares M50;84.5420;84.5420;84.5420;27-Feb-2015
+113069;MOSt Shares M50;85.6082;85.6082;85.6082;02-Mar-2015
+113069;MOSt Shares M50;86.0542;86.0542;86.0542;03-Mar-2015
+113069;MOSt Shares M50;85.3514;85.3514;85.3514;04-Mar-2015
+113069;MOSt Shares M50;85.4909;85.4909;85.4909;05-Mar-2015
+113069;MOSt Shares M50;83.7630;83.7630;83.7630;09-Mar-2015
+113069;MOSt Shares M50;83.3350;83.3350;83.3350;10-Mar-2015
+113069;MOSt Shares M50;83.2167;83.2167;83.2167;11-Mar-2015
+113069;MOSt Shares M50;83.9409;83.9409;83.9409;12-Mar-2015
+113069;MOSt Shares M50;82.7197;82.7197;82.7197;13-Mar-2015
+113069;MOSt Shares M50;82.5703;82.5703;82.5703;16-Mar-2015
+113069;MOSt Shares M50;83.4222;83.4222;83.4222;17-Mar-2015
+113069;MOSt Shares M50;83.0927;83.0927;83.0927;18-Mar-2015
+113069;MOSt Shares M50;82.5912;82.5912;82.5912;19-Mar-2015
+113069;MOSt Shares M50;82.0351;82.0351;82.0351;20-Mar-2015
+113069;MOSt Shares M50;81.8093;81.8093;81.8093;23-Mar-2015
+113069;MOSt Shares M50;81.7368;81.7368;81.7368;24-Mar-2015
+113069;MOSt Shares M50;81.6578;81.6578;81.6578;25-Mar-2015
+113069;MOSt Shares M50;79.7830;79.7830;79.7830;26-Mar-2015
+113069;MOSt Shares M50;79.7728;79.7728;79.7728;27-Mar-2015
+113069;MOSt Shares M50;81.1953;81.1953;81.1953;30-Mar-2015
+113069;MOSt Shares M50;81.1797;81.1797;81.1797;31-Mar-2015
+114456;MOSt Shares M100;13.1284;13.1284;13.1284;01-Jan-2015
+114456;MOSt Shares M100;13.2129;13.2129;13.2129;02-Jan-2015
+114456;MOSt Shares M100;13.2233;13.2233;13.2233;05-Jan-2015
+114456;MOSt Shares M100;12.8227;12.8227;12.8227;06-Jan-2015
+114456;MOSt Shares M100;12.8596;12.8596;12.8596;07-Jan-2015
+114456;MOSt Shares M100;13.0830;13.0830;13.0830;08-Jan-2015
+114456;MOSt Shares M100;13.0907;13.0907;13.0907;09-Jan-2015
+114456;MOSt Shares M100;13.1510;13.1510;13.1510;12-Jan-2015
+114456;MOSt Shares M100;13.1521;13.1521;13.1521;13-Jan-2015
+114456;MOSt Shares M100;13.1246;13.1246;13.1246;14-Jan-2015
+114456;MOSt Shares M100;13.3071;13.3071;13.3071;15-Jan-2015
+114456;MOSt Shares M100;13.3863;13.3863;13.3863;16-Jan-2015
+114456;MOSt Shares M100;13.4217;13.4217;13.4217;19-Jan-2015
+114456;MOSt Shares M100;13.4692;13.4692;13.4692;20-Jan-2015
+114456;MOSt Shares M100;13.4813;13.4813;13.4813;21-Jan-2015
+114456;MOSt Shares M100;13.5092;13.5092;13.5092;22-Jan-2015
+114456;MOSt Shares M100;13.5572;13.5572;13.5572;23-Jan-2015
+114456;MOSt Shares M100;13.6691;13.6691;13.6691;27-Jan-2015
+114456;MOSt Shares M100;13.7484;13.7484;13.7484;28-Jan-2015
+114456;MOSt Shares M100;13.7111;13.7111;13.7111;29-Jan-2015
+114456;MOSt Shares M100;13.6516;13.6516;13.6516;30-Jan-2015
+114456;MOSt Shares M100;13.7401;13.7401;13.7401;02-Feb-2015
+114456;MOSt Shares M100;13.6298;13.6298;13.6298;03-Feb-2015
+114456;MOSt Shares M100;13.5820;13.5820;13.5820;04-Feb-2015
+114456;MOSt Shares M100;13.3805;13.3805;13.3805;05-Feb-2015
+114456;MOSt Shares M100;13.2573;13.2573;13.2573;06-Feb-2015
+114456;MOSt Shares M100;13.0347;13.0347;13.0347;09-Feb-2015
+114456;MOSt Shares M100;13.1228;13.1228;13.1228;10-Feb-2015
+114456;MOSt Shares M100;13.3580;13.3580;13.3580;11-Feb-2015
+114456;MOSt Shares M100;13.5154;13.5154;13.5154;12-Feb-2015
+114456;MOSt Shares M100;13.6255;13.6255;13.6255;13-Feb-2015
+114456;MOSt Shares M100;13.6017;13.6017;13.6017;16-Feb-2015
+114456;MOSt Shares M100;13.7046;13.7046;13.7046;18-Feb-2015
+114456;MOSt Shares M100;13.7333;13.7333;13.7333;19-Feb-2015
+114456;MOSt Shares M100;13.7309;13.7309;13.7309;20-Feb-2015
+114456;MOSt Shares M100;13.5952;13.5952;13.5952;23-Feb-2015
+114456;MOSt Shares M100;13.5463;13.5463;13.5463;24-Feb-2015
+114456;MOSt Shares M100;13.5243;13.5243;13.5243;25-Feb-2015
+114456;MOSt Shares M100;13.3672;13.3672;13.3672;26-Feb-2015
+114456;MOSt Shares M100;13.6392;13.6392;13.6392;27-Feb-2015
+114456;MOSt Shares M100;13.8568;13.8568;13.8568;02-Mar-2015
+114456;MOSt Shares M100;13.9637;13.9637;13.9637;03-Mar-2015
+114456;MOSt Shares M100;13.7803;13.7803;13.7803;04-Mar-2015
+114456;MOSt Shares M100;13.8908;13.8908;13.8908;05-Mar-2015
+114456;MOSt Shares M100;13.7082;13.7082;13.7082;09-Mar-2015
+114456;MOSt Shares M100;13.7109;13.7109;13.7109;10-Mar-2015
+114456;MOSt Shares M100;13.6603;13.6603;13.6603;11-Mar-2015
+114456;MOSt Shares M100;13.8723;13.8723;13.8723;12-Mar-2015
+114456;MOSt Shares M100;13.6878;13.6878;13.6878;13-Mar-2015
+114456;MOSt Shares M100;13.6351;13.6351;13.6351;16-Mar-2015
+114456;MOSt Shares M100;13.7678;13.7678;13.7678;17-Mar-2015
+114456;MOSt Shares M100;13.7905;13.7905;13.7905;18-Mar-2015
+114456;MOSt Shares M100;13.7403;13.7403;13.7403;19-Mar-2015
+114456;MOSt Shares M100;13.5376;13.5376;13.5376;20-Mar-2015
+114456;MOSt Shares M100;13.4269;13.4269;13.4269;23-Mar-2015
+114456;MOSt Shares M100;13.3877;13.3877;13.3877;24-Mar-2015
+114456;MOSt Shares M100;13.4045;13.4045;13.4045;25-Mar-2015
+114456;MOSt Shares M100;13.2807;13.2807;13.2807;26-Mar-2015
+114456;MOSt Shares M100;13.2573;13.2573;13.2573;27-Mar-2015
+114456;MOSt Shares M100;13.4575;13.4575;13.4575;30-Mar-2015
+114456;MOSt Shares M100;13.5217;13.5217;13.5217;31-Mar-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);266.4055;266.4055;266.4055;01-Jan-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);267.6122;267.6122;267.6122;02-Jan-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);266.9121;266.9121;266.9121;05-Jan-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);262.9705;262.9705;262.9705;06-Jan-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);260.5963;260.5963;260.5963;07-Jan-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);262.0367;262.0367;262.0367;08-Jan-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);264.9827;264.9827;264.9827;09-Jan-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);261.9699;261.9699;261.9699;12-Jan-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);258.4262;258.4262;258.4262;13-Jan-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);257.9944;257.9944;257.9944;14-Jan-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);257.0346;257.0346;257.0346;15-Jan-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);253.1461;253.1461;253.1461;16-Jan-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);255.4767;255.4767;255.4767;19-Jan-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);254.6672;254.6672;254.6672;20-Jan-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);256.6162;256.6162;256.6162;21-Jan-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);257.5256;257.5256;257.5256;22-Jan-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);262.6196;262.6196;262.6196;23-Jan-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);261.9325;261.9325;261.9325;27-Jan-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);254.8481;254.8481;254.8481;28-Jan-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);253.2329;253.2329;253.2329;29-Jan-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);257.7351;257.7351;257.7351;30-Jan-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);255.9115;255.9115;255.9115;02-Feb-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);258.0115;258.0115;258.0115;03-Feb-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);260.0414;260.0414;260.0414;04-Feb-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);259.8498;259.8498;259.8498;05-Feb-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);261.9767;261.9767;261.9767;06-Feb-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);260.1184;260.1184;260.1184;09-Feb-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);261.2512;261.2512;261.2512;10-Feb-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);265.1922;265.1922;265.1922;11-Feb-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);266.5952;266.5952;266.5952;12-Feb-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);269.9684;269.9684;269.9684;13-Feb-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);271.7120;271.7120;271.7120;16-Feb-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);271.8734;271.8734;271.8734;18-Feb-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);272.8495;272.8495;272.8495;19-Feb-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);274.1366;274.1366;274.1366;20-Feb-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);275.6139;275.6139;275.6139;23-Feb-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);276.2598;276.2598;276.2598;24-Feb-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);276.0579;276.0579;276.0579;25-Feb-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);274.2588;274.2588;274.2588;26-Feb-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);274.6852;274.6852;274.6852;27-Feb-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);273.7790;273.7790;273.7790;02-Mar-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);276.5320;276.5320;276.5320;03-Mar-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);275.0983;275.0983;275.0983;04-Mar-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);275.7644;275.7644;275.7644;05-Mar-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);272.5833;272.5833;272.5833;09-Mar-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);275.0258;275.0258;275.0258;10-Mar-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);270.5947;270.5947;270.5947;11-Mar-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);269.3988;269.3988;269.3988;12-Mar-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);270.2323;270.2323;270.2323;13-Mar-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);270.8068;270.8068;270.8068;16-Mar-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);273.5284;273.5284;273.5284;17-Mar-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);273.3792;273.3792;273.3792;18-Mar-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);276.2898;276.2898;276.2898;19-Mar-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);275.7736;275.7736;275.7736;20-Mar-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);277.5195;277.5195;277.5195;23-Mar-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);275.8482;275.8482;275.8482;24-Mar-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);274.9080;274.9080;274.9080;25-Mar-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);268.9773;268.9773;268.9773;26-Mar-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);269.5508;269.5508;269.5508;27-Mar-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);269.4535;269.4535;269.4535;30-Mar-2015
+114984;Motilal Oswal MOSt Shares NASDAQ-100 ETF (MOSt Shares NASDAQ 100);273.7202;273.7202;273.7202;31-Mar-2015

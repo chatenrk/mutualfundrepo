@@ -26,7 +26,7 @@ sap.ui
 
 												var loginuser = this.getOwnerComponent().getModel("loggedin_user");
 												this._lgndata = loginuser.getData();
-
+                        return this._lgndata;
 										},
 
 										_getInvestFor:function(username)
@@ -120,7 +120,16 @@ sap.ui
 												panelName.setExpanded(expanded);
 											}
 										},
-
+										sortArray:function(arr,key)
+										{
+											var a1,b1;
+											arr.sort(function(a,b)
+											{
+												a1 = a[key];
+												b1 = b[key];
+												return a1-b1;
+											});
+										},
 										onNavBack : function(oEvent) {
 											var oHistory, sPreviousHash;
 											oHistory = History.getInstance();

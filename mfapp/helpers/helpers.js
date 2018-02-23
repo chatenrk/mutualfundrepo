@@ -116,7 +116,7 @@ function checkpwd(password)
 							robj.scode = sarray[0];
 							robj.sname = sarray[1];
 							robj.nav = sarray[2];
-							
+
 							// Convert date from DD-MMM-YYYY to ISO date
 							date = moment(sarray[5],'DD-MMM-YYYY').format("YYYY-MM-DD")
 							isodate = moment(date).toISOString();
@@ -132,6 +132,40 @@ function checkpwd(password)
 
 
 	}
+	function findInArray(array,key,value)
+	{
+
+		for(var i=0;i<array.length;i++)
+		{
+			if(array[i][key] === value)
+			{
+				return array[i];
+			}
+		}
+	}
+
+	function sumtotal(array,key)
+	{
+
+			var stotal = 0.00,
+			val = 0;
+			for (var i = 0; i < array.length; i++)
+			{
+
+				if(array[i][key].value)
+				{
+
+					val = parseFloat(array[i][key].value);
+				}
+				else
+				{
+					val = array[i][key];
+				}
+
+				stotal = stotal + val;
+			}
+			return stotal;
+	}
 
 
 module.exports.parseOutput = parseOutput;
@@ -139,3 +173,5 @@ module.exports.parsetextNAV = parsetextNAV;
 module.exports.asyncForEach = asyncForEach;
 module.exports.csvtojson = csvtojson;
 module.exports.checkpwd = checkpwd;
+module.exports.findInArray = findInArray;
+module.exports.sumtotal = sumtotal;

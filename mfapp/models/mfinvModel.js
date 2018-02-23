@@ -54,7 +54,7 @@ async function findOneInvDet(query)
 {
 try{
       let invdet;
-      invdet = await mfinvModel.find(query);
+      invdet = await mfinvModel.find(query).sort({amcname:1,sname:1});
       return invdet;
   } catch (err)
   {
@@ -135,10 +135,93 @@ async function getAggregation(aggr)
   }
 }
 
+async function grpGoalAggregation(aggr)
+{
+  try
+  {
+
+    let aggrres;
+    aggrres = await mfinvModel.aggregate([
+
+
+              { $match: {invBy: {$eq: aggr.invBy}} },
+              {
+                $group:
+                {
+                        _id: "$invFor",
+                        count: {$sum: 1},
+                        total:{$sum:"$amount"},
+
+                }
+              },
+              {$sort:{_id:1}}
+    //
+        ]);
+
+    return aggrres;
+  }
+  catch (err)
+  {
+
+    return err;
+  }
+}
+
+async function grpGoalSchemeAggregation(aggr)
+{
+  try
+  {
+    debugger;
+    let aggrres;
+    aggrres = await mfinvModel.aggregate([
+
+
+              { $match: {invBy: {$eq: aggr.invBy}, invFor: {$eq: aggr.invFor}} },
+              {
+                $group:
+                {
+                        _id: {invFor: aggr.invFor,sname:"$sname",scode:"$scode"},
+                        count: {$sum: 1},
+                        total:{$sum:"$amount"},
+
+                }
+              },
+              {$sort:{_id:1}}
+    //
+        ]);
+
+    return aggrres;
+  }
+  catch (err)
+  {
+    debugger;
+    return err;
+  }
+}
+
+async function deleteInv(_id)
+{
+  try
+  {
+    debugger;
+    let delres;
+    delres = await mfinvModel.deleteOne({"_id":_id});
+    return delres;
+  }
+  catch (err)
+  {
+    debugger;
+    return err;
+  }
+}
+
 
 
 module.exports.findAll = findAll;
 module.exports.postOne = postOne;
 module.exports.getAggregation = getAggregation;
+module.exports.grpGoalAggregation = grpGoalAggregation;
+module.exports.grpGoalSchemeAggregation = grpGoalSchemeAggregation;
 //module.exports.postMany = postMany;
 module.exports.findOneInvDet = findOneInvDet;
+module.exports.deleteInv = deleteInv;

@@ -1,0 +1,35 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Popover
+		title="Own NAV"
+		class="sapUiContentPadding"
+		placement="PreferredRightOrFlip"
+			initialFocus="logout">
+		<content>
+			<VBox>
+				<Title text="Enter Own NAV, as NAV not found for given date" />
+				<items>
+				<Label text="{i18n>ownnav}" width="auto" class="LabelText"/>
+				<Input
+						id="ownnavval"
+						width="200px"
+				 />
+			 </items>
+			</VBox>
+		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button
+					id="Submit"
+					text="Submit"
+					press="handleSubmitPress" />
+					<Button
+						id="Cancel"
+						text="Cancel"
+						press="handleCancelPress" />
+			</Toolbar>
+		</footer>
+	</Popover>
+</core:FragmentDefinition>
