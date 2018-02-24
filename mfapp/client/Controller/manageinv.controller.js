@@ -1,7 +1,7 @@
 sap.ui
   .define(
-    ["../helpers/MessageHelpers", "../helpers/GatewayHelper", "sap/m/MessageBox", "simple_hello/Controller/BaseController", "sap/m/MessageToast", "	sap/ui/model/Sorter", "sap/ui/model/Filter", 'simple_hello/libs/Moment'],
-    function(MessageHelpers, GatewayHelper, MessageBox, BaseController, MessageToast, Sorter, Filter, Moment) {
+    ["sap/ui/core/Fragment","../helpers/MessageHelpers", "../helpers/GatewayHelper", "sap/m/MessageBox", "simple_hello/Controller/BaseController", "sap/m/MessageToast", "	sap/ui/model/Sorter", "sap/ui/model/Filter", 'simple_hello/libs/Moment'],
+    function(Fragment,MessageHelpers, GatewayHelper, MessageBox, BaseController, MessageToast, Sorter, Filter, Moment) {
       "use strict";
       var _oMessageStrip, _invBy;
       var _dialog;
@@ -225,12 +225,13 @@ sap.ui
 
             handleCopyRow: function(oEvt) {
 
-              var that = this;
-              // Get id of the row selected for delete
-              var id = oEvt.getSource().getBindingContext("manageinv_model").getProperty("_id");
-              that.id = id;
-              var sname = oEvt.getSource().getBindingContext("manageinv_model").getProperty("sname")
-              var invdate = oEvt.getSource().getBindingContext("manageinv_model").getProperty("invdatefmtd")
+                this._showpopover("change", oEvt);
+              // var that = this;
+              // // Get id of the row selected for delete
+              // var id = oEvt.getSource().getBindingContext("manageinv_model").getProperty("_id");
+              // that.id = id;
+              // var sname = oEvt.getSource().getBindingContext("manageinv_model").getProperty("sname")
+              // var invdate = oEvt.getSource().getBindingContext("manageinv_model").getProperty("invdatefmtd")
             },
 
             handlePopOverPress: function(oEvt) {
@@ -247,8 +248,9 @@ sap.ui
 
             _showpopover: function(type, oEvt) {
 
-              if (!this._oPopover) {
-                this._oPopover = sap.ui.xmlfragment("simple_hello.view.invpopover", this);
+              if (!this._oPopover)
+              {
+                this._oPopover = sap.ui.xmlfragment("investpopover","simple_hello.view.invpopover", this);
                 this.getView().addDependent(this._oPopover);
                 this._oPopover.attachAfterOpen(function() {
                   this.disablePointerEvents();
@@ -258,6 +260,13 @@ sap.ui
                 }, this);
               }
 
+              // // First check if the popover is open. If so close it
+              // if(this._oPopover.isOpen() === true)
+              // {
+              //   this._oPopover.close();
+              // }
+
+
               var oCtx = oEvt.getSource().getBindingContext("manageinv_model");
               var sPath = oCtx.getPath();
               this._oPopover.bindElement({
@@ -265,9 +274,46 @@ sap.ui
                 model: "manageinv_model"
               });
 
+
+              var dispCont = 
+              // var dispVBox = Fragment.byId("investpopover","dispVBox");
+              // var changeVBox = Fragment.byId("investpopover","changeVBox");
+              var svbutton = Fragment.byId("investpopover","save");
+              var cpybutton = Fragment.byId("investpopover","copy");
+              var delbutton = Fragment.byId("investpopover","delete");
+
+
+              //remove all content
+              // this._oPopover.removeAllContent();
+
+              if(type === "display")
+              {
+                // this._oPopover.getContent();
+                // dispVBox.setVisible(true);
+                // changeVBox.setVisible(false);
+                cpybutton.setVisible(true);
+                delbutton.setVisible(true);
+                svbutton.setVisible(false);
+              }
+              else if (type === "change")
+              {
+                // dispVBox.setVisible(false);
+                // changeVBox.setVisible(true);
+                cpybutton.setVisible(false);
+                delbutton.setVisible(false);
+                svbutton.setVisible(true);
+              }
+
               // delay because addDependent will do a async rerendering and the actionSheet will immediately close without it.
               var oControl = oEvt.getSource();
               this._oPopover.openBy(oControl);
+            },
+            handleClose:function(oEvt)
+            {
+              if(this._oPopover)
+              {
+                this._oPopover.close();
+              }
             }
 
 
