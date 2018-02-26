@@ -8,5 +8,5 @@ The important components in this App include
 - Admin Dashboard 
 - Chaitanya's MF Dashboard
 
-Login Validation:
+### Login Validation:
 This screen comprises of 2 fields namely the UserName and Password. It works as an authentication gateway for existing users to login and avail the services provided by the Mutual Fund Demo App
