@@ -1,6 +1,6 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
-	<VBox class="sapUiSmallMargin">
-		<f:Form id="invDetailsForm" editable="false">
+	<VBox id="invdeltdispVBOX" class="sapUiSmallMargin">
+		<f:Form editable="false">
 			<f:title>
 				<core:Title text="{i18n>invOvw}"/>
 			</f:title>
@@ -12,13 +12,13 @@
 					<f:formElements>
 						<f:FormElement label="Scheme Name" design="sap.m.LabelDesign.Bold">
 							<f:fields>
-								<Text text="{manageinv_model>sname}" id="sname"/>
+								<Text text="{manageinv_model>sname}"/>
 							</f:fields>
 						</f:FormElement>
 
 						<f:FormElement label="Transaction" design="sap.m.LabelDesign.Bold">
 							<f:fields>
-								<Text text="{manageinv_model>transaction}" id="transaction"/>
+								<Text text="{manageinv_model>transaction}"/>
 							</f:fields>
 						</f:FormElement>
 
@@ -30,25 +30,25 @@
 
 						<f:FormElement label="Amount" design="Bold">
 							<f:fields>
-								<Text text="{manageinv_model>amount}" id="amount"/>
+								<Text text="{manageinv_model>amount}"/>
 							</f:fields>
 						</f:FormElement>
 
 						<f:FormElement label="Invested For" design="sap.m.LabelDesign.Bold">
 							<f:fields>
-								<Text text="{manageinv_model>invFor}" id="invFor"/>
+								<Text text="{manageinv_model>invFor}"/>
 							</f:fields>
 						</f:FormElement>
 
 						<f:FormElement label="Remarks" design="sap.m.LabelDesign.Bold">
 							<f:fields>
-								<Text text="{manageinv_model>remarks}" id="remarks"/>
+								<Text text="{manageinv_model>remarks}"/>
 							</f:fields>
 						</f:FormElement>
 
 						<f:FormElement label="Asset Type" design="sap.m.LabelDesign.Bold">
 							<f:fields>
-								<Text text="{manageinv_model>assetType}" id="assetType"/>
+								<Text text="{manageinv_model>assetType}"/>
 							</f:fields>
 						</f:FormElement>
 					</f:formElements>

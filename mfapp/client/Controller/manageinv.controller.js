@@ -1,7 +1,7 @@
 sap.ui
   .define(
-    ["sap/ui/core/Fragment","../helpers/MessageHelpers", "../helpers/GatewayHelper", "sap/m/MessageBox", "simple_hello/Controller/BaseController", "sap/m/MessageToast", "	sap/ui/model/Sorter", "sap/ui/model/Filter", 'simple_hello/libs/Moment'],
-    function(Fragment,MessageHelpers, GatewayHelper, MessageBox, BaseController, MessageToast, Sorter, Filter, Moment) {
+    ["sap/ui/core/Fragment", "../helpers/MessageHelpers", "../helpers/GatewayHelper", "sap/m/MessageBox", "simple_hello/Controller/BaseController", "sap/m/MessageToast", "	sap/ui/model/Sorter", "sap/ui/model/Filter", 'simple_hello/libs/Moment'],
+    function(Fragment, MessageHelpers, GatewayHelper, MessageBox, BaseController, MessageToast, Sorter, Filter, Moment) {
       "use strict";
       var _oMessageStrip, _invBy;
       var _dialog;
@@ -37,12 +37,12 @@ sap.ui
             _getgoalssuccess: function(data, that) {
 
               /**
-              * @desc This is the success handler for Goals details.
-              * If details are receieved then they are bound to the model,for display on the view
-              * If no details are recieved, repeat the getInvestFor method with username as Others
-              * @param data: data sent from the server
-              * @param that: reference to the this variable of the view
-              */
+               * @desc This is the success handler for Goals details.
+               * If details are receieved then they are bound to the model,for display on the view
+               * If no details are recieved, repeat the getInvestFor method with username as Others
+               * @param data: data sent from the server
+               * @param that: reference to the this variable of the view
+               */
 
 
               if (data.length > 0) {
@@ -61,7 +61,7 @@ sap.ui
                 that._getMFGoals("Others");
               }
             },
-            _getgoalsfailure: function(err,that) {
+            _getgoalsfailure: function(err, that) {
 
             },
             _getOwnInvestments: function(invBy) {
@@ -225,13 +225,27 @@ sap.ui
 
             handleCopyRow: function(oEvt) {
 
-                this._showpopover("change", oEvt);
-              // var that = this;
-              // // Get id of the row selected for delete
-              // var id = oEvt.getSource().getBindingContext("manageinv_model").getProperty("_id");
-              // that.id = id;
-              // var sname = oEvt.getSource().getBindingContext("manageinv_model").getProperty("sname")
-              // var invdate = oEvt.getSource().getBindingContext("manageinv_model").getProperty("invdatefmtd")
+              // Get the popover and change the content
+              if (this._oPopover) {
+                // Get the content from the invdetl fragment and add it to the popover
+                if (!this._invcopy) {
+                  this._invcopy = sap.ui.xmlfragment("investdetl", "simple_hello.view.invcopy", this);
+                }
+                var popoverContent = Fragment.byId("investdetl", "invdeltcopyVBOX");
+
+                //remove all content
+                this._oPopover.removeAllContent();
+                this._oPopover.insertContent(popoverContent);
+
+
+
+                this._cpybutton.setVisible(false);
+                this._delbutton.setVisible(false);
+                this._svbutton.setVisible(true);
+
+              }
+              // this._showpopover("change", oEvt);
+
             },
 
             handlePopOverPress: function(oEvt) {
@@ -248,9 +262,8 @@ sap.ui
 
             _showpopover: function(type, oEvt) {
 
-              if (!this._oPopover)
-              {
-                this._oPopover = sap.ui.xmlfragment("investpopover","simple_hello.view.invpopover", this);
+              if (!this._oPopover) {
+                this._oPopover = sap.ui.xmlfragment("investpopover", "simple_hello.view.invpopover", this);
                 this.getView().addDependent(this._oPopover);
                 this._oPopover.attachAfterOpen(function() {
                   this.disablePointerEvents();
@@ -275,43 +288,40 @@ sap.ui
               });
 
 
-              var dispCont = 
+              // var dispCont =
               // var dispVBox = Fragment.byId("investpopover","dispVBox");
               // var changeVBox = Fragment.byId("investpopover","changeVBox");
-              var svbutton = Fragment.byId("investpopover","save");
-              var cpybutton = Fragment.byId("investpopover","copy");
-              var delbutton = Fragment.byId("investpopover","delete");
+              this._svbutton = Fragment.byId("investpopover", "save");
+              this._cpybutton = Fragment.byId("investpopover", "copy");
+              this._delbutton = Fragment.byId("investpopover", "delete");
 
 
               //remove all content
               // this._oPopover.removeAllContent();
 
-              if(type === "display")
-              {
-                // this._oPopover.getContent();
-                // dispVBox.setVisible(true);
-                // changeVBox.setVisible(false);
-                cpybutton.setVisible(true);
-                delbutton.setVisible(true);
-                svbutton.setVisible(false);
-              }
-              else if (type === "change")
-              {
-                // dispVBox.setVisible(false);
-                // changeVBox.setVisible(true);
-                cpybutton.setVisible(false);
-                delbutton.setVisible(false);
-                svbutton.setVisible(true);
+              if (type === "display") {
+                // Get the content from the invdetl fragment and add it to the popover
+                if (!this._invdetl) {
+                  this._invdetl = sap.ui.xmlfragment("investdetl", "simple_hello.view.invdetl", this);
+                }
+
+                var popoverContent = Fragment.byId("investdetl", "invdeltdispVBOX");
+
+                //remove all content
+                this._oPopover.removeAllContent();
+                this._oPopover.insertContent(popoverContent);
+
+                this._cpybutton.setVisible(true);
+                this._delbutton.setVisible(true);
+                this._svbutton.setVisible(false);
               }
 
               // delay because addDependent will do a async rerendering and the actionSheet will immediately close without it.
               var oControl = oEvt.getSource();
               this._oPopover.openBy(oControl);
             },
-            handleClose:function(oEvt)
-            {
-              if(this._oPopover)
-              {
+            handleClose: function(oEvt) {
+              if (this._oPopover) {
                 this._oPopover.close();
               }
             }

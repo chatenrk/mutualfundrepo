@@ -34,11 +34,7 @@
             <Text text="{i18n>invFor}"/>
           </Column>
 
-          <Column hAlign="Center" vAlign="Center">
-            <header>
-              <Label text="{i18n>action}"/>
-            </header>
-          </Column>
+
 
         </columns>
         <items>
@@ -49,12 +45,7 @@
               <Text text="{manageinv_model>invdatefmtd}"/>
               <Text text="{manageinv_model>amount}"/>
               <Text text="{manageinv_model>invFor}"/>
-              <SegmentedButton selectedKey="kids">
-                <items>
-                  <SegmentedButtonItem icon="sap-icon://delete" press="handleDeleteRow"/>
-                  <SegmentedButtonItem icon="sap-icon://copy" press="handleCopyRow"/>
-                </items>
-              </SegmentedButton>
+            
             </cells>
           </ColumnListItem>
         </items>

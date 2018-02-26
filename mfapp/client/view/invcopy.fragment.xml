@@ -1,60 +1,78 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
 
-  <VBox class="sapUiSmallMargin">
-    <f:Form id="invDetailsForm" editable="false">
+  <VBox class="sapUiSmallMargin" id="invdeltcopyVBOX">
+    <f:Form editable="true">
       <f:title>
-        <core:Title text="{i18n>invOvw}"/>
+        <core:Title text="{i18n>invChg}"/>
       </f:title>
+
       <f:layout>
         <f:ResponsiveGridLayout labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false"/>
       </f:layout>
+
       <f:formContainers>
         <f:FormContainer>
           <f:formElements>
+
+            <!-- Scheme name for copy. This is not editable -->
             <f:FormElement label="Scheme Name" design="sap.m.LabelDesign.Bold">
               <f:fields>
-                <Text text="{manageinv_model>sname}" id="sname"/>
+                <Text text="{manageinv_model>sname}"/>
               </f:fields>
             </f:FormElement>
 
+            <!-- Transaction type for copy. This is not editable -->
             <f:FormElement label="Transaction" design="sap.m.LabelDesign.Bold">
               <f:fields>
-                <Text text="{manageinv_model>transaction}" id="transaction"/>
+                <Text text="{manageinv_model>transaction}"/>
               </f:fields>
             </f:FormElement>
 
+            <!-- Date of investment -->
             <f:FormElement label="Investment Date" design="sap.m.LabelDesign.Bold">
               <f:fields>
-                <Text text="{manageinv_model>invdatefmtd}"/>
+                <DatePicker id="mfinvdate1" value="{manageinv_model>invdatefmtd}" displayFormat="dd-MMM-yyyy" valueFormat="yyyy-MM-dd" change="handleChange"/>
               </f:fields>
             </f:FormElement>
 
+            <!-- Amount of investment -->
             <f:FormElement label="Amount" design="Bold">
               <f:fields>
-                <Text text="{manageinv_model>amount}" id="amount"/>
+                <Input value="{manageinv_model>amount}"/>
               </f:fields>
             </f:FormElement>
 
+            <!-- Investment Goal -->
             <f:FormElement label="Invested For" design="sap.m.LabelDesign.Bold">
               <f:fields>
-                <Text text="{manageinv_model>invFor}" id="invFor"/>
+                <ComboBox id="cbinvfor" width="300px" items="{mfinvfor_model>/invFor}" selectionChange="onInvForChange">
+                  <items>
+                    <core:Item key="{mfinvfor_model>key}" text="{mfinvfor_model>text}"/>
+                  </items>
+                </ComboBox>
               </f:fields>
             </f:FormElement>
 
             <f:FormElement label="Remarks" design="sap.m.LabelDesign.Bold">
               <f:fields>
-                <Text text="{manageinv_model>remarks}" id="remarks"/>
+                <Input value="{manageinv_model>remarks}"/>
               </f:fields>
             </f:FormElement>
 
             <f:FormElement label="Asset Type" design="sap.m.LabelDesign.Bold">
               <f:fields>
-                <Text text="{manageinv_model>assetType}" id="assetType"/>
+                <ComboBox id="cbassettype" width="100px" items="{mfinvfor_model>/assetType}" selectionChange="onAssetTypeChange">
+                  <items>
+                    <core:Item key="{mfinvfor_model>key}" text="{mfinvfor_model>text}"/>
+                  </items>
+                </ComboBox>
               </f:fields>
             </f:FormElement>
+
           </f:formElements>
         </f:FormContainer>
       </f:formContainers>
+
     </f:Form>
   </VBox>
 
