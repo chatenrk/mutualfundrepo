@@ -1,0 +1,128 @@
+<mvc:View controllerName="simple_hello.Controller.shownavsch" xmlns="sap.m" xmlns:t="sap.ui.table" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+
+  <Page id="schtable" title="Show NAV Details for scheme" showNavButton="true" navButtonPress="onNavBack">
+
+    <content>
+
+      <!-- This is the panel which holds the selection elements -->
+      <Panel id="showschsel" width="auto" class="sapUiSmallMargin border-0">
+
+        <!-- Header Toolbar -->
+        <headerToolbar class="sapUiTinyMargin">
+          <Toolbar>
+            <Title level="H4" text="{i18n>selnavsch}"/>
+          </Toolbar>
+        </headerToolbar>
+
+        <!-- Main Flex Box -->
+        <VBox class="sapUiSmallMargin" id="MainFlexBox">
+
+          <!-- AMC Name -->
+          <HBox width="100%">
+            <items>
+              <HBox width="20%" class="alignDropdownAlign sapMFlexItemAlignCenter">
+                <Label text="{i18n>amcname}" width="auto" class="LabelText"/>
+              </HBox>
+
+              <VBox width="80%" direction="Column">
+                <items>
+                  <ComboBox id="cbfname" width="300px" items="{amc_model>/}" selectionChange="onFHChange">
+                    <items>
+                      <core:Item key="{amc_model>amccode}" text="{amc_model>amcname}"/>
+                    </items>
+                  </ComboBox>
+                </items>
+              </VBox>
+            </items>
+          </HBox>
+
+          <!-- MF Name. This is greyed out and is loaded with data selected from Select Dialog -->
+          <HBox width="100%">
+            <items>
+              <HBox width="20%" class="alignDropdownAlign sapMFlexItemAlignCenter">
+                <Label text="{i18n>mfname}" width="auto" class="LabelText"/>
+
+              </HBox>
+
+              <VBox width="80%" direction="Column">
+                <items>
+                  <Input id="mfname" width="600px" enabled="false"/>
+                </items>
+              </VBox>
+            </items>
+          </HBox>
+
+          <!-- Buttons for the form -->
+          <HBox width="100%" justifyContent="End" class="sapUiSmallMarginTop">
+            <items>
+
+              <Button text="Get NAV" type="Submit" class="sapUiSmallMarginEnd" press="onGetNAV">
+                <layoutData>
+                  <OverflowToolbarLayoutData priority="NeverOverflow"/>
+                </layoutData>
+              </Button>
+
+              <Button text="Refresh" type="Refresh" press="onRefresh">
+                <layoutData>
+                  <OverflowToolbarLayoutData priority="NeverOverflow"/>
+                </layoutData>
+              </Button>
+
+            </items>
+          </HBox>
+
+        </VBox>
+      </Panel>
+
+      <!-- This is the panel which table to show the logged details -->
+      <Panel id="showschtbl" width="auto" class="sapUiSmallMargin border-0">
+
+        <!-- Header Toolbar -->
+        <headerToolbar class="sapUiTinyMargin">
+          <Toolbar>
+            <Title level="H4" text="{i18n>navdisp}"/>
+          </Toolbar>
+        </headerToolbar>
+
+        <Table id="navdatatable" items="{fewnavmodel>/}" selectionMode="None" title="NAV" growing="true" growingThreshold="10">
+
+          <headerToolbar>
+            <Toolbar>
+              <Title text="Last 10 NAV for Scheme" level="H2"/>
+            </Toolbar>
+          </headerToolbar>
+
+          <columns>
+            <Column hAlign="Center" vAlign="Center">
+              <Text text="{i18n>scode}" class="textbold"/>
+            </Column>
+            <Column hAlign="Center" vAlign="Center">
+              <Text text="{i18n>sname}"/>
+            </Column>
+
+            <Column hAlign="Center" vAlign="Center">
+              <Text text="{i18n>nav}"/>
+            </Column>
+
+            <Column hAlign="Center" vAlign="Center">
+              <Text text="{i18n>ndate}"/>
+            </Column>
+
+          </columns>
+          <items>
+            <ColumnListItem  hAlign="Center" vAlign="Center">
+              <cells>
+                <Text text="{fewnavmodel>scode}"/>
+                <Text text="{fewnavmodel>sname}"/>
+                <Text text="{fewnavmodel>nav}"/>
+                <Text text="{fewnavmodel>datefmtd}"/>
+              </cells>
+            </ColumnListItem>
+          </items>
+
+        </Table>
+      </Panel>
+    </content>
+
+  </Page>
+</mvc:View>

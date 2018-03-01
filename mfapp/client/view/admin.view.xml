@@ -3,23 +3,40 @@
 	xmlns:layout="sap.ui.layout"
 	controllerName="simple_hello.Controller.admin">
 	<ObjectHeader
-		title="Scheme related" />
+		title="Admin Tiles" />
 	<HeaderContainer orientation="Horizontal">
-	
-	
-	
+
 	<content>
 	<FlexBox items = "{dbtiles_model>/AdminCollection}">
-	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
 				 header="{dbtiles_model>title}"
 				 press="onTilePress">
 		<TileContent>
 			<ImageContent src="{dbtiles_model>icon}" />
 		</TileContent>
 	</GenericTile>
-	</FlexBox>	
+	</FlexBox>
 	</content>
-	
+
+	</HeaderContainer>
+
+
+	<ObjectHeader
+		title="NAV Operation Tiles" />
+	<HeaderContainer orientation="Horizontal">
+
+	<content>
+	<FlexBox items = "{dbtiles_model>/NAVCollection}">
+	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+				 header="{dbtiles_model>title}"
+				 press="onTilePress">
+		<TileContent>
+			<ImageContent src="{dbtiles_model>icon}" />
+		</TileContent>
+	</GenericTile>
+	</FlexBox>
+	</content>
+
 	</HeaderContainer>
 
 </View>

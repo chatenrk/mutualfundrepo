@@ -288,16 +288,12 @@ sap.ui
               });
 
 
-              // var dispCont =
-              // var dispVBox = Fragment.byId("investpopover","dispVBox");
-              // var changeVBox = Fragment.byId("investpopover","changeVBox");
+
               this._svbutton = Fragment.byId("investpopover", "save");
               this._cpybutton = Fragment.byId("investpopover", "copy");
               this._delbutton = Fragment.byId("investpopover", "delete");
 
 
-              //remove all content
-              // this._oPopover.removeAllContent();
 
               if (type === "display") {
                 // Get the content from the invdetl fragment and add it to the popover
@@ -324,6 +320,28 @@ sap.ui
               if (this._oPopover) {
                 this._oPopover.close();
               }
+            },
+
+            handleSave:function(oEvt)
+            {
+
+              var that = this;
+
+              var data = oEvt.getSource().getBindingContext("manageinv_model").getObject();
+
+              // Check if required details are provided
+              var postdata = this._postdata(data);
+
+
+
+
+            },
+            _postdata:function(data)
+            {
+              // var postobj={};
+              //
+              // if(data.inv)
+              // 
             }
 
 

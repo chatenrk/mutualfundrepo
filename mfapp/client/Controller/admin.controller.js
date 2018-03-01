@@ -41,6 +41,9 @@ sap.ui
                 case "manageinv":
                   this._oRouter.navTo("manageinv");
                   break;
+                case "shownav":
+                    this._oRouter.navTo("shownavsch");
+                    break;
                 default:
                   break;
               }

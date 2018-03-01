@@ -133,6 +133,10 @@
 			"splitapp":
 			{
 				"type": "sap.ui.model.json.JSONModel"
+			},
+			"fewnavmodel":
+			{
+				"type": "sap.ui.model.json.JSONModel"
 			}
 		},
 		"routing": {
@@ -248,6 +252,11 @@
 					"name": "manageinv",
 					"target": "manageinv"
 
+				},
+				{
+					"pattern": "shownavsch",
+					"name": "shownavsch",
+					"target": "shownavsch"
 				}
 
 			],
@@ -318,6 +327,10 @@
 				},
 				"dispallinvgoals": {
 					"viewName": "showallinvsplit.master2",
+					"viewLevel": 1
+				},
+				"shownavsch": {
+					"viewName": "shownavsch",
 					"viewLevel": 1
 				}
 

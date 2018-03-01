@@ -30,18 +30,7 @@
 			"type": "Create",
 			"title": "Add AMC Details"
 		},
-		{
-			"id": "addnavdet",
-			"icon": "sap-icon://add",
-			"type": "Create",
-			"title": "Add NAV Details"
-		},
-		{
-			"id": "addmultnav",
-			"icon": "sap-icon://add",
-			"type": "Create",
-			"title": "Add Multiple NAV"
-		},
+
 		{
 			"id": "manageinv",
 			"icon": "sap-icon://add",
@@ -73,6 +62,22 @@
 			"title": "Show All My Investments"
 		}
 
+
+	],
+	"NAVCollection": [
+
+		{
+			"id": "addnavdet",
+			"icon": "sap-icon://add",
+			"type": "Create",
+			"title": "Upload NAV File(TXT/CSV)"
+		},
+		{
+			"id": "shownav",
+			"icon": "sap-icon://show",
+			"type": "Monitor",
+			"title": "Show NAV for Scheme"
+		}
 
 	]
 }
