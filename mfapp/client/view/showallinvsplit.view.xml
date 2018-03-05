@@ -1,88 +1,40 @@
-<mvc:View
-	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
-	controllerName="simple_hello.Controller.showallinvsplit"
-	xmlns="sap.m">
-	<SplitApp id="SplitAppDemo" initialDetail="detail" initialMaster="master" orientationChange="onOrientationChange">
-		<detailPages>
-			<Page id="detail" title="Detail 1" class="sapUiStdPage">
+<mvc:View controllerName="simple_hello.Controller.showallinvsplit" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns="sap.m">
+	<semantic:FullscreenPage id="page" navButtonPress="onNavBack" showNavButton="true" title="{i18n>mfinvdisp}">
+		<semantic:content>
+			<IconTabBar id="iconTabBar" select="onQuickFilter" class="sapUiResponsiveContentPadding">
 				<content>
-					<Label text="Detail page 1" />
-					<Button text="Go to Detail page2" press="onPressNavToDetail" />
-				</content>
-			</Page>
-			<Page id="detailDetail" title="Detail Detail" class="sapUiStdPage" showNavButton="true"
-					navButtonText="Back" navButtonPress="onPressDetailBack">
-				<content>
-					<VBox class="sapUiSmallMargin">
-						<Label text="This is Detail Page2" />
-						<Text text="Here you could change the Split Application mode. After the mode change, resize the browser window to see the difference in the master form behaviour." />
-						<RadioButtonGroup columns="1" width="500px" class="sapUiMediumMarginBottom" select="onPressModeBtn">
-							<buttons>
-								<RadioButton id="RB1-1" text="show/hide" selected="true" custom:splitAppMode="ShowHideMode" />
-								<RadioButton id="RB1-2" text="stretch/compress" custom:splitAppMode="StretchCompressMode" />
-								<RadioButton id="RB1-3" text="hide" custom:splitAppMode="HideMode" />
-								<RadioButton id="RB1-4" text="popover" custom:splitAppMode="PopoverMode" />
-							</buttons>
-						</RadioButtonGroup>
-					</VBox>
-				</content>
-			</Page>
-			<Page id="detail2" title="Detail 3 Page" class="sapUiStdPage" showNavButton="true"
-					navButtonText="Back" navButtonPress="onPressDetailBack">
+					<Table id="invtable" BackgroundDesign="Solid" updateFinished="onUpdateFinished" class="sapUiResponsiveMargin sapUiNoMarginTop" growing="true" growingScrollToLoad="true" noDataText="{worklistView>/tableNoDataText}" width="auto" items="{manageinv_model>/}">
+						<headerToolbar>
+							<Toolbar>
+								<ToolbarSpacer/>
+								<SearchField id="searchField" search="onSearch" tooltip="{i18n>worklistSearchTooltip}" width="auto"/>
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column hAlign="Center" vAlign="Center">
+								<Text text="{i18n>sname}"/>
+							</Column>
+							<Column hAlign="Center" vAlign="Center">
+								<Text text="{i18n>tamnt}"/>
+							</Column>
 
-				<content>
-					<Label text="This is Detail Page3" />
-					<Input/>
-					<Label text="Label 2" />
-					<Input/>
-					<Label text="Label 3" />
-					<Input/>
-					<Label text="Label 4" />
-					<Input/>
-					<Label text="Label 5" />
-					<Input/>
-				</content>
-			</Page>
-		</detailPages>
-		<masterPages>
-			<Page id="pfmaster" title="Portfolio View" icon="sap-icon://action" class="sapUiStdPage" showNavButton = "true"
-		       navButtonPress = "onNavBack">
-				<content>
-					<List headerText="Goals" items="{splitapp>/}" noDataText="{i18n>noDataText}">
+							<Column hAlign="Center" vAlign="Center">
+								<Text text="{i18n>fcnt}"/>
+							</Column>
+
+						</columns>
 						<items>
-              <ObjectListItem id="MasterList"
-															title="{splitapp>name}"
-                              number="{
-                                        	parts:[{path:'splitapp>total'},{path:'splitapp>curr'}],
-                                          type: 'sap.ui.model.type.Currency',
-					                                formatOptions: {showMeasure: false}
-                                      }"
-                              numberUnit="{splitapp>curr}"
-                              type="Navigation"
-                              press="onMasterPress">
-
-                    <attributes>
-  					               <ObjectAttribute text="Total Investments: {splitapp>goalCount}"/>
-  				          </attributes>
-  			      </ObjectListItem>
-
+							<ColumnListItem press="onPress" type="Navigation" hAlign="Center" vAlign="Center">
+								<cells>
+									<ObjectIdentifier title="{manageinv_model>sname}"/>
+									<ObjectNumber number="{manageinv_model>total}"/>
+									<ObjectNumber number="{manageinv_model>count}"/>
+								</cells>
+							</ColumnListItem>
 						</items>
-					</List>
+					</Table>
 				</content>
-			</Page>
-			<!-- <Page id="master2" title="Master 2" icon="sap-icon://action" class="sapUiStdPage" showNavButton="true"
-					navButtonPress="onPressMasterBack">
-				<content>
-					<List itemPress="onListItemPress">
-						<items>
-							<StandardListItem title="To Detail 1" type="Active" custom:to="detail"/>
-							<StandardListItem title="To Detail 2" type="Active" custom:to="detailDetail"/>
-							<StandardListItem title="To Detail 3" type="Active" custom:to="detail2"/>
-						</items>
-					</List>
-				</content>
-			</Page> -->
-		</masterPages>
-	</SplitApp>
+			</IconTabBar>
+		</semantic:content>
+	</semantic:FullscreenPage>
 </mvc:View>

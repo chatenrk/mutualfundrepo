@@ -148,7 +148,7 @@ async function grpGoalAggregation(aggr)
               {
                 $group:
                 {
-                        _id: "$invFor",
+                        _id: {invFor: "$invFor",sname:"$sname",scode:"$scode"},
                         count: {$sum: 1},
                         total:{$sum:"$amount"},
 

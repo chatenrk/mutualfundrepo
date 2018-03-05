@@ -2,6 +2,14 @@ sap.ui.define([], function() {
   "use strict";
 
   return {
+
+    /*
+    *---------------------------------------------------------------------*
+    * Investment Handling Methods
+    *---------------------------------------------------------------------*
+
+    */
+
     _deleteInvDet: function(id) {
       /**
        * @desc This is a helper function which recieves the id and deletes the entry in the mfinvdetls collection of the
@@ -98,6 +106,41 @@ sap.ui.define([], function() {
       return deferred.promise();
 
     },
+    getInvSchemeAggr: function(invBy) {
+      /**
+       * @desc This helper method is used to fetch aggregated scheme data for the logged in user
+       *       It performs an AJAX call and fetches the data
+       * @param invBy referring to the user who has logged in
+       * @return This returns the scheme data aggregations as a JSON Array
+       */
+
+       var schagrurl = "http://localhost:3000/mfinv/aggr?invBy=" + invBy;
+       var that = this;
+       var deferred = jQuery.Deferred();
+
+
+       $.ajax({
+         url: schagrurl,
+         type: 'GET',
+         dataType: 'json',
+         success: function(data) {
+           deferred.resolve(data);
+
+         },
+         error: function(err) {
+           deferred.reject(err);
+         }
+
+       }); //AJAX call close
+       return deferred.promise();
+    },
+
+    /*
+    *---------------------------------------------------------------------*
+    * AMC Handling Methods
+    *---------------------------------------------------------------------*
+
+    */
 
     getAMCs: function() {
 
@@ -129,6 +172,13 @@ sap.ui.define([], function() {
       return deferred.promise();
 
     },
+
+    /*
+    *---------------------------------------------------------------------*
+    * Scheme Handling Methods
+    *---------------------------------------------------------------------*
+
+    */
 
     getSchemes: function(amccode) {
       /**
@@ -166,8 +216,14 @@ sap.ui.define([], function() {
 
     },
 
-    getFewNav: function(scode,limit,sorder)
-    {
+    /*
+    *---------------------------------------------------------------------*
+    * NAV Handling Methods
+    *---------------------------------------------------------------------*
+
+    */
+
+    getFewNav: function(scode, limit, sorder) {
       /**
        * @desc This helper method is used to fetch first/ last N nav values from the database
        * @param scode referring to the Scheme Code
@@ -176,30 +232,26 @@ sap.ui.define([], function() {
        * @return This returns the NAV's in the database(navdetls collection) as a JSON Array
        */
 
-       var that = this;
-       var deferred = jQuery.Deferred();
+      var that = this;
+      var deferred = jQuery.Deferred();
 
-       var fewnavurl = "http://localhost:3000/nav/navlimit?scode="+scode+"&limit="+limit+"&sorder="+sorder;
+      var fewnavurl = "http://localhost:3000/nav/navlimit?scode=" + scode + "&limit=" + limit + "&sorder=" + sorder;
 
-       $.ajax({
-         url: fewnavurl,
-         type: 'GET',
-         dataType: 'json',
-         success: function(data) {
-           deferred.resolve(data);
+      $.ajax({
+        url: fewnavurl,
+        type: 'GET',
+        dataType: 'json',
+        success: function(data) {
+          deferred.resolve(data);
 
-         },
-         error: function(err) {
-           deferred.reject(err);
+        },
+        error: function(err) {
+          deferred.reject(err);
 
-         }
+        }
 
-       }); //AJAX call close
-       return deferred.promise();
-
-    },
-
-    gatewayfailure: function(err, busyDialog) {
+      }); //AJAX call close
+      return deferred.promise();
 
     }
 

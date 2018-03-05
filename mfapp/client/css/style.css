@@ -1,41 +1,72 @@
 .sapMPanelBGTranslucent {
-    background-color: #bfbfbf; !important
+  background-color: #bfbfbf;
+   !important
 }
 
 .sapMNav {
-    overflow: hidden;
-    position: relative;
-    height: 100%;
-    background-color: seashell; !important
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  background-color: seashell;
+   !important
 }
 
 .sapMListTblCell {
-
-    border-left: 1px solid #ccc;
-    
-    font-weight: bold; !important
-
-},
-.textbold{
-	font-weight: bold; !important
+  border-left: 1px solid #ccc;
+  font-weight: bold;
+   !important
 }
+
+, .textbold {
+  font-weight: bold;
+   !important
+}
+
 .pw {
-    border-width: 1;
-    border-color: #000000;
-    padding: 5;
-    margin: 5;
+  border-width: 1;
+  border-color: #000000;
+  padding: 5;
+  margin: 5;
 }
 
-.pw-none { }
+.pw-none {}
 
 .pw-weak {
-    background-color: red;
+  background-color: red;
 }
 
 .pw-medium {
-    background-color: yellow;
+  background-color: yellow;
 }
 
 .pw-strong {
-    background-color: green;
+  background-color: green;
+}
+
+.sapMITBFilter .sapMITBText {
+  position: relative;
+  color: #666666;
+  text-shadow: 0 0.0625rem 0 rgba(255, 255, 255, 0.5);
+  padding: 0.7rem 0.5rem 0.8rem;
+  line-height: 0.9375rem;
+  overflow: hidden;
+  width: 8rem;
+  text-overflow: inherit;
+  word-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.sapMITBAll .sapMITBText {
+  display: inline-block;
+  max-height: 3rem;
+  max-width: 4rem;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: inherit;
+  vertical-align: middle;
+  white-space: normal;
+  width: auto;
+  color: #333333;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
 }
