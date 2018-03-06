@@ -17,8 +17,8 @@ This app has the following major components
 
 ### Server side Coding
 The important files in the server side code are as follows
-- `server.js`
-- `package.json`
+- **server.js**
+- **package.json**
 #### Routes
 #### Models
 #### Helpers
@@ -70,7 +70,7 @@ Methods used in this controller
     												 */);
     }
     ```
-
+##### [addamcs.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/addamcs.controller.js)
 #### Views
 #### Models
 #### Routing
