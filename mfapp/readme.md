@@ -11,26 +11,6 @@
       - [Config](#config)
     - [Client side Coding](#client-side-coding)
       - [Controllers](#controllers)
-        - [BaseController.js](#[basecontroller.js]) [addamcs.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/addamcs.controller.js)
-        - [addmultnav.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/addmultnav.controller.js)
-        - [addnav.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/addnav.controller.js)
-        - [addschemes.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/addschemes.controller.js)
-        - [admin.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/admin.controller.js)
-        - [allinvovw.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/allinvovw.controller.js)
-        - [app.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/app.controller.js)
-        - [chatenmfdashboard.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/chatenmfdashboard.controller.js)
-        - [dashboard.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/dashboard.controller.js)
-        - [getamcs.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/getamcs.controller.js)
-        - [getschemes.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/getschemes.controller.js)
-        - [invdetldisp.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/invdetldisp.controller.js)
-        - [login.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/login.controller.js)
-        - [manageinv.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/manageinv.controller.js)
-        - [manageinv.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/manageinv.controller.js)
-        - [register.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/register.controller.js)
-        - [schdetails.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/schdetails.controller.js)
-        - [showallinv.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/showallinv.controller.js)
-        - [showallinvsplit.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/showallinvsplit.controller.js)
-        - [shownavsch.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/shownavsch.controller.js)
       - [Views](#views)
       - [Models](#models)
       - [Routing](#routing)
@@ -76,9 +56,9 @@ The important files in the server side code are as follows
 
 ### Client side Coding
 The important files in the client side code, which is housed in the [client](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client) folder of the app are as follows
-    - **index.html**
-    - **Component.js**
-    - **manifest.js**
+- **index.html**
+- **Component.js**
+- **manifest.js**
 #### Controllers
 A controller contains methods that define how model and view interact. For more info refer to the [section](#mvc-architecture-in-openui5)
 
