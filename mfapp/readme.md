@@ -9,7 +9,7 @@ Mutual Fund App is a demo app that is built using the following technologies
 This app has the following major components
 - Server side coding which involves
     - Routing to send and receive data from MongoDB database
-    - Models, which include [Mongoose](http://mongoosejs.com/) schemas, models
+    - Models, which include [Mongoose](#mongoose) schemas, models
     - server.js file which houses the
     - package.json file
 - Client side coding which involves
@@ -25,7 +25,7 @@ The important files in the server side code are as follows
 #### Config
 
 ### Client side Coding
-The important files in the client side code, which is housed in the `client` folder of the app are as follows
+The important files in the client side code, which is housed in the [client](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client) folder of the app are as follows
     - `index.html`
     - `Component.js`
     - `manifest.js`
@@ -40,7 +40,7 @@ The important files in the client side code, which is housed in the `client` fol
 #### Third party Libraries
 #### Helper Classes
 
-## Appendix
+## Further Reading
 ### OpenUI5
 [Open UI5](https://openui5.hana.ondemand.com/) is an open source JavaScript UI library, maintained by SAP and available under the Apache 2.0 license. OpenUI5 lets you build enterprise-ready web applications, responsive to all devices, running on almost any browser of your choice. It’s based on JavaScript, using JQuery as its foundation, and follows web standards. It eases your development with a client-side HTML5 rendering library including a rich set of controls, and supports data binding to different models (JSON, XML and OData).
 
@@ -59,3 +59,4 @@ For more info refer to this [blog](https://blogs.sap.com/2013/12/11/what-is-open
 ### Node JS and NPM
 ### Express
 ### MongoDB
+### Mongoose
