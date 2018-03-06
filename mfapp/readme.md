@@ -26,9 +26,9 @@ The important files in the server side code are as follows
 
 ### Client side Coding
 The important files in the client side code, which is housed in the [client](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client) folder of the app are as follows
-    - `index.html`
-    - `Component.js`
-    - `manifest.js`
+    - **index.html**
+    - **Component.js**
+    - **manifest.js**
 #### Controllers
 A controller contains methods that define how model and view interact. For more info refer to the [section](#mvc-architecture-in-openui5)
 
@@ -37,26 +37,26 @@ This app uses the following Controllers
 This is the generic helper controller. It houses the most routinely used functions, that are re-used across various other controllers. This also acts as the parent controller for all other controllers created in the app.
 
 Dependencies for this controller are
-- `sap/ui/core/mvc/Controller` - This is used to define the extend the standard controller object
-- `sap/ui/core/routing/History` - Useful for getting the history object, for back navigation
-- `simple_hello/libs/Moment` - This is reference to third party Moment library(#moment), which is used for working with dates
+- **sap/ui/core/mvc/Controller** - This is used to define the extend the standard controller object
+- **sap/ui/core/routing/History** - Useful for getting the history object, for back navigation
+- **simple_hello/libs/Moment** - This is reference to third party Moment library(#moment), which is used for working with dates
 
 Methods used in this controller
-- `onInit` - This is a lifecycle hook method which is called when a view is instantiated and its controls (if available) have already been created; used to modify the view before it is displayed to bind event handlers and do other one-time initialization
-- `_getLoginData` - This is a helper method that retrieves the login data for the user
-- `_getInvestFor` - This is a helper method to get the Goals for the logged user
-- `_goalsuccess` - This is the event handler success method for `_getInvestFor`
-- `_goalfailure` - This is the event handler failure method for `_getInvestFor`
-- `_isodatetodate`
+- **onInit** - This is a lifecycle hook method which is called when a view is instantiated and its controls (if available) have already been created; used to modify the view before it is displayed to bind event handlers and do other one-time initialization
+- **_getLoginData** - This is a helper method that retrieves the login data for the user
+- **_getInvestFor** - This is a helper method to get the Goals for the logged user
+- **_goalsuccess** - This is the event handler success method for `_getInvestFor`
+- **_goalfailure** - This is the event handler failure method for `_getInvestFor`
+- **_isodatetodate**
     ```javascript
     // Convert ISO Date to DD-MMM-YYYY format and set it to IST Timezone
     var pdate = moment(isodate).utcOffset("+05:30").format('DD-MMM-YYYY');
     return pdate;
     ```
-- `getJSONModel` - returns a new JSON Model
-- `getRouter` - returns the router defined in Component.js
-- `setPanelExpanded` - Helper method to set panel to expanded / collapsed based on the input passed to it
-- `onNavBack` - This is the event callback method, taht is invoked when history routing is invoked, because the user has clicked on the back button
+- **getJSONModel** - returns a new JSON Model
+- **getRouter** - returns the router defined in Component.js
+- **setPanelExpanded** - Helper method to set panel to expanded / collapsed based on the input passed to it
+- **onNavBack** - This is the event callback method, taht is invoked when history routing is invoked, because the user has clicked on the back button
 **Code snippet**
     ```javascript
     var oHistory, sPreviousHash;
