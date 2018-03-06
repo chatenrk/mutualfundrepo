@@ -1,9 +1,9 @@
 # Mutual Fund App
 
 Mutual Fund App is a demo app that is built using the following technologies
-- [Open UI5](https://openui5.hana.ondemand.com/) for the front end development
-- [Node.js](https://nodejs.org/en/) and [Express.js](https://expressjs.com/) for the server side development and
-- [MongoDB](https://www.mongodb.com/) as the database
+- [Open UI5](#openui5) for the front end development
+- [Node.js](#node-js-and-npm) and [Express.js](#express) for the server side development and
+- [MongoDB](#mongodb) as the database
 
 ## Components
 This app has the following major components
@@ -17,8 +17,8 @@ This app has the following major components
 
 ### Server side Coding
 The important files in the server side code are as follows
--`server.js`
--`package.json`
+- `server.js`
+- `package.json`
 #### Routes
 #### Models
 #### Helpers
