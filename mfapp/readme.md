@@ -70,7 +70,28 @@ Methods used in this controller
     												 */);
     }
     ```
-##### [addamcs.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/addamcs.controller.js)
+    ##### [addamcs.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/addamcs.controller.js)
+    ##### [addmultnav.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/addmultnav.controller.js)
+    ##### [addnav.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/addnav.controller.js)
+    ##### [addschemes.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/addschemes.controller.js)
+    ##### [admin.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/admin.controller.js)
+    ##### [allinvovw.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/allinvovw.controller.js)
+    ##### [app.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/app.controller.js)
+    ##### [chatenmfdashboard.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/chatenmfdashboard.controller.js)
+    ##### [dashboard.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/dashboard.controller.js)
+    ##### [getamcs.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/getamcs.controller.js)
+    ##### [getschemes.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/getschemes.controller.js)
+    ##### [invdetldisp.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/invdetldisp.controller.js)
+    ##### [login.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/login.controller.js)
+    ##### [manageinv.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/manageinv.controller.js)
+    ##### [manageinv.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/manageinv.controller.js)
+    ##### [register.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/register.controller.js)
+    ##### [schdetails.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/schdetails.controller.js)
+    ##### [showallinv.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/showallinv.controller.js)
+    ##### [showallinvsplit.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/showallinvsplit.controller.js)
+    ##### [shownavsch.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/shownavsch.controller.js)
+
+
 #### Views
 #### Models
 #### Routing
