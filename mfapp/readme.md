@@ -30,6 +30,47 @@ The important files in the client side code, which is housed in the [client](htt
     - `Component.js`
     - `manifest.js`
 #### Controllers
+A controller contains methods that define how model and view interact. For more info refer to the [section](#mvc-architecture-in-openui5)
+
+This app uses the following Controllers
+##### [BaseController.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/BaseController.js)
+This is the generic helper controller. It houses the most routinely used functions, that are re-used across various other controllers. This also acts as the parent controller for all other controllers created in the app.
+
+Dependencies for this controller are
+- `sap/ui/core/mvc/Controller` - This is used to define the extend the standard controller object
+- `sap/ui/core/routing/History` - Useful for getting the history object, for back navigation
+- `simple_hello/libs/Moment` - This is reference to third party Moment library(#moment), which is used for working with dates
+
+Methods used in this controller
+- `onInit` - This is a lifecycle hook method which is called when a view is instantiated and its controls (if available) have already been created; used to modify the view before it is displayed to bind event handlers and do other one-time initialization
+- `_getLoginData` - This is a helper method that retrieves the login data for the user
+- `_getInvestFor` - This is a helper method to get the Goals for the logged user
+- `_goalsuccess` - This is the event handler success method for `_getInvestFor`
+- `_goalfailure` - This is the event handler failure method for `_getInvestFor`
+- `_isodatetodate`
+    ```javascript
+    // Convert ISO Date to DD-MMM-YYYY format and set it to IST Timezone
+    var pdate = moment(isodate).utcOffset("+05:30").format('DD-MMM-YYYY');
+    return pdate;
+    ```
+- `getJSONModel` - returns a new JSON Model
+- `getRouter` - returns the router defined in Component.js
+- `setPanelExpanded` - Helper method to set panel to expanded / collapsed based on the input passed to it
+- `onNavBack` - This is the event callback method, taht is invoked when history routing is invoked, because the user has clicked on the back button
+**Code snippet**
+    ```javascript
+    var oHistory, sPreviousHash;
+    oHistory = History.getInstance();
+    sPreviousHash = oHistory.getPreviousHash();
+    if (sPreviousHash !== undefined) {
+        window.history.go(-1);
+    } else {
+	    this.getRouter().navTo("appHome", {}, true /* * no
+    												  * history
+    												 */);
+    }
+    ```
+
 #### Views
 #### Models
 #### Routing
@@ -56,7 +97,27 @@ Many other Open Source libraries are used in UI5 and come bundled with it, e.g. 
 
 For more info refer to this [blog](https://blogs.sap.com/2013/12/11/what-is-openui5-sapui5/)
 
+### MVC Architecture in OpenUI5
+The Model View Controller (MVC) concept is used in SAPUI5 to separate the representation of information from the user interaction. This separation facilitates development and the changing of parts independently.
+
+Model, view, and controller are assigned the following roles:
+
+- The view is responsible for defining and rendering the UI.
+- The model manages the application data.
+- The controller reacts to view events and user interaction by modifying the view and model.
+
+![alt text](https://help.sap.com/doc/saphelp_scm700_ehp03/7.0.3/en-US/ec/699e0817fb46a0817b0fa276a249f8/loio99b4be76a3f94db18172e67e730fb7fb_LowRes.png)
+
+The purpose of data binding in the UI is to separate the definition of the user interface (view), the data visualized by the application (model), and the code for the business logic for processing the data (controller). The separation has the following advantages: It provides better readability, maintainability, and extensibility and it allows you to change the view without touching the underlying business logic and to define several views of the same data.
+
+Views and controllers often form a 1:1 relationship, but it is also possible to have controllers without a UI, these controllers are called application controllers. It is also possible to create views without controllers. From a technical position, a view is a SAPUI5 control and can have or inherit a SAPUI5 model.
+
+View and controller represent reusable units, and distributed development is highly supported.
+
 ### Node JS and NPM
-### Express
+#### Express
+#### Mongoose
+
 ### MongoDB
-### Mongoose
+
+### Moment
