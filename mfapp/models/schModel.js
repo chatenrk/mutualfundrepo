@@ -99,11 +99,13 @@ async function findOneSchDet(id) {
 
 
   try {
-    let schemes
-    schemes = await mfschdetModel.find(id);
-    return schemes;
-  } catch (err) {
+    let schdet
+    schdet = await mfschdetModel.find(id);
+  
 
+    return schdet;
+  } catch (err) {
+    debugger;
     return err;
   }
 };

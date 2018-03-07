@@ -1,9 +1,12 @@
+/* global moment:true */
 sap.ui
   .define(
     ["simple_hello/Controller/BaseController",
-      "../helpers/GatewayHelper"
+      "../helpers/GatewayHelper",
+      "../helpers/ParsingHelpers",
+      "simple_hello/libs/Toastr"
     ],
-    function(BaseController, GatewayHelper) {
+    function(BaseController, GatewayHelper, ParsingHelpers, Toastr) {
       "use strict";
       var _oRouter;
       return BaseController
@@ -33,14 +36,49 @@ sap.ui
               var oArgs = oEvt.getParameter("arguments"),
                 data = oArgs["?query"];
 
+              // Get Scheme details
+              if (data.scode !== "") {
+                this._getSchDet(data.scode);
+              }
+
               //Query and get the data
               if (data.scode !== "" &&
                 data.invBy !== "" &&
                 data.invFor !== "") {
-                this._getSchData(data.scode, data.invBy, data.invFor);
+                this._getInvData(data.scode, data.invBy, data.invFor);
               }
             },
-            _getSchData: function(scode, invBy, invFor) {
+            _getSchDet: function(scode) {
+              /**
+               * @desc This method invokes the gateway helper to retrieve the Scheme details
+               * It uses the scheme code to fetch the data
+               * @param scode: scheme code of the selected scheme
+               */
+
+              var that = this;
+              GatewayHelper._getSchemeDetails(scode).then(function(data) {
+                that._getSchDetSuccess(data, that);
+              }, function(err) {
+                that._getSchDetFailure(err, that);
+              });
+
+            },
+            _getSchDetSuccess: function(data, that) {
+
+              if (data.length > 0) {
+                var parseData = ParsingHelpers._parseSchDetails(data);
+                var oJSONModel = this.getOwnerComponent().getModel("schdet_model");
+                oJSONModel.setData(parseData[0]);
+                oJSONModel.updateBindings();
+              } else {
+
+              }
+            },
+            _getSchDetFailure: function(err, that) {
+
+            },
+
+            _getInvData: function(scode, invBy, invFor) {
               /**
                * @desc This method invokes the gateway helper to retrieve the investment details
                * It uses the scheme code, invested By and Goal details to fetch the investment
@@ -49,7 +87,8 @@ sap.ui
                * @param: invFor: Goal of the selected investment
                */
               var that = this;
-              GatewayHelper._getInvBySchCodeInvFor(scode, invBy, invFor).then(function(data) {
+              var desctrue = true;
+              GatewayHelper._getInvBySchCodeInvFor(scode, invBy, invFor,desctrue).then(function(data) {
                 that._getinvsuccess(data, that);
               }, function(err) {
                 that._getinvfailure(err, that);
@@ -59,61 +98,21 @@ sap.ui
 
             _getinvsuccess: function(data, that) {
 
-              var parseData = this._parseData(data);
-              
+              if (data.length > 0) {
+                var parseData = ParsingHelpers._parseInvDetails(data);
+                var oJSONModel = this.getOwnerComponent().getModel("dispinvdetl");
+                oJSONModel.setData(parseData);
+                oJSONModel.updateBindings();
+              } else {
+
+              }
 
             },
             _getinvfailure: function(err, that) {
 
             },
-            _parseData:function(data)
-            {
-              var pobj = {},parr = [];
-              for (var i = 0; i < data.length; i++) {
-                pobj = data[i];
-                pobj.invdatefmtd = this._isodatetodate(data[i].invdate);
-                parr.push(pobj);
-                pobj = {};
-              }
-              return parr;
-            }
-            // _schdetrestcall: function() {
-            //   var authurl = "http://localhost:3000/schemes/sdet" + "?scode=" + this.scode;
-            //   var that = this;
-            //
-            //   $.ajax({
-            //     url: authurl,
-            //     type: 'GET',
-            //     dataType: 'json',
-            //     success: function(data) {
-            //       that._getschsuccess(data, that);
-            //
-            //     },
-            //     error: function(err) {
-            //       that._getschfailure(err, that);
-            //
-            //     }
-            //
-            //   }); //AJAX call close
-            // },
 
-            // _getschsuccess: function(data, that) {
-            //
-            //   // Format data
-            //   var formattedData = that.formatData(data[0])
-            //   // Bind data to the model
-            //   var oModel = that.getView().getModel("schdet_model");
-            //
-            //   oModel.setData([]);
-            //   oModel.setData(data[0]);
-            //   //                                        	oModel.refresh();
-            //
-            //   //                                        	this.getView().byId("objpghdr").bindElement("schdet_model");
-            //
-            // },
-            // _getschfailure: function(err, that) {
-            //
-            // },
+
             handleSchLinkPressed: function(oEvent) {
               var data = this.getView().getModel("schdet_model").getData();
               var url = data.schurl;
@@ -125,14 +124,6 @@ sap.ui
                 " " +
                 data.assetqual + " " + data.assetcurr;
 
-            },
-            formatCurrency: function(curr) {
-              var x = curr.toString();
-              var lastThree = x.substring(x.length - 3);
-              var otherNumbers = x.substring(0, x.length - 3);
-              if (otherNumbers != '')
-                lastThree = ',' + lastThree;
-              return otherNumbers.replace(/\B(?=(\d{2})+(?!\d))/g, ",") + lastThree;
             }
 
 

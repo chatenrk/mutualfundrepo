@@ -10,18 +10,19 @@ sap.ui.define([], function() {
 
     */
 
-    _getInvBySchCodeInvFor: function(scode, invBy, invFor)
+    _getInvBySchCodeInvFor: function(scode, invBy, invFor,desc)
     {
       /**
        * @desc This is a helper function which recieves the scheme code and InvFor(Goal) and Invested By
        * @param scode: scheme code of the selected scheme
        * @param invBy: User for the investment
        * @param: invFor: Goal of the selected investment
+       * @param: desc referring to Descending order when supplied as true
        * @return promise
        */
 
 
-       var invdeturl = "http://localhost:3000/mfinv/mfinvdet?scode="+scode+"&invBy="+invBy+"&invFor="+invFor;
+       var invdeturl = "http://localhost:3000/mfinv/mfinvdet?scode="+scode+"&invBy="+invBy+"&invFor="+invFor+"&desc="+desc;
        var that = this;
        var deferred = jQuery.Deferred();
 
@@ -169,6 +170,44 @@ sap.ui.define([], function() {
        return deferred.promise();
     },
 
+    _postMultiInvest:function(file)
+    {
+      /**
+       * @desc This helper method is used to post multiple Investment details of a user to the database
+       * @param file referring to the CSV File
+       * @return Returns a promise object
+       */
+
+      var that = this;
+      var deferred = jQuery.Deferred();
+      var schdetposturl = "http://localhost:3000/schemes/csvSchDet";
+
+      var fd = new FormData();
+      fd.append('file', file);
+
+      $.ajax({
+        url: schdetposturl,
+        processData: false, // important
+        contentType: false, // important
+        data: fd,
+        type: 'POST',
+        cache: false,
+
+
+        success: function(data) {
+          deferred.resolve(data);
+
+        },
+        error: function(err) {
+          deferred.reject(err);
+
+        }
+
+      }); //AJAX call close
+
+        return deferred.promise();
+    }
+
     /*
     *---------------------------------------------------------------------*
     * AMC Handling Methods
@@ -286,6 +325,38 @@ sap.ui.define([], function() {
       }); //AJAX call close
 
         return deferred.promise();
+    },
+
+    _getSchemeDetails:function(scode)
+    {
+      /**
+       * @desc This helper method is used to fetch all the Scheme Details from the database
+       *       It performs an AJAX call and fetches the data
+       * @param scode referring to the selected scheme code
+       * @return Returns a promise object
+       */
+
+      var that = this;
+      var deferred = jQuery.Deferred();
+
+      var schurl = "http://localhost:3000/schemes/sdet?scode="+scode;
+
+
+      $.ajax({
+        url: schurl,
+        type: 'GET',
+        dataType: 'json',
+        success: function(data) {
+          deferred.resolve(data);
+
+        },
+        error: function(err) {
+          deferred.reject(err);
+
+        }
+
+      }); //AJAX call close
+      return deferred.promise();
     },
 
 

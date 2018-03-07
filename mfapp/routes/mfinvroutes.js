@@ -27,6 +27,7 @@ router.get('/mfinvdet', async (req, res, next) => {
   var date = req.query.invdate;
   var invBy = req.query.invBy;
   var invFor = req.query.invFor;
+  var desc = req.query.desc;
 
   // Determine which query to use based on passed details
 
@@ -78,7 +79,7 @@ router.get('/mfinvdet', async (req, res, next) => {
 
 
   try {
-    invdet = await mfinvmodel.findOneInvDet(query);
+    invdet = await mfinvmodel.findOneInvDet(query,desc);
     res.send(invdet);
   } catch (err) {
 
@@ -91,7 +92,7 @@ router.get('/mfinvdet', async (req, res, next) => {
 
 
 
-//Route to get all amcs
+//Route to get all investments
 router.get('/all', async (req, res, next) => {
 
   try {
@@ -137,6 +138,28 @@ router.post('/pone', async (req, res, next) => {
     return res.status(500).send(err);
   }
 
+
+});
+
+//Route to post a multiple investments sent via csv
+router.post('/csvinv', upload.single('file'), async (req, res) => {
+
+  if (!req.file)
+    return res.status(400).send('No files were uploaded.');
+
+  var mfschemeFile = req.file;
+
+  try {
+    var mfschemes = await helpers.csvtojson(mfschemeFile);
+    debugger;
+
+    var result = await schmodel.postMany(mfschemes);
+    debugger;
+    res.send(result);
+  } catch (err) {
+    debugger;
+    return res.status(500).send(err);
+  }
 
 });
 

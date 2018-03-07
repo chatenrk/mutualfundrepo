@@ -18,7 +18,7 @@ const helpers = require('../helpers/helpers.js');
 
 // Route to get scheme details, based on ID
 
-//Route to get all scheme details
+//Route to get scheme details based on the query
 router.get('/sdet', async (req, res, next) => {
 
 

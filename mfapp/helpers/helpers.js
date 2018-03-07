@@ -175,6 +175,13 @@ function checkpwd(password)
 		return isodate
 	}
 
+	function isodatetodate(isodate)
+	{
+		//Convert ISO Date into DD-MMM-YYYY format in IST Timezone
+		var pdate = moment(isodate).utcOffset("+05:30").format('DD-MMM-YYYY');
+		return pdate;
+	}
+
 
 module.exports.parseOutput = parseOutput;
 module.exports.parsetextNAV = parsetextNAV;
@@ -184,3 +191,4 @@ module.exports.checkpwd = checkpwd;
 module.exports.findInArray = findInArray;
 module.exports.sumtotal = sumtotal;
 module.exports.datetoisodate = datetoisodate;
+module.exports.isodatetodate = isodatetodate;

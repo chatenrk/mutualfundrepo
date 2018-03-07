@@ -1,20 +1,16 @@
-sap.ui.define(["sap.ui.core.util.ExportColumn"], function(ExportColumn) {
+sap.ui.define([], function() {
   "use strict";
 
   return {
-    _populateColumnsExcelExtract: function(oExport, data) {
-      // var itemsArray = [],
-      //   itemsobj = {};
-      // for (var i = 0; i < data.length; i++) {
-      //   var oExpCol = new ExportColumn({
-      //     name: data[i].key;
-      //     template: {
-      //       content: data[i].value
-      //     }
-      //   }); // Export Column Close
-      //   oExport.insertColumn(oExpCol, i);
-      //   oExpCol = null;
-      // } // For loop close
-    } // Helper Function Close
+
+    _formatCurrency: function(curr) {
+      var x = curr.toString();
+      var lastThree = x.substring(x.length - 3);
+      var otherNumbers = x.substring(0, x.length - 3);
+      if (otherNumbers != '')
+        lastThree = ',' + lastThree;
+      return otherNumbers.replace(/\B(?=(\d{2})+(?!\d))/g, ",") + lastThree;
+    }
+
   }
 });
