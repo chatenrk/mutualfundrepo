@@ -167,6 +167,14 @@ function checkpwd(password)
 			return stotal;
 	}
 
+	function datetoisodate(date)
+	{
+		// Convert date from DD-MMM-YYYY to ISO date
+		var tempdate = moment(date,'DD-MMM-YYYY').format("YYYY-MM-DD")
+		var isodate = moment(tempdate).toISOString();
+		return isodate
+	}
+
 
 module.exports.parseOutput = parseOutput;
 module.exports.parsetextNAV = parsetextNAV;
@@ -175,3 +183,4 @@ module.exports.csvtojson = csvtojson;
 module.exports.checkpwd = checkpwd;
 module.exports.findInArray = findInArray;
 module.exports.sumtotal = sumtotal;
+module.exports.datetoisodate = datetoisodate;

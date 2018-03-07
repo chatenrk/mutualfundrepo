@@ -21,7 +21,7 @@
 			"id": "onAddSchDet",
 			"icon": "sap-icon://add",
 			"type": "Create",
-			"title": "Add Scheme Details"
+			"title": "Add Scheme Codes"
 
 		},
 		{
@@ -29,6 +29,13 @@
 			"icon": "sap-icon://add",
 			"type": "Create",
 			"title": "Add AMC Details"
+		},
+
+		{
+			"id": "addSchemedet",
+			"icon": "sap-icon://add",
+			"type": "Create",
+			"title": "Add Scheme Details"
 		},
 
 		{

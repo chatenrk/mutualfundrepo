@@ -207,6 +207,12 @@
 
 				},
 				{
+					"pattern": "addmultischdet",
+					"name": "addmultischdet",
+					"target": "addmultischdet"
+
+				},
+				{
 					"pattern": "addnav",
 					"name": "addnav",
 					"target": "addnav"
@@ -231,7 +237,7 @@
 
 				},
 				{
-					"pattern": "schdet/{scode}",
+					"pattern": "schdet:?query:",
 					"name": "schdet",
 					"target": "schdetails"
 				},
@@ -295,6 +301,10 @@
 				},
 				"addamcs": {
 					"viewName": "addamcs",
+					"viewLevel": 1
+				},
+				"addmultischdet": {
+					"viewName": "addmultischdetails",
 					"viewLevel": 1
 				},
 				"addnav": {

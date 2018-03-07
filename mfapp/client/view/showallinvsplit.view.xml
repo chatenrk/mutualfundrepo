@@ -24,7 +24,7 @@
 
 						</columns>
 						<items>
-							<ColumnListItem press="onPress" type="Navigation" hAlign="Center" vAlign="Center">
+							<ColumnListItem press="onPressScheme" type="Navigation" hAlign="Center" vAlign="Center">
 								<cells>
 									<ObjectIdentifier title="{manageinv_model>sname}"/>
 									<ObjectNumber number="{manageinv_model>total}"/>

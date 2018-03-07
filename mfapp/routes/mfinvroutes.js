@@ -26,6 +26,7 @@ router.get('/mfinvdet', async (req, res, next) => {
   var scode = req.query.scode;
   var date = req.query.invdate;
   var invBy = req.query.invBy;
+  var invFor = req.query.invFor;
 
   // Determine which query to use based on passed details
 
@@ -37,6 +38,19 @@ router.get('/mfinvdet', async (req, res, next) => {
       }, {
         invdate: isodate
       }]
+    }
+  } else if (invBy && scode && invFor) {
+    var query = {
+      $and: [{
+          scode: scode
+        },
+        {
+          invBy: invBy
+        },
+        {
+          invFor:invFor
+        }
+      ]
     }
   } else if (invBy && scode) {
     var query = {
@@ -218,17 +232,14 @@ router.get('/fvalcalc', async (req, res, next) => {
 
 //Route for deleting a Investment
 router.delete('/delinv', async (req, res, next) => {
-debugger;
-	if(req.query.id && req.query.id!=="")
-	{
-		var _id = req.query.id;
-		var delres = await mfinvmodel.deleteInv(_id);
-		res.send(delres);
-	}
-	else
-	{
-		return res.status(500).send("Improperly formed delete request");
-	}
+  debugger;
+  if (req.query.id && req.query.id !== "") {
+    var _id = req.query.id;
+    var delres = await mfinvmodel.deleteInv(_id);
+    res.send(delres);
+  } else {
+    return res.status(500).send("Improperly formed delete request");
+  }
 
 });
 // Route for Goal Planner

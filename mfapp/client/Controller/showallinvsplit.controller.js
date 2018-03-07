@@ -1,14 +1,10 @@
 sap.ui.define([
   'jquery.sap.global',
   "simple_hello/Controller/BaseController",
-  'sap/m/MessageToast',
-  'sap/ui/core/Fragment',
-  'sap/ui/core/mvc/Controller',
   'sap/ui/model/Filter',
   "sap/ui/model/FilterOperator",
-  'sap/ui/model/json/JSONModel',
   "../helpers/GatewayHelper"
-], function(jQuery, BaseController, MessageToast, Fragment, Controller, Filter, FilterOperator, JSONModel, GatewayHelper) {
+], function(jQuery, BaseController, Filter, FilterOperator, GatewayHelper) {
   "use strict";
   var _invBy;
   var CController = BaseController.extend("simple_hello.Controller.showallinvsplit", {
@@ -192,6 +188,35 @@ sap.ui.define([
         iconTabBar.insertItem(oIconTabFilter, iconIndex);
 
       }
+
+    },
+
+    onPressScheme: function(oEvt) {
+
+      /**
+       * @desc This is a event handler that handles the click event of the table navigation
+       * @param oEvt: Refers to the event generated based on the click
+       */
+      var that = this;
+      var source = oEvt.getSource();
+      var oBindingContext = source.getBindingContext("manageinv_model");
+
+      var scode = oBindingContext.getProperty("scode");
+      var invFor = oBindingContext.getProperty("invFor");
+      //
+      //  var oSchData = {};
+      //  oSchData.scode = scode;
+      //  oSchData.invFor = invFor;
+      //  oSchData.invBy = this._invBy;
+
+      var oRouter = this.getRouter();
+      oRouter.navTo("schdet", {
+        query: {
+          scode: scode,
+          invFor: invFor,
+          invBy: that._invBy
+        }
+      }, false);
 
     }
 

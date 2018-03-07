@@ -5,10 +5,44 @@ sap.ui.define([], function() {
 
     /*
     *---------------------------------------------------------------------*
-    * Investment Handling Methods
+    * Mutual Fund Investment Handling Methods
     *---------------------------------------------------------------------*
 
     */
+
+    _getInvBySchCodeInvFor: function(scode, invBy, invFor)
+    {
+      /**
+       * @desc This is a helper function which recieves the scheme code and InvFor(Goal) and Invested By
+       * @param scode: scheme code of the selected scheme
+       * @param invBy: User for the investment
+       * @param: invFor: Goal of the selected investment
+       * @return promise
+       */
+
+
+       var invdeturl = "http://localhost:3000/mfinv/mfinvdet?scode="+scode+"&invBy="+invBy+"&invFor="+invFor;
+       var that = this;
+       var deferred = jQuery.Deferred();
+
+
+       $.ajax({
+         url: invdeturl,
+         type: 'GET',
+         dataType: 'json',
+         success: function(data) {
+           deferred.resolve(data);
+
+         },
+         error: function(err) {
+           deferred.reject(err);
+         }
+
+       }); //AJAX call close
+       return deferred.promise();
+
+
+    },
 
     _deleteInvDet: function(id) {
       /**
@@ -185,7 +219,7 @@ sap.ui.define([], function() {
        * @desc This helper method is used to fetch all the schemes from the database
        *       It performs an AJAX call and fetches the data
        * @param amccode referring to the selected AMC Code
-       * @return This returns the AMC's found in the database(amcs collection) as a JSON Array
+       * @return Returns a promise object
        */
 
       var that = this;
@@ -216,6 +250,45 @@ sap.ui.define([], function() {
 
     },
 
+    _postSchemeDetailsMulti:function(file)
+    {
+      /**
+       * @desc This helper method is used to post multiple scheme details to the database
+       * @param file referring to the CSV File
+       * @return Returns a promise object
+       */
+
+      var that = this;
+      var deferred = jQuery.Deferred();
+      var schdetposturl = "http://localhost:3000/schemes/csvSchDet";
+
+      var fd = new FormData();
+      fd.append('file', file);
+
+      $.ajax({
+        url: schdetposturl,
+        processData: false, // important
+        contentType: false, // important
+        data: fd,
+        type: 'POST',
+        cache: false,
+
+
+        success: function(data) {
+          deferred.resolve(data);
+
+        },
+        error: function(err) {
+          deferred.reject(err);
+
+        }
+
+      }); //AJAX call close
+
+        return deferred.promise();
+    },
+
+
     /*
     *---------------------------------------------------------------------*
     * NAV Handling Methods
@@ -229,7 +302,7 @@ sap.ui.define([], function() {
        * @param scode referring to the Scheme Code
        * @param limit referring to the number of documents to be retrieved
        * @param sorder referring to the sort order(Ascending / Descending)
-       * @return This returns the NAV's in the database(navdetls collection) as a JSON Array
+       * @return Returns a promise object
        */
 
       var that = this;

@@ -119,6 +119,18 @@ Methods used in this controller
 ##### [schdetails.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/schdetails.controller.js)
 ##### [showallinv.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/showallinv.controller.js)
 ##### [showallinvsplit.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/showallinvsplit.controller.js)
+This is the controller corresponding to the `showallinvsplit` view.
+
+Dependencies for this controller are
+- **jquery.sap.global**,
+- **simple_hello/Controller/BaseController** - This is a reference to the basecontroller that was created,
+- **sap/ui/model/Filter** - Used for filter operation on table binding,
+- **sap/ui/model/FilterOperator** - Used for defining a filter operator(EQ,LT,GT etc.),
+- **../helpers/GatewayHelper** - Reference to the gateway helper class
+
+Methods used in this controller
+- **onPressScheme** - This is a event handler that handles the click event of the table navigation
+
 ##### [shownavsch.controller.js](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client/Controller/shownavsch.controller.js)
 
 
@@ -170,5 +182,6 @@ View and controller represent reusable units, and distributed development is hig
 #### Mongoose
 
 ### MongoDB
-
 ### Moment
+### JavaScript API documentation and comment standards
+For comments refer to JSDoc dcoumentation at [JSDoc](http://usejsdoc.org/)

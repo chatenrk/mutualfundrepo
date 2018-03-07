@@ -32,6 +32,9 @@ sap.ui
                 case "addamcdet":
                   this._oRouter.navTo("addamcs");
                   break;
+                case "addSchemedet":
+                  this._oRouter.navTo("addmultischdet");
+                  break;
                 case "addnavdet":
                   this._oRouter.navTo("addnav");
                   break;
@@ -42,8 +45,8 @@ sap.ui
                   this._oRouter.navTo("manageinv");
                   break;
                 case "shownav":
-                    this._oRouter.navTo("shownavsch");
-                    break;
+                  this._oRouter.navTo("shownavsch");
+                  break;
                 default:
                   break;
               }
