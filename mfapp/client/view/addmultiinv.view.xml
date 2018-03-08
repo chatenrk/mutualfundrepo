@@ -12,7 +12,7 @@
 
 	<Panel  id="filePanel" width="auto" class="sapUiTinyMargin" headerText="File Upload Panel">
 	<ObjectHeader
-		icon = "sap-icon://database" title="Add Investments" titleLevel="H4"/>
+		icon = "sap-icon://database" title="Add Multiple Investments" titleLevel="H4"/>
 
 
 	<content>
@@ -57,6 +57,18 @@
             <Column hAlign="Center" vAlign="Center">
                 <Text text="{i18n>sname}" />
             </Column>
+
+						<Column hAlign="Center" vAlign="Center">
+								<Text text="{i18n>sname}" />
+						</Column>
+
+						<Column hAlign="Center" vAlign="Center">
+								<Text text="{i18n>sname}" />
+						</Column>
+
+						<Column hAlign="Center" vAlign="Center">
+								<Text text="{i18n>sname}" />
+						</Column>
 
            <Column hAlign="Center" vAlign="Center">
                 <Text text="{i18n>pStatus}" />

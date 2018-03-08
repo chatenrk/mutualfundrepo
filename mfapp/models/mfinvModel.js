@@ -1,9 +1,19 @@
+/*
+------------------------------------------------------------------------------------------------------------------------
+* Declarations
+------------------------------------------------------------------------------------------------------------------------
+*/
 var mongoose = require('mongoose');
 require('mongoose-double')(mongoose);
 var integerValidator = require('mongoose-integer');
 
 const helpers = require('../helpers/helpers.js');
 
+/*
+------------------------------------------------------------------------------------------------------------------------
+* Schema and Model Definition
+------------------------------------------------------------------------------------------------------------------------
+*/
 
 var SchemaTypes = mongoose.Schema.Types;
 var mfinvSchema = mongoose.Schema({
@@ -26,13 +36,13 @@ var mfinvSchema = mongoose.Schema({
 });
 
 mfinvSchema.plugin(integerValidator);
+var mfinvModel = mongoose.model('mfinvdetltemp', mfinvSchema);
 
-
-
-
-var mfinvModel = mongoose.model('mfinvdetl', mfinvSchema);
-
-
+/*
+------------------------------------------------------------------------------------------------------------------------
+* Get Data Methods
+------------------------------------------------------------------------------------------------------------------------
+*/
 //This route gets all the documents inside the schemes collection in MongoDB
 async function findAll() {
   try {
@@ -57,7 +67,7 @@ async function findOneInvDet(query, desc) {
         amcname: 1,
         sname: 1
       });
-    }else {
+    } else {
       invdet = await mfinvModel.find(query).sort({
         amcname: 1,
         sname: 1,
@@ -71,9 +81,34 @@ async function findOneInvDet(query, desc) {
   }
 };
 
-
+/*
+------------------------------------------------------------------------------------------------------------------------
+* Post Data Methods
+------------------------------------------------------------------------------------------------------------------------
+*/
 //This route posts a single Inv Detail to database
-async function postOne(mfinvdet) {
+async function postOne(mfinvdet, user) {
+
+
+  // If user is not available use the one passed in the arguments
+  if (!mfinvdet.invBy || mfinvdet.invBy === "") {
+    mfinvdet.invBy = user;
+  }
+
+
+  // Check if the NAV is supplied, incase of multipost it is not supplied and has to be retrieved here
+  if (!mfinvdet.nav || mfinvdet.nav === "") {
+
+    var isodate = helpers.datetoisodate(mfinvdet.invdate);     //moment(mfinvdet.invdate).toISOString();
+    try {
+      var navdetls = await helpers.getNAV(mfinvdet.scode, isodate)
+      if(navdetls[0].nav.value !== "")
+      {
+        mfinvdet.nav = navdetls[0].nav.value;
+        mfinvdet.units = mfinvdet.amount / mfinvdet.nav;
+      }
+    } catch (err) {}
+  }
 
 
   try {
@@ -109,12 +144,12 @@ async function postOne(mfinvdet) {
 }
 
 //This route posts a multiple Investments to database
-async function postManyInvDet(mfinvdetls) {
+async function postManyInvDet(mfinvdetls, user) {
   var resArray = [];
   await helpers.asyncForEach(mfinvdetls, async (item, index, array) => {
     try {
 
-      result = await postOneSchDet(mfinvdetls[index]);
+      result = await postOne(mfinvdetls[index], user);
 
       resArray.push(result);
 
@@ -127,6 +162,12 @@ async function postManyInvDet(mfinvdetls) {
 
   return resArray;
 }
+
+/*
+------------------------------------------------------------------------------------------------------------------------
+* Get Aggregate Data Methods
+------------------------------------------------------------------------------------------------------------------------
+*/
 
 async function getAggregation(aggr) {
   try {
@@ -259,6 +300,12 @@ async function grpGoalSchemeAggregation(aggr) {
   }
 }
 
+/*
+------------------------------------------------------------------------------------------------------------------------
+* Delete Data Methods
+------------------------------------------------------------------------------------------------------------------------
+*/
+
 async function deleteInv(_id) {
   try {
     debugger;
@@ -274,12 +321,17 @@ async function deleteInv(_id) {
 }
 
 
+/*
+------------------------------------------------------------------------------------------------------------------------
+* Module Exports
+------------------------------------------------------------------------------------------------------------------------
+*/
 
 module.exports.findAll = findAll;
 module.exports.postOne = postOne;
 module.exports.getAggregation = getAggregation;
 module.exports.grpGoalAggregation = grpGoalAggregation;
 module.exports.grpGoalSchemeAggregation = grpGoalSchemeAggregation;
-//module.exports.postMany = postMany;
 module.exports.findOneInvDet = findOneInvDet;
 module.exports.deleteInv = deleteInv;
+module.exports.postManyInvDet = postManyInvDet;

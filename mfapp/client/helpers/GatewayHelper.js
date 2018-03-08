@@ -5,9 +5,63 @@ sap.ui.define([], function() {
 
     /*
     *---------------------------------------------------------------------*
+    * User Handling Methods
+    *---------------------------------------------------------------------*
+    */
+
+
+    /*---------------------------------------------------------------------*
+    * Get Request Methods
+    *---------------------------------------------------------------------*/
+
+    _getUserDetails:function(user)
+    {
+      /**
+       * @desc This is a helper function which gets the user details from database. If no user is supplied
+       *       get all the user data from the database
+       * @param user: user object
+       * @return promise
+       */
+
+
+      // if user is not available, get all user details
+      if(!user)
+      {
+        var userdeturl = "http://localhost:3000/users/userdet";
+        var that = this;
+        var deferred = jQuery.Deferred();
+
+
+        $.ajax({
+          url: userdeturl,
+          type: 'GET',
+          dataType: 'json',
+          success: function(data) {
+            deferred.resolve(data);
+
+          },
+          error: function(err) {
+            deferred.reject(err);
+          }
+
+        }); //AJAX call close
+        return deferred.promise();
+
+      }
+    },
+
+    /*---------------------------------------------------------------------*
+    * Post Requests Methods
+    *---------------------------------------------------------------------*/
+
+    /*---------------------------------------------------------------------*
+    * Delete Requests Methods
+    *---------------------------------------------------------------------*/
+
+    /*
+    *---------------------------------------------------------------------*
     * Mutual Fund Investment Handling Methods
     *---------------------------------------------------------------------*
-
     */
 
     _getInvBySchCodeInvFor: function(scode, invBy, invFor,desc)
@@ -170,7 +224,7 @@ sap.ui.define([], function() {
        return deferred.promise();
     },
 
-    _postMultiInvest:function(file)
+    _postMultiInvest:function(file,user)
     {
       /**
        * @desc This helper method is used to post multiple Investment details of a user to the database
@@ -180,13 +234,13 @@ sap.ui.define([], function() {
 
       var that = this;
       var deferred = jQuery.Deferred();
-      var schdetposturl = "http://localhost:3000/schemes/csvSchDet";
+      var multiinvposturl = "http://localhost:3000/mfinv/csvinv?user="+user;
 
       var fd = new FormData();
       fd.append('file', file);
 
       $.ajax({
-        url: schdetposturl,
+        url: multiinvposturl,
         processData: false, // important
         contentType: false, // important
         data: fd,
@@ -206,7 +260,7 @@ sap.ui.define([], function() {
       }); //AJAX call close
 
         return deferred.promise();
-    }
+    },
 
     /*
     *---------------------------------------------------------------------*

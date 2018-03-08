@@ -8,9 +8,12 @@ sap.ui
       "simple_hello/libs/Moment",
       "sap/ui/core/util/Export",
       "sap/ui/core/util/ExportTypeCSV",
-      "../helpers/GatewayHelper"
+      "../helpers/GatewayHelper",
+      "../helpers/ModelHelpers",
+      "../helpers/OtherHelpers",
+      "../helpers/MessageHelpers"
     ],
-    function(BaseController, MessageToast, UploadCollectionParameter, Helpers, Moment, Export, ExportTypeCSV,GatewayHelper) {
+    function(BaseController, MessageToast, UploadCollectionParameter, Helpers, Moment, Export, ExportTypeCSV, GatewayHelper, ModelHelpers, OtherHelpers, MessageHelpers) {
       "use strict";
       var postdata, _fPanel, _tPanel;
       return BaseController
@@ -34,16 +37,70 @@ sap.ui
             },
 
             onStartUpload: function(oEvent) {
-              var fU = this.getView().byId("idfileUploader");
-              var domRef = fU.getFocusDomRef();
-              var file = domRef.files[0];
-              this._parserestcall(file);
+              // var fU = this.getView().byId("idfileUploader");
+              // var domRef = fU.getFocusDomRef();
+              // var file = domRef.files[0];
+              this._getUserDetails();
+              // this._parserestcall(file);
 
             },
 
-            _parserestcall: function(file) {
+            _getUserDetails: function() {
+              /**
+               * @desc This helper method retrieves all the users from the database and shows them as a POP-UP
+               */
+              var that = this;
+              GatewayHelper._getUserDetails().then(function(data) {
+                that._getusrdtlssuccess(data, that);
+              }, function(err) {
+                that._getusrdtlsfailure(err, that);
+              });
 
-            // instantiate dialog
+            },
+            _getusrdtlssuccess: function(data, that) {
+
+              // Set the data to the model(usrdetls_model)
+              if (data.length > 0) {
+                var oJSONModel = ModelHelpers._setModelData(this, "usrdetls_model", data);
+                OtherHelpers._showDialogViaFragment("simple_hello.view.userselect", "usrdetls_model", oJSONModel, this);
+              } else {
+
+              }
+
+            },
+
+            handleClose: function(oEvent) {
+              var ConfirmText, ConfirmYes = "Yes",
+                ConfirmNo = "No",
+                that = this;
+              var aContexts = oEvent.getParameter("selectedContexts");
+              if (aContexts && aContexts.length) {
+                this._selusrname = aContexts.map(function(oContext) {
+                  return oContext.getObject().name;
+                });
+                ConfirmText = "Do you want to post the Investments from the file for user " + this._selusrname;
+                MessageHelpers._showConfirmDialog(ConfirmText, ConfirmYes, ConfirmNo).then(function(data) {
+                  if (data === ConfirmYes) {
+                    // Post the file data for the selected user
+
+                    var fU = that.getView().byId("idfileUploader");
+                    var domRef = fU.getFocusDomRef();
+                    var file = domRef.files[0];
+                    that._parserestcall(file,that._selusrname);
+
+                  }
+                });
+              }
+              oEvent.getSource().getBinding("items").filter([]);
+
+            },
+
+
+            _getusrdtlsfailure: function(err, that) {},
+
+            _parserestcall: function(file,user) {
+
+              // instantiate dialog
               if (!this._dialog) {
                 this._dialog = sap.ui.xmlfragment("simple_hello.view.busydialog", this);
                 this.getView().addDependent(this._dialog);
@@ -63,7 +120,7 @@ sap.ui
               this._dialog.open();
 
               var that = this;
-              GatewayHelper._postSchemeDetailsMulti(file).then(function(data) {
+              GatewayHelper._postMultiInvest(file,user).then(function(data) {
                 that._postschdetsuccess(data, that);
               }, function(err) {
                 that._postschdetfailure(err, that);
@@ -123,8 +180,7 @@ sap.ui
                     pdata.push(parseData);
                     parseData = {};
                   }
-                }
-                else {
+                } else {
                   // Successfully inserted into DB
 
                   parseData.scode = data[i].operation.scode;

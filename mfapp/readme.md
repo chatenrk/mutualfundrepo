@@ -50,9 +50,39 @@ The important files in the server side code are as follows
 - **server.js**
 - **package.json**
 #### Routes
+The following route files are used at the server end.
+- **amcroutes.js** - This handles all the routing related to AMC Data. The corresponding model is **amcmodel.js**
+- **goalroutes.js** - This handles all the routing related to goals(Portfolio's). The corresponding model is **invfor.js**
+- **mfinvroutes.js** - This handles all the routing related to investments made by the user. The corresponding model is **mfinvModel.js**
+- **navroutes.js** - This handles all the routing related to nav details of the schemes. The corresponding model is **navModel.js**
+- **projroutes.js** - This is WIP
+- **schroutes.js** - This handles all the routing related to scheme data(scheme code and scheme details). The corresponding model is **schModel.js**
+- **users.js** - This handles all the routing related to user data(login,registration etc). The corresponding model is **userModel.js**
 #### Models
+The following model helper are used at the server end.
+- **amcmodel.js** - This is model helper class for AMC Data.
+- **invfor.js** - This is model helper class for goals(Portfolio's)
+- **mfinvModel.js** - This is model helper class for investments made by the user
+- **navModel.js** - This is model helper class for NAV(Net Asset Value) details of the schemes.
+- **schModel.js** - This is model helper class for scheme data(scheme code and scheme details)
+- **userModel.js** - This is model helper class for user data(login,registration etc).
 #### Helpers
+The following helper files are used at the server end, which contain reusable code that can be used across models and routes.
+- **Helpers.js**
+This helper class is using the following functions
+  - parseOutput
+  - csvtojson - Used for converting the CSV file received from the client, to JSON array
+  - asyncForEach - This provides a async For Loop functionality, useful when we need an async functionality for multiple records, like posting multiple records
+  - checkpwd
+  - parsetextNAV
+  - findInArray
+  - sumtotal
+  - datetoisodate - Converts date to ISO Format using the moment framework
+  - isodatetodate - Converts the isodate to date format using the moment framework
+  - getNAV - Get the NAV for a scheme and date combo
+
 #### Config
+
 
 ### Client side Coding
 The important files in the client side code, which is housed in the [client](https://github.com/chatenrk/mutualfundrepo/blob/master/mfapp/client) folder of the app are as follows

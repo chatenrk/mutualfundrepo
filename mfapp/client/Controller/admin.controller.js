@@ -41,6 +41,9 @@ sap.ui
                 case "addmultnav":
                   this._oRouter.navTo("addmultnav");
                   break;
+                case "addmultiinvdet":
+                  this._oRouter.navTo("addmultiinvdet");
+                  break;
                 case "manageinv":
                   this._oRouter.navTo("manageinv");
                   break;

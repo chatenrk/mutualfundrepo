@@ -143,17 +143,19 @@ router.post('/pone', async (req, res, next) => {
 
 //Route to post a multiple investments sent via csv
 router.post('/csvinv', upload.single('file'), async (req, res) => {
+  debugger;
+  var user = req.query.user;
 
   if (!req.file)
     return res.status(400).send('No files were uploaded.');
 
-  var mfschemeFile = req.file;
+  var multiinvFile = req.file;
 
   try {
-    var mfschemes = await helpers.csvtojson(mfschemeFile);
+    var multiinvs = await helpers.csvtojson(multiinvFile);
     debugger;
 
-    var result = await schmodel.postMany(mfschemes);
+    var result = await mfinvmodel.postManyInvDet(multiinvs,user);
     debugger;
     res.send(result);
   } catch (err) {

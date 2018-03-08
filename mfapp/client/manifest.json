@@ -135,7 +135,11 @@
       },
       "fewnavmodel": {
         "type": "sap.ui.model.json.JSONModel"
+      },
+      "usrdetls_model": {
+        "type": "sap.ui.model.json.JSONModel"
       }
+
     },
     "routing": {
       "config": {
@@ -220,6 +224,12 @@
           "pattern": "mfinvlog",
           "name": "mfinvlog",
           "target": "mfinvlog"
+
+        },
+        {
+          "pattern": "addmultiinvdet",
+          "name": "addmultiinvdet",
+          "target": "addmultiinvdet"
 
         },
         {
@@ -315,6 +325,10 @@
         },
         "mfinvlog": {
           "viewName": "mfinvlog",
+          "viewLevel": 1
+        },
+        "addmultiinvdet": {
+          "viewName": "addmultiinv",
           "viewLevel": 1
         },
         "dispallinv": {

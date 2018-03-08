@@ -1,42 +1,48 @@
-<View
-	xmlns="sap.m"
-	xmlns:layout="sap.ui.layout"
-	controllerName="simple_hello.Controller.admin">
-	<ObjectHeader
-		title="Admin Tiles" />
-	<HeaderContainer orientation="Horizontal">
+<View xmlns="sap.m" xmlns:layout="sap.ui.layout" controllerName="simple_hello.Controller.admin">
+	<Page showHeader="false">
+		<ObjectHeader title="Admin Tiles"/>
+		<HeaderContainer orientation="Horizontal">
 
-	<content>
-	<FlexBox items = "{dbtiles_model>/AdminCollection}">
-	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
-				 header="{dbtiles_model>title}"
-				 press="onTilePress">
-		<TileContent>
-			<ImageContent src="{dbtiles_model>icon}" />
-		</TileContent>
-	</GenericTile>
-	</FlexBox>
-	</content>
+			<content>
+				<FlexBox items="{dbtiles_model>/AdminCollection}">
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{dbtiles_model>title}" press="onTilePress">
+						<TileContent>
+							<ImageContent src="{dbtiles_model>icon}"/>
+						</TileContent>
+					</GenericTile>
+				</FlexBox>
+			</content>
 
-	</HeaderContainer>
+		</HeaderContainer>
 
+		<ObjectHeader title="Investment Related Tiles"/>
+		<HeaderContainer orientation="Horizontal">
 
-	<ObjectHeader
-		title="NAV Operation Tiles" />
-	<HeaderContainer orientation="Horizontal">
+			<content>
+				<FlexBox items="{dbtiles_model>/AdminINVCollection}">
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{dbtiles_model>title}" press="onTilePress">
+						<TileContent>
+							<ImageContent src="{dbtiles_model>icon}"/>
+						</TileContent>
+					</GenericTile>
+				</FlexBox>
+			</content>
 
-	<content>
-	<FlexBox items = "{dbtiles_model>/NAVCollection}">
-	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
-				 header="{dbtiles_model>title}"
-				 press="onTilePress">
-		<TileContent>
-			<ImageContent src="{dbtiles_model>icon}" />
-		</TileContent>
-	</GenericTile>
-	</FlexBox>
-	</content>
+		</HeaderContainer>
 
-	</HeaderContainer>
+		<ObjectHeader title="NAV Operation Tiles"/>
+		<HeaderContainer orientation="Horizontal">
 
+			<content>
+				<FlexBox items="{dbtiles_model>/NAVCollection}">
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{dbtiles_model>title}" press="onTilePress">
+						<TileContent>
+							<ImageContent src="{dbtiles_model>icon}"/>
+						</TileContent>
+					</GenericTile>
+				</FlexBox>
+			</content>
+
+		</HeaderContainer>
+	</Page>
 </View>
