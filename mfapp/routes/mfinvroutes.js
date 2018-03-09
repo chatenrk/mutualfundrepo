@@ -26,6 +26,8 @@ router.get('/mfinvdet', async (req, res, next) => {
   var scode = req.query.scode;
   var date = req.query.invdate;
   var invBy = req.query.invBy;
+  var invFor = req.query.invFor;
+  var desc = req.query.desc;
 
   // Determine which query to use based on passed details
 
@@ -37,6 +39,19 @@ router.get('/mfinvdet', async (req, res, next) => {
       }, {
         invdate: isodate
       }]
+    }
+  } else if (invBy && scode && invFor) {
+    var query = {
+      $and: [{
+          scode: scode
+        },
+        {
+          invBy: invBy
+        },
+        {
+          invFor:invFor
+        }
+      ]
     }
   } else if (invBy && scode) {
     var query = {
@@ -64,7 +79,7 @@ router.get('/mfinvdet', async (req, res, next) => {
 
 
   try {
-    invdet = await mfinvmodel.findOneInvDet(query);
+    invdet = await mfinvmodel.findOneInvDet(query,desc);
     res.send(invdet);
   } catch (err) {
 
@@ -77,7 +92,7 @@ router.get('/mfinvdet', async (req, res, next) => {
 
 
 
-//Route to get all amcs
+//Route to get all investments
 router.get('/all', async (req, res, next) => {
 
   try {
@@ -123,6 +138,30 @@ router.post('/pone', async (req, res, next) => {
     return res.status(500).send(err);
   }
 
+
+});
+
+//Route to post a multiple investments sent via csv
+router.post('/csvinv', upload.single('file'), async (req, res) => {
+  debugger;
+  var user = req.query.user;
+
+  if (!req.file)
+    return res.status(400).send('No files were uploaded.');
+
+  var multiinvFile = req.file;
+
+  try {
+    var multiinvs = await helpers.csvtojson(multiinvFile);
+    debugger;
+
+    var result = await mfinvmodel.postManyInvDet(multiinvs,user);
+    debugger;
+    res.send(result);
+  } catch (err) {
+    debugger;
+    return res.status(500).send(err);
+  }
 
 });
 
@@ -218,17 +257,14 @@ router.get('/fvalcalc', async (req, res, next) => {
 
 //Route for deleting a Investment
 router.delete('/delinv', async (req, res, next) => {
-debugger;
-	if(req.query.id && req.query.id!=="")
-	{
-		var _id = req.query.id;
-		var delres = await mfinvmodel.deleteInv(_id);
-		res.send(delres);
-	}
-	else
-	{
-		return res.status(500).send("Improperly formed delete request");
-	}
+  debugger;
+  if (req.query.id && req.query.id !== "") {
+    var _id = req.query.id;
+    var delres = await mfinvmodel.deleteInv(_id);
+    res.send(delres);
+  } else {
+    return res.status(500).send("Improperly formed delete request");
+  }
 
 });
 // Route for Goal Planner

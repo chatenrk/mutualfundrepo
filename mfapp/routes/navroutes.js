@@ -23,9 +23,6 @@ const config = require('../config/database');
 const helpers = require('../helpers/helpers.js');
 
 // Route to get scheme details, based on ID
-
-
-
 router.get('/navdet', async (req, res, next) => {
 
 
@@ -48,7 +45,6 @@ router.get('/navdet', async (req, res, next) => {
     navdetls = await navmodel.findOneNav(query);
     res.send(navdetls);
   } catch (err) {
-
     return res.status(500).send(err);
   }
 

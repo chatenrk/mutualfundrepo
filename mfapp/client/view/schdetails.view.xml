@@ -52,13 +52,13 @@
 				</subSections>
 		</ObjectPageSection>
 
-		<ObjectPageSection id="snapshot1" title="NAV Section">
+		<ObjectPageSection id="snapshot1" title="Investments Section">
 
 				<subSections>
 						<ObjectPageSubSection id="schnav" title="">
 							<blocks>
 								<snapshot:schemenav id="schemenav">
-								
+
 								</snapshot:schemenav>
 									<!-- <ModelMapping externalModelName = "schdet_model" internalModelName="SchDet" externalPath="{schdet_model>/}"/> -->
 

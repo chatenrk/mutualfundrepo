@@ -1,104 +1,132 @@
+/* global moment:true */
 sap.ui
-        .define(
-                [ "simple_hello/Controller/BaseController", "sap/m/MessageToast", 'sap/m/Popover','sap/m/Button',
-                	'sap/m/MessageStrip','sap/m/MessageToast','sap/m/GenericTile','simple_hello/models/formatter'],
-                function(BaseController, MessageToast,Popover,Button,MessageStrip,GenericTile,Formatter) {
-                    "use strict";
-                    var _oRouter;
-                    return BaseController
-                            .extend(
-                                    "simple_hello.Controller.schdetails",
-                                    {
-                                    	
-                                    	formatter:Formatter,
-                                        onInit : function() 
-                                        {
-                                        	
-                                        	this._oRouter = this.getRouter();
-                                        	this._oRouter.attachRouteMatched(this._handleRouteMatched, this);
-                                        },
-                                        
-                                        _handleRouteMatched: function (oEvt) 
-                                        {
-                                        	 
-                                            if (oEvt.getParameter("name") !== "schdet") 
-                                            {
-                                                return;
-                                            } 
-                                            
-                                            this.scode = oEvt.getParameter("arguments").scode;	
-                                          //Query and get the data
-                                			this._schdetrestcall();
-                                          			            
-                                      	},
-                                      	_schdetrestcall:function()
-                                        {
-                                       	var authurl = "http://localhost:3000/schemes/sdet"+"?scode="+this.scode;
-                               			var that = this;
-                               			
-                               			$.ajax(
-                               				      {
-                               				        url:authurl,
-                               				        type: 'GET',
-                               				        dataType:'json',
-                               				        success:function(data)
-                               				        {
-                               				        	that._getschsuccess(data,that);
-                               				       
-                               				        },
-                               				        error:function(err)
-                               				        {
-                               				         that._getschfailure(err,that);
-                               				       
-                               				        }
-                               			
-                               				      });			//AJAX call close	
-                                        },
-                                        
-                                        _getschsuccess: function(data,that)
-                                        {	
-                                        	
-                                        	// Format data
-                                        	var formattedData = that.formatData(data[0])
-                                        	// Bind data to the model
-                                        	var oModel = that.getView().getModel("schdet_model");
-                                        	
-                                        	oModel.setData([]);
-                                        	oModel.setData(data[0]);
-//                                        	oModel.refresh();
-                                        	
-//                                        	this.getView().byId("objpghdr").bindElement("schdet_model");
-                                        	
-                                        },
-                                        _getschfailure:function(err,that)
-                                        {
-                                        	
-                                        },
-                                        handleSchLinkPressed: function(oEvent) 
-                                        {
-                                        	var data = this.getView().getModel("schdet_model").getData();
-                                        	var url = data.schurl;
-                                			sap.m.URLHelper.redirect(url, true);
-                                		},
-                                		formatData:function(data)
-                                		{
-                                			// Format currency
-                                			data.assets = this.formatCurrency(data.assets)+
-                                						  " "+
-                                						  data.assetqual + " " + data.assetcurr;
-                                			
-                                		},
-                                		formatCurrency: function(curr)
-                                		{
-                                			var x=curr.toString();
-                                			var lastThree = x.substring(x.length-3);
-                                			var otherNumbers = x.substring(0,x.length-3);
-                                			if(otherNumbers != '')
-                                			    lastThree = ',' + lastThree;
-                                			return otherNumbers.replace(/\B(?=(\d{2})+(?!\d))/g, ",") + lastThree;
-                                		}
-                                        
-                                       
- 
-                                    });
-                });
+  .define(
+    ["simple_hello/Controller/BaseController",
+      "../helpers/GatewayHelper",
+      "../helpers/ParsingHelpers",
+      "simple_hello/libs/Toastr"
+    ],
+    function(BaseController, GatewayHelper, ParsingHelpers, Toastr) {
+      "use strict";
+      var _oRouter;
+      return BaseController
+        .extend(
+          "simple_hello.Controller.schdetails", {
+
+            onInit: function() {
+
+              this._oRouter = this.getRouter();
+              this._oRouter.attachRouteMatched(this._handleRouteMatched, this);
+            },
+
+            _handleRouteMatched: function(oEvt) {
+
+              /**
+               * @desc This is the event callback for the attachRouteMatched event. It listens to the event and
+               *       triggers whenever there is a route match
+               * @param oEvt: Reference to the route matched event
+               */
+
+              // Check if the route matched is the Scheme details
+              if (oEvt.getParameter("name") !== "schdet") {
+                return;
+              }
+
+              // During routing a query parameter is passed. Get the fields that are passed
+              var oArgs = oEvt.getParameter("arguments"),
+                data = oArgs["?query"];
+
+              // Get Scheme details
+              if (data.scode !== "") {
+                this._getSchDet(data.scode);
+              }
+
+              //Query and get the data
+              if (data.scode !== "" &&
+                data.invBy !== "" &&
+                data.invFor !== "") {
+                this._getInvData(data.scode, data.invBy, data.invFor);
+              }
+            },
+            _getSchDet: function(scode) {
+              /**
+               * @desc This method invokes the gateway helper to retrieve the Scheme details
+               * It uses the scheme code to fetch the data
+               * @param scode: scheme code of the selected scheme
+               */
+
+              var that = this;
+              GatewayHelper._getSchemeDetails(scode).then(function(data) {
+                that._getSchDetSuccess(data, that);
+              }, function(err) {
+                that._getSchDetFailure(err, that);
+              });
+
+            },
+            _getSchDetSuccess: function(data, that) {
+
+              var oJSONModel = this.getOwnerComponent().getModel("schdet_model");
+              if (data.length > 0) {
+                var parseData = ParsingHelpers._parseSchDetails(data);
+                oJSONModel.setData(parseData[0]);
+                oJSONModel.updateBindings();
+              } else {
+                oJSONModel.setData([]);
+              }
+            },
+            _getSchDetFailure: function(err, that) {
+
+            },
+
+            _getInvData: function(scode, invBy, invFor) {
+              /**
+               * @desc This method invokes the gateway helper to retrieve the investment details
+               * It uses the scheme code, invested By and Goal details to fetch the investment
+               * @param scode: scheme code of the selected scheme
+               * @param invBy: User for the investment
+               * @param: invFor: Goal of the selected investment
+               */
+              var that = this;
+              var desctrue = true;
+              GatewayHelper._getInvBySchCodeInvFor(scode, invBy, invFor, desctrue).then(function(data) {
+                that._getinvsuccess(data, that);
+              }, function(err) {
+                that._getinvfailure(err, that);
+              });
+
+            },
+
+            _getinvsuccess: function(data, that) {
+
+              if (data.length > 0) {
+                var parseData = ParsingHelpers._parseInvDetails(data);
+                var oJSONModel = this.getOwnerComponent().getModel("dispinvdetl");
+                oJSONModel.setData(parseData);
+                oJSONModel.updateBindings();
+              } else {
+
+              }
+
+            },
+            _getinvfailure: function(err, that) {
+
+            },
+
+
+            handleSchLinkPressed: function(oEvent) {
+              var data = this.getView().getModel("schdet_model").getData();
+              var url = data.schurl;
+              sap.m.URLHelper.redirect(url, true);
+            },
+            formatData: function(data) {
+              // Format currency
+              data.assets = this.formatCurrency(data.assets) +
+                " " +
+                data.assetqual + " " + data.assetcurr;
+
+            }
+
+
+
+          });
+    });
