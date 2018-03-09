@@ -65,13 +65,13 @@ sap.ui
             },
             _getSchDetSuccess: function(data, that) {
 
+              var oJSONModel = this.getOwnerComponent().getModel("schdet_model");
               if (data.length > 0) {
                 var parseData = ParsingHelpers._parseSchDetails(data);
-                var oJSONModel = this.getOwnerComponent().getModel("schdet_model");
                 oJSONModel.setData(parseData[0]);
                 oJSONModel.updateBindings();
               } else {
-
+                oJSONModel.setData([]);
               }
             },
             _getSchDetFailure: function(err, that) {
@@ -88,7 +88,7 @@ sap.ui
                */
               var that = this;
               var desctrue = true;
-              GatewayHelper._getInvBySchCodeInvFor(scode, invBy, invFor,desctrue).then(function(data) {
+              GatewayHelper._getInvBySchCodeInvFor(scode, invBy, invFor, desctrue).then(function(data) {
                 that._getinvsuccess(data, that);
               }, function(err) {
                 that._getinvfailure(err, that);

@@ -19,21 +19,21 @@
       "id": "onAddSchDet",
       "icon": "sap-icon://add",
       "type": "Create",
-      "title": "Add Scheme Codes"
+      "title": "Upload Scheme Codes(CSV File)"
 
     },
     {
       "id": "addamcdet",
       "icon": "sap-icon://add",
       "type": "Create",
-      "title": "Add AMC Details"
+      "title": "Upload AMC Codes(CSV Files)"
     },
 
     {
       "id": "addSchemedet",
       "icon": "sap-icon://add",
       "type": "Create",
-      "title": "Add Scheme Details"
+      "title": "Upload Scheme Details(CSV Files)"
     }
 
   ],
@@ -67,7 +67,7 @@
       "id": "addnavdet",
       "icon": "sap-icon://add",
       "type": "Create",
-      "title": "Upload NAV File(TXT/CSV)"
+      "title": "Upload NAV File(TXT File)"
     },
     {
       "id": "shownav",
@@ -82,7 +82,7 @@
       "id": "addmultiinvdet",
       "icon": "sap-icon://add",
       "type": "Create",
-      "title": "Add Multiple Investment Details(CSV)"
+      "title": "Add Multiple Investment Details(CSV File)"
     },
 
     {

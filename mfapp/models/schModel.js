@@ -64,7 +64,7 @@ var mfschdetSchema = mongoose.Schema({
 mfschdetSchema.plugin(integerValidator);
 
 var mfschemesModel = mongoose.model('schemes', mfschemeSchema);
-var mfschdetModel = mongoose.model('schdetail', mfschdetSchema);
+var mfschdetModel = mongoose.model('schdetailtemp', mfschdetSchema);
 
 //This route gets all the documents inside the schemes collection in MongoDB
 async function findAll() {
@@ -101,7 +101,7 @@ async function findOneSchDet(id) {
   try {
     let schdet
     schdet = await mfschdetModel.find(id);
-  
+
 
     return schdet;
   } catch (err) {
