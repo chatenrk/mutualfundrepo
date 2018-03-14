@@ -1,0 +1,17 @@
+{
+  "ChartsCollection": [{
+      "id": "onShowLineChart",
+      "icon": "sap-icon://show",
+      "type": "Monitor",
+      "title": "LineChart"
+    },
+
+    {
+      "id": "onShowBarChart",
+      "icon": "sap-icon://show",
+      "type": "Monitor",
+      "title": "BarChart"
+    }
+  ]
+
+}
