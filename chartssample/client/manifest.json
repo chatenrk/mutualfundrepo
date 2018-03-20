@@ -29,6 +29,18 @@
   "sap.ui5": {
     "_version": "1.2.0",
     "rootView": "charts_sample.view.app",
+    "resources":
+		{
+  		 	"css":
+  		 	[
+  				{
+   					"uri": "css/style.css"
+  				},
+          {
+   					"uri": "css/multiline.css"
+  				}
+  			]
+		},
     "models": {
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
@@ -41,6 +53,18 @@
         "dataSource": "chartcoll_ds"
       },
       "simlinecht_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      },
+      "simpiecht_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      },
+      "navgrwth_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      },
+      "mulseriescht_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      },
+      "mullinechtgwt_model": {
         "type": "sap.ui.model.json.JSONModel"
       }
     },
@@ -64,6 +88,30 @@
         "name": "simplelinechart",
         "target": "simlinecht"
 
+      },
+      {
+        "pattern": "Pie Chart",
+        "name": "simplepiechart",
+        "target": "simpiecht"
+
+      },
+      {
+        "pattern": "NAV Growth Chart",
+        "name": "navgrwthchart",
+        "target": "navgrwthchart"
+
+      },
+      {
+        "pattern": "MultiLine Chart",
+        "name": "multilinechart",
+        "target": "mullinecht"
+
+      },
+      {
+        "pattern": "Cost Versus Value Chart",
+        "name": "costvsvallinecht",
+        "target": "costvsvallinecht"
+
       }
     ],
       "targets": {
@@ -73,6 +121,22 @@
         },
         "simlinecht": {
           "viewName": "simlinecht",
+          "viewLevel": 1
+        },
+        "simpiecht": {
+          "viewName": "simpiecht",
+          "viewLevel": 1
+        },
+        "navgrwthchart": {
+          "viewName": "navgrwth",
+          "viewLevel": 1
+        },
+        "mullinecht": {
+          "viewName": "mullinecht",
+          "viewLevel": 1
+        },
+        "costvsvallinecht": {
+          "viewName": "mullinechtgwt",
           "viewLevel": 1
         }
 

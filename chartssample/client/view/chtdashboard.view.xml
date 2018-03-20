@@ -1,9 +1,10 @@
 <mvc:View xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" controllerName="charts_sample.controller.chtdashboard">
-<Page title="Charts Dashboard">
-	<ObjectHeader title="Charts Dashboard"/>
+<Page title="{i18n>chtsdashboard}">
+	<!-- Line Charts Collection  -->
+	<ObjectHeader title="{i18n>linechts}"/>
 	<HeaderContainer orientation="Horizontal">
 		<content>
-			<FlexBox items="{dbtiles_model>/ChartsCollection}">
+			<FlexBox items="{dbtiles_model>/LineChtsColl}">
 				<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{dbtiles_model>title}" press="onTilePress">
 					<TileContent>
 						<ImageContent src="{dbtiles_model>icon}"/>
@@ -12,5 +13,35 @@
 			</FlexBox>
 		</content>
 	</HeaderContainer>
+
+<!-- Bar Charts Collection -->
+	<ObjectHeader title="{i18n>barchts}"/>
+	<HeaderContainer orientation="Horizontal">
+		<content>
+			<FlexBox items="{dbtiles_model>/BarChtsColl}">
+				<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{dbtiles_model>title}" press="onTilePress">
+					<TileContent>
+						<ImageContent src="{dbtiles_model>icon}"/>
+					</TileContent>
+				</GenericTile>
+			</FlexBox>
+		</content>
+	</HeaderContainer>
+
+	<!-- Pie Charts Collection -->
+		<ObjectHeader title="{i18n>piechts}"/>
+		<HeaderContainer orientation="Horizontal">
+			<content>
+				<FlexBox items="{dbtiles_model>/PieChtsColl}">
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{dbtiles_model>title}" press="onTilePress">
+						<TileContent>
+							<ImageContent src="{dbtiles_model>icon}"/>
+						</TileContent>
+					</GenericTile>
+				</FlexBox>
+			</content>
+		</HeaderContainer>
+
+
 </Page>
 </mvc:View>

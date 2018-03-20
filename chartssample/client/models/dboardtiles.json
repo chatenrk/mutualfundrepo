@@ -1,17 +1,37 @@
 {
-  "ChartsCollection": [{
+  "LineChtsColl": [{
       "id": "onShowLineChart",
       "icon": "sap-icon://show",
       "type": "Monitor",
-      "title": "LineChart"
+      "title": "Simple Line Chart"
     },
 
     {
-      "id": "onShowBarChart",
+      "id": "onNavGrowth",
       "icon": "sap-icon://show",
       "type": "Monitor",
-      "title": "BarChart"
+      "title": "NAV Growth Chart"
+    },
+
+    {
+      "id": "onShowCostVsVal",
+      "icon": "sap-icon://show",
+      "type": "Monitor",
+      "title": "Cost Versus Value Line Chart"
+    },
+
+    {
+      "id": "onShowMultiSeriesLineChart",
+      "icon": "sap-icon://show",
+      "type": "Monitor",
+      "title": "Multi Series Line Chart"
     }
-  ]
+  ],
+  "PieChtsColl": [{
+    "id": "onShowPieChart",
+    "icon": "sap-icon://show",
+    "type": "Monitor",
+    "title": "Simple Pie Chart"
+  }]
 
 }

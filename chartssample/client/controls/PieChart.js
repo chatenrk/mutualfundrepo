@@ -3,7 +3,7 @@ sap.ui.define(['jquery.sap.global', 'sap/ui/core/Control'],
   function(jQuery, Control) {
     "use strict";
 
-    var LineChart = Control.extend("charts_sample.LineChart", {
+    var PieChart = Control.extend("charts_sample.PieChart", {
       metadata: {
         properties: {
           "title": {
@@ -15,7 +15,7 @@ sap.ui.define(['jquery.sap.global', 'sap/ui/core/Control'],
         defaultAggregation: "items",
         aggregations: {
           items: {
-            type: "charts_sample.LineChartItem",
+            type: "charts_sample.PieChartItem",
             multiple: true,
             singularName: "item"
           }
@@ -65,74 +65,107 @@ sap.ui.define(['jquery.sap.global', 'sap/ui/core/Control'],
 
 
         // set the dimensions and margins of the graph
-        var margin = {
-            top: 20,
-            right: 20,
-            bottom: 30,
-            left: 50
-          },
-          width = 960 - margin.left - margin.right,
-          height = 500 - margin.top - margin.bottom;
 
-        // parse the date / time
-        var parseTime = d3.timeParse("%d-%b-%y");
+        var width = 800;
+        var height = 360;
+        var radius = Math.min(width, height) / 2;
+        var donutWidth = 75;
 
-        // set the ranges
-        var x = d3.scaleTime().range([0, width]);
-        var y = d3.scaleLinear().range([height, 0]);
+        var legendRectSize = 18; // NEW
+        var legendSpacing = 4; // NEW
 
-        // define the line
-        var valueline = d3.line()
-          .x(function(d) {
-            return x(d.key);
-          })
-          .y(function(d) {
-            return y(d.value);
-          });
+
+
+        var color = d3.scaleOrdinal(d3.schemeCategory10);
 
         // append the svg obgect to the body of the page
         // appends a 'group' element to 'svg'
         // moves the 'group' element to the top left margin
         var svg = vis.append("svg")
-          .attr("width", width + margin.left + margin.right)
-          .attr("height", height + margin.top + margin.bottom)
-          .style("background-color", "white")
-          .style("font", "12px sans-serif")
+          .attr("width", width)
+          .attr("height", height)
           .append("g")
-          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+          .attr("transform", "translate(" + (width / 2) + "," + (height / 2) + ")");
 
-        // format the data
-        data.forEach(function(d) {
-          d.key = parseTime(d.key);
-          d.value = +d.value;
+        var arc = d3.arc()
+          .innerRadius(0)
+          .outerRadius(radius);
+
+        var pie = d3.pie()
+          .value(function(d) {
+            return d.value;
+          })
+          .sort(null);
+
+        var tooltip = vis
+                      .append('div')
+                      .attr('class', 'pietooltip');
+
+        tooltip.append('div')
+          .attr('class', 'assettype');
+        tooltip.append('div')
+          .attr('class', 'amount');
+        tooltip.append('div')
+          .attr('class', 'percent');
+
+
+
+        /*
+         * Select all path elements inside our svg
+         *  associate our dataset with the path elements
+         * enter() method creates placeholder nodes for each of the values
+         *
+         */
+        var path = svg.selectAll('path')
+          .data(pie(data))
+          .enter()
+          .append('path')
+          .attr('d', arc)
+          .attr('fill', function(d) {
+            return color(d.data.key);
+          });
+
+        path.on('mouseover', function(d) {
+          var total = d3.sum(data.map(function(d) {
+            return d.value;
+          }));
+          var percent = Math.round(1000 * d.data.value / total) / 10;
+          tooltip.select('.assettype').html(d.data.key);
+          tooltip.select('.amount').html(d.data.value);
+          tooltip.select('.percent').html(percent + '%');
+          tooltip.style('display', 'block');
+        });
+        path.on('mouseout', function() {
+          tooltip.style('display', 'none');
         });
 
-        // Scale the range of the data
-        x.domain(d3.extent(data, function(d) {
-          return d.key;
-        }));
 
-        y.domain([d3.min(data, function(d) {
-          return d.value;
-        }), d3.max(data, function(d) {
-          return d.value;
-        })]);
+        var legend = svg.selectAll('.legend')
+          .data(color.domain())
+          .enter()
+          .append('g')
+          .attr('class', 'pielegend')
+          .attr('transform', function(d, i) {
+            var height = legendRectSize + legendSpacing;
+            var offset = height * color.domain().length / 2;
+            var horz = 12 * legendRectSize;
+            var vert = i * height - offset;
+            return 'translate(' + horz + ',' + vert + ')';
+          });
 
-        // Add the valueline path.
-        svg.append("path")
-          .data([data])
-          .attr("class", "line")
-          .attr("d", valueline);
-
-        // Add the X Axis
-        svg.append("g")
-          .attr("transform", "translate(0," + height + ")")
-          .call(d3.axisBottom(x));
-
-        // Add the Y Axis
-        svg.append("g")
-          .call(d3.axisLeft(y));
+        legend.append('rect')
+          .attr('width', legendRectSize)
+          .attr('height', legendRectSize)
+          .style('fill', color)
+          .style('stroke', color);
+        legend.append('text')
+          .attr('x', legendRectSize + legendSpacing)
+          .attr('y', legendRectSize - legendSpacing)
+          .text(function(d) {
+            return d;
+          });
       }
+
     });
 
     /* =========================================================== */
@@ -143,7 +176,7 @@ sap.ui.define(['jquery.sap.global', 'sap/ui/core/Control'],
      * Initializes the control.
      * @private
      */
-    LineChart.prototype.init = function() {
+    PieChart.prototype.init = function() {
 
 
     };
@@ -154,7 +187,7 @@ sap.ui.define(['jquery.sap.global', 'sap/ui/core/Control'],
     /*           begin: internal methods and properties            */
     /* =========================================================== */
 
-    LineChart.prototype.createChart = function() {
+    PieChart.prototype.createChart = function() {
       /*
        * Called from renderer
        */
@@ -181,5 +214,5 @@ sap.ui.define(['jquery.sap.global', 'sap/ui/core/Control'],
     };
 
 
-    return LineChart;
+    return PieChart;
   });

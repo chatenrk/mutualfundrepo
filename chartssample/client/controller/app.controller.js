@@ -1,6 +1,6 @@
 sap.ui
   .define(
-    ["charts_sample/Controller/BaseController"],
+    ["charts_sample/controller/BaseController"],
     function(BaseController) {
       "use strict";
       return BaseController

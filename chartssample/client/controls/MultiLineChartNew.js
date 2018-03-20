@@ -3,7 +3,7 @@ sap.ui.define(['jquery.sap.global', 'sap/ui/core/Control'],
   function(jQuery, Control) {
     "use strict";
 
-    var LineChart = Control.extend("charts_sample.LineChart", {
+    var MultiLineChartNew = Control.extend("charts_sample.MultiLineChartNew", {
       metadata: {
         properties: {
           "title": {
@@ -15,7 +15,7 @@ sap.ui.define(['jquery.sap.global', 'sap/ui/core/Control'],
         defaultAggregation: "items",
         aggregations: {
           items: {
-            type: "charts_sample.LineChartItem",
+            type: "charts_sample.MultiLineChartItemNew",
             multiple: true,
             singularName: "item"
           }
@@ -77,18 +77,33 @@ sap.ui.define(['jquery.sap.global', 'sap/ui/core/Control'],
         // parse the date / time
         var parseTime = d3.timeParse("%d-%b-%y");
 
+
+
         // set the ranges
         var x = d3.scaleTime().range([0, width]);
         var y = d3.scaleLinear().range([height, 0]);
 
-        // define the line
+        // define the 1st line
         var valueline = d3.line()
           .x(function(d) {
-            return x(d.key);
+            return x(d.date);
           })
           .y(function(d) {
-            return y(d.value);
+            return y(d.totcost);
           });
+
+        // define the 2nd line
+        var valueline2 = d3.line()
+          .x(function(d) {
+            return x(d.date);
+          })
+          .y(function(d) {
+            return y(d.totval);
+          });
+
+
+
+
 
         // append the svg obgect to the body of the page
         // appends a 'group' element to 'svg'
@@ -101,28 +116,35 @@ sap.ui.define(['jquery.sap.global', 'sap/ui/core/Control'],
           .append("g")
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-        // format the data
+        // // format the data
         data.forEach(function(d) {
-          d.key = parseTime(d.key);
-          d.value = +d.value;
+          d.date = parseTime(d.date);
+          d.totcost = +d.totcost;
+          d.totval = +d.totval;
         });
 
         // Scale the range of the data
         x.domain(d3.extent(data, function(d) {
-          return d.key;
+          return d.date;
         }));
 
-        y.domain([d3.min(data, function(d) {
-          return d.value;
-        }), d3.max(data, function(d) {
-          return d.value;
+        y.domain([0, d3.max(data, function(d) {
+          return Math.max(d.totcost, d.totval);
         })]);
 
         // Add the valueline path.
         svg.append("path")
           .data([data])
           .attr("class", "line")
+          .style("stroke", "red")
           .attr("d", valueline);
+
+        // Add the valueline2 path.
+        svg.append("path")
+          .data([data])
+          .attr("class", "line")
+          .style("stroke", "green")
+          .attr("d", valueline2);
 
         // Add the X Axis
         svg.append("g")
@@ -143,8 +165,7 @@ sap.ui.define(['jquery.sap.global', 'sap/ui/core/Control'],
      * Initializes the control.
      * @private
      */
-    LineChart.prototype.init = function() {
-
+    MultiLineChartNew.prototype.init = function() {
 
     };
 
@@ -154,7 +175,7 @@ sap.ui.define(['jquery.sap.global', 'sap/ui/core/Control'],
     /*           begin: internal methods and properties            */
     /* =========================================================== */
 
-    LineChart.prototype.createChart = function() {
+    MultiLineChartNew.prototype.createChart = function() {
       /*
        * Called from renderer
        */
@@ -181,5 +202,5 @@ sap.ui.define(['jquery.sap.global', 'sap/ui/core/Control'],
     };
 
 
-    return LineChart;
+    return MultiLineChartNew;
   });
