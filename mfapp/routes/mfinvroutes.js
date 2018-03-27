@@ -49,7 +49,7 @@ router.get('/mfinvdet', async (req, res, next) => {
           invBy: invBy
         },
         {
-          invFor:invFor
+          invFor: invFor
         }
       ]
     }
@@ -79,7 +79,7 @@ router.get('/mfinvdet', async (req, res, next) => {
 
 
   try {
-    invdet = await mfinvmodel.findOneInvDet(query,desc);
+    invdet = await mfinvmodel.findOneInvDet(query, desc);
     res.send(invdet);
   } catch (err) {
 
@@ -155,7 +155,7 @@ router.post('/csvinv', upload.single('file'), async (req, res) => {
     var multiinvs = await helpers.csvtojson(multiinvFile);
     debugger;
 
-    var result = await mfinvmodel.postManyInvDet(multiinvs,user);
+    var result = await mfinvmodel.postManyInvDet(multiinvs, user);
     debugger;
     res.send(result);
   } catch (err) {
@@ -167,6 +167,17 @@ router.post('/csvinv', upload.single('file'), async (req, res) => {
 
 //Route for aggregations
 router.get('/aggr', async (req, res, next) => {
+
+  /**
+  * @desc This route is used for all aggregations that are performed on Mutual fund investments table
+  * Current list of aggregations are
+  * - getAggregation - Matches the user for investment and gives the sum,count and details of each of his investment
+  * - TBF
+  * @param
+  * @return 
+
+  */
+
   debugger;
 
   if (req.query.id && req.query.id !== "" && req.query.totcol !== "" && req.query.invBy !== "") {
@@ -195,6 +206,13 @@ router.get('/aggr', async (req, res, next) => {
   } else {
     return res.status(500).send("Improperly formed Aggregation query");
   }
+});
+
+// Route for value calculations
+router.get('/valcalc', async (req, res, next) => {
+
+
+
 });
 
 // Route for Step-up sip calculation

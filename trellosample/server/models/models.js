@@ -20,7 +20,7 @@ async function find(query) {
     qauth = await qauthModel.find(query);
     return qauth;
   } catch (err) {
-    debugger;
+
     return err;
   }
 };

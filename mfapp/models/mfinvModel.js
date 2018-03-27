@@ -99,11 +99,10 @@ async function postOne(mfinvdet, user) {
   // Check if the NAV is supplied, incase of multipost it is not supplied and has to be retrieved here
   if (!mfinvdet.nav || mfinvdet.nav === "") {
 
-    var isodate = helpers.datetoisodate(mfinvdet.invdate);     //moment(mfinvdet.invdate).toISOString();
+    var isodate = helpers.datetoisodate(mfinvdet.invdate); //moment(mfinvdet.invdate).toISOString();
     try {
       var navdetls = await helpers.getNAV(mfinvdet.scode, isodate)
-      if(navdetls[0].nav.value !== "")
-      {
+      if (navdetls[0].nav.value !== "") {
         mfinvdet.nav = navdetls[0].nav.value;
         mfinvdet.units = mfinvdet.amount / mfinvdet.nav;
       }
@@ -228,13 +227,15 @@ async function grpGoalAggregation(aggr) {
             sname: "$sname",
             scode: "$scode"
           },
-          count: {
+          invcount: {
             $sum: 1
           },
-          total: {
+          totinv: {
             $sum: "$amount"
           },
-
+          totalunits: {
+            $sum: "$units"
+          }
         }
       },
       {
@@ -276,13 +277,15 @@ async function grpGoalSchemeAggregation(aggr) {
             sname: "$sname",
             scode: "$scode"
           },
-          count: {
+          invcount: {
             $sum: 1
           },
-          total: {
+          totinv: {
             $sum: "$amount"
           },
-
+          totalunits: {
+            $sum: "$units"
+          }
         }
       },
       {

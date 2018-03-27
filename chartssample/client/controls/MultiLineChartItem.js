@@ -24,7 +24,7 @@ sap.ui.define(['jquery.sap.global', 'sap/ui/core/Element'],
     var MultiLineChartItem = Element.extend("charts_sample.MultiLineChartItem", {
       metadata: {
         properties: {
-          "key" : {type : "string", group : "Misc", defaultValue : null},
+          "date" : {type : "string", group : "Misc", defaultValue : null},
           "value" : {type : "string", group : "Misc", defaultValue : null},
           "series": {type : "string", group : "Misc", defaultValue : null}
         }

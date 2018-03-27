@@ -2,6 +2,8 @@
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
+const cors = require('cors');
+
 
 const app = express();
 const port = 3000;
@@ -18,6 +20,16 @@ mongoose.connection.on('connected', function(){
 mongoose.connection.on('error', function(){
 	console.log('Error connecting to DB '+config.database);
 })
+
+// To overcome CORS issue
+app.use(function (req, res, next) {
+    //Enabling CORS
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, contentType,Content-Type, Accept, Authorization");
+    next();
+});
+
 
 // Define client path to load frontend files
 app.use(express.static(path.join(__dirname,'../','client')));

@@ -31,8 +31,8 @@ sap.ui
               var data = this.getOwnerComponent().getModel("mulseriescht_model"); // This is set in the Component.js from local model
 
               var oChartItem = new LineChartItem({
-                key: "{date}",
-                value:"{temperature}",
+                date: "{date}",
+                value:"{value}",
                 series:"{series}"
               });
               var oChart = new LineChart({

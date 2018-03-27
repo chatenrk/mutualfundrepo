@@ -1,11 +1,11 @@
 <mvc:View controllerName="simple_hello.Controller.app"
-    xmlns="sap.m" 
+    xmlns="sap.m"
     xmlns:f="sap.ui.layout.form"
-    xmlns:l="sap.ui.layout" 
+    xmlns:l="sap.ui.layout"
     xmlns:core="sap.ui.core"
     xmlns:tnt = "sap.tnt"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
-    
+
 	<tnt:ToolPage id="toolPage">
 		<tnt:header>
 			<tnt:ToolHeader>
@@ -17,15 +17,15 @@
 						<OverflowToolbarLayoutData priority="NeverOverflow" />
 					</layoutData>
 				</Button>
-				
+
 				<ToolbarSpacer width="650px" />
-				
+
 				<Title level="H1" text="{i18n>DemoApp}" TextAlign="Center" />
-				
+
 
 				<ToolbarSpacer width="300px" />
-				
-						
+
+
 				<Button text="{usrlgn_model>/user/name}" type="Transparent" press="handleUserNamePress" visible="{usrlgn_model>/user_visible}">
 					<layoutData>
 						<OverflowToolbarLayoutData priority="NeverOverflow" />
@@ -40,16 +40,16 @@
 			<tnt:SideNavigation expanded="true"
 								itemSelect="onItemSelect">
 				<tnt:NavigationList id="nlitems" items="{path: 'nview_model>/'}">
-					
+
 						<tnt:NavigationListItem Id="{nview_model>id}"
 												text="{nview_model>text}"
 												key="{nview_model>key}"
 												icon="{nview_model>icon}"
 												>
 						</tnt:NavigationListItem>
-					 
+
 				</tnt:NavigationList>
-				
+
 			</tnt:SideNavigation>
 		</tnt:sideContent>
 
@@ -59,7 +59,5 @@
 			</NavContainer>
 		</tnt:mainContents>
 	</tnt:ToolPage>
-	
+
 </mvc:View>
-	
-	

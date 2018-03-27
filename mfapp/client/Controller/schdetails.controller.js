@@ -86,8 +86,28 @@ sap.ui
                * @param invBy: User for the investment
                * @param: invFor: Goal of the selected investment
                */
+
               var that = this;
-              var desctrue = true;
+              var desctrue = true; // Descending Order of investments
+
+              // // Get the total and count of investments(from the previous page)
+              // var oAggrModel = this.getOwnerComponent().getModel("manageinv_model");
+              // var data = oAggrModel.getData();
+              //
+              // for (var i = 0; i < data.length; i++) {
+              //   if (data[i].scode === parseInt(scode) && data[i].invFor === invFor) {
+              //     var schdet_model = this.getOwnerComponent().getModel("schdet_model");
+              //
+              //     var schdata = schdet_model.getData();
+              //     schdata.totalVal = data[i].total;
+              //     schdata.numInv = data[i].count;
+              //
+              //     schdet_model.setData([]);
+              //     schdet_model.setData(schdata);
+              //     schdet_model.updateBindings();
+              //   }
+              // }
+
               GatewayHelper._getInvBySchCodeInvFor(scode, invBy, invFor, desctrue).then(function(data) {
                 that._getinvsuccess(data, that);
               }, function(err) {
@@ -99,6 +119,8 @@ sap.ui
             _getinvsuccess: function(data, that) {
 
               if (data.length > 0) {
+
+
                 var parseData = ParsingHelpers._parseInvDetails(data);
                 var oJSONModel = this.getOwnerComponent().getModel("dispinvdetl");
                 oJSONModel.setData(parseData);

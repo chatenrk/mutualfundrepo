@@ -14,11 +14,20 @@
 
 		<layout:VerticalLayout class="sapUiSmallMarginEnd">
 			<Label text="Assets" design="Bold"/>
-			<Text  text="{schdet_model>/passetfinal} (As on {schdet_model>/passetdate}) " />
+			<Text  text="{i18n>RupeeSymbol} {schdet_model>/passetfinal} (As on {schdet_model>/passetdate}) " />
 			<Text text=""/>
 			<Label text="Expense Ratio" design="Bold"/>
 			<Text  text="{schdet_model>/expense}% (As on {schdet_model>/pexpensedate}) " />
 		</layout:VerticalLayout>
+
+		<layout:VerticalLayout class="sapUiSmallMarginEnd">
+			<Label text="{i18n>totInv}" design="Bold"/>
+			<Text  text= "{i18n>RupeeSymbol}{schdet_model>/totInv} (As on {schdet_model>/calcdate}) " />
+			<Text text=""/>
+			<Label text="{i18n>currVal}" design="Bold"/>
+			<Text  text="{i18n>RupeeSymbol}{schdet_model>/currVal} (As on {schdet_model>/calcdate}) " />
+		</layout:VerticalLayout>
+
 		</layout:HorizontalLayout>
 	</forms:SimpleForm>
 </mvc:View>

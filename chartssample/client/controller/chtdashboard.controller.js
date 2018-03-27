@@ -66,6 +66,14 @@ sap.ui
                   this._oRouter.navTo("simplepiechart");
                   break;
 
+                case "onShowDonutChart": // Simple Donut Chart
+                  this._oRouter.navTo("simpledonutchart");
+                  break;
+
+                  case "onShowGrpBarChart": // Group Bar Chart
+                    this._oRouter.navTo("grpbarchart");
+                    break;
+
                 default:
                   break;
               }

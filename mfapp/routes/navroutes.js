@@ -51,6 +51,8 @@ router.get('/navdet', async (req, res, next) => {
 
 });
 
+
+
 router.get('/navbetn', async (req, res, next) => {
 
 
