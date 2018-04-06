@@ -115,6 +115,12 @@ async function postOne(mfinvdet, user) {
         naverrflag = true;
         naverr.name = "NAV not found";
         naverr.message = "NAV not found";
+        navoprn.transaction = mfinvdet.transaction;
+        navoprn.invdate = isodate;
+        navoprn.amount = mfinvdet.amount;
+        navoprn.remarks = mfinvdet.remarks;
+        navoprn.invFor = mfinvdet.invFor;
+        navoprn.assetType = mfinvdet.assetType;
         navoprn.scode = mfinvdet.scode;
         navoprn.sname = mfinvdet.sname;
         var parseResult = helpers.parseOutput(naverrflag, naverr, navoprn);
@@ -124,41 +130,47 @@ async function postOne(mfinvdet, user) {
       naverrflag = true;
       naverr.name = "NAV not found";
       naverr.message = "NAV not found";
+      navoprn.transaction = mfinvdet.transaction;
+      navoprn.invdate = isodate;
+      navoprn.amount = mfinvdet.amount;
+      navoprn.remarks = mfinvdet.remarks;
+      navoprn.invFor = mfinvdet.invFor;
+      navoprn.assetType = mfinvdet.assetType;
       navoprn.scode = mfinvdet.scode;
       navoprn.sname = mfinvdet.sname;
       var parseResult = helpers.parseOutput(naverrflag, naverr, navoprn);
     }
   }
 
-// Check if the NAV has been determined before proceeding with the inserted
-if(naverrflag === false){
-  try {
-    let invdet
-    var _id = new mongoose.Types.ObjectId();
-    invdet = await mfinvModel.create({
-      transaction: mfinvdet.transaction,
-      amccode: mfinvdet.amccode,
-      amcname: mfinvdet.amcname,
-      scode: mfinvdet.scode,
-      sname: mfinvdet.sname,
-      invdate: mfinvdet.invdate,
-      nav: mfinvdet.nav,
-      units: mfinvdet.units,
-      amount: mfinvdet.amount,
-      remarks: mfinvdet.remarks,
-      invFor: mfinvdet.invFor,
-      assetType: mfinvdet.assetType,
-      invBy: mfinvdet.invBy
-    });
-    var parseResult = helpers.parseOutput(errflag, invdet);
+  // Check if the NAV has been determined before proceeding with the inserted
+  if (naverrflag === false) {
+    try {
+      let invdet
+      var _id = new mongoose.Types.ObjectId();
+      invdet = await mfinvModel.create({
+        transaction: mfinvdet.transaction,
+        amccode: mfinvdet.amccode,
+        amcname: mfinvdet.amcname,
+        scode: mfinvdet.scode,
+        sname: mfinvdet.sname,
+        invdate: mfinvdet.invdate,
+        nav: mfinvdet.nav,
+        units: mfinvdet.units,
+        amount: mfinvdet.amount,
+        remarks: mfinvdet.remarks,
+        invFor: mfinvdet.invFor,
+        assetType: mfinvdet.assetType,
+        invBy: mfinvdet.invBy
+      });
+      var parseResult = helpers.parseOutput(errflag, invdet);
 
-  } catch (err) {
-    var operation = err.getOperation();
-    var errflag = true;
-    var parseResult = helpers.parseOutput(errflag, err, operation);
+    } catch (err) {
+      var operation = err.getOperation();
+      var errflag = true;
+      var parseResult = helpers.parseOutput(errflag, err, operation);
 
+    }
   }
-}
   return parseResult;
 }
 

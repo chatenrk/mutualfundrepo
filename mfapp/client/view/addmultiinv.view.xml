@@ -50,22 +50,27 @@
 
 		   <columns>
             <Column hAlign="Center" vAlign="Center">
-                <Text text="{i18n>scode}" />
+                <Text text="{i18n>transaction}" />
             </Column>
 
 
             <Column hAlign="Center" vAlign="Center">
-                <Text text="{i18n>sname}" />
+                <Text text="{i18n>dinv}" />
             </Column>
 
            <Column hAlign="Center" vAlign="Center">
-                <Text text="{i18n>pStatus}" />
+                <Text text="{i18n>sname}" />
             </Column>
+
+						<Column hAlign="Center" vAlign="Center">
+								 <Text text="{i18n>pStatus}" />
+						 </Column>
         </columns>
         <items>
             <ColumnListItem type="Active" hAlign="Center" vAlign="Center">
                 <cells>
-                    <Text text="{post_nav_model>scode}" />
+                    <Text text="{post_nav_model>transaction}" />
+										<Text text="{post_nav_model>invdtfrmtd}" />
                     <Text text="{post_nav_model>sname}" />
                     <Text text="{post_nav_model>msg}" />
                 </cells>

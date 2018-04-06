@@ -208,22 +208,25 @@ sap.ui
               var succmsg = "Data inserted successfully into database";
               for (var i = 0; i < data.length; i++) {
 
+                parseData = data[i].operation;
+                parseData.invdtfrmtd = this._isodatetodate(parseData.invdate);
+
                 // perform required array operations
                 if (data[i].opsuccess === false) {
                   // Error during insertion
                   if (data[i].message.includes(dupkeyerr)) {
                     // Record already exists in DB
 
-                    parseData.scode = data[i].operation.scode;
-                    parseData.sname = data[i].operation.sname;
+                    // parseData.scode = data[i].operation.scode;
+                    // parseData.sname = data[i].operation.sname;
                     parseData.msg = errmsg;
                     pdata.push(parseData);
                     parseData = {};
                   } else if (data[i].message.includes(naverr)) {
                     // NAV not found
 
-                    parseData.scode = data[i].operation.scode;
-                    parseData.sname = data[i].operation.sname;
+                    // parseData.scode = data[i].operation.scode;
+                    // parseData.sname = data[i].operation.sname;
                     parseData.msg = naverrmsg;
                     pdata.push(parseData);
                     parseData = {};
@@ -231,8 +234,8 @@ sap.ui
                 } else {
                   // Successfully inserted into DB
 
-                  parseData.scode = data[i].operation.scode;
-                  parseData.sname = data[i].operation.sname;
+                  // parseData.scode = data[i].operation.scode;
+                  // parseData.sname = data[i].operation.sname;
                   parseData.msg = succmsg;
                   pdata.push(parseData);
                   parseData = {};
@@ -260,9 +263,15 @@ sap.ui
                 // column definitions with column name and binding info for the content
 
                 columns: [{
-                    name: "Scheme Code",
+                    name: "Transaction",
                     template: {
-                      content: "{scode}"
+                      content: "{transaction}"
+                    }
+                  },
+                  {
+                    name: "Date of Investment",
+                    template: {
+                      content: "{invdtfrmtd}"
                     }
                   },
                   {
@@ -271,146 +280,35 @@ sap.ui
                       content: "{sname}"
                     }
                   },
+
                   {
-                    name: "Category",
+                    name: "Amount",
                     template: {
-                      content: "{category}"
+                      content: "{amount}"
+                    }
+                  },
+
+                  {
+                    name: "Remarks",
+                    template: {
+                      content: "{remarks}"
+                    }
+                  },
+
+                  {
+                    name: "Investment For",
+                    template: {
+                      content: "{invFor}"
                     }
                   },
                   {
-                    name: "Assets",
+                    name: "Asset Type",
                     template: {
-                      content: "{assets}"
+                      content: "{assetType}"
                     }
                   },
                   {
-                    name: "Assets as on Date",
-                    template: {
-                      content: "{assetdate}"
-                    }
-                  },
-                  {
-                    name: "Assets Currency",
-                    template: {
-                      content: "{assetcurr}"
-                    }
-                  },
-                  {
-                    name: "Assets Currency Qualifier",
-                    template: {
-                      content: "{assetqual}"
-                    }
-                  },
-                  {
-                    name: "Expense Ratio",
-                    template: {
-                      content: "{expense}"
-                    }
-                  },
-                  {
-                    name: "Expense Ratio as on Date",
-                    template: {
-                      content: "{expensedate}"
-                    }
-                  },
-                  {
-                    name: "Fund House",
-                    template: {
-                      content: "{fhouse}"
-                    }
-                  },
-                  {
-                    name: "Launch Date",
-                    template: {
-                      content: "{ldate}"
-                    }
-                  },
-                  {
-                    name: "BenchMark",
-                    template: {
-                      content: "{bmark}"
-                    }
-                  },
-                  {
-                    name: "Risk",
-                    template: {
-                      content: "{risk}"
-                    }
-                  },
-                  {
-                    name: "Return",
-                    template: {
-                      content: "{return}"
-                    }
-                  },
-                  {
-                    name: "Return since launch",
-                    template: {
-                      content: "{rlaunch}"
-                    }
-                  },
-                  {
-                    name: "Min Investment",
-                    template: {
-                      content: "{mininv}"
-                    }
-                  },
-                  {
-                    name: "Min Additional Investment",
-                    template: {
-                      content: "{minaddinv}"
-                    }
-                  },
-                  {
-                    name: "Min Withdrawal",
-                    template: {
-                      content: "{minwith}"
-                    }
-                  },
-                  {
-                    name: "Min SWP Withdrawal",
-                    template: {
-                      content: "{minswpwith}"
-                    }
-                  },
-                  {
-                    name: "Min Balance",
-                    template: {
-                      content: "{minbal}"
-                    }
-                  },
-                  {
-                    name: "Exit Load",
-                    template: {
-                      content: "{exitload}"
-                    }
-                  },
-                  {
-                    name: "Plan Type",
-                    template: {
-                      content: "{ptype}"
-                    }
-                  },
-                  {
-                    name: "Scheme Type",
-                    template: {
-                      content: "{schtype}"
-                    }
-                  },
-                  {
-                    name: "Image Path",
-                    template: {
-                      content: "{imgpath}"
-                    }
-                  },
-                  {
-                    name: "Scheme URL",
-                    template: {
-                      content: "{schurl}"
-                    }
-                  },
-                  {
-                    name: "Posting Message",
+                    name: "Posting Status",
                     template: {
                       content: "{msg}"
                     }
