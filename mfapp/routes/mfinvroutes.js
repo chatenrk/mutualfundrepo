@@ -21,7 +21,7 @@ const helpers = require('../helpers/helpers.js');
 
 //Route to find one MF Investment
 router.get('/mfinvdet', async (req, res, next) => {
-  debugger;
+
 
   var scode = req.query.scode;
   var date = req.query.invdate;
@@ -131,7 +131,6 @@ router.post('/pone', async (req, res, next) => {
 
   try {
     invdet = await mfinvmodel.postOne(mfinvdet);
-
     res.send(invdet);
   } catch (err) {
 
@@ -174,11 +173,10 @@ router.get('/aggr', async (req, res, next) => {
   * - getAggregation - Matches the user for investment and gives the sum,count and details of each of his investment
   * - TBF
   * @param
-  * @return 
+  * @return
 
   */
 
-  debugger;
 
   if (req.query.id && req.query.id !== "" && req.query.totcol !== "" && req.query.invBy !== "") {
     var aggr = {}

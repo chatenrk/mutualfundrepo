@@ -10,47 +10,64 @@
 			<f:formContainers>
 				<f:FormContainer>
 					<f:formElements>
-						<f:FormElement label="Scheme Name" design="sap.m.LabelDesign.Bold">
+
+<!-- Scheme Name Element -->
+						<f:FormElement label="{i18n>sname}" design="sap.m.LabelDesign.Bold">
 							<f:fields>
 								<Text text="{manageinv_model>sname}"/>
 							</f:fields>
 						</f:FormElement>
-
-						<f:FormElement label="Transaction" design="sap.m.LabelDesign.Bold">
+<!-- Transaction Form Element -->
+						<f:FormElement label="{i18n>transaction}" design="sap.m.LabelDesign.Bold">
 							<f:fields>
 								<Text text="{manageinv_model>transaction}"/>
 							</f:fields>
 						</f:FormElement>
-
-						<f:FormElement label="Investment Date" design="sap.m.LabelDesign.Bold">
+<!-- Investment Date Form Element -->
+						<f:FormElement label="{i18n>dinv}" design="sap.m.LabelDesign.Bold">
 							<f:fields>
 								<Text text="{manageinv_model>invdatefmtd}"/>
 							</f:fields>
 						</f:FormElement>
-
-						<f:FormElement label="Amount" design="Bold">
+<!-- Amount Form Element -->
+						<f:FormElement label="{i18n>amount}" design="Bold">
 							<f:fields>
 								<Text text="{manageinv_model>amount}"/>
 							</f:fields>
 						</f:FormElement>
-
-						<f:FormElement label="Invested For" design="sap.m.LabelDesign.Bold">
+<!-- NAV Form Element -->
+						<f:FormElement label="{i18n>nav}" design="sap.m.LabelDesign.Bold">
+							<f:fields>
+								<Text text="{manageinv_model>nav}"/>
+							</f:fields>
+						</f:FormElement>
+<!-- Units Form Element -->
+						<f:FormElement label="{i18n>units}" design="sap.m.LabelDesign.Bold">
+							<f:fields>
+								<Text text="{manageinv_model>units}"/>
+							</f:fields>
+						</f:FormElement>
+<!-- Investment FOR Form Element -->
+						<f:FormElement label="{i18n>invFor}" design="sap.m.LabelDesign.Bold">
 							<f:fields>
 								<Text text="{manageinv_model>invFor}"/>
 							</f:fields>
 						</f:FormElement>
 
-						<f:FormElement label="Remarks" design="sap.m.LabelDesign.Bold">
+<!-- Remarks Form Element -->
+						<f:FormElement label="{i18n>remarks}" design="sap.m.LabelDesign.Bold">
 							<f:fields>
 								<Text text="{manageinv_model>remarks}"/>
 							</f:fields>
 						</f:FormElement>
 
-						<f:FormElement label="Asset Type" design="sap.m.LabelDesign.Bold">
+<!-- Asset Type Form Element -->
+						<f:FormElement label="{i18n>assetType}" design="sap.m.LabelDesign.Bold">
 							<f:fields>
 								<Text text="{manageinv_model>assetType}"/>
 							</f:fields>
 						</f:FormElement>
+
 					</f:formElements>
 				</f:FormContainer>
 			</f:formContainers>

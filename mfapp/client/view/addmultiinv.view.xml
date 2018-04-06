@@ -58,18 +58,6 @@
                 <Text text="{i18n>sname}" />
             </Column>
 
-						<Column hAlign="Center" vAlign="Center">
-								<Text text="{i18n>sname}" />
-						</Column>
-
-						<Column hAlign="Center" vAlign="Center">
-								<Text text="{i18n>sname}" />
-						</Column>
-
-						<Column hAlign="Center" vAlign="Center">
-								<Text text="{i18n>sname}" />
-						</Column>
-
            <Column hAlign="Center" vAlign="Center">
                 <Text text="{i18n>pStatus}" />
             </Column>

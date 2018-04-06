@@ -61,7 +61,7 @@ async function findAll() {
 async function findOneInvDet(query, desc) {
   try {
     let invdet;
-    debugger;
+
     if (desc = "") {
       invdet = await mfinvModel.find(query).sort({
         amcname: 1,
@@ -88,13 +88,16 @@ async function findOneInvDet(query, desc) {
 */
 //This route posts a single Inv Detail to database
 async function postOne(mfinvdet, user) {
+  debugger;
 
+  var naverrflag = false;
+  var naverr = {},
+    navoprn = {};
 
   // If user is not available use the one passed in the arguments
   if (!mfinvdet.invBy || mfinvdet.invBy === "") {
     mfinvdet.invBy = user;
   }
-
 
   // Check if the NAV is supplied, incase of multipost it is not supplied and has to be retrieved here
   if (!mfinvdet.nav || mfinvdet.nav === "") {
@@ -103,13 +106,32 @@ async function postOne(mfinvdet, user) {
     try {
       var navdetls = await helpers.getNAV(mfinvdet.scode, isodate)
       if (navdetls[0].nav.value !== "") {
+        naverrflag = false;
         mfinvdet.nav = navdetls[0].nav.value;
         mfinvdet.units = mfinvdet.amount / mfinvdet.nav;
+      } else {
+
+        // No NAV found for the date and scheme code combination in database. Do not proceed with insert
+        naverrflag = true;
+        naverr.name = "NAV not found";
+        naverr.message = "NAV not found";
+        navoprn.scode = mfinvdet.scode;
+        navoprn.sname = mfinvdet.sname;
+        var parseResult = helpers.parseOutput(naverrflag, naverr, navoprn);
       }
-    } catch (err) {}
+    } catch (err) {
+
+      naverrflag = true;
+      naverr.name = "NAV not found";
+      naverr.message = "NAV not found";
+      navoprn.scode = mfinvdet.scode;
+      navoprn.sname = mfinvdet.sname;
+      var parseResult = helpers.parseOutput(naverrflag, naverr, navoprn);
+    }
   }
 
-
+// Check if the NAV has been determined before proceeding with the inserted
+if(naverrflag === false){
   try {
     let invdet
     var _id = new mongoose.Types.ObjectId();
@@ -128,17 +150,15 @@ async function postOne(mfinvdet, user) {
       assetType: mfinvdet.assetType,
       invBy: mfinvdet.invBy
     });
-
-
     var parseResult = helpers.parseOutput(errflag, invdet);
 
   } catch (err) {
-
     var operation = err.getOperation();
     var errflag = true;
     var parseResult = helpers.parseOutput(errflag, err, operation);
 
   }
+}
   return parseResult;
 }
 

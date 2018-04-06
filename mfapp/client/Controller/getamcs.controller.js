@@ -8,45 +8,44 @@ sap.ui
                             .extend(
                                     "simple_hello.Controller.getamcs",
                                     {
-                                        onInit : function() 
+                                        onInit : function()
                                         {
                                         	var oRouter = this.getRouter();
                                         	oRouter.attachRouteMatched(this._handleRouteMatched, this);
-                                          
+
                                         },
-                                        
+
                                         _handleRouteMatched:function(oEvt)
                                         {
                                         	 if (oEvt.getParameter("name") !== "getamcs") {
-                                        		 
                                                  return;
- 
+
                                              } 
-                                        	 
+
                                         	 this._getAMCs();
                                         },
                                         _getAMCs: function()
                                         {
                                         	// instantiate dialog
-                                			if (!this._dialog) 
+                                			if (!this._dialog)
                                 			{
                                 				this._dialog = sap.ui.xmlfragment("simple_hello.view.busydialog", this);
                                 				this.getView().addDependent(this._dialog);
                                 			}
-                                			
+
                                 			// open dialog
                                 			var oJSONModel = this.getJSONModel();
                                 			var data = {
                                 					title:"Get AMC Data",
                                 					text:"Retrieving all AMC data from Database. Please wait"
                                 			}
-                                			
+
                                 			oJSONModel.setData(data);
                                 			this.getView().setModel(oJSONModel,"busyDialog");
-                                			
+
                                 			jQuery.sap.syncStyleClass("sapUiSizeCompact", this.getView(), this._dialog);
                                 			this._dialog.open();
-                                			
+
                                 			//Query and get the data
                                 			this._amcrestcall();
                                         },
@@ -54,7 +53,7 @@ sap.ui
                                          {
                                         	var authurl = "http://localhost:3000/amc/all";
                                 			var that = this;
-                                			
+
                                 			$.ajax(
                                 				      {
                                 				        url:authurl,
@@ -63,24 +62,24 @@ sap.ui
                                 				        success:function(data)
                                 				        {
                                 				        	that._getschsuccess(data,that);
-                                				       
+
                                 				        },
                                 				        error:function(err)
                                 				        {
                                 				         that._getschfailure(err,that);
-                                				       
+
                                 				        }
-                                			
-                                				      });			//AJAX call close	
+
+                                				      });			//AJAX call close
                                          },
-                                         
+
                                          _getschsuccess: function(data,that){
                                         	 // Close the busy dialog
                                         	 if(that._dialog)
                                         	 {
                                         		 that._dialog.close();
                                         	 }
-                                        	 
+
                                         	 // Set the data to scheme model
                                         	var schModel =  this.getView().getModel("amc_model");
                                         	schModel.setData(data);
@@ -94,8 +93,8 @@ sap.ui
                                         		 that._dialog.close();
                                         	 }
                                          },
-                                         
-                                     	handleViewSettingsDialogButtonPressed: function (oEvent) 
+
+                                     	handleViewSettingsDialogButtonPressed: function (oEvent)
                                      	{
                                      		if (!this._oDialog) {
                                 				this._oDialog = sap.ui.xmlfragment("simple_hello.view.TableViewSettingsDialog", this);
@@ -104,20 +103,20 @@ sap.ui
                                 			jQuery.sap.syncStyleClass("sapUiSizeCompact", this.getView(), this._oDialog);
                                 			this._oDialog.open();
                                      	},
-                                     	handleVSConfirm: function(oEvent) 
+                                     	handleVSConfirm: function(oEvent)
                                      	{
                                      		// This is called when the OK button is pressed in the view settings dialog
-                                     		
+
                                      		var oView = this.getView();
                                 			var oTable = oView.byId("amcdatatable");
-                                			
+
                                 			var mParams = oEvent.getParameters();
                                 			var oBinding = oTable.getBinding("items");
-                                			
+
                                 			var sPath;
                                 			var bDescending;
                                 			var aSorters = [];
-                                			
+
                                 			sPath = mParams.sortItem.getKey();
                                 			bDescending = mParams.sortDescending;
                                 			aSorters.push(new Sorter(sPath, bDescending));
@@ -125,7 +124,7 @@ sap.ui
 
                                      	},
                                      	onSchSearch: function(oEvent){
-                                     		
+
                                      		// add filter for search
                                 			var aFilters = [];
                                 			var sQuery = oEvent.getSource().getValue();
@@ -133,7 +132,7 @@ sap.ui
                                 				var filter = new Filter("amcname", sap.ui.model.FilterOperator.Contains, sQuery);
                                 				aFilters.push(filter);
                                 			}
-                                			
+
                                 			var oView = this.getView();
                                 			var oTable = oView.byId("amcdatatable");
                                 			var oBinding = oTable.getBinding("items");
@@ -144,14 +143,14 @@ sap.ui
 //                                     		var source = oEvt.getSource();
 //                                     		var oBindingContext = source.getBindingContext("scheme_model");
 //                                     		var scode = oBindingContext.getProperty("scode");
-//                                     		
-//                                     		
+//
+//
 //                                     		var oRouter = this.getRouter();
 //                                     		oRouter.navTo("schdet",{scode: scode});
-//                                     		
-                                     		
+//
+
 //                                     		var listItem = oEvt.getParameters().listItem;
                                      	}
- 
+
                                     });
                 });
