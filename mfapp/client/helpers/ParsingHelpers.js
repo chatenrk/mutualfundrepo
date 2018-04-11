@@ -63,6 +63,37 @@ sap.ui.define(["./DateHelpers", "./OtherHelpers"], function(DateHelpers, OtherHe
         }
       }
       return parr;
+    },
+
+    _parsePostInvestment: function(data, that) {
+      /**
+       * @desc This is the helper method that parses the data that is returned from Post Investment
+       *       Currently invoked
+       * @param {array} data referring to the data that is inserted
+       * @param {object} that referring to the this variable of the parent
+       */
+
+      if (data.opsuccess === false)
+
+      {
+        switch (data.errcode) {
+          case 11000:
+            // Error inserting data. Display the same in the message strip
+            data.msg = "Data already exists for combination of " + data.operation.sname + " and " + data.operation.pdate + ". Please recheck"
+            break;
+          default:
+            data.msg = "Error Occured. Please contact Admin"
+        }
+        that._generateMsgStrip(data.msg, true)
+      } else {
+        // Data inserted successfully
+        var pdata = {};
+        that._destroyMsgStrip(false);
+        pdata = data.operation;
+        pdata.pdate = DateHelpers._isodatetodate(pdata.invdate);
+        return pdata;
+
+      }
     }
 
   }
