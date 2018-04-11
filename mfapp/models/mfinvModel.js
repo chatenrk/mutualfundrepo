@@ -36,7 +36,7 @@ var mfinvSchema = mongoose.Schema({
 });
 
 mfinvSchema.plugin(integerValidator);
-var mfinvModel = mongoose.model('mfinvdetltemp', mfinvSchema);
+var mfinvModel = mongoose.model('mfinvdetl', mfinvSchema);
 
 /*
 ------------------------------------------------------------------------------------------------------------------------
