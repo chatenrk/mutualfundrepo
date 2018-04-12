@@ -4,9 +4,11 @@ sap.ui
     ["simple_hello/Controller/BaseController",
       "../helpers/GatewayHelper",
       "../helpers/ParsingHelpers",
+      "../helpers/OtherHelpers",
+      "../helpers/DateHelpers",
       "simple_hello/libs/Toastr"
     ],
-    function(BaseController, GatewayHelper, ParsingHelpers, Toastr) {
+    function(BaseController, GatewayHelper, ParsingHelpers, OtherHelpers, DateHelpers, Toastr) {
       "use strict";
       var _oRouter;
       return BaseController
@@ -88,31 +90,43 @@ sap.ui
                */
 
               var that = this;
+              that.scode = scode;
+              that.invBy = invBy;
+              that.invFor = invFor;
               var desctrue = true; // Descending Order of investments
 
-              // // Get the total and count of investments(from the previous page)
-              // var oAggrModel = this.getOwnerComponent().getModel("manageinv_model");
-              // var data = oAggrModel.getData();
-              //
-              // for (var i = 0; i < data.length; i++) {
-              //   if (data[i].scode === parseInt(scode) && data[i].invFor === invFor) {
-              //     var schdet_model = this.getOwnerComponent().getModel("schdet_model");
-              //
-              //     var schdata = schdet_model.getData();
-              //     schdata.totalVal = data[i].total;
-              //     schdata.numInv = data[i].count;
-              //
-              //     schdet_model.setData([]);
-              //     schdet_model.setData(schdata);
-              //     schdet_model.updateBindings();
-              //   }
-              // }
-
+              //  Call the gateway helper method to get individual investments for selected scheme
               GatewayHelper._getInvBySchCodeInvFor(scode, invBy, invFor, desctrue).then(function(data) {
                 that._getinvsuccess(data, that);
               }, function(err) {
                 that._getinvfailure(err, that);
               });
+
+
+
+
+
+            },
+            _getcurrvalsuccess: function(data, cvaldata, that) {
+
+              var schinvaggr_model = that.getOwnerComponent().getModel("schinvaggr_model");
+
+              var schdata = {};
+              var desctrue = true; // Descending Order of investments
+
+              schdata.totalVal = OtherHelpers._formatCurrency(data.totinv);
+              schdata.numInv = data.invcount;
+              schdata.totalUnits = data.totalunits;
+              schdata.currdate = DateHelpers._currentDate();
+
+              schdata.currVal = OtherHelpers._formatCurrency(Math.round(cvaldata.currvalamnt));
+              schdata.lnavDate = cvaldata.lastNavDate;
+
+              schinvaggr_model.setData([]);
+              schinvaggr_model.setData(schdata);
+              schinvaggr_model.updateBindings();
+
+
 
             },
 
@@ -125,7 +139,27 @@ sap.ui
                 var oJSONModel = this.getOwnerComponent().getModel("dispinvdetl");
                 oJSONModel.setData(parseData);
                 oJSONModel.updateBindings();
-              } else {
+
+                // Now that we have the individual investments get the total investment and current value
+                // Get the total and count of investments(from the previous page)
+                var oAggrModel = this.getOwnerComponent().getModel("manageinv_model");
+                var data = oAggrModel.getData();
+
+                for (var i = 0; i < data.length; i++) {
+                  if (data[i].scode === parseInt(that.scode) && data[i].invFor === that.invFor) {
+                    that.schaggrdata = data[i];
+                    // Perform the gateway call and get the current value of the investment selected
+                    GatewayHelper.getCurrentValue(data[i].scode, data[i].totalunits).then(function(cvaldata) {
+                      that._getcurrvalsuccess(that.schaggrdata, cvaldata, that);
+                    }, function(err) {
+                      that._getcurrvalfailure(err, that);
+                    });
+
+                  }
+                }
+
+              } else
+              {
 
               }
 

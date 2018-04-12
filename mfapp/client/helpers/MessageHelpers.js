@@ -1,4 +1,4 @@
-sap.ui.define(["sap/m/MessageStrip", "sap/m/MessageBox", "sap/m/Dialog", "sap/m/Button", "sap/m/Text"], function(MessageStrip, MessageBox, Dialog, Button,Text) {
+sap.ui.define(["sap/m/MessageStrip", "sap/m/MessageBox", "sap/m/Dialog", "sap/m/Button", "sap/m/Text"], function(MessageStrip, MessageBox, Dialog, Button, Text) {
   "use strict";
 
   return {
@@ -8,14 +8,21 @@ sap.ui.define(["sap/m/MessageStrip", "sap/m/MessageBox", "sap/m/Dialog", "sap/m/
         msgstrip.setText(msgtext);
       }
     },
-    _msgbox: function(type, msg, title) {
+    _msgbox: function(type, msg, title, onCloseFn,that) {
       if (type === "alert") {
         MessageBox.alert(msg, {
           title: title
         });
+      } else if (type == "confirm") {
+        MessageBox.confirm(msg, {
+          title: title,
+          onClose: function(oAction,that) {
+            onCloseFn(oAction,that);
+          }
+        });
       }
     },
-    _showConfirmDialog: function(CfmText,CfmYes,CfmNo) {
+    _showConfirmDialog: function(CfmText, CfmYes, CfmNo) {
       var that = this;
       var deferred = jQuery.Deferred();
 

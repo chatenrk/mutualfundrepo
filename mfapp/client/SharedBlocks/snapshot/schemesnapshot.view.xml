@@ -3,7 +3,7 @@
 			maxContainerCols="1"
 			layout="ResponsiveGridLayout">
 		<layout:HorizontalLayout>
-
+<!-- Scheme Code and Scheme Name Display  -->
 		<layout:VerticalLayout class="sapUiLargeMarginEnd">
 			<Label text="Scheme Code" design="Bold"/>
 			<Text text="{schdet_model>/scode}"/>
@@ -12,6 +12,7 @@
 			<Text text="{schdet_model>/category}"/>
 		</layout:VerticalLayout>
 
+<!-- Assets and Expense Ratio -->
 		<layout:VerticalLayout class="sapUiSmallMarginEnd">
 			<Label text="Assets" design="Bold"/>
 			<Text  text="{i18n>RupeeSymbol} {schdet_model>/passetfinal} (As on {schdet_model>/passetdate}) " />
@@ -20,12 +21,13 @@
 			<Text  text="{schdet_model>/expense}% (As on {schdet_model>/pexpensedate}) " />
 		</layout:VerticalLayout>
 
+<!-- Total Invested Value and Current Value  -->
 		<layout:VerticalLayout class="sapUiSmallMarginEnd">
 			<Label text="{i18n>totInv}" design="Bold"/>
-			<Text  text= "{i18n>RupeeSymbol}{schdet_model>/totInv} (As on {schdet_model>/calcdate}) " />
+			<Text  text= "{i18n>RupeeSymbol}{schinvaggr_model>/totalVal} (As on {schinvaggr_model>/currdate}) " />
 			<Text text=""/>
 			<Label text="{i18n>currVal}" design="Bold"/>
-			<Text  text="{i18n>RupeeSymbol}{schdet_model>/currVal} (As on {schdet_model>/calcdate}) " />
+			<Text  text="{i18n>RupeeSymbol}{schinvaggr_model>/currVal} (As on {schinvaggr_model>/lnavDate}) " />
 		</layout:VerticalLayout>
 
 		</layout:HorizontalLayout>

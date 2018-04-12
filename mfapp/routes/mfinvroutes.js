@@ -16,6 +16,7 @@ var upload = multer({
 const mfinvmodel = require('../models/mfinvmodel');
 const config = require('../config/database');
 const helpers = require('../helpers/helpers.js');
+const calchelpers = require('../helpers/calchelpers.js');
 
 // Route to get scheme details, based on ID
 
@@ -283,6 +284,24 @@ router.delete('/delinv', async (req, res, next) => {
   }
 
 });
+
+// Route for Current Value calculation
+router.get('/currval', async (req, res, next) => {
+  if (req.query.scode && req.query.units !== "") {
+    debugger;
+    try {
+      var currvaldet = await calchelpers.currval(req.query.scode, req.query.units)
+      debugger;
+      res.send(currvaldet);
+    } catch (err) {
+      debugger;
+      return res.status(500).send(err);
+    }
+  } else {
+    return res.status(500).send("Improperly formed Current Value request");
+  }
+});
+
 // Route for Goal Planner
 router.get('/gplanner', async (req, res, next) => {
   //

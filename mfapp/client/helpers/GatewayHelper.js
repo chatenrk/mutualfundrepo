@@ -108,8 +108,7 @@ sap.ui.define([], function() {
        *       It performs an AJAX call and fetches the data
        *       If no data is found for the user, it uses generic goals
        * @param This receieves username as an input
-       * @return This returns the values found for the user in the database(InvGoals collection)
-       *         If nothing found then it returns the data for others
+       * @return promise
        */
 
       var authurl = "http://localhost:3000/goal/goaldet?inv_for=" + username;
@@ -173,7 +172,7 @@ sap.ui.define([], function() {
        * @desc This helper method is used to fetch aggregated scheme data for the logged in user
        *       It performs an AJAX call and fetches the data
        * @param invBy referring to the user who has logged in
-       * @return This returns the scheme data aggregations as a JSON Array
+       * @return promise
        */
 
       var schagrurl = "http://localhost:3000/mfinv/aggr?invBy=" + invBy;
@@ -194,6 +193,37 @@ sap.ui.define([], function() {
         }
 
       }); //AJAX call close
+      return deferred.promise();
+    },
+
+    getCurrentValue: function(scode, units) {
+
+      /**
+       * @desc This method is a gateway helper to retrieve the current value of an investment
+       *       based on scheme code and total units
+       * @param {string} scode refering to scheme code
+       * @param {string} units refering to total units
+       * @return promise
+       */
+
+      var authurl = "http://localhost:3000/mfinv/currval?scode=" + scode + "&units=" + units;
+      var that = this;
+      var deferred = jQuery.Deferred();
+
+      $.ajax({
+        url: authurl,
+        type: 'GET',
+        dataType: 'json',
+        success: function(data) {
+          deferred.resolve(data);
+
+        },
+        error: function(err) {
+          deferred.reject(err);
+        }
+
+      }); //AJAX call close
+
       return deferred.promise();
     },
 
