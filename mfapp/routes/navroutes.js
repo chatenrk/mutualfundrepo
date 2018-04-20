@@ -51,6 +51,8 @@ router.get('/navdet', async (req, res, next) => {
 
 });
 
+
+
 router.get('/navbetn', async (req, res, next) => {
 
 
@@ -205,18 +207,5 @@ router.post('/navfile', upload.single('file'), async (req, res) => {
 });
 
 
-//Test route
-
-router.get('/navtest', async (req, res, next) => {
-
-
-  request({
-    'url': 'https://www.google.com',
-    'proxy': 'https://proxy.cognizant.com:6050'
-  }, function(error, response, body) {
-
-    console.log(body);
-  });
-});
 
 module.exports = router;

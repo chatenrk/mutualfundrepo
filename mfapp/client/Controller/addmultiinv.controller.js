@@ -21,6 +21,42 @@ sap.ui
           "simple_hello.Controller.addmultiinv", {
             onInit: function() {
 
+              /**
+               * @desc This is a lifecycle hook method that is called when the view is initialized
+               * Useful for initialization of the any parameters, adding dependent event handlers etc
+               * Here it is used to subscribe to the handleRouteMatched event of the router
+               *
+               */
+
+              var oRouter = this.getRouter();
+              oRouter.attachRouteMatched(this._handleRouteMatched, this);
+
+            },
+
+            _handleRouteMatched: function(oEvt) {
+
+              /**
+               * @desc This it the event callback method that is registered for the handleRouteMatched event
+               *       It triggers on every route match. Any data fetches/refreshes can be performed in this method
+               * @param oEvt{object} referencing to the route matched event triggered via navigation
+               */
+
+              if (oEvt.getParameter("name") !== "addmultiinvdet") {
+                return;
+
+              }
+
+              this._handleRefreshOnRouting();
+            },
+
+            _handleRefreshOnRouting: function() {
+
+              /**
+               * @desc This is a helper method that performs the refresh and toggle of the panels on routing
+               *       It toggles the file panel to expanded,and the table panel to collapsed
+               *       It also refreshes the file panel upload file name and sets the table contents to empty
+               */
+
               this._fPanel = this.getView().byId("filePanel");
               this._fPanel.setExpandable(true);
               this._fPanel.setExpanded(true);
@@ -29,19 +65,22 @@ sap.ui
               this._tPanel.setExpandable(true);
               this._tPanel.setExpanded(false);
 
+              // Remove the value of the file name field
+              this.getView().byId("idfileUploader").setValue("");
+
+              // Set the table data to empty
+              var pnav_model = this.getOwnerComponent().getModel("post_nav_model");
+              pnav_model.setData([]);
+              pnav_model.updateBindings();
+
               // Set the collection for Filter List
               var oFilterList = {
 
               };
-
             },
 
             onStartUpload: function(oEvent) {
-              // var fU = this.getView().byId("idfileUploader");
-              // var domRef = fU.getFocusDomRef();
-              // var file = domRef.files[0];
               this._getUserDetails();
-              // this._parserestcall(file);
 
             },
 
@@ -82,11 +121,10 @@ sap.ui
                 MessageHelpers._showConfirmDialog(ConfirmText, ConfirmYes, ConfirmNo).then(function(data) {
                   if (data === ConfirmYes) {
                     // Post the file data for the selected user
-
                     var fU = that.getView().byId("idfileUploader");
                     var domRef = fU.getFocusDomRef();
                     var file = domRef.files[0];
-                    that._parserestcall(file,that._selusrname);
+                    that._parserestcall(file, that._selusrname);
 
                   }
                 });
@@ -98,7 +136,7 @@ sap.ui
 
             _getusrdtlsfailure: function(err, that) {},
 
-            _parserestcall: function(file,user) {
+            _parserestcall: function(file, user) {
 
               // instantiate dialog
               if (!this._dialog) {
@@ -120,7 +158,7 @@ sap.ui
               this._dialog.open();
 
               var that = this;
-              GatewayHelper._postMultiInvest(file,user).then(function(data) {
+              GatewayHelper._postMultiInvest(file, user).then(function(data) {
                 that._postschdetsuccess(data, that);
               }, function(err) {
                 that._postschdetfailure(err, that);
@@ -164,27 +202,40 @@ sap.ui
 
               var pdata = [];
               var dupkeyerr = "duplicate key error";
+              var naverr = "NAV not found";
+              var naverrmsg = "NAV not found in database. No operation performed"
               var errmsg = "Data already exists in database. No operation performed";
               var succmsg = "Data inserted successfully into database";
               for (var i = 0; i < data.length; i++) {
-                // perform required array operations
 
+                parseData = data[i].operation;
+                parseData.invdtfrmtd = this._isodatetodate(parseData.invdate);
+
+                // perform required array operations
                 if (data[i].opsuccess === false) {
                   // Error during insertion
                   if (data[i].message.includes(dupkeyerr)) {
                     // Record already exists in DB
 
-                    parseData.scode = data[i].operation.scode;
-                    parseData.sname = data[i].operation.sname;
+                    // parseData.scode = data[i].operation.scode;
+                    // parseData.sname = data[i].operation.sname;
                     parseData.msg = errmsg;
+                    pdata.push(parseData);
+                    parseData = {};
+                  } else if (data[i].message.includes(naverr)) {
+                    // NAV not found
+
+                    // parseData.scode = data[i].operation.scode;
+                    // parseData.sname = data[i].operation.sname;
+                    parseData.msg = naverrmsg;
                     pdata.push(parseData);
                     parseData = {};
                   }
                 } else {
                   // Successfully inserted into DB
 
-                  parseData.scode = data[i].operation.scode;
-                  parseData.sname = data[i].operation.sname;
+                  // parseData.scode = data[i].operation.scode;
+                  // parseData.sname = data[i].operation.sname;
                   parseData.msg = succmsg;
                   pdata.push(parseData);
                   parseData = {};
@@ -212,9 +263,15 @@ sap.ui
                 // column definitions with column name and binding info for the content
 
                 columns: [{
-                    name: "Scheme Code",
+                    name: "Transaction",
                     template: {
-                      content: "{scode}"
+                      content: "{transaction}"
+                    }
+                  },
+                  {
+                    name: "Date of Investment",
+                    template: {
+                      content: "{invdtfrmtd}"
                     }
                   },
                   {
@@ -223,146 +280,35 @@ sap.ui
                       content: "{sname}"
                     }
                   },
+
                   {
-                    name: "Category",
+                    name: "Amount",
                     template: {
-                      content: "{category}"
+                      content: "{amount}"
+                    }
+                  },
+
+                  {
+                    name: "Remarks",
+                    template: {
+                      content: "{remarks}"
+                    }
+                  },
+
+                  {
+                    name: "Investment For",
+                    template: {
+                      content: "{invFor}"
                     }
                   },
                   {
-                    name: "Assets",
+                    name: "Asset Type",
                     template: {
-                      content: "{assets}"
+                      content: "{assetType}"
                     }
                   },
                   {
-                    name: "Assets as on Date",
-                    template: {
-                      content: "{assetdate}"
-                    }
-                  },
-                  {
-                    name: "Assets Currency",
-                    template: {
-                      content: "{assetcurr}"
-                    }
-                  },
-                  {
-                    name: "Assets Currency Qualifier",
-                    template: {
-                      content: "{assetqual}"
-                    }
-                  },
-                  {
-                    name: "Expense Ratio",
-                    template: {
-                      content: "{expense}"
-                    }
-                  },
-                  {
-                    name: "Expense Ratio as on Date",
-                    template: {
-                      content: "{expensedate}"
-                    }
-                  },
-                  {
-                    name: "Fund House",
-                    template: {
-                      content: "{fhouse}"
-                    }
-                  },
-                  {
-                    name: "Launch Date",
-                    template: {
-                      content: "{ldate}"
-                    }
-                  },
-                  {
-                    name: "BenchMark",
-                    template: {
-                      content: "{bmark}"
-                    }
-                  },
-                  {
-                    name: "Risk",
-                    template: {
-                      content: "{risk}"
-                    }
-                  },
-                  {
-                    name: "Return",
-                    template: {
-                      content: "{return}"
-                    }
-                  },
-                  {
-                    name: "Return since launch",
-                    template: {
-                      content: "{rlaunch}"
-                    }
-                  },
-                  {
-                    name: "Min Investment",
-                    template: {
-                      content: "{mininv}"
-                    }
-                  },
-                  {
-                    name: "Min Additional Investment",
-                    template: {
-                      content: "{minaddinv}"
-                    }
-                  },
-                  {
-                    name: "Min Withdrawal",
-                    template: {
-                      content: "{minwith}"
-                    }
-                  },
-                  {
-                    name: "Min SWP Withdrawal",
-                    template: {
-                      content: "{minswpwith}"
-                    }
-                  },
-                  {
-                    name: "Min Balance",
-                    template: {
-                      content: "{minbal}"
-                    }
-                  },
-                  {
-                    name: "Exit Load",
-                    template: {
-                      content: "{exitload}"
-                    }
-                  },
-                  {
-                    name: "Plan Type",
-                    template: {
-                      content: "{ptype}"
-                    }
-                  },
-                  {
-                    name: "Scheme Type",
-                    template: {
-                      content: "{schtype}"
-                    }
-                  },
-                  {
-                    name: "Image Path",
-                    template: {
-                      content: "{imgpath}"
-                    }
-                  },
-                  {
-                    name: "Scheme URL",
-                    template: {
-                      content: "{schurl}"
-                    }
-                  },
-                  {
-                    name: "Posting Message",
+                    name: "Posting Status",
                     template: {
                       content: "{msg}"
                     }

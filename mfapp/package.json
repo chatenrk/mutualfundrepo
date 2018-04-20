@@ -17,6 +17,7 @@
     "csvtojson": "^1.1.9",
     "event-stream": "^3.3.4",
     "express": "*",
+    "financejs": "^4.1.0",
     "fs": "0.0.1-security",
     "jsonwebtoken": "*",
     "moment": "^2.20.1",

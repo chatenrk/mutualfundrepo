@@ -16,12 +16,13 @@ var upload = multer({
 const mfinvmodel = require('../models/mfinvmodel');
 const config = require('../config/database');
 const helpers = require('../helpers/helpers.js');
+const calchelpers = require('../helpers/calchelpers.js');
 
 // Route to get scheme details, based on ID
 
 //Route to find one MF Investment
 router.get('/mfinvdet', async (req, res, next) => {
-  debugger;
+
 
   var scode = req.query.scode;
   var date = req.query.invdate;
@@ -49,7 +50,7 @@ router.get('/mfinvdet', async (req, res, next) => {
           invBy: invBy
         },
         {
-          invFor:invFor
+          invFor: invFor
         }
       ]
     }
@@ -79,7 +80,7 @@ router.get('/mfinvdet', async (req, res, next) => {
 
 
   try {
-    invdet = await mfinvmodel.findOneInvDet(query,desc);
+    invdet = await mfinvmodel.findOneInvDet(query, desc);
     res.send(invdet);
   } catch (err) {
 
@@ -131,7 +132,6 @@ router.post('/pone', async (req, res, next) => {
 
   try {
     invdet = await mfinvmodel.postOne(mfinvdet);
-
     res.send(invdet);
   } catch (err) {
 
@@ -155,7 +155,7 @@ router.post('/csvinv', upload.single('file'), async (req, res) => {
     var multiinvs = await helpers.csvtojson(multiinvFile);
     debugger;
 
-    var result = await mfinvmodel.postManyInvDet(multiinvs,user);
+    var result = await mfinvmodel.postManyInvDet(multiinvs, user);
     debugger;
     res.send(result);
   } catch (err) {
@@ -167,7 +167,17 @@ router.post('/csvinv', upload.single('file'), async (req, res) => {
 
 //Route for aggregations
 router.get('/aggr', async (req, res, next) => {
-  debugger;
+
+  /**
+  * @desc This route is used for all aggregations that are performed on Mutual fund investments table
+  * Current list of aggregations are
+  * - getAggregation - Matches the user for investment and gives the sum,count and details of each of his investment
+  * - TBF
+  * @param
+  * @return
+
+  */
+
 
   if (req.query.id && req.query.id !== "" && req.query.totcol !== "" && req.query.invBy !== "") {
     var aggr = {}
@@ -195,6 +205,13 @@ router.get('/aggr', async (req, res, next) => {
   } else {
     return res.status(500).send("Improperly formed Aggregation query");
   }
+});
+
+// Route for value calculations
+router.get('/valcalc', async (req, res, next) => {
+
+
+
 });
 
 // Route for Step-up sip calculation
@@ -267,6 +284,24 @@ router.delete('/delinv', async (req, res, next) => {
   }
 
 });
+
+// Route for Current Value calculation
+router.get('/currval', async (req, res, next) => {
+  if (req.query.scode && req.query.units !== "") {
+    debugger;
+    try {
+      var currvaldet = await calchelpers.currval(req.query.scode, req.query.units)
+      debugger;
+      res.send(currvaldet);
+    } catch (err) {
+      debugger;
+      return res.status(500).send(err);
+    }
+  } else {
+    return res.status(500).send("Improperly formed Current Value request");
+  }
+});
+
 // Route for Goal Planner
 router.get('/gplanner', async (req, res, next) => {
   //

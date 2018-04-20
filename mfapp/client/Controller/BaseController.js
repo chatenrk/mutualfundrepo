@@ -13,6 +13,23 @@ sap.ui
               this.ownerComponent = this.getOwnerComponent();
             },
 
+            _geti18ntext:function(textname){
+
+              /**
+              * @desc This method is a helper to get the value of the i18n text. This will used in Controller class
+              *       to get the data for rendering
+              * @param textname Name of the text which needs to be read
+              * @return textcontent Content of the text that is passed
+              */
+
+              if(textname !== ""){
+                var textcontent = this.getOwnerComponent().getModel("i18n").getResourceBundle().getText(textname);
+                return textcontent;
+              }
+
+
+            },
+
             _getLoginData: function() {
               /**
                * @desc This provides the login user information.

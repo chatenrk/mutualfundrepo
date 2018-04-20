@@ -3,6 +3,7 @@
     <footer>
       <Toolbar>
         <ToolbarSpacer/>
+        <Button id="edit" icon="sap-icon://edit" press="handleEditRow" visible="false" />
         <Button id="copy" icon="sap-icon://copy" press="handleCopyRow" visible="false" />
         <Button id="delete" icon="sap-icon://delete" press="handleDeleteRow" visible="false" />
         <Button id="save" icon="sap-icon://save" press="handleSave" visible="false"/>

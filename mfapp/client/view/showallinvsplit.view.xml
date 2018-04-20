@@ -7,7 +7,7 @@
 						<headerToolbar>
 							<Toolbar>
 								<ToolbarSpacer/>
-								<SearchField id="searchField" search="onSearch" tooltip="{i18n>worklistSearchTooltip}" width="auto"/>
+								<SearchField id="searchField" liveChange="onSearch" tooltip="{i18n>worklistSearchTooltip}" width="auto"/>
 							</Toolbar>
 						</headerToolbar>
 						<columns>
@@ -27,8 +27,8 @@
 							<ColumnListItem press="onPressScheme" type="Navigation" hAlign="Center" vAlign="Center">
 								<cells>
 									<ObjectIdentifier title="{manageinv_model>sname}"/>
-									<ObjectNumber number="{manageinv_model>total}"/>
-									<ObjectNumber number="{manageinv_model>count}"/>
+									<ObjectNumber number="{manageinv_model>totinv}"/>
+									<ObjectNumber number="{manageinv_model>invcount}"/>
 								</cells>
 							</ColumnListItem>
 						</items>

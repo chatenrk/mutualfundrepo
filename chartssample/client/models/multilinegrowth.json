@@ -1,0 +1,335 @@
+[
+  {
+    "PurchaseDate": "07-Jul-15",
+    "PurchaseValue": 5000,
+    "TotalPurchase": 5000,
+    "NAV": 460.0586,
+    "UnitsBought": 10.86818071,
+    "TotalUnits": 10.86818071,
+    "TotalValue": 5000
+  },
+  {
+    "PurchaseDate": "04-Sep-15",
+    "PurchaseValue": 2000,
+    "TotalPurchase": 7000,
+    "NAV": 432.3095,
+    "UnitsBought": 4.626315175,
+    "TotalUnits": 15.49449588,
+    "TotalValue": 6698
+  },
+  {
+    "PurchaseDate": "28-Sep-15",
+    "PurchaseValue": 2000,
+    "TotalPurchase": 9000,
+    "NAV": 441.1478,
+    "UnitsBought": 4.533627959,
+    "TotalUnits": 20.02812384,
+    "TotalValue": 8835
+  },
+  {
+    "PurchaseDate": "13-Oct-15",
+    "PurchaseValue": 2000,
+    "TotalPurchase": 11000,
+    "NAV": 453.3783,
+    "UnitsBought": 4.411327141,
+    "TotalUnits": 24.43945098,
+    "TotalValue": 11080
+  },
+  {
+    "PurchaseDate": "09-Nov-15",
+    "PurchaseValue": 2000,
+    "TotalPurchase": 13000,
+    "NAV": 446.287,
+    "UnitsBought": 4.481421148,
+    "TotalUnits": 28.92087213,
+    "TotalValue": 12907
+  },
+  {
+    "PurchaseDate": "15-Dec-15",
+    "PurchaseValue": 2000,
+    "TotalPurchase": 15000,
+    "NAV": 435.6799,
+    "UnitsBought": 4.59052621,
+    "TotalUnits": 33.51139834,
+    "TotalValue": 14600
+  },
+  {
+    "PurchaseDate": "11-Jan-16",
+    "PurchaseValue": 2000,
+    "TotalPurchase": 17000,
+    "NAV": 430.8631,
+    "UnitsBought": 4.641845635,
+    "TotalUnits": 38.15324397,
+    "TotalValue": 16439
+  },
+  {
+    "PurchaseDate": "16-Feb-16",
+    "PurchaseValue": 2000,
+    "TotalPurchase": 19000,
+    "NAV": 403.7755,
+    "UnitsBought": 4.953247535,
+    "TotalUnits": 43.10649151,
+    "TotalValue": 17405
+  },
+  {
+    "PurchaseDate": "10-Mar-16",
+    "PurchaseValue": 2000,
+    "TotalPurchase": 21000,
+    "NAV": 424.6747,
+    "UnitsBought": 4.70948705,
+    "TotalUnits": 47.81597856,
+    "TotalValue": 20306
+  },
+  {
+    "PurchaseDate": "12-Apr-16",
+    "PurchaseValue": 2000,
+    "TotalPurchase": 23000,
+    "NAV": 445.4953,
+    "UnitsBought": 4.489385185,
+    "TotalUnits": 52.30536374,
+    "TotalValue": 23302
+  },
+  {
+    "PurchaseDate": "10-May-16",
+    "PurchaseValue": 2000,
+    "TotalPurchase": 25000,
+    "NAV": 455.8934,
+    "UnitsBought": 4.386990468,
+    "TotalUnits": 56.69235421,
+    "TotalValue": 25846
+  },
+  {
+    "PurchaseDate": "10-Jun-16",
+    "PurchaseValue": 2000,
+    "TotalPurchase": 27000,
+    "NAV": 469.4012,
+    "UnitsBought": 4.260747523,
+    "TotalUnits": 60.95310173,
+    "TotalValue": 28611
+  },
+  {
+    "PurchaseDate": "11-Jul-16",
+    "PurchaseValue": 2000,
+    "TotalPurchase": 29000,
+    "NAV": 489.6918,
+    "UnitsBought": 4.084201532,
+    "TotalUnits": 65.03730327,
+    "TotalValue": 31848
+  },
+  {
+    "PurchaseDate": "11-Aug-16",
+    "PurchaseValue": 2000,
+    "TotalPurchase": 31000,
+    "NAV": 493.8852,
+    "UnitsBought": 4.049524059,
+    "TotalUnits": 69.08682733,
+    "TotalValue": 34121
+  },
+  {
+    "PurchaseDate": "02-Sep-16",
+    "PurchaseValue": 3600,
+    "TotalPurchase": 34600,
+    "NAV": 509.6708,
+    "UnitsBought": 7.063382874,
+    "TotalUnits": 76.1502102,
+    "TotalValue": 38812
+  },
+  {
+    "PurchaseDate": "09-Sep-16",
+    "PurchaseValue": 2500,
+    "TotalPurchase": 37100,
+    "NAV": 513.0488,
+    "UnitsBought": 4.872830811,
+    "TotalUnits": 81.02304101,
+    "TotalValue": 41569
+  },
+  {
+    "PurchaseDate": "11-Nov-16",
+    "PurchaseValue": 2500,
+    "TotalPurchase": 39600,
+    "NAV": 488.7165,
+    "UnitsBought": 5.115440138,
+    "TotalUnits": 86.13848115,
+    "TotalValue": 42097
+  },
+  {
+    "PurchaseDate": "12-Dec-16",
+    "PurchaseValue": 2500,
+    "TotalPurchase": 42100,
+    "NAV": 478.344,
+    "UnitsBought": 5.22636429,
+    "TotalUnits": 91.36484544,
+    "TotalValue": 43704
+  },
+  {
+    "PurchaseDate": "19-Dec-16",
+    "PurchaseValue": 2500,
+    "TotalPurchase": 44600,
+    "NAV": 472.6706,
+    "UnitsBought": 5.28909562,
+    "TotalUnits": 96.65394106,
+    "TotalValue": 45685
+  },
+  {
+    "PurchaseDate": "26-Dec-16",
+    "PurchaseValue": 2500,
+    "TotalPurchase": 47100,
+    "NAV": 458.6977,
+    "UnitsBought": 5.450212635,
+    "TotalUnits": 102.1041537,
+    "TotalValue": 46835
+  },
+  {
+    "PurchaseDate": "10-Jan-17",
+    "PurchaseValue": 2500,
+    "TotalPurchase": 49600,
+    "NAV": 482.394,
+    "UnitsBought": 5.182485686,
+    "TotalUnits": 107.2866394,
+    "TotalValue": 51754
+  },
+  {
+    "PurchaseDate": "17-Jan-17",
+    "PurchaseValue": 2500,
+    "TotalPurchase": 52100,
+    "NAV": 490.0825,
+    "UnitsBought": 5.101181944,
+    "TotalUnits": 112.3878213,
+    "TotalValue": 55079
+  },
+  {
+    "PurchaseDate": "09-Feb-17",
+    "PurchaseValue": 2500,
+    "TotalPurchase": 54600,
+    "NAV": 516.3766,
+    "UnitsBought": 4.841427749,
+    "TotalUnits": 117.2292491,
+    "TotalValue": 60534
+  },
+  {
+    "PurchaseDate": "08-Mar-17",
+    "PurchaseValue": 2500,
+    "TotalPurchase": 57100,
+    "NAV": 524.6715,
+    "UnitsBought": 4.764886219,
+    "TotalUnits": 121.9941353,
+    "TotalValue": 64007
+  },
+  {
+    "PurchaseDate": "10-Apr-17",
+    "PurchaseValue": 2500,
+    "TotalPurchase": 59600,
+    "NAV": 541.1186,
+    "UnitsBought": 4.620059262,
+    "TotalUnits": 126.6141946,
+    "TotalValue": 68513
+  },
+  {
+    "PurchaseDate": "27-Apr-17",
+    "PurchaseValue": 2000,
+    "TotalPurchase": 61600,
+    "NAV": 551.9176,
+    "UnitsBought": 3.623729339,
+    "TotalUnits": 130.2379239,
+    "TotalValue": 71881
+  },
+  {
+    "PurchaseDate": "11-May-17",
+    "PurchaseValue": 2500,
+    "TotalPurchase": 64100,
+    "NAV": 557.7287,
+    "UnitsBought": 4.482466117,
+    "TotalUnits": 134.72039,
+    "TotalValue": 75137
+  },
+  {
+    "PurchaseDate": "19-May-17",
+    "PurchaseValue": 2500,
+    "TotalPurchase": 66600,
+    "NAV": 551.5523,
+    "UnitsBought": 4.532661726,
+    "TotalUnits": 139.2530517,
+    "TotalValue": 76805
+  },
+  {
+    "PurchaseDate": "14-Jun-17",
+    "PurchaseValue": 2500,
+    "TotalPurchase": 69100,
+    "NAV": 561.0443,
+    "UnitsBought": 4.455976115,
+    "TotalUnits": 143.7090278,
+    "TotalValue": 80627
+  },
+  {
+    "PurchaseDate": "11-Jul-17",
+    "PurchaseValue": 2500,
+    "TotalPurchase": 71600,
+    "NAV": 568.6638,
+    "UnitsBought": 4.396270696,
+    "TotalUnits": 148.1052985,
+    "TotalValue": 84222
+  },
+  {
+    "PurchaseDate": "01-Sep-17",
+    "PurchaseValue": 2500,
+    "TotalPurchase": 74100,
+    "NAV": 582.326,
+    "UnitsBought": 4.293127904,
+    "TotalUnits": 152.3984264,
+    "TotalValue": 88746
+  },
+  {
+    "PurchaseDate": "11-Sep-17",
+    "PurchaseValue": 2500,
+    "TotalPurchase": 76600,
+    "NAV": 584.3949,
+    "UnitsBought": 4.277929188,
+    "TotalUnits": 156.6763556,
+    "TotalValue": 91561
+  },
+  {
+    "PurchaseDate": "12-Oct-17",
+    "PurchaseValue": 2500,
+    "TotalPurchase": 79100,
+    "NAV": 585.9102,
+    "UnitsBought": 4.266865468,
+    "TotalUnits": 160.9432211,
+    "TotalValue": 94298
+  },
+  {
+    "PurchaseDate": "10-Nov-17",
+    "PurchaseValue": 2500,
+    "TotalPurchase": 81600,
+    "NAV": 606.1635,
+    "UnitsBought": 4.124299797,
+    "TotalUnits": 165.0675209,
+    "TotalValue": 100058
+  },
+  {
+    "PurchaseDate": "11-Dec-17",
+    "PurchaseValue": 2500,
+    "TotalPurchase": 84100,
+    "NAV": 609.8398,
+    "UnitsBought": 4.099437262,
+    "TotalUnits": 169.1669582,
+    "TotalValue": 103165
+  },
+  {
+    "PurchaseDate": "10-Jan-18",
+    "PurchaseValue": 2500,
+    "TotalPurchase": 86600,
+    "NAV": 633.0928,
+    "UnitsBought": 3.94886816,
+    "TotalUnits": 173.1158263,
+    "TotalValue": 109598
+  },
+  {
+    "PurchaseDate": "26-Feb-18",
+    "PurchaseValue": 2500,
+    "TotalPurchase": 89100,
+    "NAV": 614.5769,
+    "UnitsBought": 4.067839191,
+    "TotalUnits": 177.1836655,
+    "TotalValue": 108893
+  }
+]

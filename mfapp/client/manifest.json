@@ -107,6 +107,9 @@
       "schdet_model": {
         "type": "sap.ui.model.json.JSONModel"
       },
+      "schinvaggr_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      },
       "selSchModel": {
         "type": "sap.ui.model.json.JSONModel"
       },
