@@ -6,18 +6,18 @@ sap.ui
       var _dialog;
       return BaseController
         .extend(
-          "simple_hello.Controller.shownavsch", {
+          "simple_hello.Controller.schchgdocdisp", {
             onInit: function() {
               var oRouter = this.getRouter();
               oRouter.attachRouteMatched(this._handleRouteMatched, this);
 
-              // Set the selection panel to expanded and the table panel to collapsed
-              this._showschselPanel = this.getView().byId("showschsel");
+              // Set the selection panel to expanded and the container panel to collapsed
+              this._showschselPanel = this.getView().byId("showdocsel");
               this._showschselPanel.setExpandable(true);
               this.setPanelExpanded(this._showschselPanel, true); //Method invoked from Parent Controller
 
 
-              this._showschtblPanel = this.getView().byId("showschtbl");
+              this._showschtblPanel = this.getView().byId("showdoccont");
               this._showschtblPanel.setExpandable(true);
               this.setPanelExpanded(this._showschtblPanel, false); //Method invoked from Parent Controller
 
@@ -28,42 +28,26 @@ sap.ui
                 return;
               }
 
-              this._handleRefreshOnRouting();
-
               //Get AMC Details for binding
               this._getAMCs();
 
 
             },
 
-            _handleRefreshOnRouting: function() {
+            onShowDoc: function() {
+              this._sValidPath = jQuery.sap.getModulePath("simple_hello", "/docs/pdf/test.pdf");
+              var oDocModel = this.getView().getModel("pdfdocument_model");
+              var data = {};
+              data.Source = this._sValidPath;
+              data.Title = "TestPDF";
+              data.Height = "600px";
+              oDocModel.setData(data);
+              oDocModel.updateBindings();
 
-              /**
-               * @desc This is a helper method that performs the refresh and toggle of the panels on routing
-               *       It toggles the file panel to expanded,and the table panel to collapsed
-               *       It also refreshes the file panel upload file name and sets the table contents to empty
-               */
+              // Set the selection panel to expanded and the container panel to collapsed
+              this.setPanelExpanded(this._showschselPanel, false); //Method invoked from Parent Controller
+              this.setPanelExpanded(this._showschtblPanel, true); //Method invoked from Parent Controller
 
-              this._fPanel = this.getView().byId("showschsel");
-              this._fPanel.setExpandable(true);
-              this._fPanel.setExpanded(true);
-
-              this._tPanel = this.getView().byId("showschtbl");
-              this._tPanel.setExpandable(true);
-              this._tPanel.setExpanded(false);
-
-              // Remove the value of the AMC
-              this.getView().byId("cbfname").setValue("");
-
-              // Remove the value of the Scheme
-              this.getView().byId("mfname").setValue("");
-
-              // Set the table data to empty
-              var pnav_model = this.getOwnerComponent().getModel("fewnavmodel");
-              pnav_model.setData([]);
-              pnav_model.updateBindings();
-
-            
 
             },
             _getAMCs: function() {
