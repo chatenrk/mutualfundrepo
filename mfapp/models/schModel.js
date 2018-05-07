@@ -231,6 +231,32 @@ async function postManySchDet(mfschdet) {
   return resArray;
 }
 
+// This function is used to update the scheme details of an existing scheme in the database
+async function postSchUpdt(mfscheme) {
+  debugger;
+  try {
+    let schemes
+    // var _id = new mongoose.Types.ObjectId();
+    schemes = await mfschemesModel.update({
+      "scode": mfscheme.scode
+    }, {
+      $set: {
+        "sname": mfscheme.sname
+      }
+
+    });
+    return schemes;
+
+  } catch (err) {
+    return err;
+    // var operation = err.getOperation();
+    // var errflag = true;
+    // var parseResult = helpers.parseOutput(errflag, err, operation);
+
+  }
+
+}
+
 
 
 module.exports.findAll = findAll;
@@ -240,3 +266,4 @@ module.exports.postManySchDet = postManySchDet;
 module.exports.postOneSchDet = postOneSchDet;
 module.exports.findOneSchDet = findOneSchDet;
 module.exports.findOneSch = findOneSch;
+module.exports.postSchUpdt = postSchUpdt;

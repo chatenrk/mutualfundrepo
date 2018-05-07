@@ -158,8 +158,7 @@ sap.ui
                   }
                 }
 
-              } else
-              {
+              } else {
 
               }
 
@@ -180,7 +179,54 @@ sap.ui
                 " " +
                 data.assetqual + " " + data.assetcurr;
 
+            },
+            handlePopOverPress: function(oEvt) {
+              this._showpopover("display", oEvt);
+            },
+
+            _showpopover: function(type, oEvt) {
+              if (!this._oPopover) {
+                this._oPopover = sap.ui.xmlfragment("investpopover", "simple_hello.view.invpopover", this);
+                this.getView().addDependent(this._oPopover);
+                this._oPopover.attachAfterOpen(function() {
+                  this.disablePointerEvents();
+                }, this);
+                this._oPopover.attachAfterClose(function() {
+                  this.enablePointerEvents();
+                }, this);
+              }
+
+              this._svbutton = Fragment.byId("investpopover", "save");
+              this._cpybutton = Fragment.byId("investpopover", "copy");
+              this._delbutton = Fragment.byId("investpopover", "delete");
+              this._editbutton = Fragment.byId("investpopover", "edit");
+
+              if (type === "display") {
+                // Get the content from the invdetl fragment and add it to the popover
+                if (!this._invdetl) {
+                  this._invdetl = sap.ui.xmlfragment("investdetl", "simple_hello.view.invdetl", this);
+                }
+
+                var popoverContent = Fragment.byId("investdetl", "invdeltdispVBOX");
+
+                //remove all content
+                this._oPopover.removeAllContent();
+                this._oPopover.insertContent(popoverContent);
+
+                this._editbutton.setVisible(true);
+                this._cpybutton.setVisible(true);
+                this._delbutton.setVisible(true);
+                this._svbutton.setVisible(false);
+              }
+
+              // delay because addDependent will do a async rerendering and the actionSheet will immediately close without it.
+              var oControl = oEvt.getSource();
+              this._oPopover.openBy(oControl);
+
+              
             }
+
+
 
 
 

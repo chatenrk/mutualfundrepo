@@ -91,5 +91,13 @@
       "type": "Create",
       "title": "Manage Investments"
     }
+  ],
+  "DocumentsCollection": [
+		{
+      "id": "schchgdocdisp",
+      "icon": "sap-icon://add",
+      "type": "Create",
+      "title": "Scheme Change Documents"
+    }
   ]
 }

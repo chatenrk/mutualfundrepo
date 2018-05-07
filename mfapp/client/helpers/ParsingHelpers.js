@@ -94,7 +94,24 @@ sap.ui.define(["./DateHelpers", "./OtherHelpers"], function(DateHelpers, OtherHe
         return pdata;
 
       }
+    },
+
+    parseUpdateData:function(upddata)
+    {
+
+      var parseResult = {};
+      if(upddata.n === upddata.nModified)     // No of entries given equal to number of entries modified
+      {
+        parseResult.updsucc = true;
+        parseResult.updmsg = "Update is successful";
+      }
+      else {
+        parseResult.updsucc = false;
+        parseResult.updmsg = "Update not possible. Please check with admin";
+      }
+        return parseResult;
     }
+
 
   }
 });

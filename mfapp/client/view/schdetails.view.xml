@@ -9,8 +9,10 @@
 	<m:Page id ="addSchemePage" title = "{i18n>schdet}" showNavButton = "true"
        navButtonPress = "onNavBack">
 
+<!-- Use Icon tab bar defines the subsections as tabs instead of single page rolling  -->
 	<ObjectPageLayout id="ObjectPageLayout"
 					  enableLazyLoading="false"
+						useIconTabBar="true"
 					  showTitleInHeaderContent="true">
 
 	<headerTitle>

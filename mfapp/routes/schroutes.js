@@ -203,5 +203,20 @@ router.post('/csvSchDet', upload.single('file'), async (req, res) => {
 
 });
 
+// Route to update the scheme data in the database
+router.post('/pschupdt', async (req, res) => {
+
+  try {
+    var mfscheme = req.body;
+    var result = await schmodel.postSchUpdt(mfscheme);
+    debugger;
+    res.send(result);
+  } catch (err) {
+
+    return res.status(500).send(err);
+  }
+
+});
+
 
 module.exports = router;

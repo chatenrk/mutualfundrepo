@@ -432,6 +432,35 @@ sap.ui.define([], function() {
 
     },
 
+    getAllSchemes: function() {
+      /**
+       * @desc This helper method gets all the schemes that are present in the database
+       * @return Returns a promise object
+       */
+
+      var that = this;
+      var deferred = jQuery.Deferred();
+
+      var allschurl = "http://localhost:3000/schemes/all";
+      $.ajax({
+        url: allschurl,
+        type: 'GET',
+        dataType: 'json',
+        success: function(data) {
+          deferred.resolve(data);
+
+        },
+        error: function(err) {
+          deferred.reject(err);
+
+        }
+
+      }); //AJAX call close
+      return deferred.promise();
+
+
+    },
+
     _getSchemeDetails: function(scode) {
       /**
        * @desc This helper method is used to fetch all the Scheme Details from the database
@@ -501,6 +530,32 @@ sap.ui.define([], function() {
 
       }); //AJAX call close
 
+      return deferred.promise();
+    },
+
+    updateSchemeData: function(schupddata)
+    {
+      var that = this;
+      var deferred = jQuery.Deferred();
+
+      var url = "http://localhost:3000/schemes/pschupdt";
+      var that = this;
+
+      $.ajax({
+        url: url,
+        type: 'POST',
+        data: schupddata,
+        dataType: 'json',
+        success: function(data) {
+          deferred.resolve(data);
+
+        },
+        error: function(err) {
+          deferred.reject(err);
+
+        }
+
+      }); //AJAX call close
       return deferred.promise();
     },
 

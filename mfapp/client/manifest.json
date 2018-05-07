@@ -141,6 +141,9 @@
       },
       "usrdetls_model": {
         "type": "sap.ui.model.json.JSONModel"
+      },
+      "pdfdocument_model": {
+        "type": "sap.ui.model.json.JSONModel"
       }
 
     },
@@ -185,6 +188,12 @@
           "pattern": "register",
           "name": "register",
           "target": "register"
+
+        },
+        {
+          "pattern": "documents",
+          "name": "documents",
+          "target": "documents"
 
         },
         {
@@ -274,7 +283,13 @@
           "pattern": "shownavsch",
           "name": "shownavsch",
           "target": "shownavsch"
+        },
+        {
+          "pattern": "schchgdocdisp",
+          "name": "schchgdocdisp",
+          "target": "schchgdocdisp"
         }
+
 
       ],
       "targets": {
@@ -356,6 +371,14 @@
         },
         "shownavsch": {
           "viewName": "shownavsch",
+          "viewLevel": 1
+        },
+        "documents": {
+          "viewName": "docdb",
+          "viewLevel": 1
+        },
+        "schchgdocdisp": {
+          "viewName": "schchgdocdisp",
           "viewLevel": 1
         }
 
