@@ -15,7 +15,7 @@ sap.ui
     ],
     function(BaseController, MessageToast, UploadCollectionParameter, Helpers, Moment, Export, ExportTypeCSV, GatewayHelper, ModelHelpers, OtherHelpers, MessageHelpers) {
       "use strict";
-      var postdata, _fPanel, _tPanel;
+      var postdata, _fPanel, _tPanel, _filename;
       return BaseController
         .extend(
           "simple_hello.Controller.addnav", {
@@ -89,6 +89,10 @@ sap.ui
               var fU = this.getView().byId("idfileUploader");
               var domRef = fU.getFocusDomRef();
               var file = domRef.files[0];
+
+              // Store the file name for further processing
+              this._filename = file.name.split(".")[0]
+
               this._parserestcall(file);
 
             },
@@ -267,7 +271,8 @@ sap.ui
               }); // Export end
 
               // download exported file
-              oExport.saveFile().catch(function(oError) {
+              var expfilename = "Processed File - " + this._filename;
+              oExport.saveFile(expfilename).catch(function(oError) {
                 MessageBox.error("Error when downloading data. Browser might not be supported!\n\n" + oError);
               }).then(function() {
                 oExport.destroy();
