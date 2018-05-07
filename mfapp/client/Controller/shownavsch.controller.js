@@ -63,7 +63,7 @@ sap.ui
               pnav_model.setData([]);
               pnav_model.updateBindings();
 
-            
+
 
             },
             _getAMCs: function() {
@@ -220,19 +220,34 @@ sap.ui
             onGetNAV: function() {
 
               /**
-               * @desc This method is the event handler for GET NAV button.
+               * @desc This method is the event handler for GET NAV button. This method gets the last 10 NAV if no date
+               *       range is passed. If a date range is passed then it gets the NAV in that date range for the
+               *       selected scheme
                */
 
               var scode = this._scode[0];
               var limit = 10;
               var sorder = "DSC";
               var that = this;
-              GatewayHelper.getFewNav(scode, limit, sorder).then(function(data) {
-                that._getnavssuccess(data, that);
-              }, function(err) {
-                that._getnavsfailure(err, that);
-              });
 
+              var sdate = this.getView().byId("frmNAVDate").getValue();
+              var edate = this.getView().byId("toNAVDate").getValue();
+
+
+              if (sdate === "" && edate === "") {
+
+                GatewayHelper.getFewNav(scode, limit, sorder).then(function(data) {
+                  that._getnavssuccess(data, that);
+                }, function(err) {
+                  that._getnavsfailure(err, that);
+                });
+              } else {
+                GatewayHelper.getNavBtwn(scode, sdate, edate).then(function(data) {
+                  that._getnavssuccess(data, that);
+                }, function(err) {
+                  that._getnavsfailure(err, that);
+                });
+              }
 
             },
             _getnavssuccess: function(data, that) {

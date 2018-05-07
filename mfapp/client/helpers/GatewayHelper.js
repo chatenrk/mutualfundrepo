@@ -642,6 +642,38 @@ sap.ui.define([], function() {
 
     },
 
+    getNavBtwn: function(scode, sdate, edate) {
+      /**
+       * @desc This helper method is used to fetch NAV for a scheme between 2 dates
+       * @param scode referring to the Scheme Code
+       * @param sdate as starting date for NAV fetch
+       * @param edate as starting date for NAV fetch
+       * @return Returns a promise object
+       */
+
+      var that = this;
+      var deferred = jQuery.Deferred();
+
+      var navbetnurl = "http://localhost:3000/nav/navbetn?scode=" + scode + "&sdate=" + sdate + "&edate=" + edate;
+
+      $.ajax({
+        url: navbetnurl,
+        type: 'GET',
+        dataType: 'json',
+        success: function(data) {
+          deferred.resolve(data);
+
+        },
+        error: function(err) {
+          deferred.reject(err);
+
+        }
+
+      }); //AJAX call close
+      return deferred.promise();
+
+    },
+
     /*---------------------------------------------------------------------*
      * Post Requests Methods
      *---------------------------------------------------------------------*/
