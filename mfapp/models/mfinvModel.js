@@ -62,7 +62,7 @@ async function findOneInvDet(query, desc) {
   try {
     let invdet;
 
-    if (desc = "") {
+    if (desc === "") {
       invdet = await mfinvModel.find(query).sort({
         amcname: 1,
         sname: 1
@@ -73,6 +73,82 @@ async function findOneInvDet(query, desc) {
         sname: 1,
         invdate: -1
       });
+    }
+    return invdet;
+  } catch (err) {
+
+    return err;
+  }
+};
+
+
+//This route finds Investment Details based on the Query sent
+async function findOneInvDetUpd(query, desc) {
+  try {
+    let invdet;
+    debugger;
+    if (!desc || desc === "") {
+
+      invdet = await mfinvModel.aggregate([{
+          $match: {
+            scode: {
+              $eq: query.scode
+            }
+          }
+        },
+        {
+          $lookup: {
+            from: "schemes",
+            localField: "scode",
+            foreignField: "scode",
+            as: "schemesLU"
+          }
+        },
+        {
+          $sort: {
+            amcname: 1,
+            sname: 1
+          }
+        }
+      ]);
+
+      // invdet = await mfinvModel.find(query).sort({
+      //   amcname: 1,
+      //   sname: 1
+      // });
+    } else {
+
+      invdet = await mfinvModel.aggregate([{
+          $match: {
+            scode: {
+              $eq: query.scode
+            }
+          }
+        },
+        {
+          $lookup: {
+            from: "schemes",
+            localField: "scode",
+            foreignField: "scode",
+            as: "schemesLU"
+          }
+        },
+        {
+          $sort: {
+            amcname: 1,
+             sname: 1,
+             invdate: -1
+          }
+        }
+      ]);
+
+
+
+      // invdet = await mfinvModel.find(query).sort({
+      //   amcname: 1,
+      //   sname: 1,
+      //   invdate: -1
+      // });
     }
     return invdet;
   } catch (err) {
@@ -285,6 +361,63 @@ async function grpGoalAggregation(aggr) {
   }
 }
 
+// Test for lookup schemename from scheme table
+async function grpGoalAggregationUpd(aggr) {
+  try {
+    debugger;
+    let aggrres;
+    aggrres = await mfinvModel.aggregate([
+
+
+      {
+        $match: {
+          invBy: {
+            $eq: aggr.invBy
+          }
+        }
+      },
+      {
+        $lookup: {
+          from: "schemes",
+          localField: "scode",
+          foreignField: "scode",
+          as: "schemesLU"
+        }
+      },
+      {
+        $group: {
+          _id: {
+            invFor: "$invFor",
+            sname: "$schemesLU.sname",
+            scode: "$scode"
+          },
+          invcount: {
+            $sum: 1
+          },
+          totinv: {
+            $sum: "$amount"
+          },
+          totalunits: {
+            $sum: "$units"
+          }
+        }
+      },
+      {
+        $sort: {
+          _id: 1
+        }
+      }
+      //
+    ]);
+
+    return aggrres;
+  } catch (err) {
+
+    return err;
+  }
+}
+
+
 async function grpGoalSchemeAggregation(aggr) {
   try {
     debugger;
@@ -366,7 +499,9 @@ module.exports.findAll = findAll;
 module.exports.postOne = postOne;
 module.exports.getAggregation = getAggregation;
 module.exports.grpGoalAggregation = grpGoalAggregation;
+module.exports.grpGoalAggregationUpd = grpGoalAggregationUpd;
 module.exports.grpGoalSchemeAggregation = grpGoalSchemeAggregation;
 module.exports.findOneInvDet = findOneInvDet;
+module.exports.findOneInvDetUpd = findOneInvDetUpd
 module.exports.deleteInv = deleteInv;
 module.exports.postManyInvDet = postManyInvDet;

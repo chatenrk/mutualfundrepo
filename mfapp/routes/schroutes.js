@@ -29,7 +29,8 @@ router.get('/sdet', async (req, res, next) => {
   }
 
   try {
-    schemes = await schmodel.findOneSchDet(id);
+    // schemes = await schmodel.findOneSchDet(id);
+    schemes = await schmodel.findOneSchDetUpd(id);
     res.send(schemes);
   } catch (err) {
 

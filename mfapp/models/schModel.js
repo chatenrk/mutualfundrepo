@@ -110,6 +110,40 @@ async function findOneSchDet(id) {
   }
 };
 
+async function findOneSchDetUpd(id) {
+
+  try {
+    var scode = parseInt(id.scode);
+    let aggrres;
+    aggrres = await mfschdetModel.aggregate([
+
+      {
+        $match: {
+          scode: {
+            $eq: scode
+          }
+        }
+      },
+      {
+        $lookup: {
+          from: "schemes",
+          localField: "scode",
+          foreignField: "scode",
+          as: "schemesLU"
+        }
+      }
+
+    ]);
+
+    return aggrres;
+  } catch (err) {
+
+    return err;
+  }
+
+
+};
+
 
 //This route posts a single scheme to database
 async function postOne(mfscheme) {
@@ -266,4 +300,5 @@ module.exports.postManySchDet = postManySchDet;
 module.exports.postOneSchDet = postOneSchDet;
 module.exports.findOneSchDet = findOneSchDet;
 module.exports.findOneSch = findOneSch;
+module.exports.findOneSchDetUpd = findOneSchDetUpd;
 module.exports.postSchUpdt = postSchUpdt;

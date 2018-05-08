@@ -147,7 +147,9 @@ sap.ui
 
                 for (var i = 0; i < data.length; i++) {
                   if (data[i].scode === parseInt(that.scode) && data[i].invFor === that.invFor) {
+
                     that.schaggrdata = data[i];
+        
                     // Perform the gateway call and get the current value of the investment selected
                     GatewayHelper.getCurrentValue(data[i].scode, data[i].totalunits).then(function(cvaldata) {
                       that._getcurrvalsuccess(that.schaggrdata, cvaldata, that);
@@ -223,7 +225,7 @@ sap.ui
               var oControl = oEvt.getSource();
               this._oPopover.openBy(oControl);
 
-              
+
             }
 
 
