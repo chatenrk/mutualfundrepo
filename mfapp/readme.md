@@ -177,7 +177,16 @@ Methods used in this controller
 
 ## Excel Templates
 The following excel templates can be used in conjunction with the app to automate the day-to-day transaction.
-### Retrieve NAV Data from AMFI
+
+### NAV Text file creation and processing
+- Sample file for uploading NAV as a text file can be found [here](https://github.com/chatenrk/mutualfundrepo/tree/myinvbranch/mfapp/Excel%20Templates)
+
+- This file retrieves the data from AMFI website for the AMC's that are mentioned in the **AMCsForRetrieval** sheet. Please ensure this sheet has the correct AMC code that is corresponding to the AMC mentioned, as this is used for retrieval
+- Also ensure that the date range is not more than 3 months. If data needs to be extracted for a lengthier period, break it down into 3 months periods and run each period separately
+- Once the data has been retrieved, it is stored as a .txt file with UTF-8 encoding. The excel would prompt for a folder where the said folder needs to be stored. On selecting the folder the file is created in that folder.
+- Once all the requisite data files are created, they can be used as input for the **Add NAV** functionality of the app. At this moment the file needs to be in the app folder for the functionality to work as expected, so if the file is stored in a different folder, then it needs to be copied into the app folder
+
+### Investments text file creation and processing
 
 ## Further Reading
 ### OpenUI5

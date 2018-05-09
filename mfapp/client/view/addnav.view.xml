@@ -1,89 +1,64 @@
-<mvc:View
-	controllerName="simple_hello.Controller.addnav"
-    xmlns="sap.m"
-    xmlns:f="sap.ui.layout.form"
-    xmlns:core="sap.ui.core"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns:u="sap.ui.unified" displayBlock="true">
+<mvc:View controllerName="simple_hello.Controller.addnav" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:u="sap.ui.unified" displayBlock="true">
 
- 	<Page id ="addAMCPage" title = "Add NAV Details" showNavButton = "true"
-       navButtonPress = "onNavBack">
+	<Page id="addAMCPage" title="Add NAV Details" showNavButton="true" navButtonPress="onNavBack">
 
+		<Panel id="filePanel" width="auto" class="sapUiTinyMargin" headerText="File Upload Panel">
+			<ObjectHeader icon="sap-icon://database" title="Add NAV" titleLevel="H4" introActive="true" intro="{i18n>navTextIntro}" introHref="https://github.com/chatenrk/mutualfundrepo/tree/myinvbranch/mfapp#excel-templates"/>
 
-	<Panel  id="filePanel" width="auto" class="sapUiTinyMargin" headerText="File Upload Panel">
-	<ObjectHeader
-		icon = "sap-icon://database" title="Add NAV" titleLevel="H4"/>
+			<content>
+				<u:FileUploader id="idfileUploader" width="50%" sameFilenameAllowed="false" buttonText="" fileType="TXT" placeholder="Choose a TXT file" style="Emphasized"></u:FileUploader>
 
+				<Button id="Button" text="Upload Now" press="onStartUpload"></Button>
+			</content>
+		</Panel>
 
-	<content>
-		 <u:FileUploader id="idfileUploader" width="50%"
-		    sameFilenameAllowed="false" buttonText="" fileType="TXT"
-		    placeholder="Choose a TXT file" style="Emphasized">
-		</u:FileUploader>
+		<Panel id="tablePanel" width="auto" class="sapUiTinyMargin" headerText="Upload Status Panel">
 
-			<Button
-				id="Button"
-				text="Upload Now"
-				press="onStartUpload">
-			</Button>
-	</content>
-	</Panel>
+			<Table items="{post_nav_model>/}" selectionMode="None" growing="true" growingThreshold="10" backgroundDesign="Solid">
 
-	<Panel  id="tablePanel" width="auto" class="sapUiTinyMargin" headerText="Upload Status Panel">
+				<headerToolbar>
+					<Toolbar>
+						<Title text="NAV Details" level="H2"/>
+						<ToolbarSpacer></ToolbarSpacer>
+						<Button icon="sap-icon://download" press="onDataExport"/>
+					</Toolbar>
+				</headerToolbar>
 
+				<columns>
+					<Column hAlign="Center" vAlign="Center">
+						<Text text="{i18n>ndate}"/>
+					</Column>
 
-		<Table
-				items="{post_nav_model>/}"
-				selectionMode = "None"
+					<Column hAlign="Center" vAlign="Center">
+						<Text text="{i18n>scode}"/>
+					</Column>
 
-				growing="true"
-				growingThreshold="10"
-				backgroundDesign = "Solid">
+					<Column hAlign="Center" vAlign="Center">
+						<Text text="{i18n>sname}"/>
+					</Column>
+					<Column hAlign="Center" vAlign="Center">
+						<Text text="{i18n>nav}"/>
+					</Column>
 
-		<headerToolbar>
-			<Toolbar>
-				<Title text="NAV Details" level="H2"/>
-				<ToolbarSpacer></ToolbarSpacer>
-				<Button	icon="sap-icon://download" press="onDataExport" />
-			</Toolbar>
-		</headerToolbar>
+					<Column hAlign="Center" vAlign="Center">
+						<Text text="{i18n>pStatus}"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Active" hAlign="Center" vAlign="Center">
+						<cells>
+							<Text text="{post_nav_model>date}"/>
+							<Text text="{post_nav_model>scode}"/>
+							<Text text="{post_nav_model>sname}"/>
+							<Text text="{post_nav_model>nav}"/>
 
-		   <columns>
-             <Column hAlign="Center" vAlign="Center">
-                <Text text="{i18n>ndate}" />
-            </Column>
+							<Text text="{post_nav_model>msg}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
 
-            <Column hAlign="Center" vAlign="Center">
-                <Text text="{i18n>scode}" />
-            </Column>
-
-
-            <Column hAlign="Center" vAlign="Center">
-                <Text text="{i18n>sname}" />
-            </Column>
-             <Column hAlign="Center" vAlign="Center">
-                <Text text="{i18n>nav}" />
-            </Column>
-
-           <Column hAlign="Center" vAlign="Center">
-                <Text text="{i18n>pStatus}" />
-            </Column>
-        </columns>
-        <items>
-            <ColumnListItem type="Active" hAlign="Center" vAlign="Center">
-                <cells>
-                   <Text text="{post_nav_model>date}" />
-                    <Text text="{post_nav_model>scode}" />
-                    <Text text="{post_nav_model>sname}" />
-                     <Text text="{post_nav_model>nav}" />
-
-                    <Text text="{post_nav_model>msg}" />
-                </cells>
-            </ColumnListItem>
-        </items>
-
-		</Table>
-	</Panel>
+			</Table>
+		</Panel>
 
 	</Page>
 </mvc:View>
