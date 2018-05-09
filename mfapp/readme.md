@@ -19,6 +19,7 @@
       - [CSS stylesheets](#css-stylesheets)
       - [Third party Libraries](#third-party-libraries)
       - [Helper Classes](#helper-classes)
+  - [Excel Templates](#excel-templates)
   - [Further Reading](#further-reading)
     - [OpenUI5](#openui5)
     - [MVC Architecture in OpenUI5](#mvc-architecture-in-openui5)
@@ -173,6 +174,10 @@ Methods used in this controller
 [Custom CSS File](../client/css/style.css)
 #### Third party Libraries
 #### Helper Classes
+
+## Excel Templates
+The following excel templates can be used in conjunction with the app to automate the day-to-day transaction.
+### Retrieve NAV Data from AMFI
 
 ## Further Reading
 ### OpenUI5
