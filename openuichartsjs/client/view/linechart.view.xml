@@ -1,0 +1,16 @@
+<mvc:View controllerName="openui5_chartjs.controller.linechart" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:acc="openui5_chartjs.control">
+
+  <Page title="{i18n>lineChart}" showNavButton="true" navButtonPress="onNavBack">
+    <content>
+      <Panel width="auto" class="sapUiResponsiveMargin">
+        <content>
+          <VBox class="sapUiSmallMargin">
+            <!-- width & height only used for ratio of the chart, but not used if control is set to responsive -->
+            <Label text="{i18n>lineChart}" class="sapUiSmallMarginBottom" design="Bold"/>
+            <acc:ChartJSControl width="400" height="200" responsive="true" chartType="Line" data="{chartjsData>/lineData}"/>
+          </VBox>
+        </content>
+      </Panel>
+    </content>
+  </Page>
+</mvc:View>

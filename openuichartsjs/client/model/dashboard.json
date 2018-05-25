@@ -1,0 +1,22 @@
+{
+  "LineChtsColl": [{
+      "id": "onShowLineChart",
+      "icon": "sap-icon://show",
+      "type": "Monitor",
+      "title": "Line Chart"
+    }
+  ],
+  "PieChtsColl": [{
+    "id": "onShowPieChart",
+    "icon": "sap-icon://show",
+    "type": "Monitor",
+    "title": "Pie Chart"
+  }],
+  "BarChtsColl": [{
+    "id": "onShowGrpBarChart",
+    "icon": "sap-icon://show",
+    "type": "Monitor",
+    "title": "Bar Chart"
+  }]
+
+}
