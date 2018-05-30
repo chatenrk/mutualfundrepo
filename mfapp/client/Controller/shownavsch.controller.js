@@ -1,7 +1,9 @@
 sap.ui
   .define(
-    ["simple_hello/Controller/BaseController", "sap/m/MessageToast", "	sap/ui/model/Sorter", "sap/ui/model/Filter", "../helpers/GatewayHelper"],
-    function(BaseController, MessageToast, Sorter, Filter, GatewayHelper) {
+    ["simple_hello/Controller/BaseController", "sap/m/MessageToast", "	sap/ui/model/Sorter", "sap/ui/model/Filter", "../helpers/GatewayHelper", "sap/ui/core/util/Export",
+      "sap/ui/core/util/ExportTypeCSV"
+    ],
+    function(BaseController, MessageToast, Sorter, Filter, GatewayHelper,Export,ExportTypeCSV) {
       "use strict";
       var _dialog;
       return BaseController
@@ -303,7 +305,65 @@ sap.ui
               // Collapse the table panel and Expand the input panel
               this.setPanelExpanded(this._showschselPanel, true);
               this.setPanelExpanded(this._showschtblPanel, false);
-            }
+            },
+
+            onDataExport: sap.m.Table.prototype.exportData || function(oEvent) {
+              var oExport = new Export({
+
+                // Type that will be used to generate the content. Own ExportType's can be created to support other formats
+                exportType: new ExportTypeCSV({
+                  separatorChar: ";"
+                }),
+
+                // Pass in the model created above
+                models: this.getView().getModel("fewnavmodel"),
+
+                // binding information for the rows aggregation
+                rows: {
+                  path: "/"
+                },
+
+                // column definitions with column name and binding info for the content
+
+                columns: [{
+                    name: "Scheme Code",
+                    template: {
+                      content: "{scode}"
+                    }
+                  },
+                  {
+                    name: "Scheme Name",
+                    template: {
+                      content: "{sname}"
+                    }
+                  },
+                  {
+                    name: "Net Asset Value",
+                    template: {
+                      content: "{nav}"
+                    }
+                  },
+
+                  {
+                    name: "Date of NAV",
+                    template: {
+                      content: "{datefmtd}"
+                    }
+                  }
+
+                ] // Columns end
+              }); // Export end
+
+              // OtherHelpers._populateColumnsExcelExtract(oExport,data);
+              // download exported file
+              oExport.saveFile().catch(function(oError) {
+                MessageBox.error("Error when downloading data. Browser might not be supported!\n\n" + oError);
+              }).then(function() {
+                oExport.destroy();
+              });
+
+
+            } // Data Export Function end
 
 
 
