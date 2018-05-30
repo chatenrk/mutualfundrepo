@@ -4,6 +4,18 @@
       "icon": "sap-icon://show",
       "type": "Monitor",
       "title": "Line Chart"
+    },
+    {
+      "id": "onShowMulLineChart",
+      "icon": "sap-icon://show",
+      "type": "Monitor",
+      "title": "Multi Line Chart"
+    },
+    {
+      "id": "onShowInvVsVal",
+      "icon": "sap-icon://show",
+      "type": "Monitor",
+      "title": "Investment Versus Value"
     }
   ],
   "PieChtsColl": [{

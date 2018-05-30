@@ -50,6 +50,14 @@ sap.ui
                   this._oRouter.navTo("linechart");
                   break;
 
+                case "onShowMulLineChart": // Line Chart routing
+                  this._oRouter.navTo("mullinechart");
+                  break;
+
+                  case "onShowInvVsVal": // Line Chart routing
+                    this._oRouter.navTo("invvallinechart");
+                    break;
+
 
 
                 case "onShowPieChart": // Simple Pie Chart

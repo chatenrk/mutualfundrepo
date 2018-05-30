@@ -46,6 +46,18 @@
       "dbtiles_model": {
         "type": "sap.ui.model.json.JSONModel",
         "dataSource": "chartcoll_ds"
+      },
+      "navline_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      },
+      "mulline_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      },
+      "schtype_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      },
+      "schtypename_model": {
+        "type": "sap.ui.model.json.JSONModel"
       }
 
 
@@ -66,11 +78,23 @@
 
         },
         {
-            "pattern": "linechart",
-            "name": "linechart",
-            "target": "linechart"
+          "pattern": "linechart",
+          "name": "linechart",
+          "target": "linechart"
 
-          }
+        },
+        {
+          "pattern": "mullinechart",
+          "name": "mullinechart",
+          "target": "mullinechart"
+
+        },
+        {
+          "pattern": "invvallinechart",
+          "name": "invvallinechart",
+          "target": "invvallinechart"
+
+        }
 
 
       ],
@@ -81,6 +105,14 @@
         },
         "linechart": {
           "viewName": "linechart",
+          "viewLevel": 1
+        },
+        "mullinechart": {
+          "viewName": "mullinechart",
+          "viewLevel": 1
+        },
+        "invvallinechart": {
+          "viewName": "invvallinechart",
           "viewLevel": 1
         }
 

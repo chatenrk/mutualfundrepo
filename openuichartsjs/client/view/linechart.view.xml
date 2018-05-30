@@ -7,7 +7,8 @@
           <VBox class="sapUiSmallMargin">
             <!-- width & height only used for ratio of the chart, but not used if control is set to responsive -->
             <Label text="{i18n>lineChart}" class="sapUiSmallMarginBottom" design="Bold"/>
-            <acc:ChartJSControl width="400" height="200" responsive="true" chartType="Line" data="{chartjsData>/lineData}"/>
+            <!-- <acc:ChartJSControl width="400" height="200" responsive="true" chartType="Line" data="{chartjsData>/lineData}"/> -->
+            <acc:ChartJSControl width="400" height="200" responsive="true" chartType="Line" data="{navline_model>/}"/>
           </VBox>
         </content>
       </Panel>

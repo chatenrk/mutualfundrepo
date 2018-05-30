@@ -1,6 +1,6 @@
 {
   "lineData": {
-    "labels": ["January", "February", "March", "April", "May", "June", "July"],
+    "labels": ["01-Jan-89", "01-Jan-90", "01-Jan-91", "01-Jan-92", "01-Jan-93", "01-Jan-94", "01-Jan-95","01-Jan-96", "01-Jan-97", "01-Jan-98", "01-Jan-99", "01-Jan-00", "01-Jan-01", "01-Jan-02","01-Jan-03", "01-Jan-04", "01-Jan-05", "01-Jan-06", "01-Jan-07", "01-Jan-08", "01-Jan-09","01-Jan-10", "01-Jan-11", "01-Jan-12", "01-Jan-13", "01-Jan-14", "01-Jan-15", "01-Jan-16"],
     "datasets": [{
       "label": "My First dataset",
       "fillColor": "rgba(220,220,220,0.2)",
@@ -9,7 +9,7 @@
       "pointStrokeColor": "#fff",
       "pointHighlightFill": "#fff",
       "pointHighlightStroke": "rgba(220,220,220,1)",
-      "data": [65, 59, 80, 81, 56, 55, 40]
+      "data": [61, 52, 83, 87, 59, 53, 46,65, 59, 80, 81, 56, 55, 40,61, 52, 83, 87, 59, 53, 46,65, 59, 80, 81, 56, 55, 40]
     }, {
       "label": "My Second dataset",
       "fillColor": "rgba(151,187,205,0.2)",
@@ -18,7 +18,7 @@
       "pointStrokeColor": "#fff",
       "pointHighlightFill": "#fff",
       "pointHighlightStroke": "rgba(151,187,205,1)",
-      "data": [28, 48, 40, 19, 86, 27, 90]
+      "data": [24, 45, 46, 16, 83, 24, 95,28, 48, 40, 19, 86, 27, 90,24, 45, 46, 16, 83, 24, 95,28, 48, 40, 19, 86, 27, 90]
     }]
   },
   "barData": {
