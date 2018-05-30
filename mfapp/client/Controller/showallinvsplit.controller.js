@@ -175,7 +175,7 @@ sap.ui.define([
         // Use this to map the Icon Tabs
         var iconTabBar = this.getView().byId("iconTabBar");
 
-        //check and insert item
+        // check and insert item
         this._checkAndInsertItem(iconTabBar, "All", "All Investments", 0);
 
         for (var i = 0; i < data.length; i++) {
@@ -311,7 +311,16 @@ sap.ui.define([
 
         });
 
+        var IconFilterSepKey = "IconTabSeparator" + iconIndex;
+        var oIconTabSeparator = new sap.m.IconTabSeparator({
+          key: IconFilterSepKey,
+          icon: "sap-icon://vertical-grip"
+        });
+
         iconTabBar.insertItem(oIconTabFilter, iconIndex);
+        // if (iconIndex !== 0) {                          //Do not insert separator for first Item
+        //   iconTabBar.insertItem(oIconTabSeparator);
+        // }
 
       }
 

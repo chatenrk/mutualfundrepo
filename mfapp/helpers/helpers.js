@@ -88,7 +88,43 @@ function checkpwd(password) {
 }
 
 function parsetextNAV(file) {
+  debugger;
+  var lno;
+  var contents = fs.readFileSync(file, "utf8").toString().split(os.EOL);
+  var rarray = [],
+    sarray = [];
+  var robj = {};
+  var isodate, date;
+  for (var i = 0; i < contents.length; i++) {
+    if (i === 0) {
+      // Header line ignore it
+    } else {
+      sarray = contents[i].split(";")
 
+      if (sarray.length > 1) {
+
+        robj.scode = sarray[0];
+        robj.sname = sarray[1];
+        robj.nav = sarray[2];
+
+        // Convert date from DD-MMM-YYYY to ISO date
+        date = moment(sarray[5], 'DD-MMM-YYYY').format("YYYY-MM-DD")
+        isodate = moment(date).toISOString();
+        robj.date = isodate;
+        rarray.push(robj);
+        robj = {};
+        isodate = '';
+      }
+      sarray = {};
+    }
+  }
+  return rarray;
+
+
+}
+
+function parsetextINV(file) {
+  debugger;
   var lno;
   var contents = fs.readFileSync(file, "utf8").toString().split(os.EOL);
   var rarray = [],
@@ -234,6 +270,7 @@ async function getAMCName(amccode) {
 
 module.exports.parseOutput = parseOutput;
 module.exports.parsetextNAV = parsetextNAV;
+module.exports.parsetextINV = parsetextINV;
 module.exports.asyncForEach = asyncForEach;
 module.exports.csvtojson = csvtojson;
 module.exports.checkpwd = checkpwd;

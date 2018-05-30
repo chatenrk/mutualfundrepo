@@ -6,6 +6,7 @@ var Finance = require('financejs');
 var finance = new Finance();
 
 const helpers = require('../helpers/helpers.js');
+const calchelpers = require('../helpers/calchelpers.js');
 const mfinvmodel = require('../models/mfinvmodel');
 const navmodel = require('../models/navModel.js');
 
@@ -176,11 +177,35 @@ function futureval(roi, cval, periods) {
 
 function xirrval() {
   debugger;
-  var xirr = finance.XIRR([5000, 2500, 2500, 2500, 2500, 2500, 2500,-20497], [new Date(2017, 10, 12), new Date(2017, 11, 10), new Date(2017, 12, 11), new Date(2018, 01, 10), new Date(2018, 02, 26), new Date(2018, 03, 13), new Date(2018, 04, 10),new Date(2018, 04, 11)], 0);
+  var xirr = finance.XIRR([5000, 2500, 2500, 2500, 2500, 2500, 2500, -20497], [new Date(2017, 10, 12), new Date(2017, 11, 10), new Date(2017, 12, 11), new Date(2018, 01, 10), new Date(2018, 02, 26), new Date(2018, 03, 13), new Date(2018, 04, 10), new Date(2018, 04, 11)], 0);
   return xirr;
 }
 
+function verssip(verssipdata) {
+  /**
+   * @desc This method is a model method that calculates the accumulated corpus based on the input data
+   *       the formula used to Calculate this is as follows
+   *       vsip*(12*((1+ret)^(years)-(1+inc+0.00001%)^(years)))/(ret-inc+0.00001%) where
+   *       vsip = Monthly investment amount,
+   *       ret	= Return expected per annum
+   *       years =	Number of years to goal
+   *       inc =	Increment percent of monthly investment
+   * @param{object} verssipdata referring to parameters of versatile SIP like monthly SIP, return %, increment % and years
+   * @return{float} acccorp referring to the accumulated corpus as per the inputs passed
+   */
 
+  var acccorp;
+  var a, b, c, d, e;
+  a = 1 + verssipdata.retpa;
+  b = Math.pow(a, verssipdata.yinv);
+  // b = calchelpers.scientificToDecimal(Math.pow(a, verssipdata.yinv));
+  c = 1 + verssipdata.sipinc + 0.00001
+  d = Math.pow(c, verssipdata.yinv);
+  e = verssipdata.retpa - verssipdata.sipinc + 0.00001;
+  acccorp = calchelpers.scientificToDecimal((12 * verssipdata.msip * (b - d)) / e);
+
+  return acccorp;
+}
 
 
 module.exports.getrefSchemeInvDet = getrefSchemeInvDet;
@@ -190,3 +215,4 @@ module.exports.postMany = postMany;
 module.exports.returnprojval = returnprojval;
 module.exports.futureval = futureval;
 module.exports.xirrval = xirrval;
+module.exports.verssip = verssip;

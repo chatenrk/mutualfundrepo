@@ -122,4 +122,23 @@ router.get('/xirrproj', async (req, res, next) => {
   }
 });
 
+// Calculate Accumulated Corpus
+router.get('/verssip', async (req, res, next) => {
+
+var verssipdata = {}
+    verssipdata.msip = parseFloat(req.query.msip),
+    verssipdata.retpa = parseFloat(req.query.retpa),
+    verssipdata.yinv = parseFloat(req.query.yinv),
+    verssipdata.sipinc = parseFloat(req.query.sipinc);
+
+  try {
+    acccorp = projmodel.verssip(verssipdata);
+
+    res.send(String(acccorp));
+  } catch (err) {
+
+    return res.status(500).send(err);
+  }
+});
+
 module.exports = router;

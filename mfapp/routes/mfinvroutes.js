@@ -120,7 +120,7 @@ router.post('/pone', async (req, res, next) => {
     sname: req.body.sname,
     invdate: invdate,
     nav: req.body.nav,
-    units: req.body.units,
+    units: parseFloat(req.body.units),
     amount: req.body.amount,
     remarks: req.body.remarks,
     invFor: req.body.invFor,
@@ -164,6 +164,31 @@ router.post('/csvinv', upload.single('file'), async (req, res) => {
 
 });
 
+
+//Route to post a multiple investments sent via txt
+router.post('/txtinv', upload.single('file'), async (req, res) => {
+  debugger;
+  var user = req.query.user;
+
+  if (!req.file)
+    return res.status(400).send('No files were uploaded.');
+
+  var multiinvFile = req.file;
+
+  try {
+    var multiinvs = await helpers.parsetextINV(multiinvFile);
+    debugger;
+
+    var result = await mfinvmodel.postManyInvDet(multiinvs, user);
+    debugger;
+    res.send(result);
+  } catch (err) {
+    debugger;
+    return res.status(500).send(err);
+  }
+
+});
+
 //Route for aggregations
 router.get('/aggr', async (req, res, next) => {
 
@@ -177,7 +202,7 @@ router.get('/aggr', async (req, res, next) => {
 
   */
 
-
+debugger;
   if (req.query.id && req.query.id !== "" && req.query.totcol !== "" && req.query.invBy !== "") {
     var aggr = {}
     aggr.id = req.query.id;

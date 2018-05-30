@@ -1,9 +1,18 @@
 <mvc:View controllerName="simple_hello.Controller.showallinvsplit" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns="sap.m">
-	<semantic:FullscreenPage id="page" navButtonPress="onNavBack" showNavButton="true" title="{i18n>mfinvdisp}">
+	<semantic:FullscreenPage id="page" navButtonPress="onNavBack" showNavButton="true" title="{i18n>mfinvdisp}" floatingFooter="true">
 		<semantic:content>
-			<IconTabBar id="iconTabBar" select="onQuickFilter" class="sapUiResponsiveContentPadding">
+			<IconTabBar id="iconTabBar" select="onQuickFilter" class="sapUiResponsiveContentPadding" showOverflowSelectList="true">
 				<content>
-					<Table id="invtable" BackgroundDesign="Solid" updateFinished="onUpdateFinished" class="sapUiResponsiveMargin sapUiNoMarginTop" growing="true" growingScrollToLoad="true" noDataText="{worklistView>/tableNoDataText}" width="auto" items="{manageinv_model>/}">
+					<Table
+						id="invtable"
+						BackgroundDesign="Solid"
+						updateFinished="onUpdateFinished"
+						class="sapUiResponsiveMargin sapUiNoMarginTop"
+						growing="true"
+						growingScrollToLoad="true"
+						noDataText="{worklistView>/tableNoDataText}"
+						width="auto"
+						items="{manageinv_model>/}">
 						<headerToolbar>
 							<Toolbar>
 								<ToolbarSpacer/>
@@ -36,5 +45,8 @@
 				</content>
 			</IconTabBar>
 		</semantic:content>
+		<semantic:customFooterContent>
+			<Label text="Sample Footer" design="Bold"/>
+		</semantic:customFooterContent>
 	</semantic:FullscreenPage>
 </mvc:View>

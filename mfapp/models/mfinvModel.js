@@ -8,6 +8,7 @@ require('mongoose-double')(mongoose);
 var integerValidator = require('mongoose-integer');
 
 const helpers = require('../helpers/helpers.js');
+const calchelpers = require('../helpers/calchelpers.js');
 
 /*
 ------------------------------------------------------------------------------------------------------------------------
@@ -136,8 +137,8 @@ async function findOneInvDetUpd(query, desc) {
         {
           $sort: {
             amcname: 1,
-             sname: 1,
-             invdate: -1
+            sname: 1,
+            invdate: -1
           }
         }
       ]);
@@ -366,6 +367,7 @@ async function grpGoalAggregationUpd(aggr) {
   try {
     debugger;
     let aggrres;
+
     aggrres = await mfinvModel.aggregate([
 
 
@@ -410,7 +412,8 @@ async function grpGoalAggregationUpd(aggr) {
       //
     ]);
 
-    return aggrres;
+
+      return aggrres;
   } catch (err) {
 
     return err;
