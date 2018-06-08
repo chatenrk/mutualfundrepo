@@ -6,9 +6,10 @@ sap.ui
       "../helpers/ParsingHelpers",
       "../helpers/OtherHelpers",
       "../helpers/DateHelpers",
+      "../helpers/ChartHelpers",
       "simple_hello/libs/Toastr"
     ],
-    function(BaseController, GatewayHelper, ParsingHelpers, OtherHelpers, DateHelpers, Toastr) {
+    function(BaseController, GatewayHelper, ParsingHelpers, OtherHelpers, DateHelpers,ChartHelpers, Toastr) {
       "use strict";
       var _oRouter;
       return BaseController
@@ -48,6 +49,7 @@ sap.ui
                 data.invBy !== "" &&
                 data.invFor !== "") {
                 this._getInvData(data.scode, data.invBy, data.invFor);
+                this._getChartData(data.scode, data.invBy, data.invFor);
               }
             },
             _getSchDet: function(scode) {
@@ -149,7 +151,7 @@ sap.ui
                   if (data[i].scode === parseInt(that.scode) && data[i].invFor === that.invFor) {
 
                     that.schaggrdata = data[i];
-        
+
                     // Perform the gateway call and get the current value of the investment selected
                     GatewayHelper.getCurrentValue(data[i].scode, data[i].totalunits).then(function(cvaldata) {
                       that._getcurrvalsuccess(that.schaggrdata, cvaldata, that);
@@ -169,6 +171,24 @@ sap.ui
 
             },
 
+            _getChartData:function(scode,invBy,invFor)
+            {
+                var that = this;
+              // Perform the gateway call and get the charts data
+              GatewayHelper._getinvvscurrval(scode, invBy, invFor).then(function(data) {
+                that._getinvvscurrvalsuccess(data,that);
+              }, function(err) {
+                that._getinvvscurrvalfailure(err, that);
+              });
+            },
+
+            _getinvvscurrvalsuccess:function(data, that){
+              var invvscurrdata = ChartHelpers._renderinvcurrvalchart(data);
+              var oModel = this.getView().getModel("invcurr_model");
+              oModel.setData(invvscurrdata);
+              oModel.updateBindings();
+            },
+            _getinvvscurrvalfailure:function(err,that){},
 
             handleSchLinkPressed: function(oEvent) {
               var data = this.getView().getModel("schdet_model").getData();

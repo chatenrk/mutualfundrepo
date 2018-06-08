@@ -64,13 +64,26 @@ var mfschdetSchema = mongoose.Schema({
 mfschdetSchema.plugin(integerValidator);
 
 var mfschemesModel = mongoose.model('schemes', mfschemeSchema);
-var mfschdetModel = mongoose.model('schdetailtemp', mfschdetSchema);
+var mfschdetModel = mongoose.model('schdetails', mfschdetSchema);
 
 //This route gets all the documents inside the schemes collection in MongoDB
 async function findAll() {
   try {
     let schemes
     schemes = await mfschemesModel.find();
+
+    return schemes;
+  } catch (err) {
+
+    return err;
+  }
+};
+
+//This route gets all the documents inside the schemes details collection in MongoDB
+async function findAllSchDet() {
+  try {
+    let schemes
+    schemes = await mfschdetModel.find();
 
     return schemes;
   } catch (err) {
@@ -294,6 +307,7 @@ async function postSchUpdt(mfscheme) {
 
 
 module.exports.findAll = findAll;
+module.exports.findAllSchDet = findAllSchDet;
 module.exports.postOne = postOne;
 module.exports.postMany = postMany;
 module.exports.postManySchDet = postManySchDet;

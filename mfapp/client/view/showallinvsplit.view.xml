@@ -24,11 +24,15 @@
 								<Text text="{i18n>sname}"/>
 							</Column>
 							<Column hAlign="Center" vAlign="Center">
-								<Text text="{i18n>tamnt}"/>
+								<Text text="{i18n>totInv}"/>
 							</Column>
 
 							<Column hAlign="Center" vAlign="Center">
-								<Text text="{i18n>fcnt}"/>
+								<Text text="{i18n>currVal}"/>
+							</Column>
+
+							<Column hAlign="Center" vAlign="Center">
+								<Text text="{i18n>gainloss}"/>
 							</Column>
 
 						</columns>
@@ -36,8 +40,9 @@
 							<ColumnListItem press="onPressScheme" type="Navigation" hAlign="Center" vAlign="Center">
 								<cells>
 									<ObjectIdentifier title="{manageinv_model>sname}"/>
-									<ObjectNumber number="{manageinv_model>totinv}"/>
-									<ObjectNumber number="{manageinv_model>invcount}"/>
+									<ObjectNumber number="{i18n>RupeeSymbol} {manageinv_model>totinv}"/>
+									<ObjectIdentifier title="{i18n>RupeeSymbol} {manageinv_model>currVal} ( as on {manageinv_model>lnavDate} )"/>
+									<ObjectNumber number="{i18n>RupeeSymbol} {manageinv_model>gainloss}"/>
 								</cells>
 							</ColumnListItem>
 						</items>

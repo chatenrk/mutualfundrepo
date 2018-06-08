@@ -144,6 +144,9 @@
       },
       "pdfdocument_model": {
         "type": "sap.ui.model.json.JSONModel"
+      },
+      "invcurr_model": {
+        "type": "sap.ui.model.json.JSONModel"
       }
 
     },

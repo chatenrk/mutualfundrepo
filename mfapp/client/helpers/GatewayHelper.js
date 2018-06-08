@@ -144,7 +144,7 @@ sap.ui.define([], function() {
        */
 
 
-      var invdeturl = "http://localhost:3000/mfinv/mfinvdet?scode=" + scode + "&invBy=" + invBy + "&invFor=" + invFor + "&desc=" + desc;
+      var invdeturl = "http://localhost:3000/mfinv/mfinvdet?scode=" + scode + "&invBy=" + invBy + "&invFor=" + encodeURIComponent(invFor) + "&desc=" + desc;
       var that = this;
       var deferred = jQuery.Deferred();
 
@@ -533,8 +533,7 @@ sap.ui.define([], function() {
       return deferred.promise();
     },
 
-    updateSchemeData: function(schupddata)
-    {
+    updateSchemeData: function(schupddata) {
       var that = this;
       var deferred = jQuery.Deferred();
 
@@ -714,6 +713,51 @@ sap.ui.define([], function() {
 
       return deferred.promise();
 
+    },
+
+
+    /*
+    *---------------------------------------------------------------------*
+    *---------------------------------------------------------------------*
+    * Projection Methods
+    *---------------------------------------------------------------------*
+    *---------------------------------------------------------------------*
+
+    */
+
+    /*---------------------------------------------------------------------*
+     * Get Requests Methods
+     *---------------------------------------------------------------------*/
+
+    _getinvvscurrval: function(scode, invBy, invFor) {
+      /**
+       * @desc This helper method gets the investment versus current value figures for a scheme code-user-goal combination
+       * @param scode referring to the Scheme Code
+       * @param invBy referring to user for whom investment data is being requested
+       * @param invFor referring to goal of investment
+       * @return Returns a promise object
+       */
+
+      var that = this;
+      var deferred = jQuery.Deferred();
+
+      var url = "http://localhost:3000/proj/invvscurr?scode=" + scode + "&invFor=" + encodeURIComponent(invFor) + "&invBy=" + invBy;
+
+      $.ajax({
+        url: url,
+        type: 'GET',
+        dataType: 'json',
+        success: function(data) {
+          deferred.resolve(data);
+
+        },
+        error: function(err) {
+          deferred.reject(err);
+
+        }
+
+      }); //AJAX call close
+      return deferred.promise();
     }
 
   }

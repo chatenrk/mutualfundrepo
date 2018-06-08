@@ -1,5 +1,9 @@
 const navmodel = require('../models/navModel');
+
 const helpers = require('./helpers');
+
+var Finance = require('financejs');
+var finance = new Finance();
 
 
 function sumtotal(array, key) {
@@ -22,7 +26,6 @@ function sumtotal(array, key) {
 
 //  Calculate the current value of an investment by getting the last NAV and multiplyying by total units
 async function currval(scode, totalUnits) {
-  debugger;
   // get last NAV
   var lnav = await navmodel.getLastNav(parseInt(scode));
   var currvaldet = {};
@@ -31,6 +34,24 @@ async function currval(scode, totalUnits) {
   currvaldet.currvalamnt = currvaldet.lastNav * parseFloat(totalUnits);
   return currvaldet;
 }
+
+async function xirrcalc(scode,invBy,invFor) {
+  debugger;
+  // Get all investment for scode-invFor-invBy
+  var query = {
+    scode: scode,
+    invBy: invBy,
+    invFor: invFor
+  }
+  invdet = await mfinvmodel.findOneInvDetUpd(query);
+  for(var i =0;i<invdet.length;i++)
+  {
+
+  }
+
+  // return xirr = finance.XIRR(amountarr, datearr);
+}
+
 
 function scientificToDecimal(num) {
   //if the number is in scientific notation remove it
@@ -56,3 +77,4 @@ function scientificToDecimal(num) {
 module.exports.scientificToDecimal = scientificToDecimal;
 
 module.exports.currval = currval;
+module.exports.xirrcalc = xirrcalc;

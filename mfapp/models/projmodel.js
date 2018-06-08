@@ -11,15 +11,17 @@ const mfinvmodel = require('../models/mfinvmodel');
 const navmodel = require('../models/navModel.js');
 
 var projSchema = mongoose.Schema({
-
+  schcat: String,
   scode: Number,
   sname: String,
-  refscheme: Boolean,
-  schtype: String
+  reffund: String
 });
 
 
 var projModel = mongoose.model('projections', projSchema);
+
+
+
 
 //This route finds scheme projection details based on the Query sent
 async function findAll(query) {
@@ -108,17 +110,18 @@ async function getrefSchemeInvDet(refscode, invBy) {
 }
 
 async function returnprojval(projdet, invBy) {
+  debugger;
   var retobj = {},
     retarr = [];
 
   // Find the reference scheme from the lot
-  var refscheme = helpers.findInArray(projdet, "refscheme", true);
+  var refscheme = helpers.findInArray(projdet, "reffund", "TRUE");
   var refscode = refscheme.scode;
   var refschinvdet = await getrefSchemeInvDet(refscode, invBy);
 
 
   for (var i = 0; i < projdet.length; i++) {
-    if (projdet[i].refscheme === true) {
+    if (projdet[i].reffund === "TRUE") {
       debugger;
       // Find last NAV in database for the scheme
       var lastNav = await navmodel.getLastNav(refscode);
@@ -139,6 +142,8 @@ async function returnprojval(projdet, invBy) {
       retobj.sinv = sinv;
       retobj.sunits = sunits;
       retobj.invval = invval;
+      retarr.push(retobj);
+      retobj = {};
     } else {
       // For all investments in refschinvdet, we need to find the corresponding NAV for the scode
       debugger;
@@ -158,14 +163,23 @@ async function returnprojval(projdet, invBy) {
           }]
         }
         var navdetls = await navmodel.findOneNav(query);
-        var currnav = parseFloat(navdetls.nav);
+        var currnav = parseFloat(navdetls[0].nav.value);
 
         var units = amount / currnav;
         sunits = sunits + units;
+
+        retobj.refscheme = refscheme;
+        retobj.lastNavDate = lastNav[0].lastNavDate;
+        retobj.sinv = sinv;
+        retobj.sunits = sunits;
+        retobj.invval = invval;
+        retarr.push(retobj);
+        retobj = {};
+
       }
     }
   }
-  retarr.push(retobj);
+
   return retarr;
 }
 

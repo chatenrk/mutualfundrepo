@@ -21,8 +21,10 @@ const helpers = require('../helpers/helpers.js');
 //Route to get scheme details based on the query
 router.get('/sdet', async (req, res, next) => {
 
-
+debugger;
   var scode = req.query.scode;
+
+if(scode && scode != ""){
 
   var id = {
     scode: scode
@@ -36,6 +38,17 @@ router.get('/sdet', async (req, res, next) => {
 
     return res.status(500).send(err);
   }
+}
+else {
+  try {
+
+    schemes = await schmodel.findAllSchDet();
+    res.send(schemes);
+  } catch (err) {
+
+    return res.status(500).send(err);
+  }
+}
 
 
 });

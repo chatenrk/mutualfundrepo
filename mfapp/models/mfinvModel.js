@@ -91,11 +91,7 @@ async function findOneInvDetUpd(query, desc) {
     if (!desc || desc === "") {
 
       invdet = await mfinvModel.aggregate([{
-          $match: {
-            scode: {
-              $eq: query.scode
-            }
-          }
+          $match: query
         },
         {
           $lookup: {
@@ -113,18 +109,10 @@ async function findOneInvDetUpd(query, desc) {
         }
       ]);
 
-      // invdet = await mfinvModel.find(query).sort({
-      //   amcname: 1,
-      //   sname: 1
-      // });
     } else {
 
       invdet = await mfinvModel.aggregate([{
-          $match: {
-            scode: {
-              $eq: query.scode
-            }
-          }
+          $match: query
         },
         {
           $lookup: {
@@ -145,11 +133,6 @@ async function findOneInvDetUpd(query, desc) {
 
 
 
-      // invdet = await mfinvModel.find(query).sort({
-      //   amcname: 1,
-      //   sname: 1,
-      //   invdate: -1
-      // });
     }
     return invdet;
   } catch (err) {
@@ -392,6 +375,7 @@ async function grpGoalAggregationUpd(aggr) {
             invFor: "$invFor",
             sname: "$schemesLU.sname",
             scode: "$scode"
+
           },
           invcount: {
             $sum: 1
@@ -412,8 +396,14 @@ async function grpGoalAggregationUpd(aggr) {
       //
     ]);
 
+    debugger;
+    // Adding this section to return the current value data
+    for (var i = 0; i < aggrres.length; i++) {
+      aggrres[i].currval = await calchelpers.currval(aggrres[i]._id.scode, aggrres[i].totalunits);
+      // aggrres[i].xirr = await calchelpers.xirrcalc(aggrres[i]._id.scode,aggr.invBy,aggrres[i]._id.invFor);
+    }
 
-      return aggrres;
+    return aggrres;
   } catch (err) {
 
     return err;

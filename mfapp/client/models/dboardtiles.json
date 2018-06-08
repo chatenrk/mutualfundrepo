@@ -51,15 +51,7 @@
       "icon": "sap-icon://add",
       "type": "Monitor",
       "title": "Display All My Investments"
-    },
-    {
-      "id": "showallinv",
-      "icon": "sap-icon://add",
-      "type": "Monitor",
-      "title": "Show All My Investments"
     }
-
-
   ],
   "NAVCollection": [
 
@@ -77,8 +69,7 @@
     }
 
   ],
-  "AdminINVCollection": [
-		{
+  "AdminINVCollection": [{
       "id": "addmultiinvdet",
       "icon": "sap-icon://add",
       "type": "Create",
@@ -92,12 +83,10 @@
       "title": "Manage Investments"
     }
   ],
-  "DocumentsCollection": [
-		{
-      "id": "schchgdocdisp",
-      "icon": "sap-icon://add",
-      "type": "Create",
-      "title": "Scheme Change Documents"
-    }
-  ]
+  "DocumentsCollection": [{
+    "id": "schchgdocdisp",
+    "icon": "sap-icon://add",
+    "type": "Create",
+    "title": "Scheme Change Documents"
+  }]
 }
