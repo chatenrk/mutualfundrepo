@@ -1,0 +1,14 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:layout="sap.ui.layout" xmlns:forms="sap.ui.layout.form" xmlns="sap.m" xmlns:acc="simple_hello.controls">
+
+  <Panel width="auto" class="sapUiResponsiveMargin">
+    <content>
+      <VBox>
+        <HBox width="90%" class="sapUiSmallMargin">
+          <Label text="{i18n>lineChart}" design="Bold"/>
+        </HBox>
+          <acc:ChartJSControl width="400" height="200" responsive="true" chartType="Line" data="{invcurr_model>/}"/>
+      </VBox>
+    </content>
+  </Panel>
+
+</mvc:View>

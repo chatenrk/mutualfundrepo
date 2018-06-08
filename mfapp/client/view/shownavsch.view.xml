@@ -52,6 +52,38 @@
             </items>
           </HBox>
 
+          <!-- Start date for NAV Fetch -->
+          <HBox width="100%">
+            <items>
+              <HBox width="20%" class="alignDropdownAlign sapMFlexItemAlignCenter">
+                <Label text="{i18n>frmNAVDate}" width="auto" class="LabelText"/>
+
+              </HBox>
+
+              <VBox width="15%" direction="Column">
+                <items>
+                  <DatePicker id="frmNAVDate" displayFormat="dd-MMM-yyyy" valueFormat="dd-MMM-yyyy" change="handleChange"/>
+                </items>
+              </VBox>
+            </items>
+          </HBox>
+
+          <!-- End Date date for NAV Fetch -->
+          <HBox width="100%">
+            <items>
+              <HBox width="20%" class="alignDropdownAlign sapMFlexItemAlignCenter">
+                <Label text="{i18n>toNAVDate}" width="auto" class="LabelText"/>
+
+              </HBox>
+
+              <VBox width="15%" direction="Column">
+                <items>
+                  <DatePicker id="toNAVDate" displayFormat="dd-MMM-yyyy" valueFormat="dd-MMM-yyyy" change="handleChange"/>
+                </items>
+              </VBox>
+            </items>
+          </HBox>
+
           <!-- Buttons for the form -->
           <HBox width="100%" justifyContent="End" class="sapUiSmallMarginTop">
             <items>
@@ -81,6 +113,8 @@
         <headerToolbar class="sapUiTinyMargin">
           <Toolbar>
             <Title level="H4" text="{i18n>navdisp}"/>
+            <ToolbarSpacer></ToolbarSpacer>
+            <Button icon="sap-icon://download" press="onDataExport"/>
           </Toolbar>
         </headerToolbar>
 
@@ -110,7 +144,7 @@
 
           </columns>
           <items>
-            <ColumnListItem  hAlign="Center" vAlign="Center">
+            <ColumnListItem hAlign="Center" vAlign="Center">
               <cells>
                 <Text text="{fewnavmodel>scode}"/>
                 <Text text="{fewnavmodel>sname}"/>

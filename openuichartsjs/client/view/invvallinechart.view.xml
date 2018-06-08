@@ -1,0 +1,52 @@
+<mvc:View controllerName="openui5_chartjs.controller.invvallinechart" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:acc="openui5_chartjs.control">
+
+  <Page title="{i18n>invvallineChart}" showNavButton="true" navButtonPress="onNavBack">
+    <content>
+      <Panel width="auto" class="sapUiResponsiveMargin">
+        <content>
+          <VBox class="sapUiSmallMargin">
+            <!-- width & height only used for ratio of the chart, but not used if control is set to responsive -->
+
+            <HBox width="100%" >
+              <items>
+                <HBox width="30%" class="alignDropdownAlign sapMFlexItemAlignCenter">
+                  <Label text="{i18n>invvallineChart}" width="auto" class="LabelText"/>
+                </HBox>
+
+                <VBox width="30%" direction="Column">
+                  <items>
+                    <ComboBox id="cbschtype"  width = "400px" items="{schtype_model>/}" selectionChange="onSelectSchType">
+                              <items>
+                                 <core:Item key="{schtype_model>schtype}" text="{schtype_model>schtype}" />
+                              </items>
+                          </ComboBox>
+                  </items>
+                </VBox>
+
+                <VBox width="40%" direction="Column">
+                  <items>
+                    <ComboBox id="cbschname"  width = "600px" items="{schtypename_model>/}" selectionChange="onSelectSchName">
+                              <items>
+                                 <core:Item key="{schtypename_model>scode}" text="{schtypename_model>sname}" />
+                              </items>
+                          </ComboBox>
+                  </items>
+                </VBox>
+              </items>
+            </HBox>
+
+            <!-- <HBox class="sapUiSmallMargin">
+              <Label text="{i18n>invvallineChart}" class="sapUiSmallMarginBottom" design="Bold"/>
+              <ComboBox id="cbtran" width="100px" items="{tran_model>/}">
+                <items>
+                  <core:Item key="{tran_model>key}" text="{tran_model>text}"/>
+                </items>
+              </ComboBox>
+            </HBox> -->
+            <acc:ChartJSControl width="400" height="200" responsive="true" chartType="Line" data="{mulline_model>/}"/>
+          </VBox>
+        </content>
+      </Panel>
+    </content>
+  </Page>
+</mvc:View>

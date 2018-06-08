@@ -166,6 +166,7 @@ router.post('/navpost', async (req, res) => {
 router.post('/navfile', upload.single('file'), async (req, res) => {
 
   // var narray = [];
+  debugger;
   if (!req.file)
     return res.status(400).send('No files were uploaded.');
 

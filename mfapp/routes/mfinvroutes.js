@@ -23,8 +23,8 @@ const calchelpers = require('../helpers/calchelpers.js');
 //Route to find one MF Investment
 router.get('/mfinvdet', async (req, res, next) => {
 
-
-  var scode = req.query.scode;
+  debugger;
+  var scode = parseInt(req.query.scode);
   var date = req.query.invdate;
   var invBy = req.query.invBy;
   var invFor = req.query.invFor;
@@ -41,19 +41,14 @@ router.get('/mfinvdet', async (req, res, next) => {
         invdate: isodate
       }]
     }
+    invdet = await mfinvmodel.findOneInvDet(query, desc);
   } else if (invBy && scode && invFor) {
     var query = {
-      $and: [{
-          scode: scode
-        },
-        {
-          invBy: invBy
-        },
-        {
-          invFor: invFor
-        }
-      ]
+      scode: scode,
+      invBy: invBy,
+      invFor: invFor
     }
+    invdet = await mfinvmodel.findOneInvDetUpd(query, desc);
   } else if (invBy && scode) {
     var query = {
       $and: [{
@@ -62,10 +57,12 @@ router.get('/mfinvdet', async (req, res, next) => {
         invBy: invBy
       }]
     }
+    invdet = await mfinvmodel.findOneInvDet(query, desc);
   } else if (invBy) {
     var query = {
       invBy: invBy
     }
+    invdet = await mfinvmodel.findOneInvDet(query, desc);
   } else if (invBy && sname) {
     var query = {
       $and: [{
@@ -74,13 +71,15 @@ router.get('/mfinvdet', async (req, res, next) => {
         invBy: invBy
       }]
     }
+    invdet = await mfinvmodel.findOneInvDet(query, desc);
   } else {
     return res.status(500).send("Invalid Get Parameters");
   }
 
 
   try {
-    invdet = await mfinvmodel.findOneInvDet(query, desc);
+    // invdet = await mfinvmodel.findOneInvDet(query, desc);
+    // invdet = await mfinvmodel.findOneInvDetUpd(query, desc);
     res.send(invdet);
   } catch (err) {
 
@@ -121,7 +120,7 @@ router.post('/pone', async (req, res, next) => {
     sname: req.body.sname,
     invdate: invdate,
     nav: req.body.nav,
-    units: req.body.units,
+    units: parseFloat(req.body.units),
     amount: req.body.amount,
     remarks: req.body.remarks,
     invFor: req.body.invFor,
@@ -165,6 +164,31 @@ router.post('/csvinv', upload.single('file'), async (req, res) => {
 
 });
 
+
+//Route to post a multiple investments sent via txt
+router.post('/txtinv', upload.single('file'), async (req, res) => {
+  debugger;
+  var user = req.query.user;
+
+  if (!req.file)
+    return res.status(400).send('No files were uploaded.');
+
+  var multiinvFile = req.file;
+
+  try {
+    var multiinvs = await helpers.parsetextINV(multiinvFile);
+    debugger;
+
+    var result = await mfinvmodel.postManyInvDet(multiinvs, user);
+    debugger;
+    res.send(result);
+  } catch (err) {
+    debugger;
+    return res.status(500).send(err);
+  }
+
+});
+
 //Route for aggregations
 router.get('/aggr', async (req, res, next) => {
 
@@ -178,7 +202,7 @@ router.get('/aggr', async (req, res, next) => {
 
   */
 
-
+debugger;
   if (req.query.id && req.query.id !== "" && req.query.totcol !== "" && req.query.invBy !== "") {
     var aggr = {}
     aggr.id = req.query.id;
@@ -200,7 +224,16 @@ router.get('/aggr', async (req, res, next) => {
   if (req.query.invBy !== "") {
     var aggr = {}
     aggr.invBy = req.query.invBy;
-    var aggrres = await mfinvmodel.grpGoalAggregation(aggr);
+
+    /*
+    // The following code change is required as we are now using lookup to fetch the scheme name
+    // instead of using the name on the investment log. This ensures that if there is a change
+    // in scheme name at a future point there is no impact on the application
+    // var aggrres = await mfinvmodel.grpGoalAggregation(aggr);
+    */
+    var aggrres = await mfinvmodel.grpGoalAggregationUpd(aggr);
+
+
     res.send(aggrres);
   } else {
     return res.status(500).send("Improperly formed Aggregation query");

@@ -1,7 +1,9 @@
 sap.ui
   .define(
-    ["simple_hello/Controller/BaseController", "sap/m/MessageToast", "	sap/ui/model/Sorter", "sap/ui/model/Filter", "../helpers/GatewayHelper"],
-    function(BaseController, MessageToast, Sorter, Filter, GatewayHelper) {
+    ["simple_hello/Controller/BaseController", "sap/m/MessageToast", "	sap/ui/model/Sorter", "sap/ui/model/Filter", "../helpers/GatewayHelper", "sap/ui/core/util/Export",
+      "sap/ui/core/util/ExportTypeCSV"
+    ],
+    function(BaseController, MessageToast, Sorter, Filter, GatewayHelper,Export,ExportTypeCSV) {
       "use strict";
       var _dialog;
       return BaseController
@@ -28,8 +30,41 @@ sap.ui
                 return;
               }
 
+              this._handleRefreshOnRouting();
+
               //Get AMC Details for binding
               this._getAMCs();
+
+
+            },
+
+            _handleRefreshOnRouting: function() {
+
+              /**
+               * @desc This is a helper method that performs the refresh and toggle of the panels on routing
+               *       It toggles the file panel to expanded,and the table panel to collapsed
+               *       It also refreshes the file panel upload file name and sets the table contents to empty
+               */
+
+              this._fPanel = this.getView().byId("showschsel");
+              this._fPanel.setExpandable(true);
+              this._fPanel.setExpanded(true);
+
+              this._tPanel = this.getView().byId("showschtbl");
+              this._tPanel.setExpandable(true);
+              this._tPanel.setExpanded(false);
+
+              // Remove the value of the AMC
+              this.getView().byId("cbfname").setValue("");
+
+              // Remove the value of the Scheme
+              this.getView().byId("mfname").setValue("");
+
+              // Set the table data to empty
+              var pnav_model = this.getOwnerComponent().getModel("fewnavmodel");
+              pnav_model.setData([]);
+              pnav_model.updateBindings();
+
 
 
             },
@@ -187,19 +222,34 @@ sap.ui
             onGetNAV: function() {
 
               /**
-               * @desc This method is the event handler for GET NAV button.
+               * @desc This method is the event handler for GET NAV button. This method gets the last 10 NAV if no date
+               *       range is passed. If a date range is passed then it gets the NAV in that date range for the
+               *       selected scheme
                */
 
               var scode = this._scode[0];
               var limit = 10;
               var sorder = "DSC";
               var that = this;
-              GatewayHelper.getFewNav(scode, limit, sorder).then(function(data) {
-                that._getnavssuccess(data, that);
-              }, function(err) {
-                that._getnavsfailure(err, that);
-              });
 
+              var sdate = this.getView().byId("frmNAVDate").getValue();
+              var edate = this.getView().byId("toNAVDate").getValue();
+
+
+              if (sdate === "" && edate === "") {
+
+                GatewayHelper.getFewNav(scode, limit, sorder).then(function(data) {
+                  that._getnavssuccess(data, that);
+                }, function(err) {
+                  that._getnavsfailure(err, that);
+                });
+              } else {
+                GatewayHelper.getNavBtwn(scode, sdate, edate).then(function(data) {
+                  that._getnavssuccess(data, that);
+                }, function(err) {
+                  that._getnavsfailure(err, that);
+                });
+              }
 
             },
             _getnavssuccess: function(data, that) {
@@ -255,7 +305,65 @@ sap.ui
               // Collapse the table panel and Expand the input panel
               this.setPanelExpanded(this._showschselPanel, true);
               this.setPanelExpanded(this._showschtblPanel, false);
-            }
+            },
+
+            onDataExport: sap.m.Table.prototype.exportData || function(oEvent) {
+              var oExport = new Export({
+
+                // Type that will be used to generate the content. Own ExportType's can be created to support other formats
+                exportType: new ExportTypeCSV({
+                  separatorChar: ";"
+                }),
+
+                // Pass in the model created above
+                models: this.getView().getModel("fewnavmodel"),
+
+                // binding information for the rows aggregation
+                rows: {
+                  path: "/"
+                },
+
+                // column definitions with column name and binding info for the content
+
+                columns: [{
+                    name: "Scheme Code",
+                    template: {
+                      content: "{scode}"
+                    }
+                  },
+                  {
+                    name: "Scheme Name",
+                    template: {
+                      content: "{sname}"
+                    }
+                  },
+                  {
+                    name: "Net Asset Value",
+                    template: {
+                      content: "{nav}"
+                    }
+                  },
+
+                  {
+                    name: "Date of NAV",
+                    template: {
+                      content: "{datefmtd}"
+                    }
+                  }
+
+                ] // Columns end
+              }); // Export end
+
+              // OtherHelpers._populateColumnsExcelExtract(oExport,data);
+              // download exported file
+              oExport.saveFile().catch(function(oError) {
+                MessageBox.error("Error when downloading data. Browser might not be supported!\n\n" + oError);
+              }).then(function() {
+                oExport.destroy();
+              });
+
+
+            } // Data Export Function end
 
 
 

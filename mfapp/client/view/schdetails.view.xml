@@ -1,72 +1,67 @@
-<View
-	xmlns="sap.uxap"
-	xmlns:m="sap.m"
-	xmlns:layout="sap.ui.layout"
-	xmlns:snapshot="simple_hello.SharedBlocks.snapshot"
-	controllerName="simple_hello.Controller.schdetails">
+<View xmlns="sap.uxap" xmlns:m="sap.m" xmlns:layout="sap.ui.layout" xmlns:snapshot="simple_hello.SharedBlocks.snapshot" xmlns:charts="simple_hello.SharedBlocks.charts" controllerName="simple_hello.Controller.schdetails">
 
+	<m:Page id="addSchemePage" title="{i18n>schdet}" showNavButton="true" navButtonPress="onNavBack">
 
-	<m:Page id ="addSchemePage" title = "{i18n>schdet}" showNavButton = "true"
-       navButtonPress = "onNavBack">
+		<!-- Use Icon tab bar defines the subsections as tabs instead of single page rolling -->
+		<ObjectPageLayout id="ObjectPageLayout" enableLazyLoading="false" useIconTabBar="true" showTitleInHeaderContent="true">
 
-	<ObjectPageLayout id="ObjectPageLayout"
-					  enableLazyLoading="false"
-					  showTitleInHeaderContent="true">
+			<headerTitle>
+				<ObjectPageHeader
+					id="objpghdr"
+					objectImageURI="{schdet_model>/imgpath}"
+					objectTitle="{schdet_model>/sname}"
+					objectImageShape="Square"
+					objectImageAlt="{schdet_model>/fhouse}"
+					isObjectIconAlwaysVisible="false"
+					isObjectTitleAlwaysVisible="false"
+					isObjectSubtitleAlwaysVisible="false"></ObjectPageHeader>
 
-	<headerTitle>
-			<ObjectPageHeader id = "objpghdr"
-							  objectImageURI="{schdet_model>/imgpath}"
-							  objectTitle="{schdet_model>/sname}"
-							  objectImageShape="Square"
-							  objectImageAlt="{schdet_model>/fhouse}"
+			</headerTitle>
+			<headerContent>
 
+				<layout:VerticalLayout>
+					<m:ObjectAttribute text="{schdet_model>/ptype} - {schdet_model>/schtype}"/>
+					<m:ObjectAttribute title="Fund House" text="{schdet_model>/fhouse}"/>
+					<m:ObjectAttribute text="Scheme Link" active="true" press="handleSchLinkPressed"/>
+				</layout:VerticalLayout>
 
-							  isObjectIconAlwaysVisible="false"
-							  isObjectTitleAlwaysVisible="false"
-							  isObjectSubtitleAlwaysVisible="false">
-			</ObjectPageHeader>
+			</headerContent>
+			<sections>
 
-	</headerTitle>
-	<headerContent>
-
-			<layout:VerticalLayout>
-			<m:ObjectAttribute  text="{schdet_model>/ptype} - {schdet_model>/schtype}" />
-			<m:ObjectAttribute title="Fund House" text="{schdet_model>/fhouse}"/>
-			<m:ObjectAttribute
-				text="Scheme Link"
-				active="true"
-				press="handleSchLinkPressed" />
-			</layout:VerticalLayout>
-
-
-	</headerContent>
-	<sections>
-
-		<ObjectPageSection id="snapshot" title="Snapshot Section">
-				<subSections>
+				<ObjectPageSection id="snapshot" title="Snapshot Section">
+					<subSections>
 						<ObjectPageSubSection id="snapshotSS1" title="">
 							<blocks>
 								<snapshot:schemesnapshot id="schemesnapshot"/>
 							</blocks>
 						</ObjectPageSubSection>
-				</subSections>
-		</ObjectPageSection>
+					</subSections>
+				</ObjectPageSection>
 
-		<ObjectPageSection id="snapshot1" title="Investments Section">
+				<ObjectPageSection id="snapshot1" title="Investments Section">
 
-				<subSections>
+					<subSections>
 						<ObjectPageSubSection id="schnav" title="">
 							<blocks>
-								<snapshot:schemenav id="schemenav">
-
-								</snapshot:schemenav>
-									<!-- <ModelMapping externalModelName = "schdet_model" internalModelName="SchDet" externalPath="{schdet_model>/}"/> -->
+								<snapshot:schemenav id="schemenav"></snapshot:schemenav>
+								<!-- <ModelMapping externalModelName = "schdet_model" internalModelName="SchDet" externalPath="{schdet_model>/}"/> -->
 
 							</blocks>
 						</ObjectPageSubSection>
-				</subSections>
-		</ObjectPageSection>
-	</sections>
-	</ObjectPageLayout>
+					</subSections>
+				</ObjectPageSection>
+
+				<ObjectPageSection id="charts" title="Charts Section">
+					<subSections>
+						<ObjectPageSubSection id="navcht" title="">
+							<blocks>
+								<charts:growthcht id="schemenav1"></charts:growthcht>
+							</blocks>
+						</ObjectPageSubSection>
+					</subSections>
+				</ObjectPageSection>
+
+			</sections>
+		</ObjectPageLayout>
 	</m:Page>
 </View>

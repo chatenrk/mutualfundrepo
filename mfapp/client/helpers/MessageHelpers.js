@@ -21,6 +21,14 @@ sap.ui.define(["sap/m/MessageStrip", "sap/m/MessageBox", "sap/m/Dialog", "sap/m/
           }
         });
       }
+      else if (type == "info") {
+        MessageBox.information(msg, {
+          title: title,
+          onClose: function(oAction,that) {
+            onCloseFn(oAction,that);
+          }
+        });
+      }
     },
     _showConfirmDialog: function(CfmText, CfmYes, CfmNo) {
       var that = this;

@@ -64,13 +64,26 @@ var mfschdetSchema = mongoose.Schema({
 mfschdetSchema.plugin(integerValidator);
 
 var mfschemesModel = mongoose.model('schemes', mfschemeSchema);
-var mfschdetModel = mongoose.model('schdetailtemp', mfschdetSchema);
+var mfschdetModel = mongoose.model('schdetails', mfschdetSchema);
 
 //This route gets all the documents inside the schemes collection in MongoDB
 async function findAll() {
   try {
     let schemes
     schemes = await mfschemesModel.find();
+
+    return schemes;
+  } catch (err) {
+
+    return err;
+  }
+};
+
+//This route gets all the documents inside the schemes details collection in MongoDB
+async function findAllSchDet() {
+  try {
+    let schemes
+    schemes = await mfschdetModel.find();
 
     return schemes;
   } catch (err) {
@@ -108,6 +121,40 @@ async function findOneSchDet(id) {
     debugger;
     return err;
   }
+};
+
+async function findOneSchDetUpd(id) {
+
+  try {
+    var scode = parseInt(id.scode);
+    let aggrres;
+    aggrres = await mfschdetModel.aggregate([
+
+      {
+        $match: {
+          scode: {
+            $eq: scode
+          }
+        }
+      },
+      {
+        $lookup: {
+          from: "schemes",
+          localField: "scode",
+          foreignField: "scode",
+          as: "schemesLU"
+        }
+      }
+
+    ]);
+
+    return aggrres;
+  } catch (err) {
+
+    return err;
+  }
+
+
 };
 
 
@@ -231,12 +278,41 @@ async function postManySchDet(mfschdet) {
   return resArray;
 }
 
+// This function is used to update the scheme details of an existing scheme in the database
+async function postSchUpdt(mfscheme) {
+  debugger;
+  try {
+    let schemes
+    // var _id = new mongoose.Types.ObjectId();
+    schemes = await mfschemesModel.update({
+      "scode": mfscheme.scode
+    }, {
+      $set: {
+        "sname": mfscheme.sname
+      }
+
+    });
+    return schemes;
+
+  } catch (err) {
+    return err;
+    // var operation = err.getOperation();
+    // var errflag = true;
+    // var parseResult = helpers.parseOutput(errflag, err, operation);
+
+  }
+
+}
+
 
 
 module.exports.findAll = findAll;
+module.exports.findAllSchDet = findAllSchDet;
 module.exports.postOne = postOne;
 module.exports.postMany = postMany;
 module.exports.postManySchDet = postManySchDet;
 module.exports.postOneSchDet = postOneSchDet;
 module.exports.findOneSchDet = findOneSchDet;
 module.exports.findOneSch = findOneSch;
+module.exports.findOneSchDetUpd = findOneSchDetUpd;
+module.exports.postSchUpdt = postSchUpdt;

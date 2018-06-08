@@ -7,7 +7,7 @@ sap.ui.define([
   "../helpers/ParsingHelpers"
 ], function(jQuery, BaseController, Filter, FilterOperator, GatewayHelper, ParsingHelpers) {
   "use strict";
-  var _invBy;
+  var _invBy, _currvaldata;
   var CController = BaseController.extend("simple_hello.Controller.showallinvsplit", {
 
     /*
@@ -175,7 +175,7 @@ sap.ui.define([
         // Use this to map the Icon Tabs
         var iconTabBar = this.getView().byId("iconTabBar");
 
-        //check and insert item
+        // check and insert item
         this._checkAndInsertItem(iconTabBar, "All", "All Investments", 0);
 
         for (var i = 0; i < data.length; i++) {
@@ -252,7 +252,6 @@ sap.ui.define([
       }
 
       // Parse Data
-      // var pdata = this._parseData(data);
       var pdata = ParsingHelpers._parseInvSchemeAggrData(data);
 
 
@@ -260,6 +259,7 @@ sap.ui.define([
       var manageinv_model = this.getView().getModel("manageinv_model");
       manageinv_model.setData(pdata);
       manageinv_model.updateBindings();
+
     },
 
     _getInvSchemeAggrfailure: function(err, that) {
@@ -311,7 +311,16 @@ sap.ui.define([
 
         });
 
+        var IconFilterSepKey = "IconTabSeparator" + iconIndex;
+        var oIconTabSeparator = new sap.m.IconTabSeparator({
+          key: IconFilterSepKey,
+          icon: "sap-icon://vertical-grip"
+        });
+
         iconTabBar.insertItem(oIconTabFilter, iconIndex);
+        // if (iconIndex !== 0) {                          //Do not insert separator for first Item
+        //   iconTabBar.insertItem(oIconTabSeparator);
+        // }
 
       }
 

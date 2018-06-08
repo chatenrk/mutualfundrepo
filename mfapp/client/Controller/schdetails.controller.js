@@ -6,9 +6,10 @@ sap.ui
       "../helpers/ParsingHelpers",
       "../helpers/OtherHelpers",
       "../helpers/DateHelpers",
+      "../helpers/ChartHelpers",
       "simple_hello/libs/Toastr"
     ],
-    function(BaseController, GatewayHelper, ParsingHelpers, OtherHelpers, DateHelpers, Toastr) {
+    function(BaseController, GatewayHelper, ParsingHelpers, OtherHelpers, DateHelpers,ChartHelpers, Toastr) {
       "use strict";
       var _oRouter;
       return BaseController
@@ -48,6 +49,7 @@ sap.ui
                 data.invBy !== "" &&
                 data.invFor !== "") {
                 this._getInvData(data.scode, data.invBy, data.invFor);
+                this._getChartData(data.scode, data.invBy, data.invFor);
               }
             },
             _getSchDet: function(scode) {
@@ -147,7 +149,9 @@ sap.ui
 
                 for (var i = 0; i < data.length; i++) {
                   if (data[i].scode === parseInt(that.scode) && data[i].invFor === that.invFor) {
+
                     that.schaggrdata = data[i];
+
                     // Perform the gateway call and get the current value of the investment selected
                     GatewayHelper.getCurrentValue(data[i].scode, data[i].totalunits).then(function(cvaldata) {
                       that._getcurrvalsuccess(that.schaggrdata, cvaldata, that);
@@ -158,8 +162,7 @@ sap.ui
                   }
                 }
 
-              } else
-              {
+              } else {
 
               }
 
@@ -168,6 +171,24 @@ sap.ui
 
             },
 
+            _getChartData:function(scode,invBy,invFor)
+            {
+                var that = this;
+              // Perform the gateway call and get the charts data
+              GatewayHelper._getinvvscurrval(scode, invBy, invFor).then(function(data) {
+                that._getinvvscurrvalsuccess(data,that);
+              }, function(err) {
+                that._getinvvscurrvalfailure(err, that);
+              });
+            },
+
+            _getinvvscurrvalsuccess:function(data, that){
+              var invvscurrdata = ChartHelpers._renderinvcurrvalchart(data);
+              var oModel = this.getView().getModel("invcurr_model");
+              oModel.setData(invvscurrdata);
+              oModel.updateBindings();
+            },
+            _getinvvscurrvalfailure:function(err,that){},
 
             handleSchLinkPressed: function(oEvent) {
               var data = this.getView().getModel("schdet_model").getData();
@@ -180,7 +201,54 @@ sap.ui
                 " " +
                 data.assetqual + " " + data.assetcurr;
 
+            },
+            handlePopOverPress: function(oEvt) {
+              this._showpopover("display", oEvt);
+            },
+
+            _showpopover: function(type, oEvt) {
+              if (!this._oPopover) {
+                this._oPopover = sap.ui.xmlfragment("investpopover", "simple_hello.view.invpopover", this);
+                this.getView().addDependent(this._oPopover);
+                this._oPopover.attachAfterOpen(function() {
+                  this.disablePointerEvents();
+                }, this);
+                this._oPopover.attachAfterClose(function() {
+                  this.enablePointerEvents();
+                }, this);
+              }
+
+              this._svbutton = Fragment.byId("investpopover", "save");
+              this._cpybutton = Fragment.byId("investpopover", "copy");
+              this._delbutton = Fragment.byId("investpopover", "delete");
+              this._editbutton = Fragment.byId("investpopover", "edit");
+
+              if (type === "display") {
+                // Get the content from the invdetl fragment and add it to the popover
+                if (!this._invdetl) {
+                  this._invdetl = sap.ui.xmlfragment("investdetl", "simple_hello.view.invdetl", this);
+                }
+
+                var popoverContent = Fragment.byId("investdetl", "invdeltdispVBOX");
+
+                //remove all content
+                this._oPopover.removeAllContent();
+                this._oPopover.insertContent(popoverContent);
+
+                this._editbutton.setVisible(true);
+                this._cpybutton.setVisible(true);
+                this._delbutton.setVisible(true);
+                this._svbutton.setVisible(false);
+              }
+
+              // delay because addDependent will do a async rerendering and the actionSheet will immediately close without it.
+              var oControl = oEvt.getSource();
+              this._oPopover.openBy(oControl);
+
+
             }
+
+
 
 
 

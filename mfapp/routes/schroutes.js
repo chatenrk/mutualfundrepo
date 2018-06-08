@@ -21,20 +21,34 @@ const helpers = require('../helpers/helpers.js');
 //Route to get scheme details based on the query
 router.get('/sdet', async (req, res, next) => {
 
-
+debugger;
   var scode = req.query.scode;
+
+if(scode && scode != ""){
 
   var id = {
     scode: scode
   }
 
   try {
-    schemes = await schmodel.findOneSchDet(id);
+    // schemes = await schmodel.findOneSchDet(id);
+    schemes = await schmodel.findOneSchDetUpd(id);
     res.send(schemes);
   } catch (err) {
 
     return res.status(500).send(err);
   }
+}
+else {
+  try {
+
+    schemes = await schmodel.findAllSchDet();
+    res.send(schemes);
+  } catch (err) {
+
+    return res.status(500).send(err);
+  }
+}
 
 
 });
@@ -198,6 +212,21 @@ router.post('/csvSchDet', upload.single('file'), async (req, res) => {
 
     res.send(result);
   } catch (err) {
+    return res.status(500).send(err);
+  }
+
+});
+
+// Route to update the scheme data in the database
+router.post('/pschupdt', async (req, res) => {
+
+  try {
+    var mfscheme = req.body;
+    var result = await schmodel.postSchUpdt(mfscheme);
+    debugger;
+    res.send(result);
+  } catch (err) {
+
     return res.status(500).send(err);
   }
 

@@ -1,5 +1,10 @@
 const navmodel = require('../models/navModel');
+
 const helpers = require('./helpers');
+
+var Finance = require('financejs');
+var finance = new Finance();
+
 
 function sumtotal(array, key) {
 
@@ -21,7 +26,6 @@ function sumtotal(array, key) {
 
 //  Calculate the current value of an investment by getting the last NAV and multiplyying by total units
 async function currval(scode, totalUnits) {
-  debugger;
   // get last NAV
   var lnav = await navmodel.getLastNav(parseInt(scode));
   var currvaldet = {};
@@ -31,4 +35,46 @@ async function currval(scode, totalUnits) {
   return currvaldet;
 }
 
+async function xirrcalc(scode,invBy,invFor) {
+  debugger;
+  // Get all investment for scode-invFor-invBy
+  var query = {
+    scode: scode,
+    invBy: invBy,
+    invFor: invFor
+  }
+  invdet = await mfinvmodel.findOneInvDetUpd(query);
+  for(var i =0;i<invdet.length;i++)
+  {
+
+  }
+
+  // return xirr = finance.XIRR(amountarr, datearr);
+}
+
+
+function scientificToDecimal(num) {
+  //if the number is in scientific notation remove it
+  if (/\d+\.?\d*e[\+\-]*\d+/i.test(num)) {
+    var zero = '0',
+      parts = String(num).toLowerCase().split('e'), //split into coeff and exponent
+      e = parts.pop(), //store the exponential part
+      l = Math.abs(e), //get the number of zeros
+      sign = e / l,
+      coeff_array = parts[0].split('.');
+    if (sign === -1) {
+      num = zero + '.' + new Array(l).join(zero) + coeff_array.join('');
+    } else {
+      var dec = coeff_array[1];
+      if (dec) l = l - dec.length;
+      num = coeff_array.join('') + new Array(l + 1).join(zero);
+    }
+  }
+
+  return num;
+};
+
+module.exports.scientificToDecimal = scientificToDecimal;
+
 module.exports.currval = currval;
+module.exports.xirrcalc = xirrcalc;

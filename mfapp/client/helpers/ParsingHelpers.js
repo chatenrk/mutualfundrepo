@@ -1,4 +1,4 @@
-sap.ui.define(["./DateHelpers", "./OtherHelpers"], function(DateHelpers, OtherHelpers) {
+sap.ui.define(["./DateHelpers", "./OtherHelpers", "./GatewayHelper"], function(DateHelpers, OtherHelpers, GatewayHelper) {
   "use strict";
 
   return {
@@ -9,6 +9,9 @@ sap.ui.define(["./DateHelpers", "./OtherHelpers"], function(DateHelpers, OtherHe
 
       for (var i = 0; i < data.length; i++) {
         pobj = data[i];
+
+        // Retrieve scheme name from the lookup instead of the table
+        pobj.sname = data[i].schemesLU[0].sname;
 
         // Parse all the dates using the date helper class
         // Asset date
@@ -39,7 +42,7 @@ sap.ui.define(["./DateHelpers", "./OtherHelpers"], function(DateHelpers, OtherHe
       for (var i = 0; i < data.length; i++) {
         pobj = data[i];
         pobj.invdatefmtd = DateHelpers._isodatetodate(pobj.invdate);
-
+        pobj.sname = data[i].schemesLU[0].sname;
         parr.push(pobj);
         pobj = {};
       }
@@ -49,17 +52,27 @@ sap.ui.define(["./DateHelpers", "./OtherHelpers"], function(DateHelpers, OtherHe
     _parseInvSchemeAggrData: function(data) {
       var pobj = {},
         parr = [];
+
+      var that = this;
       for (var i = 0; i < data.length; i++) {
         // Check if the total is grater than zero, we are not displaying zero investments for the user
         if (data[i].totinv > 0) {
+
           pobj.scode = data[i]._id.scode;
-          pobj.sname = data[i]._id.sname;
+          pobj.sname = data[i]._id.sname[0];
           pobj.invFor = data[i]._id.invFor;
           pobj.invcount = data[i].invcount;
           pobj.totalunits = data[i].totalunits;
-          pobj.totinv = data[i].totinv;
+          pobj.totinv = OtherHelpers._formatCurrency(data[i].totinv);
+
+          pobj.currVal = OtherHelpers._formatCurrency(Math.round(data[i].currval.currvalamnt));
+          pobj.lnavDate = data[i].currval.lastNavDate;
+
+          pobj.gainloss = OtherHelpers._formatCurrency(Math.round(data[i].currval.currvalamnt - data[i].totinv));
+
           parr.push(pobj);
           pobj = {};
+
         }
       }
       return parr;
@@ -94,7 +107,22 @@ sap.ui.define(["./DateHelpers", "./OtherHelpers"], function(DateHelpers, OtherHe
         return pdata;
 
       }
+    },
+
+    parseUpdateData: function(upddata) {
+
+      var parseResult = {};
+      if (upddata.n === upddata.nModified) // No of entries given equal to number of entries modified
+      {
+        parseResult.updsucc = true;
+        parseResult.updmsg = "Update is successful";
+      } else {
+        parseResult.updsucc = false;
+        parseResult.updmsg = "Update not possible. Please check with admin";
+      }
+      return parseResult;
     }
+
 
   }
 });
