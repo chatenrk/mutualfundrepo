@@ -226,6 +226,45 @@ View and controller represent reusable units, and distributed development is hig
 #### Mongoose
 
 ### MongoDB
+
+#### COMPONENTS
+
+- mongod - The database server.
+- mongos - Sharding router.
+- mongo  - The database shell (uses interactive javascript).
+
+#### UTILITIES
+
+- mongodump         - Create a binary dump of the contents of a database.
+- mongorestore      - Restore data from the output created by mongodump.
+- mongoexport       - Export the contents of a collection to JSON or CSV.
+- mongoimport       - Import data from JSON, CSV or TSV.
+- mongofiles        - Put, get and delete files from GridFS.
+- mongostat         - Show the status of a running mongod/mongos.
+- bsondump          - Convert BSON files into human-readable formats.
+- mongoreplay       - Traffic capture and replay tool.
+- mongotop          - Track time spent reading and writing data.
+- install_compass   - Installs MongoDB Compass for your platform.
+
+
+#### Mongo Backup
+To take a backup of a MongoDB database, ensure that the Mongo Database is connected. Further run the following command
+
+```
+mongodump --gzip
+```
+The above command creates a **Dump** folder, where all the database are backed up in zipped format
+
+#### Mongo Restore
+To restore the backup to database, navigate to the dump folder and run the following command. Before running ensure that the zipped folder is unzipped
+
+```
+mongorestore --gzip
+```
+
+#### Sample Code Snippets
+
 ### Moment
 ### JavaScript API documentation and comment standards
+For error checking JavaScript files use [JSHint](http://jshint.com/)
 For comments refer to JSDoc dcoumentation at [JSDoc](http://usejsdoc.org/)
