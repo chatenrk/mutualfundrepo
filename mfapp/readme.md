@@ -263,6 +263,49 @@ mongorestore --gzip
 ```
 
 #### Sample Code Snippets
+In all the code snippets below replace <collectionname> with actual name of collection in the database. Replace field with actual name of the field in the collection
+
+##### Index creation and display
+
+Use the following piece of code to create a index for a collection. In the below snippet, field1 and field2 is sorted on Ascending Order(1), and unique signifies no duplicate entries
+```
+db.<collectionname>.createIndex(
+{field1:1,field2:1},{unique:true})
+```
+
+Use the following code to find indexes created for a collection
+```
+db.<collectionname>.getIndexes()
+```
+
+##### Find Documents in MongoDB
+```
+db.<collectionname>.find(
+    { "field" : value}
+).pretty()
+
+
+db.<collectionname>.find(
+    { "field" : "value",
+      "field1" : "value1"}
+).pretty()
+
+```
+##### Update document in a collection
+
+Use the following piece of code to update a document in a collection. In the below code, field1 is the match condition, and field2 signifies the field which needs to be updated for the matched document
+```
+db.<collectionname>.update(
+    { "field1" : value1},
+    {
+      $set: {
+		"field2":"value2"
+
+	    }
+
+    }
+)
+```
 
 ### Moment
 ### JavaScript API documentation and comment standards
