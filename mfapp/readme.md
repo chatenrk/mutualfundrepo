@@ -222,6 +222,19 @@ Views and controllers often form a 1:1 relationship, but it is also possible to 
 View and controller represent reusable units, and distributed development is highly supported.
 
 ### Node JS and NPM
+#### NPM Related
+##### NPM Proxy Setting
+Use the following code to set the NPM Proxy
+```
+For HTTP:
+npm config set proxy http://proxy_host:port
+For HTTPS:
+npm config set https-proxy http://proxy.company.com:8080
+
+To remove proxy use:
+npm config rm https-proxy
+
+```
 #### Express
 #### Mongoose
 
