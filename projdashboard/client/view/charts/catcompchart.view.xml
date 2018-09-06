@@ -1,0 +1,16 @@
+<mvc:View controllerName="proj_chartdb.controller.charts.catcompchart" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:chtcontls="proj_chartdb.controls">
+
+  <Page title="{i18n>mullineChart}" showNavButton="true" navButtonPress="onNavBack">
+    <content>
+      <Panel width="auto" class="sapUiResponsiveMargin">
+        <content>
+          <VBox class="sapUiSmallMargin">
+            <!-- width & height only used for ratio of the chart, but not used if control is set to responsive -->
+            <Label text="{i18n>mullineChart}" class="sapUiSmallMarginBottom" design="Bold"/>
+            <chtcontls:ChartJSControl width="400" height="200" responsive="true" chartType="Line" data="{mulline_model>/}"/>
+          </VBox>
+        </content>
+      </Panel>
+    </content>
+  </Page>
+</mvc:View>

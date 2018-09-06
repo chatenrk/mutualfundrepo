@@ -1,0 +1,40 @@
+{
+  "LineChtsColl": [{
+      "id": "onShowLineChart",
+      "icon": "sap-icon://show",
+      "type": "Monitor",
+      "title": "Line Chart"
+    },
+    {
+      "id": "onShowMulLineChart",
+      "icon": "sap-icon://show",
+      "type": "Monitor",
+      "title": "Multi Line Chart"
+    },
+    {
+      "id": "onShowInvVsVal",
+      "icon": "sap-icon://show",
+      "type": "Monitor",
+      "title": "Investment Versus Value"
+    }
+  ],
+  "PieChtsColl": [{
+    "id": "onShowPieChart",
+    "icon": "sap-icon://show",
+    "type": "Monitor",
+    "title": "Pie Chart"
+  }],
+  "BarChtsColl": [{
+    "id": "onShowGrpBarChart",
+    "icon": "sap-icon://show",
+    "type": "Monitor",
+    "title": "Bar Chart"
+  }],
+  "CatCompColl": [{
+    "id": "onShowPharmaFunds",
+    "icon": "sap-icon://show",
+    "type": "Monitor",
+    "title": "Pharma Funds"
+  }]
+
+}
