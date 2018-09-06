@@ -33,6 +33,37 @@ sap.ui.define([], function() {
 
     },
 
+    _getAllPie: function() {
+      /**
+       * @desc This gets all the NAV from ChartDB / navlinedetls
+       * @return Returns a promise object
+       */
+      var that = this;
+      var deferred = jQuery.Deferred();
+
+      var navdetlurl = "http://localhost:3000/chtdata/piedetails";
+
+
+
+      $.ajax({
+        url: navdetlurl,
+        type: 'GET',
+        dataType: 'json',
+        success: function(data) {
+          deferred.resolve(data);
+
+        },
+        error: function(err) {
+          deferred.reject(err);
+
+        }
+
+      }); //AJAX call close
+
+      return deferred.promise();
+
+    },
+
     _getMulLineData: function(scode) {
       /**
        * @desc This gets all the NAV from ChartDB / navlinedetls

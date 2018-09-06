@@ -5,7 +5,7 @@ sap.ui.define([
   "../helpers/ajaxhelpers"
 ], function(BaseController, ChartJSControl, C3JSControl, AjaxHelpers) {
   "use strict";
-  return BaseController.extend("openui5_chartjs.controller.linechart", {
+  return BaseController.extend("openui5_chartjs.controller.piechart", {
 
     // add your controller methods here
     onInit: function() {
@@ -30,70 +30,76 @@ sap.ui.define([
        * @param oEvt{object} referencing to the route matched event triggered via navigation
        */
 
-      if (oEvt.getParameter("name") !== "linechart") {
+      if (oEvt.getParameter("name") !== "piechart") {
         return;
 
       }
 
-      this._getNAVDetails();
+      this._getPieDetails();
     },
 
-    _getNAVDetails: function() {
+    _getPieDetails: function() {
       /**
        * @desc This helper method retrieves all the users from the database and shows them as a POP-UP
        */
       var that = this;
-      AjaxHelpers._getAllNAV().then(function(data) {
-        that._getnavsuccess(data, that);
+      AjaxHelpers._getAllPie().then(function(data) {
+        that._getpiesuccess(data, that);
       }, function(err) {
-        that._getnavfailure(err, that);
+        that._getpiefailure(err, that);
       });
 
     },
 
-    onSelectionChange: function (oEvt) {
-      var selkey = oEvt.getSource().mProperties.selectedKey;
-
-
-      // Adjust and update chart
-
-    },
-
-    _getnavsuccess: function(dbdata, that) {
+    _getpiesuccess: function(dbdata, that) {
 
       var labels = [],
         chtdata = [],
         datasets = [];
       var lineData = {},
         dsValues = {};
+
+      var dyncolobj = {},
+        dyncol = [];
+
       for (var i = 0; i < dbdata.length; i++) {
-        if (i % 15 == 0) {
-          labels.push(dbdata[i].date);
-          chtdata.push(dbdata[i].nav);
-        }
+        labels.push(dbdata[i].type);
+        chtdata.push(dbdata[i].amount);
+        dyncolobj = this.dynamicColors();
+        dyncol.push(dyncolobj);
       }
 
-      dsValues.label = "Sample NAV Line";
-      dsValues.fillColor = "rgba(220,220,220,0.2)";
-      dsValues.strokeColor = "rgba(220,220,220,1)";
-      dsValues.pointColor = "rgba(220,220,220,1)";
-      dsValues.pointStrokeColor = "#fff";
-      dsValues.pointHighlightFill = "#fff";
-      dsValues.pointHighlightStroke = "rgba(220,220,220,1)";
+      dsValues.label = "Sample Pie Chart";
+      dsValues.backgroundColor = dyncol;
       dsValues.data = chtdata;
+
 
       datasets.push(dsValues);
 
       lineData.datasets = datasets;
       lineData.labels = labels;
 
-      var oNavModel = this.getView().getModel("navline_model");
+      var oNavModel = this.getView().getModel("piechart_model");
       oNavModel.setData(lineData);
       oNavModel.updateBindings();
 
 
     },
     _getnavfailure: function(err, that) {},
+
+    dynamicColors: function() {
+      var r = Math.floor(Math.random() * 255);
+      var g = Math.floor(Math.random() * 255);
+      var b = Math.floor(Math.random() * 255);
+
+      return "rgb(" + r + "," + g + "," + b + ")";
+    },
+    _getMLineDetailsfailure: function(err, that) {},
+
+
+    _parseMulLineData(dbdata) {
+
+    },
 
     onAfterRendering: function() {
       //TODO: Enable control method calls
