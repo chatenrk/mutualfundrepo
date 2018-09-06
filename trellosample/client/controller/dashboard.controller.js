@@ -1,7 +1,7 @@
 sap.ui
   .define(
-    ["trello_sample/controller/BaseController","../helpers/ajaxcallhelpers"],
-    function(BaseController,AjaxCallHelpers) {
+    ["trello_sample/controller/BaseController", "../helpers/ajaxcallhelpers"],
+    function(BaseController, AjaxCallHelpers) {
       "use strict";
       var self;
       return BaseController
@@ -10,15 +10,22 @@ sap.ui
             onInit: function() {
               self = this;
               //Get all the Trello dashboards for a user
-              AjaxCallHelpers._getAllDashboards("crayabharam").then(function(data){
+              AjaxCallHelpers._getAllDashboards("crayabharam").then(function(data) {
                 //Bind the boards data to the model for display
                 var oBoardsModel = self.getOwnerComponent().getModel("boards_model");
                 oBoardsModel.setData([]);
                 oBoardsModel.setData(data);
                 oBoardsModel.updateBindings();
-              },function(err){
+              }, function(err) {
 
               });
+
+            },
+            onTilePress: function(oEvt) {
+              // Get the binding context. Pass the attached model name for this
+              var oBindingContext = oEvt.getSource().getBindingContext("boards_model");
+              var tilename = oBindingContext.getProperty("name");
+              
 
             }
           });

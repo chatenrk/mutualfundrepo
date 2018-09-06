@@ -2,20 +2,15 @@ const axios = require('axios');
 
 async function getBoardsForUser(authparams) {
 
-  // const getBoardsURL = "https://api.trello.com/1/members/" + authparams.userid + "/boards?key=" + authparams.key + "&token=" + authparams.token;
-  // var boards;
-  // try {
-  //   boards = await axios.get(getBoardsURL, {
-  //     proxy: {
-  //       host: 'proxy.cognizant.com',
-  //       port: 6050,
-  //     },
-  //   });
-  //   return boards;
-  // } catch (err) {
-  //   debugger;
-  //   return err;
-  // }
+  const getBoardsURL = "https://api.trello.com/1/members/" + authparams.userid + "/boards?key=" + authparams.key + "&token=" + authparams.token;
+  var boards;
+  try {
+    boards = await axios.get(getBoardsURL, {});
+    return boards;
+  } catch (err) {
+    debugger;
+    return err;
+  }
 }
 
 async function getCardsForBoard(boardid, authparams) {
