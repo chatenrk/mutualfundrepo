@@ -121,6 +121,22 @@ sap.ui.define(["./DateHelpers", "./OtherHelpers", "./GatewayHelper"], function(D
         parseResult.updmsg = "Update not possible. Please check with admin";
       }
       return parseResult;
+    },
+    checkStringInArray: function(array, srcstrpath, string) {
+      /**
+       * @desc This function checks if a string is present in an array of strings
+       * @param array contianing the array of strings
+       * @param string which needs to be checked
+       * @return boolean representing whether string is present or not
+       */
+
+      for (var i = 0; i < array.length; i++) {
+        if (array[i][srcstrpath] === string) {
+          return true;
+        }
+      }
+      return false;
+
     }
 
 

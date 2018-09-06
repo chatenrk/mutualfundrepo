@@ -88,5 +88,11 @@
     "icon": "sap-icon://add",
     "type": "Create",
     "title": "Scheme Change Documents"
+  }],
+  "ChartsCollection": [{
+    "id": "catcompchart",
+    "icon": "sap-icon://add",
+    "type": "Create",
+    "title": "Category Performance"
   }]
 }

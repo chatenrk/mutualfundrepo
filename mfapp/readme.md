@@ -27,6 +27,11 @@
       - [Express](#express)
       - [Mongoose](#mongoose)
     - [MongoDB](#mongodb)
+      - [Components](#Components)
+      - [Utilities](#Utilities)
+      - [Mongo Backup](#mongo-backup)
+      - [Mongo Restore](#mongo-restore)  
+      - [Sample Code Snippets](#sample-code-snippets)
     - [Moment](#moment)
 
 
@@ -305,6 +310,17 @@ db.<collectionname>.update(
 
     }
 )
+```
+
+##### Count documents in a collection
+```
+db.<collectionname>.count()
+```
+
+##### Delete documents in a collections
+```
+db.<collectionname>.deleteMany(
+   { "field1" : value1}) 
 ```
 
 ### Moment

@@ -147,6 +147,9 @@
       },
       "invcurr_model": {
         "type": "sap.ui.model.json.JSONModel"
+      },
+      "chtschcat_model": {
+        "type": "sap.ui.model.json.JSONModel"
       }
 
     },
@@ -197,6 +200,12 @@
           "pattern": "documents",
           "name": "documents",
           "target": "documents"
+
+        },
+        {
+          "pattern": "charts",
+          "name": "charts",
+          "target": "charts"
 
         },
         {
@@ -291,6 +300,11 @@
           "pattern": "schchgdocdisp",
           "name": "schchgdocdisp",
           "target": "schchgdocdisp"
+        },
+        {
+          "pattern": "catcompchart",
+          "name": "catcompchart",
+          "target": "catcompchart"
         }
 
 
@@ -380,8 +394,16 @@
           "viewName": "docdb",
           "viewLevel": 1
         },
+        "charts": {
+          "viewName": "chartsdb",
+          "viewLevel": 1
+        },
         "schchgdocdisp": {
           "viewName": "schchgdocdisp",
+          "viewLevel": 1
+        },
+        "catcompchart": {
+          "viewName": "charts.catcompchart",
           "viewLevel": 1
         }
 

@@ -116,13 +116,14 @@ sap.ui
               var schdata = {};
               var desctrue = true; // Descending Order of investments
 
-              schdata.totalVal = OtherHelpers._formatCurrency(data.totinv);
+              schdata.totalVal = data.totinv;
               schdata.numInv = data.invcount;
               schdata.totalUnits = data.totalunits;
               schdata.currdate = DateHelpers._currentDate();
 
               schdata.currVal = OtherHelpers._formatCurrency(Math.round(cvaldata.currvalamnt));
               schdata.lnavDate = cvaldata.lastNavDate;
+              schdata.gainloss = data.gainloss;
 
               schinvaggr_model.setData([]);
               schinvaggr_model.setData(schdata);

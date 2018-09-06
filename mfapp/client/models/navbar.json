@@ -45,6 +45,14 @@
 				"key": "documents",
 				"icon": "sap-icon://bbyd-dashboard",
 				"usr_log_flag":true
+			},
+			{
+
+				"id":"charts",
+				"text": "Charts Dashboard",
+				"key": "charts",
+				"icon": "sap-icon://bbyd-dashboard",
+				"usr_log_flag":true
 			}
 
 ]

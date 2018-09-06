@@ -110,51 +110,40 @@ async function getrefSchemeInvDet(refscode, invBy) {
 }
 
 async function returnprojval(projdet, invBy) {
-  debugger;
+
+  // Data declarations
   var retobj = {},
-    retarr = [];
+    retobjdet = {},
+    currscode,
+    retarr = [],
+    retobjdetarr = [];
+  var sinv = 0,
+    sunits = 0.00;
+
 
   // Find the reference scheme from the lot
   var refscheme = helpers.findInArray(projdet, "reffund", "TRUE");
   var refscode = refscheme.scode;
   var refschinvdet = await getrefSchemeInvDet(refscode, invBy);
 
-
   for (var i = 0; i < projdet.length; i++) {
-    if (projdet[i].reffund === "TRUE") {
-      debugger;
-      // Find last NAV in database for the scheme
-      var lastNav = await navmodel.getLastNav(refscode);
-      var lastnavval = parseFloat(lastNav[0].lastNavValue);
+    sinv = 0, sunits = 0.00;
+    // Get Last Nav Details
+    var lastNav = await navmodel.getLastNav(projdet[i].scode);
+    var lastnavval = parseFloat(lastNav[0].lastNavValue);
 
-      //Find sum of investments
-      var sinv = helpers.sumtotal(refschinvdet, "amount");
-      // Find sum of units
-      var sunits = helpers.sumtotal(refschinvdet, "units");
-
-      // Total actual amount
-      var invval = lastnavval * sunits;
-
-
-      //Fill all of the details into return json
-      retobj.refscheme = refscheme;
-      retobj.lastNavDate = lastNav[0].lastNavDate;
-      retobj.sinv = sinv;
-      retobj.sunits = sunits;
-      retobj.invval = invval;
-      retarr.push(retobj);
-      retobj = {};
-    } else {
-      // For all investments in refschinvdet, we need to find the corresponding NAV for the scode
-      debugger;
+    retobj.scode = projdet[i].scode;
+    retobj.sname = projdet[i].sname;
+    if (projdet[i].reffund === "TRUE") {} else {
       currscode = projdet[i].scode;
-      var sinv = 0,
-        sunits = 0.00;
+      // Loop at all entries in reference scheme and populate the details about the projection scheme
       for (var j = 0; j < refschinvdet.length; j++) {
+
         invdate = refschinvdet[j].invdate;
         amount = refschinvdet[j].amount;
         sinv = sinv + amount;
-        // Get NAV for that date and scode
+
+        // Get NAV Details for date of Processing
         var query = {
           $and: [{
             scode: currscode
@@ -168,29 +157,34 @@ async function returnprojval(projdet, invBy) {
         var units = amount / currnav;
         sunits = sunits + units;
 
-        retobj.refscheme = refscheme;
-        retobj.lastNavDate = lastNav[0].lastNavDate;
-        retobj.sinv = sinv;
-        retobj.sunits = sunits;
-        retobj.invval = invval;
-        retarr.push(retobj);
-        retobj = {};
 
+        retobjdet.invdate = invdate;
+        retobjdet.units = units;
+        retobjdet.amount = amount;
+        retobjdet.sinv = sinv;
+        retobjdet.sunits = units;
+        retobjdet.currval = units * lastnavval;
+        retobjdetarr.push(retobjdet);
+        retobjdet = {};
       }
+
+      retobj.retobjdetarr = retobjdetarr;
+      retobjdetarr = [];
+      retarr.push(retobj);
+      retobj = {};
     }
   }
-
   return retarr;
 }
 
 function futureval(roi, cval, periods) {
-  debugger;
+
   var fval = finance.FV(roi, cval, periods);
   return fval;
 }
 
 function xirrval() {
-  debugger;
+
   var xirr = finance.XIRR([5000, 2500, 2500, 2500, 2500, 2500, 2500, -20497], [new Date(2017, 10, 12), new Date(2017, 11, 10), new Date(2017, 12, 11), new Date(2018, 01, 10), new Date(2018, 02, 26), new Date(2018, 03, 13), new Date(2018, 04, 10), new Date(2018, 04, 11)], 0);
   return xirr;
 }

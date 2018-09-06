@@ -728,7 +728,35 @@ sap.ui.define([], function() {
     /*---------------------------------------------------------------------*
      * Get Requests Methods
      *---------------------------------------------------------------------*/
+    _getprojcatandfunds: function() {
 
+      /**
+       * @desc This helper method gets all the projection categories and its funds
+       * @return Returns a promise object
+       */
+
+       var that = this;
+       var deferred = jQuery.Deferred();
+
+       var url = "http://localhost:3000/proj/schcat";
+
+       $.ajax({
+         url: url,
+         type: 'GET',
+         dataType: 'json',
+         success: function(data) {
+           deferred.resolve(data);
+
+         },
+         error: function(err) {
+           deferred.reject(err);
+
+         }
+
+       }); //AJAX call close
+       return deferred.promise();
+
+    },
     _getinvvscurrval: function(scode, invBy, invFor) {
       /**
        * @desc This helper method gets the investment versus current value figures for a scheme code-user-goal combination

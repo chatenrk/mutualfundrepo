@@ -1,0 +1,32 @@
+<View xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:core="sap.ui.core" controllerName="simple_hello.Controller.charts.catcompchart">
+	<Page title="{i18n>catperfchart}" showNavButton="true" navButtonPress="onNavBack">
+		<content>
+			<Panel width="auto" class="sapUiResponsiveMargin">
+				<content>
+					<VBox class="sapUiSmallMargin">
+						<!-- width & height only used for ratio of the chart, but not used if control is set to responsive -->
+						<HBox width="100%">
+							<items>
+								<HBox width="70%" class="alignDropdownAlign sapMFlexItemAlignCenter">
+									<Label text="{i18n>selfundcat}" width="auto" class="LabelText"/>
+								</HBox>
+
+								<VBox width="30%" direction="Column">
+									<items>
+										<ComboBox id="cbschtype" width="400px" items="{chtschcat_model>/}" selectionChange="onSelectChtSchCat">
+											<items>
+												<core:Item key="{chtschcat_model>schcat}" text="{chtschcat_model>schcat}"/>
+											</items>
+										</ComboBox>
+									</items>
+								</VBox>
+
+							</items>
+						</HBox>
+					</VBox>
+				</content>
+			</Panel>
+		</content>
+
+	</Page>
+</View>

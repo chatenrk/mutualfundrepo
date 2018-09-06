@@ -30,7 +30,7 @@ router.get('/invvscurr', async (req, res, next) => {
     projdet = [];
 
 
-  debugger;
+
   // Get all the investments for a scheme-user-goal
   var query = {
     scode: scode,
@@ -61,7 +61,7 @@ router.get('/invvscurr', async (req, res, next) => {
       // Check if this is the last loop pass. if so add the current value data
       if (i == invdet.length - 1)
       {
-          debugger;
+        
           var currval = await calchelpers.currval(scode,projdet[i].totunits);
           projdetobj.totamnt = projdet[i].totamnt;
           projdetobj.totunits = projdet[i].totunits;
@@ -103,7 +103,7 @@ router.get('/schcat', async (req, res, next) => {
 
 //Route for projection calculations
 router.get('/projvalues', async (req, res, next) => {
-  debugger;
+
   var schtype = req.query.schtype;
   var invBy = req.query.invBy;
 
