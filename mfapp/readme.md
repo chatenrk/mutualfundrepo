@@ -222,10 +222,105 @@ Views and controllers often form a 1:1 relationship, but it is also possible to 
 View and controller represent reusable units, and distributed development is highly supported.
 
 ### Node JS and NPM
+#### NPM Related
+##### NPM Proxy Setting
+Use the following code to set the NPM Proxy
+```
+For HTTP:
+npm config set proxy http://proxy_host:port
+For HTTPS:
+npm config set https-proxy http://proxy.company.com:8080
+
+To remove proxy use:
+npm config rm https-proxy
+
+```
 #### Express
 #### Mongoose
 
 ### MongoDB
+
+#### COMPONENTS
+
+- mongod - The database server.
+- mongos - Sharding router.
+- mongo  - The database shell (uses interactive javascript).
+
+#### UTILITIES
+
+- mongodump         - Create a binary dump of the contents of a database.
+- mongorestore      - Restore data from the output created by mongodump.
+- mongoexport       - Export the contents of a collection to JSON or CSV.
+- mongoimport       - Import data from JSON, CSV or TSV.
+- mongofiles        - Put, get and delete files from GridFS.
+- mongostat         - Show the status of a running mongod/mongos.
+- bsondump          - Convert BSON files into human-readable formats.
+- mongoreplay       - Traffic capture and replay tool.
+- mongotop          - Track time spent reading and writing data.
+- install_compass   - Installs MongoDB Compass for your platform.
+
+
+#### Mongo Backup
+To take a backup of a MongoDB database, ensure that the Mongo Database is connected. Further run the following command
+
+```
+mongodump --gzip
+```
+The above command creates a **Dump** folder, where all the database are backed up in zipped format
+
+#### Mongo Restore
+To restore the backup to database, navigate to the dump folder and run the following command. Before running ensure that the zipped folder is unzipped
+
+```
+mongorestore --gzip
+```
+
+#### Sample Code Snippets
+In all the code snippets below replace <collectionname> with actual name of collection in the database. Replace field with actual name of the field in the collection
+
+##### Index creation and display
+
+Use the following piece of code to create a index for a collection. In the below snippet, field1 and field2 is sorted on Ascending Order(1), and unique signifies no duplicate entries
+```
+db.<collectionname>.createIndex(
+{field1:1,field2:1},{unique:true})
+```
+
+Use the following code to find indexes created for a collection
+```
+db.<collectionname>.getIndexes()
+```
+
+##### Find Documents in MongoDB
+```
+db.<collectionname>.find(
+    { "field" : value}
+).pretty()
+
+
+db.<collectionname>.find(
+    { "field" : "value",
+      "field1" : "value1"}
+).pretty()
+
+```
+##### Update document in a collection
+
+Use the following piece of code to update a document in a collection. In the below code, field1 is the match condition, and field2 signifies the field which needs to be updated for the matched document
+```
+db.<collectionname>.update(
+    { "field1" : value1},
+    {
+      $set: {
+		"field2":"value2"
+
+	    }
+
+    }
+)
+```
+
 ### Moment
 ### JavaScript API documentation and comment standards
+For error checking JavaScript files use [JSHint](http://jshint.com/)
 For comments refer to JSDoc dcoumentation at [JSDoc](http://usejsdoc.org/)
