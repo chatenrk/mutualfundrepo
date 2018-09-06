@@ -82,7 +82,7 @@ sap.ui.define(['jquery.sap.global', 'sap/ui/core/Control'],
         var y = d3.scaleLinear().range([height, 0]);
 
         // Define the axes
-        var xAxis = d3.axisBottom(x)
+        var xAxis = d3.axisBottom(x).ticks(10);
         var yAxis = d3.axisLeft(y)
 
         // Define the ordinal scale for colors
@@ -140,59 +140,34 @@ sap.ui.define(['jquery.sap.global', 'sap/ui/core/Control'],
             .style("stroke", function() {
               return d.color = color(d.key);
             });
-          
-            // Add the Legend
-            svg.append("text")
-              .attr("x", width + 250)
-              .attr("y", (i * legendSpace / 5) + 5)
-              .attr("class", "mulserlegend")
-              .style("fill", function() {
-                return d.color = color(d.key);
-              })
-              .text(d.key);
+
+          // Add the Legend
+          svg.append("text")
+            .attr("x", width + 250)
+            .attr("y", (i * legendSpace / 5) + 5)
+            .attr("class", "mulserlegend")
+            .style("fill", function() {
+              return d.color = color(d.key);
+            })
+            .text(d.key);
 
         });
 
         // Add the X Axis
         svg.append("g")
+          .attr("class", "mulseraxis")
           .attr("transform", "translate(0," + height + ")")
-          .call(xAxis);
-
-        // text label for the x axis
-        svg.append("text")
-          .attr("x", width / 2)
-          .attr("y", height + 40)
-          .style("text-anchor", "middle")
-          .text("Investment Period ->");
+          .call(xAxis)
+          .selectAll("text")
+          .style("text-anchor", "end")
+          .attr("dx", "-.8em")
+          .attr("dy", ".15em")
+          .attr("transform", "rotate(-65)");
 
         // Add the Y Axis
         svg.append("g")
+          .attr("class", "mulseraxis")
           .call(yAxis);
-
-        // text label for the y axis
-        svg.append("text")
-          .attr("transform", "rotate(-90)")
-          .attr("dy", "1em")
-          .attr("x", 0 - (height / 2))
-          .attr("y", 0 - margin.left - 3)
-          .style("text-anchor", "middle")
-          .text("Growth(in Rs.)");
-
-        // var p1 = svg.selectAll('path')
-        //   .data(dataNest)
-        //   .enter()
-        //   .append('g');
-        //
-        // p1.append("path")
-        //   .attr("class", "line")
-        //   .attr("d", function(d) {
-        //     return line(d.values);
-        //   })
-        //   .style("stroke", function(d) {
-        //     return color(d.key);
-        //   });
-
-
       }
     });
 

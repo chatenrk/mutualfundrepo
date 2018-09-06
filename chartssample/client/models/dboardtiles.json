@@ -43,7 +43,7 @@
     "id": "onShowGrpBarChart",
     "icon": "sap-icon://show",
     "type": "Monitor",
-    "title": "Group Line Chart(with Legend)"
+    "title": "Bar Chart(with Legend)"
   }]
 
 }
