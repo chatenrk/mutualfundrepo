@@ -268,18 +268,21 @@ mongodump --gzip
 ```
 The above command creates a **Dump** folder, where all the database are backed up in zipped format.The following are useful options that can be used along with the above command
 
-`--gzip`
+```
+--gzip
 Compresses the output. If  mongodump  outputs to the dump directory, the new feature compresses the individual files. The files have the suffix  **.gz**.
 
-`--out <path>, -o <path>`
+--out <path>, -o <path>
 Specifies the directory where mongodump will write BSON files for the dumped databases. By default, mongodump saves output files in a directory named **dump** in the current working directory.
 
-`--db <database>,-d <database>`
+--db <database>,-d <database>
 
 Specifies a database to backup. If you do not specify a database,  mongodump  copies all databases in this instance into the dump files.
 
-`--collection <collection>, -c <collection>`
+--collection <collection>, -c <collection>
 Specifies a collection to backup. If you do not specify a collection, this option copies all collections in the specified database or instance to the dump files
+
+```
 
 #### Mongo Restore
 To restore the backup to database, navigate to the dump folder and run the following command. Before running ensure that the zipped folder is unzipped
