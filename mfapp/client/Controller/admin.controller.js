@@ -44,6 +44,9 @@ sap.ui
                 case "shownav":
                     this._oRouter.navTo("shownavsch");
                     break;
+               case "addnavdetnew":
+                    this._oRouter.navTo("addnavdetnew");
+                    break;     
                 default:
                   break;
               }

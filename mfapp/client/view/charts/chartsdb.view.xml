@@ -1,0 +1,14 @@
+<mvc:View 
+	xmlns="sap.m" 
+	xmlns:layout="sap.ui.layout" 
+	xmlns:mvc="sap.ui.core.mvc" controllerName="simple_hello.Controller.charts.chartsdb">
+	<Page id="chartsdbpage" title="{i18n>chtsdashboard}" enableScrolling="false">
+		<!-- Line Charts Collection  -->
+		<ObjectHeader title="{i18n>linechts}"/>
+		<!--<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="test" press="onTilePress">
+			<TileContent>
+				<ImageContent src="{dbtiles_model>icon}"/>
+			</TileContent>
+		</GenericTile>-->
+	</Page>
+</mvc:View>

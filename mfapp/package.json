@@ -11,6 +11,7 @@
     "bluebird": "^3.5.1",
     "body-parser": "*",
     "busboy": "^0.2.14",
+    "cheerio": "^1.0.0-rc.2",
     "connect-busboy": "0.0.2",
     "cors": "*",
     "csv-parse": "^2.0.0",

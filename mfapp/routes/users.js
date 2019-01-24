@@ -10,11 +10,12 @@ const config = require('../config/database');
 const helpers = require('../helpers/helpers.js');
 
 
+
 router.post('/register',function(req,res,next)
 {
 
 // Check if the password matches the compliance requirements.
-	
+
 	var password = req.body.password;
 	if(helpers.checkpwd(password) === "insuff pwd")
 		{
@@ -24,15 +25,15 @@ router.post('/register',function(req,res,next)
 						msg:"Password not complaint with specifications.Please check the information popup for more details"
 					});
 		}
-	
-	
+
+
 // Check if the user is already registered, use the email as it is the index of the table
-	
+
 	userModel.getUserByEmail(req.body.email,function(err,data)
 	{
 		if(err)
 		{
-			
+
 			res.status(200).json(
 					{
 						success:false,
@@ -41,7 +42,7 @@ router.post('/register',function(req,res,next)
 		}
 		else
 		{
-			
+
 			if(data !== null){
 // Check if data is empty
 				if(data.id)
@@ -52,7 +53,7 @@ router.post('/register',function(req,res,next)
 							name: "Duplicate Email",
 							msg:"This email is already registered. Please use the login page"
 						});
-				
+
 				}
 			}
 			else
@@ -63,11 +64,11 @@ router.post('/register',function(req,res,next)
 					username:  req.body.username,
 					password: req.body.password
 				});
-				
+
 				userModel.addUser(newUser,function(err,callback)
 				{
 					if(err)
-					{	
+					{
 						if(err.code===11000)
 						{
 							res.status(200).json(
@@ -85,10 +86,10 @@ router.post('/register',function(req,res,next)
 										msg:err.message
 									});
 						}
-					
+
 					}
 					else
-					
+
 					{
 						res.status(200).json(
 								{
@@ -97,16 +98,16 @@ router.post('/register',function(req,res,next)
 								});
 					}
 				});
-				
+
 			}
 		}
 	});
-	
- 
+
+
 });
 
 router.post('/authenticate',function(req,res,next){
-	
+
 	if(mongoose.connection.readyState===0){
 		res.status(200).json(
 				{
@@ -118,9 +119,9 @@ router.post('/authenticate',function(req,res,next){
 	{
 	var username = req.body.username;
 	var password = req.body.password;
-	
+
 	userModel.getUserByUsername(username,function(err,user){
-		
+
 		if(err) throw err;
 		if(!user){
 			res.status(200).json(
@@ -133,10 +134,10 @@ router.post('/authenticate',function(req,res,next){
 			userModel.comparePassword(password,user.password,function(err,isMatch){
 				if(err) throw err;
 				if(isMatch){
-					
+
 				var options = { expiresIn:604800 };
 					const token = jwt.sign({user: user.username}, config.secret,options);
-					
+
 					res.status(200).json(
 							{
 								success:true,
@@ -156,13 +157,13 @@ router.post('/authenticate',function(req,res,next){
 								success:false,
 								msg:"Incorrect password, please check again"
 							});
-						
+
 					}
 			});				//Compare password close
 		}
 	});						//getUserByUsername close
-	
-		}					// mongoose connection check else close	
+
+		}					// mongoose connection check else close
 });
 
 router.get('/profile',function(req,res,next){
@@ -171,7 +172,7 @@ router.get('/profile',function(req,res,next){
 
 parseError = function(err){
 	if(err.code===11000){
-		
+
 	}
 }
 
