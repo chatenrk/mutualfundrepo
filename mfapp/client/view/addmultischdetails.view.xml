@@ -1,0 +1,79 @@
+<mvc:View
+	controllerName="simple_hello.Controller.addmultischdet"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:u="sap.ui.unified" displayBlock="true">
+
+ 	<Page id ="addAMCPage" title = "Add Scheme Details" showNavButton = "true"
+       navButtonPress = "onNavBack">
+
+
+	<Panel  id="filePanel" width="auto" class="sapUiTinyMargin" headerText="File Upload Panel">
+	<ObjectHeader
+		icon = "sap-icon://database" title="Add Scheme Details" titleLevel="H4"/>
+
+
+	<content>
+		 <u:FileUploader id="idfileUploader" width="50%"
+		    sameFilenameAllowed="false" buttonText="" fileType="CSV"
+		    placeholder="Choose a CSV file" style="Emphasized">
+		</u:FileUploader>
+
+			<Button
+				id="Button"
+				text="Upload Now"
+				press="onStartUpload">
+			</Button>
+	</content>
+	</Panel>
+
+	<Panel  id="tablePanel" width="auto" class="sapUiTinyMargin" headerText="Upload Status Panel">
+
+
+		<Table
+				items="{post_nav_model>/}"
+				selectionMode = "None"
+
+				growing="true"
+				growingThreshold="10"
+				backgroundDesign = "Solid">
+
+		<headerToolbar>
+			<Toolbar>
+				<Title text="NAV Details" level="H2"/>
+				<ToolbarSpacer></ToolbarSpacer>
+				<Button	icon="sap-icon://download" press="onDataExport" />
+			</Toolbar>
+		</headerToolbar>
+
+		   <columns>
+            <Column hAlign="Center" vAlign="Center">
+                <Text text="{i18n>scode}" />
+            </Column>
+
+
+            <Column hAlign="Center" vAlign="Center">
+                <Text text="{i18n>sname}" />
+            </Column>
+
+           <Column hAlign="Center" vAlign="Center">
+                <Text text="{i18n>pStatus}" />
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem type="Active" hAlign="Center" vAlign="Center">
+                <cells>
+                    <Text text="{post_nav_model>scode}" />
+                    <Text text="{post_nav_model>sname}" />
+                    <Text text="{post_nav_model>msg}" />
+                </cells>
+            </ColumnListItem>
+        </items>
+
+		</Table>
+	</Panel>
+
+	</Page>
+</mvc:View>

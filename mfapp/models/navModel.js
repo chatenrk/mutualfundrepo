@@ -121,6 +121,7 @@ async function postMany(mfnavs) {
 
 // Get Last NAV details for a scheme
 async function getLastNav(scode) {
+
   try {
 
     let aggrres;

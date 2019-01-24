@@ -16,16 +16,19 @@ var upload = multer({
 const mfinvmodel = require('../models/mfinvmodel');
 const config = require('../config/database');
 const helpers = require('../helpers/helpers.js');
+const calchelpers = require('../helpers/calchelpers.js');
 
 // Route to get scheme details, based on ID
 
 //Route to find one MF Investment
 router.get('/mfinvdet', async (req, res, next) => {
-  debugger;
 
-  var scode = req.query.scode;
+  debugger;
+  var scode = parseInt(req.query.scode);
   var date = req.query.invdate;
   var invBy = req.query.invBy;
+  var invFor = req.query.invFor;
+  var desc = req.query.desc;
 
   // Determine which query to use based on passed details
 
@@ -38,6 +41,14 @@ router.get('/mfinvdet', async (req, res, next) => {
         invdate: isodate
       }]
     }
+    invdet = await mfinvmodel.findOneInvDet(query, desc);
+  } else if (invBy && scode && invFor) {
+    var query = {
+      scode: scode,
+      invBy: invBy,
+      invFor: invFor
+    }
+    invdet = await mfinvmodel.findOneInvDetUpd(query, desc);
   } else if (invBy && scode) {
     var query = {
       $and: [{
@@ -46,10 +57,12 @@ router.get('/mfinvdet', async (req, res, next) => {
         invBy: invBy
       }]
     }
+    invdet = await mfinvmodel.findOneInvDet(query, desc);
   } else if (invBy) {
     var query = {
       invBy: invBy
     }
+    invdet = await mfinvmodel.findOneInvDet(query, desc);
   } else if (invBy && sname) {
     var query = {
       $and: [{
@@ -58,13 +71,15 @@ router.get('/mfinvdet', async (req, res, next) => {
         invBy: invBy
       }]
     }
+    invdet = await mfinvmodel.findOneInvDet(query, desc);
   } else {
     return res.status(500).send("Invalid Get Parameters");
   }
 
 
   try {
-    invdet = await mfinvmodel.findOneInvDet(query);
+    // invdet = await mfinvmodel.findOneInvDet(query, desc);
+    // invdet = await mfinvmodel.findOneInvDetUpd(query, desc);
     res.send(invdet);
   } catch (err) {
 
@@ -77,7 +92,7 @@ router.get('/mfinvdet', async (req, res, next) => {
 
 
 
-//Route to get all amcs
+//Route to get all investments
 router.get('/all', async (req, res, next) => {
 
   try {
@@ -105,7 +120,7 @@ router.post('/pone', async (req, res, next) => {
     sname: req.body.sname,
     invdate: invdate,
     nav: req.body.nav,
-    units: req.body.units,
+    units: parseFloat(req.body.units),
     amount: req.body.amount,
     remarks: req.body.remarks,
     invFor: req.body.invFor,
@@ -116,7 +131,6 @@ router.post('/pone', async (req, res, next) => {
 
   try {
     invdet = await mfinvmodel.postOne(mfinvdet);
-
     res.send(invdet);
   } catch (err) {
 
@@ -126,10 +140,69 @@ router.post('/pone', async (req, res, next) => {
 
 });
 
+//Route to post a multiple investments sent via csv
+router.post('/csvinv', upload.single('file'), async (req, res) => {
+  debugger;
+  var user = req.query.user;
+
+  if (!req.file)
+    return res.status(400).send('No files were uploaded.');
+
+  var multiinvFile = req.file;
+
+  try {
+    var multiinvs = await helpers.csvtojson(multiinvFile);
+    debugger;
+
+    var result = await mfinvmodel.postManyInvDet(multiinvs, user);
+    debugger;
+    res.send(result);
+  } catch (err) {
+    debugger;
+    return res.status(500).send(err);
+  }
+
+});
+
+
+//Route to post a multiple investments sent via txt
+router.post('/txtinv', upload.single('file'), async (req, res) => {
+  debugger;
+  var user = req.query.user;
+
+  if (!req.file)
+    return res.status(400).send('No files were uploaded.');
+
+  var multiinvFile = req.file;
+
+  try {
+    var multiinvs = await helpers.parsetextINV(multiinvFile);
+    debugger;
+
+    var result = await mfinvmodel.postManyInvDet(multiinvs, user);
+    debugger;
+    res.send(result);
+  } catch (err) {
+    debugger;
+    return res.status(500).send(err);
+  }
+
+});
+
 //Route for aggregations
 router.get('/aggr', async (req, res, next) => {
-  debugger;
 
+  /**
+  * @desc This route is used for all aggregations that are performed on Mutual fund investments table
+  * Current list of aggregations are
+  * - getAggregation - Matches the user for investment and gives the sum,count and details of each of his investment
+  * - TBF
+  * @param
+  * @return
+
+  */
+
+debugger;
   if (req.query.id && req.query.id !== "" && req.query.totcol !== "" && req.query.invBy !== "") {
     var aggr = {}
     aggr.id = req.query.id;
@@ -151,11 +224,27 @@ router.get('/aggr', async (req, res, next) => {
   if (req.query.invBy !== "") {
     var aggr = {}
     aggr.invBy = req.query.invBy;
-    var aggrres = await mfinvmodel.grpGoalAggregation(aggr);
+
+    /*
+    // The following code change is required as we are now using lookup to fetch the scheme name
+    // instead of using the name on the investment log. This ensures that if there is a change
+    // in scheme name at a future point there is no impact on the application
+    // var aggrres = await mfinvmodel.grpGoalAggregation(aggr);
+    */
+    var aggrres = await mfinvmodel.grpGoalAggregationUpd(aggr);
+
+
     res.send(aggrres);
   } else {
     return res.status(500).send("Improperly formed Aggregation query");
   }
+});
+
+// Route for value calculations
+router.get('/valcalc', async (req, res, next) => {
+
+
+
 });
 
 // Route for Step-up sip calculation
@@ -218,19 +307,34 @@ router.get('/fvalcalc', async (req, res, next) => {
 
 //Route for deleting a Investment
 router.delete('/delinv', async (req, res, next) => {
-debugger;
-	if(req.query.id && req.query.id!=="")
-	{
-		var _id = req.query.id;
-		var delres = await mfinvmodel.deleteInv(_id);
-		res.send(delres);
-	}
-	else
-	{
-		return res.status(500).send("Improperly formed delete request");
-	}
+  debugger;
+  if (req.query.id && req.query.id !== "") {
+    var _id = req.query.id;
+    var delres = await mfinvmodel.deleteInv(_id);
+    res.send(delres);
+  } else {
+    return res.status(500).send("Improperly formed delete request");
+  }
 
 });
+
+// Route for Current Value calculation
+router.get('/currval', async (req, res, next) => {
+  if (req.query.scode && req.query.units !== "") {
+    debugger;
+    try {
+      var currvaldet = await calchelpers.currval(req.query.scode, req.query.units)
+      debugger;
+      res.send(currvaldet);
+    } catch (err) {
+      debugger;
+      return res.status(500).send(err);
+    }
+  } else {
+    return res.status(500).send("Improperly formed Current Value request");
+  }
+});
+
 // Route for Goal Planner
 router.get('/gplanner', async (req, res, next) => {
   //

@@ -4,14 +4,22 @@ sap.ui
     function(Fragment, MessageHelpers, GatewayHelper, MessageBox, BaseController, MessageToast, Sorter, Filter, Moment) {
       "use strict";
       var _oMessageStrip, _invBy;
-      var _dialog;
+      var _dialog,_self;
       return BaseController
         .extend(
           "simple_hello.Controller.manageinv", {
             onInit: function() {
+              _self = this;
               var oRouter = this.getRouter();
               _oMessageStrip = this.getView().byId("msgstrp");
               oRouter.attachRouteMatched(this._handleRouteMatched, this);
+
+              var maninv = this.getOwnerComponent().getModel("manageinv_model");
+              maninv.attachPropertyChange(this._handlePropertyChanged);
+
+            },
+            _handlePropertyChanged(oEvt) {
+
             },
             _handleRouteMatched: function(oEvt) {
               if (oEvt.getParameter("name") !== "manageinv") {
@@ -107,6 +115,7 @@ sap.ui
               var pdata = this._parseData(data);
               // Set the data to scheme model
               var manageinv_model = this.getView().getModel("manageinv_model");
+              manageinv_model.setData([]);
               manageinv_model.setData(pdata);
               manageinv_model.updateBindings();
             },
@@ -223,6 +232,26 @@ sap.ui
               });
             },
 
+            handleEditRow: function(oEvt) {
+              // Get the popover and change the content
+              if (this._oPopover) {
+                // Get the content from the invdetl fragment and add it to the popover
+                if (!this._invcopy) {
+                  this._invcopy = sap.ui.xmlfragment("investdetl", "simple_hello.view.invcopy", this);
+                }
+                var popoverContent = Fragment.byId("investdetl", "invdeltcopyVBOX");
+
+                //remove all content
+                this._oPopover.removeAllContent();
+                this._oPopover.insertContent(popoverContent);
+
+                this._editbutton.setVisible(false);
+                this._cpybutton.setVisible(false);
+                this._delbutton.setVisible(false);
+                this._svbutton.setVisible(true);
+              }
+            },
+
             handleCopyRow: function(oEvt) {
 
               // Get the popover and change the content
@@ -237,8 +266,7 @@ sap.ui
                 this._oPopover.removeAllContent();
                 this._oPopover.insertContent(popoverContent);
 
-
-
+                this._editbutton.setVisible(false);
                 this._cpybutton.setVisible(false);
                 this._delbutton.setVisible(false);
                 this._svbutton.setVisible(true);
@@ -273,11 +301,7 @@ sap.ui
                 }, this);
               }
 
-              // // First check if the popover is open. If so close it
-              // if(this._oPopover.isOpen() === true)
-              // {
-              //   this._oPopover.close();
-              // }
+
 
 
               var oCtx = oEvt.getSource().getBindingContext("manageinv_model");
@@ -292,7 +316,7 @@ sap.ui
               this._svbutton = Fragment.byId("investpopover", "save");
               this._cpybutton = Fragment.byId("investpopover", "copy");
               this._delbutton = Fragment.byId("investpopover", "delete");
-
+              this._editbutton = Fragment.byId("investpopover", "edit");
 
 
               if (type === "display") {
@@ -307,6 +331,7 @@ sap.ui
                 this._oPopover.removeAllContent();
                 this._oPopover.insertContent(popoverContent);
 
+                this._editbutton.setVisible(true);
                 this._cpybutton.setVisible(true);
                 this._delbutton.setVisible(true);
                 this._svbutton.setVisible(false);
@@ -317,31 +342,48 @@ sap.ui
               this._oPopover.openBy(oControl);
             },
             handleClose: function(oEvt) {
+
               if (this._oPopover) {
                 this._oPopover.close();
+
+                // Refresh and dump any unwated changes. Currently the only way to do this is to
+                // retrigger the fetch query
+                MessageHelpers._msgbox("confirm", "Discard changes made in the form", "Discard Changes", this._closePopOver,this);
+
+                // this._owninvrestcall(this._invBy);
+
               }
             },
+            _closePopOver: function(oAction,that) {
+              if (oAction === MessageBox.Action.OK) {
+                // _self.refreshFormData();
+                _self._getOwnInvestments(_self._invBy);
+              }
 
-            handleSave:function(oEvt)
-            {
+            },
+            // refreshFormData:function()
+            // {
+            //   var invfor =   _self.getView().byId("cbinvfor").getData();
+            // },
 
-              var that = this;
+            handleSave: function(oEvt) {
 
-              var data = oEvt.getSource().getBindingContext("manageinv_model").getObject();
-
-              // Check if required details are provided
-              var postdata = this._postdata(data);
+              // var that = this;
+              //
+              // var data = oEvt.getSource().getBindingContext("manageinv_model").getObject();
+              //
+              // // Check if required details are provided
+              // var postdata = this._postdata(data);
 
 
 
 
             },
-            _postdata:function(data)
-            {
+            _postdata: function(data) {
               // var postobj={};
               //
               // if(data.inv)
-              // 
+              //
             }
 
 

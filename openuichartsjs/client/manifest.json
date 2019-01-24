@@ -1,0 +1,153 @@
+{
+  "_version": "1.3.0",
+  "sap.app": {
+    "_version": "1.3.0",
+    "id": "openui5_chartjs",
+    "type": "application",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "dataSources": {
+      "chartcoll_ds": {
+        "uri": "model/dashboard.json",
+        "type": "JSON"
+      }
+    }
+
+  },
+  "sap.ui": {
+    "_version": "1.3.0",
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    },
+    "supportedThemes": [
+      "sap_bluecrystal"
+    ]
+  },
+  "sap.ui5": {
+    "_version": "1.2.0",
+    "rootView": "openui5_chartjs.view.app",
+
+    "config": {
+      "chartjsModel": "/model/data_chartjs.json",
+      "c3jsModel": "/model/data_c3js.json"
+    },
+
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "openui5_chartjs.i18n.i18n"
+        }
+      },
+      "dbtiles_model": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "chartcoll_ds"
+      },
+      "navline_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      },
+      "mulline_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      },
+      "schtype_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      },
+      "schtypename_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      },
+      "piechart_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      }
+
+
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "openui5_chartjs.view",
+        "controlId": "rootControl",
+        "controlAggregation": "pages",
+        "transition": "slide"
+      },
+      "routes": [{
+          "pattern": "",
+          "name": "cdb",
+          "target": "cdb"
+
+        },
+        {
+          "pattern": "linechart",
+          "name": "linechart",
+          "target": "linechart"
+
+        },
+        {
+          "pattern": "mullinechart",
+          "name": "mullinechart",
+          "target": "mullinechart"
+
+        },
+        {
+          "pattern": "invvallinechart",
+          "name": "invvallinechart",
+          "target": "invvallinechart"
+
+        },
+        {
+          "pattern": "piechart",
+          "name": "piechart",
+          "target": "piechart"
+
+        }
+
+
+      ],
+      "targets": {
+        "cdb": {
+          "viewName": "cdb",
+          "viewLevel": 1
+        },
+        "linechart": {
+          "viewName": "linechart",
+          "viewLevel": 1
+        },
+        "mullinechart": {
+          "viewName": "mullinechart",
+          "viewLevel": 1
+        },
+        "invvallinechart": {
+          "viewName": "invvallinechart",
+          "viewLevel": 1
+        },
+        "piechart": {
+          "viewName": "piechart",
+          "viewLevel": 1
+        }
+
+
+      },
+      "resources": {
+        "css": [{
+          "uri": "css/c3.min.css"
+        }, {
+          "uri": "css/style.css"
+        }],
+        "js": [{
+          "uri": "/control/Chart.min.js"
+        }, {
+          "uri": "/control/d3.min.js"
+        }, {
+          "uri": "/control/c3.min.js"
+        }]
+      }
+
+
+
+    }
+  }
+}

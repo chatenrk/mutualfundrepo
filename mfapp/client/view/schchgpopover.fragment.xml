@@ -1,0 +1,43 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
+	<Popover title="{scheme_model>sname}" class="sapUiPopupWithPadding" placement="Auto" initialFocus="copy" contentWidth="40%" contentHeight="75%">
+		<VBox id="invdeltdispVBOX" class="sapUiSmallMargin">
+			<f:Form editable="true">
+				<f:title>
+					<core:Title text="{i18n>schChgOvw}"/>
+				</f:title>
+				<f:layout>
+					<f:ResponsiveGridLayout labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false"/>
+				</f:layout>
+				<f:formContainers>
+					<f:FormContainer>
+						<f:formElements>
+
+							<!-- Scheme code. This is not editable -->
+	            <f:FormElement label="{i18n>scode}" design="sap.m.LabelDesign.Bold">
+	              <f:fields>
+	                <Text text="{scheme_model>scode}"/>
+	              </f:fields>
+	            </f:FormElement>
+
+							<!--Scheme name. This is editable -->
+							<f:FormElement label="{i18n>sname}" design="Bold">
+								<f:fields>
+									<Input id="sname_ipfield" value="{scheme_model>sname}" editable="false"/>
+								</f:fields>
+							</f:FormElement>
+
+						</f:formElements>
+					</f:FormContainer>
+				</f:formContainers>
+			</f:Form>
+		</VBox>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button id="edit" icon="sap-icon://edit" press="handleEditRow" />
+				<Button id="save" icon="sap-icon://save" press="handleSave" visible="false"/>
+				<Button id="close" icon="sap-icon://decline" press="handleClose"/>
+			</Toolbar>
+		</footer>
+	</Popover>
+</core:FragmentDefinition>

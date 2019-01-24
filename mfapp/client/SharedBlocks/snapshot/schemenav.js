@@ -1,4 +1,4 @@
-sap.ui.define(['sap/uxap/BlockBase'], function (BlockBase) {
+sap.ui.define(['sap/uxap/BlockBase','sap/m/MessageToast'], function (BlockBase,MessageToast) {
 	"use strict";
 
 	var schemenav = BlockBase.extend("simple_hello.SharedBlocks.snapshot.schemenav", {

@@ -1,0 +1,15 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<SelectDialog
+		noDataText="No Users Found"
+		title="Select User for Investments"
+		liveChange="handleSearch"
+		confirm="handleClose"
+		cancel="handleClose"
+		items="{usrdetls_model>/}" >
+		<StandardListItem
+			title="{usrdetls_model>name}"
+			type="Active" />
+	</SelectDialog>
+</core:FragmentDefinition>

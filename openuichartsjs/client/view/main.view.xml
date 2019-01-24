@@ -1,0 +1,47 @@
+<mvc:View controllerName="openui5_chartjs.controller.main"
+          xmlns="sap.m"
+          xmlns:core="sap.ui.core"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns:acc="openui5_chartjs.control">
+  <Page title="{i18n>homePageTitle}">
+    <content>
+      <Panel width="auto" class="sapUiResponsiveMargin">
+        <headerToolbar>
+          <Toolbar height="3rem">
+            <Title text="{i18n>ChartjsHeader}"/>
+          </Toolbar>
+        </headerToolbar>
+        <content>
+          <VBox class="sapUiSmallMargin">
+            <!-- width & height only used for ratio of the chart, but not used if control is set to responsive -->
+            <Label text="{i18n>lineChart}" class="sapUiSmallMarginBottom" design="Bold"/>
+            <acc:ChartJSControl width="400" height="200" responsive="true" chartType="Line" data="{chartjsData>/lineData}"/>
+            <Label text="{i18n>barChart}" class="sapUiSmallMarginBottom" design="Bold"/>
+            <acc:ChartJSControl width="400" height="200" responsive="true" chartType="Bar" data="{chartjsData>/barData}"/>
+            <Label text="{i18n>radarChart}" class="sapUiSmallMarginBottom" design="Bold"/>
+            <acc:ChartJSControl width="400" height="200" responsive="true" chartType="Radar" data="{chartjsData>/radarData}"/>
+            <Label text="{i18n>polarChart}" class="sapUiSmallMarginBottom" design="Bold"/>
+            <acc:ChartJSControl width="400" height="200" responsive="true" chartType="PolarArea" data="{chartjsData>/polarData}"/>
+            <Label text="{i18n>pieChart}" class="sapUiSmallMarginBottom" design="Bold"/>
+            <acc:ChartJSControl width="400" height="200" responsive="true" chartType="Pie" data="{chartjsData>/pieData}"/>
+            <Label text="{i18n>doughnutChart}" class="sapUiSmallMarginBottom" design="Bold"/>
+            <acc:ChartJSControl width="400" height="200" responsive="true" chartType="Doughnut" data="{chartjsData>/pieData}"/>
+          </VBox>
+        </content>
+      </Panel>
+      <Panel width="auto" class="sapUiResponsiveMargin">
+        <headerToolbar>
+          <Toolbar height="3rem">
+            <Title text="{i18n>C3jsHeader}"/>
+          </Toolbar>
+        </headerToolbar>
+        <content>
+          <VBox class="sapUiSmallMargin">
+            <Label text="{i18n>lineChart}" class="sapUiSmallMarginBottom" design="Bold"/>
+            <acc:C3JSControl data="{c3jsData>/}"/>
+          </VBox>
+        </content>
+      </Panel>
+    </content>
+  </Page>
+</mvc:View>

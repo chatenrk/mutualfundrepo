@@ -32,6 +32,7 @@
         "uri": "models/splitapp.json",
         "type": "JSON"
       }
+
     }
   },
   "sap.ui": {
@@ -42,12 +43,18 @@
       "tablet": true,
       "phone": true
     },
-    "supportedThemes": ["sap_bluecrystal"]
+
+    "supportedThemes": [
+      "sap_bluecrystal"
+  
   },
   "sap.ui5": {
     "_version": "1.2.0",
     "rootView": "simple_hello.view.app",
 
+    "resourceRoots": {
+      "simple_hello.toastr": "./libs/Toastr"
+    },
     "models": {
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
@@ -69,6 +76,7 @@
       },
       "mfinvfor_model": {
         "type": "sap.ui.model.json.JSONModel"
+
       },
       "tran_model": {
         "type": "sap.ui.model.json.JSONModel",
@@ -101,6 +109,11 @@
       "schdet_model": {
         "type": "sap.ui.model.json.JSONModel"
       },
+
+      "schinvaggr_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      },
+
       "selSchModel": {
         "type": "sap.ui.model.json.JSONModel"
       },
@@ -122,6 +135,7 @@
       },
       "dispinvdetl": {
         "type": "sap.ui.model.json.JSONModel"
+
       },
       "splitapp": {
         "type": "sap.ui.model.json.JSONModel"
@@ -129,9 +143,25 @@
       "fewnavmodel": {
         "type": "sap.ui.model.json.JSONModel"
       },
+
 	  "mulline_model":{
         "type": "sap.ui.model.json.JSONModel"
       }
+
+      "usrdetls_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      },
+      "pdfdocument_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      },
+      "invcurr_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      },
+      "chtschcat_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      }
+
+
     },
     "routing": {
       "config": {
@@ -142,83 +172,121 @@
         "controlAggregation": "pages",
         "transition": "slide"
       },
+
       "routes": [
         {
           "pattern": "",
           "name": "login",
           "target": "login"
+
         },
 
         {
           "pattern": "dashboard",
           "name": "dashboard",
           "target": "dashboard"
+
         },
 
         {
           "pattern": "chatenmf",
           "name": "chatenmf",
           "target": "chatenmf"
+
         },
 
         {
           "pattern": "admin",
           "name": "admin",
           "target": "admin"
+
         },
         {
           "pattern": "charts",
           "name": "charts",
           "target": "charts"
+
         },
 
         {
           "pattern": "register",
           "name": "register",
           "target": "register"
+
+
         },
+        {
+          "pattern": "documents",
+          "name": "documents",
+          "target": "documents"
+
+        },
+
         {
           "pattern": "getschemes",
           "name": "getschemes",
           "target": "getschemes"
+
         },
         {
           "pattern": "getamcs",
           "name": "getamcs",
           "target": "getamcs"
+
         },
         {
           "pattern": "addschemes",
           "name": "addschemes",
           "target": "addschemes"
+
         },
         {
           "pattern": "addamcs",
           "name": "addamcs",
           "target": "addamcs"
+
+        },
+        {
+          "pattern": "addmultischdet",
+          "name": "addmultischdet",
+          "target": "addmultischdet"
+
+
         },
         {
           "pattern": "addnav",
           "name": "addnav",
           "target": "addnav"
+
         },
         {
           "pattern": "mfinvlog",
           "name": "mfinvlog",
           "target": "mfinvlog"
+
+        },
+        {
+          "pattern": "addmultiinvdet",
+          "name": "addmultiinvdet",
+          "target": "addmultiinvdet"
+
+
         },
         {
           "pattern": "dispallinv",
           "name": "dispallinv",
           "target": "dispallinv"
+
         },
         {
           "pattern": "showallinv",
           "name": "showallinv",
           "target": "showallinv"
+
         },
+ 
         {
-          "pattern": "schdet/{scode}",
+          "pattern": "schdet:?query:",
           "name": "schdet",
           "target": "schdetails"
         },
@@ -226,16 +294,19 @@
           "pattern": "invdetldisp",
           "name": "invdetldisp",
           "target": "invdetldisp"
+
         },
         {
           "pattern": "dispallinv/{goal}",
           "name": "dispallinvgoals",
           "target": "dispallinvgoals"
+
         },
         {
           "pattern": "manageinv",
           "name": "manageinv",
           "target": "manageinv"
+
         },
         {
           "pattern": "shownavsch",
@@ -243,6 +314,7 @@
           "target": "shownavsch"
         },
         {
+
           "pattern": "mullinechart/{chttype}",
           "name": "mullinechart",
           "target": "mullinechart"
@@ -252,6 +324,19 @@
           "name": "addnavdetnew",
           "target": "addnavdetnew"
         }
+
+          "pattern": "schchgdocdisp",
+          "name": "schchgdocdisp",
+          "target": "schchgdocdisp"
+        },
+        {
+          "pattern": "catcompchart",
+          "name": "catcompchart",
+          "target": "catcompchart"
+        }
+
+
+
       ],
       "targets": {
         "login": {
@@ -270,10 +355,12 @@
           "viewName": "admin",
           "viewLevel": 1
         },
+
         "charts": {
           "viewName": "charts/chartsdb",
           "viewLevel": 1
         },
+
         "register": {
           "viewName": "register",
           "viewLevel": 1
@@ -294,6 +381,12 @@
           "viewName": "addamcs",
           "viewLevel": 1
         },
+
+        "addmultischdet": {
+          "viewName": "addmultischdetails",
+          "viewLevel": 1
+        },
+
         "addnav": {
           "viewName": "addnav",
           "viewLevel": 1
@@ -306,6 +399,12 @@
           "viewName": "mfinvlog",
           "viewLevel": 1
         },
+
+        "addmultiinvdet": {
+          "viewName": "addmultiinv",
+          "viewLevel": 1
+        },
+
         "dispallinv": {
           "viewName": "showallinvsplit",
           "viewLevel": 1
@@ -330,6 +429,7 @@
           "viewName": "shownavsch",
           "viewLevel": 1
         },
+
         "addnavdetnew": {
           "viewName": "addnavnew",
           "viewLevel": 1
@@ -339,6 +439,29 @@
           "viewLevel": 1
         }
       }
+
+        "documents": {
+          "viewName": "docdb",
+          "viewLevel": 1
+        },
+        "charts": {
+          "viewName": "chartsdb",
+          "viewLevel": 1
+        },
+        "schchgdocdisp": {
+          "viewName": "schchgdocdisp",
+          "viewLevel": 1
+        },
+        "catcompchart": {
+          "viewName": "charts.catcompchart",
+          "viewLevel": 1
+        }
+
+      }
+
+
+
+
     }
   }
 }

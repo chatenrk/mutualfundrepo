@@ -31,14 +31,14 @@
             <!-- Date of investment -->
             <f:FormElement label="Investment Date" design="sap.m.LabelDesign.Bold">
               <f:fields>
-                <DatePicker id="mfinvdate1" displayFormat="dd-MMM-yyyy" valueFormat="yyyy-MM-dd" change="handleDateChange"/>
+                <DatePicker id="mfinvdate1" displayFormat="dd-MMM-yyyy" value="{manageinv_model>invdatefmtd}" valueFormat="dd-MMM-yyyy" change="handleDateChange"/>
               </f:fields>
             </f:FormElement>
 
             <!-- Amount of investment -->
             <f:FormElement label="Amount" design="Bold">
               <f:fields>
-                <Input />
+                <Input text="{manageinv_model>amount}"/>
               </f:fields>
             </f:FormElement>
 

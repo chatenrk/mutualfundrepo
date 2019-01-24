@@ -29,7 +29,10 @@ const helpers = require("../helpers/helpers.js");
 
 // Route to get scheme details, based on ID
 
-router.get("/navdet", async (req, res, next) => {
+router.get('/navdet', async (req, res, next) => {
+
+
+
   var scode = req.query.scode;
   var date = req.query.date;
   //	var isodate = new Date(date).toISOString();
@@ -53,7 +56,10 @@ router.get("/navdet", async (req, res, next) => {
   }
 });
 
-router.get("/navbetn", async (req, res, next) => {
+
+router.get('/navbetn', async (req, res, next) => {
+
+
   var scode = req.query.scode;
   var sdate = req.query.sdate;
   var edate = req.query.edate;
@@ -142,7 +148,10 @@ router.post("/navpost", async (req, res) => {
 //Route to post a multiple nav details sent via a text / csv file
 router.post("/navfile", upload.single("file"), async (req, res) => {
   // var narray = [];
-  if (!req.file) return res.status(400).send("No files were uploaded.");
+
+  if (!req.file)
+    return res.status(400).send('No files were uploaded.');
+
 
   var navFile = req.file;
 
@@ -204,6 +213,7 @@ router.get("/amfiretr", async (req, res, next) => {
     }
   });
 });
+
 
 router.get("/valrestest", async (req, res, next) => {
   // var mf = "mf=";
@@ -286,5 +296,6 @@ router.get("/valrestest", async (req, res, next) => {
     }
   });
 });
+
 
 module.exports = router;

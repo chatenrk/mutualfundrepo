@@ -1,0 +1,37 @@
+<mvc:View controllerName="openui5_chartjs.controller.linechart" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:acc="openui5_chartjs.control">
+
+  <Page title="{i18n>lineChart}" showNavButton="true" navButtonPress="onNavBack">
+
+    <content>
+      <Panel width="auto" class="sapUiResponsiveMargin">
+
+        <content>
+          <VBox>
+            <!-- width & height only used for ratio of the chart, but not used if control is set to responsive -->
+
+            <HBox width="90%" class="sapUiSmallMargin">
+              <Label text="{i18n>lineChart}" design="Bold"/>
+            </HBox>
+
+            <HBox width = "95%" justifyContent="End" alignItems="End">
+              <SegmentedButton selectedKey="3Y" selectionChange="onSelectionChange">
+                <items>
+                  <SegmentedButtonItem text="1M" key="1M" width="22%"/>
+                  <SegmentedButtonItem text="3M" key="3M" width="22%"/>
+                  <SegmentedButtonItem text="6M" key="6M" width="22%"/>
+                  <SegmentedButtonItem text="1Y" key="1Y" width="22%"/>
+                  <SegmentedButtonItem text="3Y" key="3Y" width="22%"/>
+                </items>
+              </SegmentedButton>
+            </HBox>
+
+
+            <!-- <acc:ChartJSControl width="400" height="200" responsive="true" chartType="Line" data="{chartjsData>/lineData}"/> -->
+            <acc:ChartJSControl width="400" height="200" responsive="true" chartType="Line" data="{navline_model>/}"/>
+
+          </VBox>
+        </content>
+      </Panel>
+    </content>
+  </Page>
+</mvc:View>

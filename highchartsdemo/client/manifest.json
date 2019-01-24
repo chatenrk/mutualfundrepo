@@ -1,0 +1,170 @@
+{
+  "_version": "1.3.0",
+  "sap.app": {
+    "_version": "1.3.0",
+    "id": "hghcharts_demo",
+    "type": "application",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "dataSources": {
+      "chartcoll_ds": {
+        "uri": "models/dboardtiles.json",
+        "type": "JSON"
+      }
+  }
+},
+  "sap.ui": {
+    "_version": "1.3.0",
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    },
+    "supportedThemes": [
+      "sap_bluecrystal"
+    ]
+  },
+  "sap.ui5": {
+    "_version": "1.2.0",
+    "rootView": "hghcharts_demo.view.app",
+    "resources":
+		{
+  		 	"css":
+  		 	[
+  				{
+   					"uri": "css/style.css"
+  				},
+          {
+   					"uri": "css/multiline.css"
+  				}
+  			]
+		},
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "hghcharts_demo.i18n.i18n"
+        }
+      },
+      "dbtiles_model": {
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "chartcoll_ds"
+      },
+      "simlinecht_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      },
+      "simpiecht_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      },
+      "simdonutcht_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      },
+      "navgrwth_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      },
+      "mulseriescht_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      },
+      "mullinechtgwt_model": {
+        "type": "sap.ui.model.json.JSONModel"
+      }
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "hghcharts_demo.view",
+        "controlId": "rootControl",
+        "controlAggregation": "pages",
+        "transition": "slide"
+      },
+      "routes": [{
+        "pattern": "",
+        "name": "Chart Tiles",
+        "target": "Tiles"
+
+      },
+      {
+        "pattern": "Line Chart",
+        "name": "simplelinechart",
+        "target": "simlinecht"
+
+      },
+      {
+        "pattern": "Pie Chart",
+        "name": "simplepiechart",
+        "target": "simpiecht"
+
+      },
+      {
+        "pattern": "Donut Chart",
+        "name": "simpledonutchart",
+        "target": "simdonutcht"
+
+      },
+      {
+        "pattern": "NAV Growth Chart",
+        "name": "navgrwthchart",
+        "target": "navgrwthchart"
+
+      },
+      {
+        "pattern": "MultiLine Chart",
+        "name": "multilinechart",
+        "target": "mullinecht"
+
+      },
+      {
+        "pattern": "Cost Versus Value Chart",
+        "name": "costvsvallinecht",
+        "target": "costvsvallinecht"
+
+      },
+      {
+        "pattern": "Group Bar Chart",
+        "name": "grpbarchart",
+        "target": "grpbarchart"
+
+      }
+    ],
+      "targets": {
+        "Tiles": {
+          "viewName": "chtdashboard",
+          "viewLevel": 1
+        },
+        "simlinecht": {
+          "viewName": "testchart",
+          "viewLevel": 1
+        },
+        "simpiecht": {
+          "viewName": "simpiecht",
+          "viewLevel": 1
+        },
+        "simdonutcht": {
+          "viewName": "simdonutcht",
+          "viewLevel": 1
+        },
+        "navgrwthchart": {
+          "viewName": "navgrwth",
+          "viewLevel": 1
+        },
+        "mullinecht": {
+          "viewName": "mullinecht",
+          "viewLevel": 1
+        },
+        "costvsvallinecht": {
+          "viewName": "mullinechtgwt",
+          "viewLevel": 1
+        },
+        "grpbarchart": {
+          "viewName": "grpbarchart",
+          "viewLevel": 1
+        }
+
+      }
+
+    }
+  }
+}

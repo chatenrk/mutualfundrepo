@@ -1,70 +1,81 @@
 {
-	"SchemeCollection": [
-		{
-			"id": "onGetSchdet",
-			"icon": "sap-icon://show",
-			"type": "Monitor",
-			"title": "Get Scheme Details"
-		},
-		{
-			"id": "getamcdet",
-			"icon": "sap-icon://show",
-			"type": "Monitor",
-			"title": "Get AMC Details"
-		}
+  "SchemeCollection": [{
+      "id": "onGetSchdet",
+      "icon": "sap-icon://show",
+      "type": "Monitor",
+      "title": "Get Scheme Details"
+    },
+    {
+      "id": "getamcdet",
+      "icon": "sap-icon://show",
+      "type": "Monitor",
+      "title": "Get AMC Details"
+    }
 
-	],
-
-
-	"AdminCollection": [
-		{
-			"id": "onAddSchDet",
-			"icon": "sap-icon://add",
-			"type": "Create",
-			"title": "Add Scheme Details"
-
-		},
-		{
-			"id": "addamcdet",
-			"icon": "sap-icon://add",
-			"type": "Create",
-			"title": "Add AMC Details"
-		},
-
-		{
-			"id": "manageinv",
-			"icon": "sap-icon://add",
-			"type": "Create",
-			"title": "Manage Investments"
-		}
-
-	],
-
-	"ChatenCollection": [
-		{
-			"id": "addmfinv",
-			"icon": "sap-icon://add",
-			"type": "Create",
-			"title": "Add MF Investment"
-
-		},
-
-		{
-			"id": "dispallinv",
-			"icon": "sap-icon://add",
-			"type": "Monitor",
-			"title": "Display All My Investments"
-		},
-		{
-			"id": "showallinv",
-			"icon": "sap-icon://add",
-			"type": "Monitor",
-			"title": "Show All My Investments"
-		}
+  ],
 
 
-	],
-	"NAVCollection": [
+  "AdminCollection": [{
+      "id": "onAddSchDet",
+      "icon": "sap-icon://add",
+      "type": "Create",
+      "title": "Upload Scheme Codes(CSV File)"
+
+    },
+    {
+      "id": "addamcdet",
+      "icon": "sap-icon://add",
+      "type": "Create",
+      "title": "Upload AMC Codes(CSV Files)"
+    },
+
+    {
+      "id": "addSchemedet",
+      "icon": "sap-icon://add",
+      "type": "Create",
+      "title": "Upload Scheme Details(CSV Files)"
+    }
+
+  ],
+
+  "ChatenCollection": [{
+      "id": "addmfinv",
+      "icon": "sap-icon://add",
+      "type": "Create",
+      "title": "Add MF Investment"
+
+    },
+
+    {
+      "id": "dispallinv",
+      "icon": "sap-icon://add",
+      "type": "Monitor",
+      "title": "Display All My Investments"
+    }
+  ],
+  "NAVCollection": [
+
+    {
+      "id": "addnavdet",
+      "icon": "sap-icon://add",
+      "type": "Create",
+      "title": "Upload NAV File(TXT File)"
+    },
+    {
+      "id": "shownav",
+      "icon": "sap-icon://show",
+      "type": "Monitor",
+      "title": "Show NAV for Scheme"
+    }
+
+  ],
+  "AdminINVCollection": [{
+      "id": "addmultiinvdet",
+      "icon": "sap-icon://add",
+      "type": "Create",
+      "title": "Add Multiple Investment Details(CSV File)"
+    },
+
 
 		{
 			"id": "addnavdet",
@@ -142,4 +153,25 @@
       "title": "Pharma Funds"
     }
   ]
+
+    {
+      "id": "manageinv",
+      "icon": "sap-icon://add",
+      "type": "Create",
+      "title": "Manage Investments"
+    }
+  ],
+  "DocumentsCollection": [{
+    "id": "schchgdocdisp",
+    "icon": "sap-icon://add",
+    "type": "Create",
+    "title": "Scheme Change Documents"
+  }],
+  "ChartsCollection": [{
+    "id": "catcompchart",
+    "icon": "sap-icon://add",
+    "type": "Create",
+    "title": "Category Performance"
+  }]
+
 }

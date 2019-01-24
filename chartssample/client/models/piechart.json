@@ -1,0 +1,12 @@
+[{
+		"assettype": "Debt",
+		"total": 2500000
+	},
+	{
+		"assettype": "Equity",
+		"total": 2800000
+	}, {
+		"assettype": "Gold",
+		"total": 1500000
+	}
+]

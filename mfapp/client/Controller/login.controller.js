@@ -17,6 +17,8 @@ sap.ui
                                         onInit : function()
                                         {
                                         	this._oMessageStrip = this.getView().byId("msgstrp");
+                                          var oFlexBox= this.getView().byId("MainFlexBox");
+                                          this.sParentId=oFlexBox.getIdForLabel();
                                         },
 
                                         onBeforeRendering:function()

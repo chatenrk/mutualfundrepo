@@ -1,0 +1,18 @@
+<mvc:View xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" controllerName="proj_chartdb.controller.cdb">
+<Page title="{i18n>projchtsdashboard}">
+	<!-- Line Charts Collection  -->
+	<ObjectHeader title="{i18n>catcompcharts}"/>
+	<HeaderContainer orientation="Horizontal">
+		<content>
+			<FlexBox items="{dbtiles_model>/CatCompColl}">
+				<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="{dbtiles_model>title}" press="onTilePress">
+					<TileContent>
+						<ImageContent src="{dbtiles_model>icon}"/>
+					</TileContent>
+				</GenericTile>
+			</FlexBox>
+		</content>
+	</HeaderContainer>
+
+</Page>
+</mvc:View>
