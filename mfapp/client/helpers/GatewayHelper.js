@@ -777,6 +777,39 @@ sap.ui.define([], function() {
         dataType: 'json',
         success: function(data) {
           deferred.resolve(data);
+        },
+        error: function(err) {
+          deferred.reject(err);
+
+        }
+
+      }); //AJAX call close
+      return deferred.promise();
+
+    },
+
+    getChartDetails: function(amccode) {
+      /**
+       * @desc This helper method is used to fetch all the schemes from the database
+       *       It performs an AJAX call and fetches the data
+       * @param amccode referring to the selected AMC Code
+       * @return This returns the AMC's found in the database(amcs collection) as a JSON Array
+       */
+
+      var that = this;
+      var deferred = jQuery.Deferred();
+
+      var schurl = "http://localhost:3000/proj/projchartdet";
+
+     
+
+      $.ajax({
+        url: schurl,
+        type: 'GET',
+        dataType: 'json',
+        success: function(data) {
+          deferred.resolve(data);
+
 
         },
         error: function(err) {
@@ -786,7 +819,10 @@ sap.ui.define([], function() {
 
       }); //AJAX call close
       return deferred.promise();
+
     }
+
+   
 
   }
 });

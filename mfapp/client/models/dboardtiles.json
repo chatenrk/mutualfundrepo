@@ -76,6 +76,84 @@
       "title": "Add Multiple Investment Details(CSV File)"
     },
 
+
+		{
+			"id": "addnavdet",
+			"icon": "sap-icon://add",
+			"type": "Create",
+			"title": "Upload NAV File(TXT/CSV)"
+		},
+		{
+			"id": "shownav",
+			"icon": "sap-icon://show",
+			"type": "Monitor",
+			"title": "Show NAV for Scheme"
+		},
+		{
+			"id": "addnavdetnew",
+			"icon": "sap-icon://show",
+			"type": "Create",
+			"title": "Add NAV via link"
+		}
+
+	],
+	"LineChtsColl": [
+    {
+      "id": "onShowMulLineChart",
+      "icon": "sap-icon://show",
+      "type": "Monitor",
+      "title": "Balanced Funds"
+    },
+	{
+      "id": "onShowLgCapChart",
+      "icon": "sap-icon://show",
+      "type": "Monitor",
+      "title": "LargeCap Funds"
+    },
+	{
+      "id": "onShowMidCapChart",
+      "icon": "sap-icon://show",
+      "type": "Monitor",
+      "title": "MidCap Funds"
+    },
+	{
+      "id": "onShowMulCapChart",
+      "icon": "sap-icon://show",
+      "type": "Monitor",
+      "title": "Multicap Funds"
+    },
+	{
+      "id": "onShowSmallCapChart",
+      "icon": "sap-icon://show",
+      "type": "Monitor",
+      "title": "SmallCap Funds"
+    },
+	{
+      "id": "onShowSmallCapChart",
+      "icon": "sap-icon://show",
+      "type": "Monitor",
+      "title": "Large and Midcap Funds"
+    },
+	{
+      "id": "onShowTaxChart",
+      "icon": "sap-icon://show",
+      "type": "Monitor",
+      "title": "Tax Saving Funds"
+    },
+	{
+      "id": "onShowTechChart",
+      "icon": "sap-icon://show",
+      "type": "Monitor",
+      "title": "Technology Funds"
+    },
+	{
+      "id": "onShowPharmaChart",
+      "icon": "sap-icon://show",
+      "type": "Monitor",
+      "title": "Pharma Funds"
+    }
+  ]
+
     {
       "id": "manageinv",
       "icon": "sap-icon://add",
@@ -95,4 +173,5 @@
     "type": "Create",
     "title": "Category Performance"
   }]
+
 }

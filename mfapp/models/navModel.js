@@ -16,6 +16,7 @@ var mfnavSchema = mongoose.Schema({
 var mfnavModel = mongoose.model('navdetls', mfnavSchema);
 
 
+
 //This route gets all the documents inside the schemes collection in MongoDB
 async function findAll() {
   try {
@@ -158,9 +159,50 @@ async function getLastNav(scode) {
   }
 }
 
+
+function postManyNew(mfnavs) {
+
+  var db = mongoose.connection;
+  var navdetls = db.collection("navdetlstemp");
+
+  var bulkOp = navdetls.initializeUnorderedBulkOp(),
+    counter = 0;
+    succcounter = 0;
+
+  var stats = {};  
+
+  // Loop at the array of data, and insert in batches of 1000
+  mfnavs.forEach(function (data) {
+    bulkOp.insert(data);
+    counter++;
+
+    if (counter % 1000 == 0) {
+      // Execute per 1000 operations and re-initialize every 1000 update statements
+      bulkOp.execute(function (e, rresult) {
+        succcounter = succcounter + rresult.nInserted;
+      });
+      bulkOp = navdetls.initializeUnorderedBulkOp();
+    }
+
+  });
+
+  // Clean up queues
+  if (counter % 1000 != 0) {
+    bulkOp.execute(function (e, rresult) {
+      succcounter = succcounter + rresult.nInserted;
+    });
+  }
+  
+
+
+  
+
+}
+
 module.exports.getLastNav = getLastNav;
 module.exports.findAll = findAll;
 module.exports.postOne = postOne;
 module.exports.postMany = postMany;
+module.exports.postManyNew = postManyNew;
 module.exports.findOneNav = findOneNav;
 module.exports.findNNAV = findNNAV;

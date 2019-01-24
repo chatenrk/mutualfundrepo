@@ -43,13 +43,15 @@
       "tablet": true,
       "phone": true
     },
+
     "supportedThemes": [
       "sap_bluecrystal"
-    ]
+  
   },
   "sap.ui5": {
     "_version": "1.2.0",
     "rootView": "simple_hello.view.app",
+
     "resourceRoots": {
       "simple_hello.toastr": "./libs/Toastr"
     },
@@ -107,9 +109,11 @@
       "schdet_model": {
         "type": "sap.ui.model.json.JSONModel"
       },
+
       "schinvaggr_model": {
         "type": "sap.ui.model.json.JSONModel"
       },
+
       "selSchModel": {
         "type": "sap.ui.model.json.JSONModel"
       },
@@ -139,6 +143,11 @@
       "fewnavmodel": {
         "type": "sap.ui.model.json.JSONModel"
       },
+
+	  "mulline_model":{
+        "type": "sap.ui.model.json.JSONModel"
+      }
+
       "usrdetls_model": {
         "type": "sap.ui.model.json.JSONModel"
       },
@@ -152,6 +161,7 @@
         "type": "sap.ui.model.json.JSONModel"
       }
 
+
     },
     "routing": {
       "config": {
@@ -162,7 +172,9 @@
         "controlAggregation": "pages",
         "transition": "slide"
       },
-      "routes": [{
+
+      "routes": [
+        {
           "pattern": "",
           "name": "login",
           "target": "login"
@@ -189,11 +201,18 @@
           "target": "admin"
 
         },
+        {
+          "pattern": "charts",
+          "name": "charts",
+          "target": "charts"
+
+        },
 
         {
           "pattern": "register",
           "name": "register",
           "target": "register"
+
 
         },
         {
@@ -202,12 +221,7 @@
           "target": "documents"
 
         },
-        {
-          "pattern": "charts",
-          "name": "charts",
-          "target": "charts"
 
-        },
         {
           "pattern": "getschemes",
           "name": "getschemes",
@@ -237,6 +251,7 @@
           "name": "addmultischdet",
           "target": "addmultischdet"
 
+
         },
         {
           "pattern": "addnav",
@@ -255,6 +270,7 @@
           "name": "addmultiinvdet",
           "target": "addmultiinvdet"
 
+
         },
         {
           "pattern": "dispallinv",
@@ -268,6 +284,7 @@
           "target": "showallinv"
 
         },
+ 
         {
           "pattern": "schdet:?query:",
           "name": "schdet",
@@ -297,6 +314,17 @@
           "target": "shownavsch"
         },
         {
+
+          "pattern": "mullinechart/{chttype}",
+          "name": "mullinechart",
+          "target": "mullinechart"
+        },
+        {
+          "pattern": "addnavdetnew",
+          "name": "addnavdetnew",
+          "target": "addnavdetnew"
+        }
+
           "pattern": "schchgdocdisp",
           "name": "schchgdocdisp",
           "target": "schchgdocdisp"
@@ -306,6 +334,7 @@
           "name": "catcompchart",
           "target": "catcompchart"
         }
+
 
 
       ],
@@ -326,6 +355,12 @@
           "viewName": "admin",
           "viewLevel": 1
         },
+
+        "charts": {
+          "viewName": "charts/chartsdb",
+          "viewLevel": 1
+        },
+
         "register": {
           "viewName": "register",
           "viewLevel": 1
@@ -346,10 +381,12 @@
           "viewName": "addamcs",
           "viewLevel": 1
         },
+
         "addmultischdet": {
           "viewName": "addmultischdetails",
           "viewLevel": 1
         },
+
         "addnav": {
           "viewName": "addnav",
           "viewLevel": 1
@@ -362,10 +399,12 @@
           "viewName": "mfinvlog",
           "viewLevel": 1
         },
+
         "addmultiinvdet": {
           "viewName": "addmultiinv",
           "viewLevel": 1
         },
+
         "dispallinv": {
           "viewName": "showallinvsplit",
           "viewLevel": 1
@@ -390,6 +429,17 @@
           "viewName": "shownavsch",
           "viewLevel": 1
         },
+
+        "addnavdetnew": {
+          "viewName": "addnavnew",
+          "viewLevel": 1
+        },
+        "mullinechart": {
+          "viewName": "charts/mullinechart",
+          "viewLevel": 1
+        }
+      }
+
         "documents": {
           "viewName": "docdb",
           "viewLevel": 1
@@ -408,6 +458,7 @@
         }
 
       }
+
 
 
 
