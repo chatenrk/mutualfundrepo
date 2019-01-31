@@ -32,7 +32,6 @@
         "uri": "models/splitapp.json",
         "type": "JSON"
       }
-
     }
   },
   "sap.ui": {
@@ -44,9 +43,7 @@
       "phone": true
     },
 
-    "supportedThemes": [
-      "sap_bluecrystal"
-  
+    "supportedThemes": ["sap_bluecrystal"]
   },
   "sap.ui5": {
     "_version": "1.2.0",
@@ -76,7 +73,6 @@
       },
       "mfinvfor_model": {
         "type": "sap.ui.model.json.JSONModel"
-
       },
       "tran_model": {
         "type": "sap.ui.model.json.JSONModel",
@@ -135,7 +131,6 @@
       },
       "dispinvdetl": {
         "type": "sap.ui.model.json.JSONModel"
-
       },
       "splitapp": {
         "type": "sap.ui.model.json.JSONModel"
@@ -144,9 +139,9 @@
         "type": "sap.ui.model.json.JSONModel"
       },
 
-	  "mulline_model":{
+      "mulline_model": {
         "type": "sap.ui.model.json.JSONModel"
-      }
+      },
 
       "usrdetls_model": {
         "type": "sap.ui.model.json.JSONModel"
@@ -160,8 +155,6 @@
       "chtschcat_model": {
         "type": "sap.ui.model.json.JSONModel"
       }
-
-
     },
     "routing": {
       "config": {
@@ -178,113 +171,93 @@
           "pattern": "",
           "name": "login",
           "target": "login"
-
         },
 
         {
           "pattern": "dashboard",
           "name": "dashboard",
           "target": "dashboard"
-
         },
 
         {
           "pattern": "chatenmf",
           "name": "chatenmf",
           "target": "chatenmf"
-
         },
 
         {
           "pattern": "admin",
           "name": "admin",
           "target": "admin"
-
         },
         {
           "pattern": "charts",
           "name": "charts",
           "target": "charts"
-
         },
 
         {
           "pattern": "register",
           "name": "register",
           "target": "register"
-
-
         },
         {
           "pattern": "documents",
           "name": "documents",
           "target": "documents"
-
         },
 
         {
           "pattern": "getschemes",
           "name": "getschemes",
           "target": "getschemes"
-
         },
         {
           "pattern": "getamcs",
           "name": "getamcs",
           "target": "getamcs"
-
         },
         {
           "pattern": "addschemes",
           "name": "addschemes",
           "target": "addschemes"
-
         },
         {
           "pattern": "addamcs",
           "name": "addamcs",
           "target": "addamcs"
-
         },
         {
           "pattern": "addmultischdet",
           "name": "addmultischdet",
           "target": "addmultischdet"
-
-
         },
         {
           "pattern": "addnav",
           "name": "addnav",
           "target": "addnav"
-
         },
         {
           "pattern": "mfinvlog",
           "name": "mfinvlog",
           "target": "mfinvlog"
-
         },
         {
           "pattern": "addmultiinvdet",
           "name": "addmultiinvdet",
           "target": "addmultiinvdet"
-
-
         },
         {
           "pattern": "dispallinv",
           "name": "dispallinv",
           "target": "dispallinv"
-
         },
         {
           "pattern": "showallinv",
           "name": "showallinv",
           "target": "showallinv"
-
         },
- 
+
         {
           "pattern": "schdet:?query:",
           "name": "schdet",
@@ -294,19 +267,16 @@
           "pattern": "invdetldisp",
           "name": "invdetldisp",
           "target": "invdetldisp"
-
         },
         {
           "pattern": "dispallinv/{goal}",
           "name": "dispallinvgoals",
           "target": "dispallinvgoals"
-
         },
         {
           "pattern": "manageinv",
           "name": "manageinv",
           "target": "manageinv"
-
         },
         {
           "pattern": "shownavsch",
@@ -314,7 +284,6 @@
           "target": "shownavsch"
         },
         {
-
           "pattern": "mullinechart/{chttype}",
           "name": "mullinechart",
           "target": "mullinechart"
@@ -323,8 +292,8 @@
           "pattern": "addnavdetnew",
           "name": "addnavdetnew",
           "target": "addnavdetnew"
-        }
-
+        },
+        {
           "pattern": "schchgdocdisp",
           "name": "schchgdocdisp",
           "target": "schchgdocdisp"
@@ -334,9 +303,6 @@
           "name": "catcompchart",
           "target": "catcompchart"
         }
-
-
-
       ],
       "targets": {
         "login": {
@@ -437,17 +403,13 @@
         "mullinechart": {
           "viewName": "charts/mullinechart",
           "viewLevel": 1
-        }
-      }
+        },
 
         "documents": {
           "viewName": "docdb",
           "viewLevel": 1
         },
-        "charts": {
-          "viewName": "chartsdb",
-          "viewLevel": 1
-        },
+
         "schchgdocdisp": {
           "viewName": "schchgdocdisp",
           "viewLevel": 1
@@ -456,12 +418,7 @@
           "viewName": "charts.catcompchart",
           "viewLevel": 1
         }
-
       }
-
-
-
-
     }
   }
 }

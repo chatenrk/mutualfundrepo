@@ -13,8 +13,6 @@
     }
 
   ],
-
-
   "AdminCollection": [{
       "id": "onAddSchDet",
       "icon": "sap-icon://add",
@@ -53,7 +51,7 @@
       "title": "Display All My Investments"
     }
   ],
-  "NAVCollection": [
+   "NAVCollection": [
 
     {
       "id": "addnavdet",
@@ -94,10 +92,16 @@
 			"icon": "sap-icon://show",
 			"type": "Create",
 			"title": "Add NAV via link"
-		}
+		},
+    {
+      "id": "manageinv",
+      "icon": "sap-icon://add",
+      "type": "Create",
+      "title": "Manage Investments"
+    }
 
 	],
-	"LineChtsColl": [
+  "LineChtsColl": [
     {
       "id": "onShowMulLineChart",
       "icon": "sap-icon://show",
@@ -152,26 +156,11 @@
       "type": "Monitor",
       "title": "Pharma Funds"
     }
-  ]
-
-    {
-      "id": "manageinv",
-      "icon": "sap-icon://add",
-      "type": "Create",
-      "title": "Manage Investments"
-    }
   ],
   "DocumentsCollection": [{
     "id": "schchgdocdisp",
     "icon": "sap-icon://add",
     "type": "Create",
     "title": "Scheme Change Documents"
-  }],
-  "ChartsCollection": [{
-    "id": "catcompchart",
-    "icon": "sap-icon://add",
-    "type": "Create",
-    "title": "Category Performance"
   }]
-
 }
