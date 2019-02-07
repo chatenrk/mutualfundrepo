@@ -14,7 +14,7 @@ sap.ui.define(["simple_hello/Controller/BaseController"], function(
 
       switch (tileid) {
         case "addprojschemes": // Check and add projection schemes
-          // this._oRouter.navTo("catcompchart");
+          this._oRouter.navTo("showprojschemes");
           break;
 
         default:

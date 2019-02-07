@@ -59,16 +59,15 @@ router.get('/invvscurr', async (req, res, next) => {
       projdetobj = {};
 
       // Check if this is the last loop pass. if so add the current value data
-      if (i == invdet.length - 1)
-      {
-          debugger;
-          var currval = await calchelpers.currval(scode,projdet[i].totunits);
-          projdetobj.totamnt = projdet[i].totamnt;
-          projdetobj.totunits = projdet[i].totunits;
-          projdetobj.currval = currval.currvalamnt;
-          projdetobj.projdate = currval.lastNavDate;
-          projdet.push(projdetobj);
-          projdetobj = {};
+      if (i == invdet.length - 1) {
+        debugger;
+        var currval = await calchelpers.currval(scode, projdet[i].totunits);
+        projdetobj.totamnt = projdet[i].totamnt;
+        projdetobj.totunits = projdet[i].totunits;
+        projdetobj.currval = currval.currvalamnt;
+        projdetobj.projdate = currval.lastNavDate;
+        projdet.push(projdetobj);
+        projdetobj = {};
       }
 
     }
@@ -237,6 +236,20 @@ router.get('/projvalues', async (req, res, next) => {
 router.get("/projchartdet", async (req, res, next) => {
   projdet = await projmodel.findAllChartDetls();
   res.send(projdet);
+});
+
+
+router.get('/projpush', async (req, res, next) => {
+  var schtype = req.query.schtype;
+
+  if (schtype) {
+    var query = {
+      schtype: schtype
+    }
+  } else {
+    return res.status(500).send("Invalid Get Parameters");
+  }
+
 });
 
 module.exports = router;

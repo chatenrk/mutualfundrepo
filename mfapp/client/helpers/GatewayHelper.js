@@ -728,12 +728,15 @@ sap.ui.define([], function() {
     /*---------------------------------------------------------------------*
      * Get Requests Methods
      *---------------------------------------------------------------------*/
+    
+     /**
+     * @desc This helper method gets all the projection categories and its funds
+     * @return Returns a promise object
+     */
+    
     _getprojcatandfunds: function() {
 
-      /**
-       * @desc This helper method gets all the projection categories and its funds
-       * @return Returns a promise object
-       */
+     
 
        var that = this;
        var deferred = jQuery.Deferred();
