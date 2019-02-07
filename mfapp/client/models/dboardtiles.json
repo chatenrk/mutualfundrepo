@@ -162,5 +162,12 @@
     "icon": "sap-icon://add",
     "type": "Create",
     "title": "Scheme Change Documents"
+  }],
+  
+  "ProjCollection": [{
+    "id": "addprojschemes",
+    "icon": "sap-icon://add",
+    "type": "Create",
+    "title": "Check and Add projection schemes"
   }]
 }

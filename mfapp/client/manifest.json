@@ -302,6 +302,11 @@
           "pattern": "catcompchart",
           "name": "catcompchart",
           "target": "catcompchart"
+        },
+        {
+          "pattern": "projections",
+          "name": "projections",
+          "target": "projections"
         }
       ],
       "targets": {
@@ -416,6 +421,10 @@
         },
         "catcompchart": {
           "viewName": "charts.catcompchart",
+          "viewLevel": 1
+        },
+         "projections": {
+          "viewName": "projections/projectionsdb",
           "viewLevel": 1
         }
       }

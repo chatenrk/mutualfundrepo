@@ -232,4 +232,11 @@ router.get('/projvalues', async (req, res, next) => {
 //   }
 // });
 
+
+// Charts related routes
+router.get("/projchartdet", async (req, res, next) => {
+  projdet = await projmodel.findAllChartDetls();
+  res.send(projdet);
+});
+
 module.exports = router;
