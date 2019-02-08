@@ -165,9 +165,15 @@
   }],
   
   "ProjCollection": [{
+    "id": "showprojschemes",
+    "icon": "sap-icon://add",
+    "type": "Create",
+    "title": "Check Add projection schemes"
+  },
+  {
     "id": "addprojschemes",
     "icon": "sap-icon://add",
     "type": "Create",
-    "title": "Check and Add projection schemes"
+    "title": "Add projection schemes"
   }]
 }

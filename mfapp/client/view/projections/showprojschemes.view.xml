@@ -57,8 +57,8 @@
           <Toolbar>
             <Title level="H4" text="{i18n>projschdisp}"/>
             <ToolbarSpacer></ToolbarSpacer>
-            <Button id="addButton" icon="sap-icon://add" press="onAddSchemes" />
-            <Button icon="sap-icon://download" press="onDataExport"/>
+ 
+            <Button id="dwdButton" icon="sap-icon://download" press="onDataExport" enabled="false"/>
           </Toolbar>
         </headerToolbar>
         <Table id="navdatatable" items="{projscheme_model>/}" selectionMode="None" title="Schemes" growing="true" growingThreshold="10">

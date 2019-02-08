@@ -136,6 +136,12 @@ sap.ui.define(
         _filterProjections: function() {
           var that = this;
           var projTempData = [];
+
+          // Set the buttons to enabled
+         
+          var dwdbutton = this.getView().byId("dwdButton");
+          dwdbutton.setEnabled(true);
+
           var projModel = this.getView().getModel("projschcat_model");
           var projModelData = projModel.getData();
 
@@ -153,22 +159,29 @@ sap.ui.define(
           this.setPanelExpanded(this._showschtblPanel, true);
         },
 
-        // handleSearch: function(oEvent) {
-        //   /**
-        //        * @desc This method is the event handler for the search of pop-up for schemes.
-        //        * @param oEvent referring to the selected scheme in the pop-up
-        //        */
+       
+        /**
+        * @desc This method is the event handler for the close of pop-up for Scheme Addition.
+        * @param oEvent referring to the selected scheme in the pop-up
+        */
 
-        //   var sValue = oEvent.getParameter("value");
-        //   var oFilter = new sap.ui.model.Filter(
-        //     "sname",
-        //     sap.ui.model.FilterOperator.Contains,
-        //     sValue
-        //   );
-
-        //   var oBinding = oEvent.getSource().getBinding("items");
-        //   oBinding.filter([oFilter]);
-        // },
+        handleClose: function(oEvent) {
+          var aContexts = oEvent.getParameter("selectedContexts");
+          // if (aContexts && aContexts.length) {
+          //   var mfname = this.getView().byId("mfname");
+          //   this._sname = aContexts.map(function(oContext) {
+          //     return oContext.getObject().sname;
+          //   });
+          //   mfname.setValue(this._sname);
+          //   this._scode = aContexts.map(function(oContext) {
+          //     return oContext.getObject().scode;
+          //   });
+          // }
+          // oEvent
+          //   .getSource()
+          //   .getBinding("items")
+          //   .filter([]);
+        },
 
         onRefresh: function() {
           this.getView()
@@ -179,7 +192,7 @@ sap.ui.define(
             .setValue("");
 
           // Set the table binding to empty
-          var mfinsmodel = this.getView().getModel("fewnavmodel");
+          var mfinsmodel = this.getView().getModel("projscheme_model");
           mfinsmodel.setData([]);
           mfinsmodel.updateBindings();
 
@@ -198,7 +211,7 @@ sap.ui.define(
               }),
 
               // Pass in the model created above
-              models: this.getView().getModel("fewnavmodel"),
+              models: this.getView().getModel("projscheme_model"),
 
               // binding information for the rows aggregation
               rows: {
@@ -221,16 +234,16 @@ sap.ui.define(
                   }
                 },
                 {
-                  name: "Net Asset Value",
+                  name: "Is Reference Fund?",
                   template: {
-                    content: "{nav}"
+                    content: "{reffund}"
                   }
                 },
 
                 {
-                  name: "Date of NAV",
+                  name: "Scheme Category",
                   template: {
-                    content: "{datefmtd}"
+                    content: "{schcat}"
                   }
                 }
               ] // Columns end
@@ -239,7 +252,7 @@ sap.ui.define(
             // OtherHelpers._populateColumnsExcelExtract(oExport,data);
             // download exported file
             oExport
-              .saveFile()
+              .saveFile(this.projSchCat)
               .catch(function(oError) {
                 MessageBox.error(
                   "Error when downloading data. Browser might not be supported!\n\n" +

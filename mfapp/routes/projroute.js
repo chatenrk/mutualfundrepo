@@ -12,6 +12,35 @@ const config = require('../config/database');
 const helpers = require('../helpers/helpers.js');
 const calchelpers = require('../helpers/calchelpers.js');
 
+/*
+New code
+*/
+// Get all schemes that are relevant for the selected scheme category(Multicap,midcap etc)
+router.get('/projschcat', async (req, res, next) => {
+  try {
+
+    var schcat = await projmodel.findAllSchCat();
+
+    if (schcat.length > 0) {
+      res.send(schcat);
+    } else {
+      return res.status(200).send("No data found for query");
+    }
+
+  } catch (err) {
+
+    return res.status(500).send(err);
+  }
+
+});
+
+
+
+
+/*
+Code below needs to be relooked if required or not
+*/
+
 // Get invested versus current projection
 router.get('/invvscurr', async (req, res, next) => {
 

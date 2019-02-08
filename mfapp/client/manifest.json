@@ -155,7 +155,7 @@
       "chtschcat_model": {
         "type": "sap.ui.model.json.JSONModel"
       },
-       "projschcatfilt_model": {
+      "projschcatfilt_model": {
         "type": "sap.ui.model.json.JSONModel"
       },
       "projschcat_model": {
@@ -164,7 +164,6 @@
       "projscheme_model": {
         "type": "sap.ui.model.json.JSONModel"
       }
-      
     },
     "routing": {
       "config": {
@@ -318,10 +317,15 @@
           "name": "projections",
           "target": "projections"
         },
-         {
+        {
           "pattern": "showprojschemes",
           "name": "showprojschemes",
           "target": "showprojschemes"
+        },
+        {
+          "pattern": "addprojschemes",
+          "name": "addprojschemes",
+          "target": "addprojschemes"
         }
       ],
       "targets": {
@@ -438,12 +442,16 @@
           "viewName": "charts.catcompchart",
           "viewLevel": 1
         },
-         "projections": {
+        "projections": {
           "viewName": "projections/projectionsdb",
           "viewLevel": 1
         },
         "showprojschemes": {
           "viewName": "projections/showprojschemes",
+          "viewLevel": 1
+        },
+        "addprojschemes": {
+          "viewName": "projections/addprojschemes",
           "viewLevel": 1
         }
       }

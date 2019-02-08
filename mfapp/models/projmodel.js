@@ -6,6 +6,10 @@ const helpers = require("../helpers/helpers.js");
 const mfinvmodel = require("../models/mfinvmodel");
 const navmodel = require("../models/navModel.js");
 
+/*
+* Projection schemes related schema and Model
+*/
+
 var projSchema = mongoose.Schema({
   schcat: String,
   scode: Number,
@@ -14,6 +18,28 @@ var projSchema = mongoose.Schema({
 });
 
 var projModel = mongoose.model("projections", projSchema);
+
+
+var projCatSchema = mongoose.Schema({
+  schtype:String
+})
+
+var projCatModel = mongoose.model('projschtypes',projCatSchema)
+
+
+async function findAllSchCat() {
+  try {
+    let projdet;
+    projdet = await projCatModel.find();
+    return projdet;
+  } catch (err) {
+    return err;
+  }
+}
+
+/*
+* Projection Schemes related functions
+*/
 
 //This route finds scheme projection details based on the Query sent
 async function findAll(query) {
@@ -255,3 +281,6 @@ module.exports.postOne = postOne;
 module.exports.postMany = postMany;
 module.exports.returnprojval = returnprojval;
 module.exports.findAllChartDetls = findAllChartDetls;
+
+module.exports.findAllSchCat = findAllSchCat;
+
