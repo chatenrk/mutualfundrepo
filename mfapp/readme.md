@@ -27,6 +27,7 @@
       - [Express](#express)
       - [Mongoose](#mongoose)
     - [MongoDB](#mongodb)
+      - [Usage](#Usage)
       - [Components](#Components)
       - [Utilities](#Utilities)
       - [Mongo Backup](#mongo-backup)
