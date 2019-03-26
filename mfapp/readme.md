@@ -245,6 +245,12 @@ npm config rm https-proxy
 
 ### MongoDB
 
+#### Usage
+To run mongodb on MacOS(OS X) navigate to the following path before using any of the following commands
+```
+/usr/local/var/mongodb
+```  
+
 #### COMPONENTS
 
 - mongod - The database server.
