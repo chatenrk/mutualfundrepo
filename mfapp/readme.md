@@ -227,6 +227,19 @@ Views and controllers often form a 1:1 relationship, but it is also possible to 
 View and controller represent reusable units, and distributed development is highly supported.
 
 ### Node JS and NPM
+#### NPM Related
+##### NPM Proxy Setting
+Use the following code to set the NPM Proxy
+```
+For HTTP:
+npm config set proxy http://proxy_host:port
+For HTTPS:
+npm config set https-proxy http://proxy.company.com:8080
+
+To remove proxy use:
+npm config rm https-proxy
+
+```
 #### Express
 #### Mongoose
 
@@ -258,7 +271,23 @@ To take a backup of a MongoDB database, ensure that the Mongo Database is connec
 ```
 mongodump --gzip
 ```
-The above command creates a **Dump** folder, where all the database are backed up in zipped format
+The above command creates a **Dump** folder, where all the database are backed up in zipped format.The following are useful options that can be used along with the above command
+
+```
+--gzip
+Compresses the output. If  mongodump  outputs to the dump directory, the new feature compresses the individual files. The files have the suffix  **.gz**.
+
+--out <path>, -o <path>
+Specifies the directory where mongodump will write BSON files for the dumped databases. By default, mongodump saves output files in a directory named **dump** in the current working directory.
+
+--db <database>,-d <database>
+
+Specifies a database to backup. If you do not specify a database,  mongodump  copies all databases in this instance into the dump files.
+
+--collection <collection>, -c <collection>
+Specifies a collection to backup. If you do not specify a collection, this option copies all collections in the specified database or instance to the dump files
+
+```
 
 #### Mongo Restore
 To restore the backup to database, navigate to the dump folder and run the following command. Before running ensure that the zipped folder is unzipped
