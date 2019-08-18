@@ -1,3 +1,0 @@
-<mvc:View controllerName="charts_sample.controller.app" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
-  <App id="rootControl"/>
-</mvc:View>
