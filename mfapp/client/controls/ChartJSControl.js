@@ -82,7 +82,9 @@ sap.ui.define([
     },
 
     exit: function() {
-      this._newCustomChart.destroy();
+
+    //   this._newCustomChart.destroy();
+
     },
 
     renderer: function(oRm, oControl) {
@@ -107,4 +109,6 @@ sap.ui.define([
       this._newCustomChart.update();
     }
   });
+
 });
+

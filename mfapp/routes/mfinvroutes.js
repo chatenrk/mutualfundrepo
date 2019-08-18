@@ -424,4 +424,20 @@ router.get('/gplanner', async (req, res, next) => {
   // yearsg = Years to goal
 });
 
+/********************************************************************************************************
+ * Temporary functions. To be cleaned up later 
+ *******************************************************************************************************/
+router.get('/allTemp', async (req, res, next) => {
+
+  try {
+    invdets = await mfinvmodel.findAllTemp();
+
+    res.send(invdets);
+  } catch (err) {
+
+    return res.status(500).send(err);
+  }
+
+
+});
 module.exports = router;

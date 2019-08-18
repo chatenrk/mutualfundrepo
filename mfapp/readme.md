@@ -27,6 +27,12 @@
       - [Express](#express)
       - [Mongoose](#mongoose)
     - [MongoDB](#mongodb)
+      - [Usage](#Usage)
+      - [Components](#Components)
+      - [Utilities](#Utilities)
+      - [Mongo Backup](#mongo-backup)
+      - [Mongo Restore](#mongo-restore)  
+      - [Sample Code Snippets](#sample-code-snippets)
     - [Moment](#moment)
 
 
@@ -240,6 +246,12 @@ npm config rm https-proxy
 
 ### MongoDB
 
+#### Usage
+To run mongodb on MacOS(OS X) navigate to the following path before using any of the following commands
+```
+/usr/local/var/mongodb
+```  
+
 #### COMPONENTS
 
 - mongod - The database server.
@@ -334,6 +346,17 @@ db.<collectionname>.update(
 
     }
 )
+```
+
+##### Count documents in a collection
+```
+db.<collectionname>.count()
+```
+
+##### Delete documents in a collections
+```
+db.<collectionname>.deleteMany(
+   { "field1" : value1}) 
 ```
 
 ### Moment

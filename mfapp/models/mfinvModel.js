@@ -39,6 +39,34 @@ var mfinvSchema = mongoose.Schema({
 mfinvSchema.plugin(integerValidator);
 var mfinvModel = mongoose.model('mfinvdetl', mfinvSchema);
 
+
+/********************************************************************************************************
+ * Temporary schema and Models for Investments. To be cleaned up later 
+ *******************************************************************************************************/
+var mfinvSchemaTemp = mongoose.Schema({
+  Date: String,
+  Month:String,
+  Year:Number,
+  Transaction: String,
+  scode: Number,
+  FundName: String,
+  amccode: Number,
+  amcname: String,
+  Investment: {
+    type: Number,
+    integer: true
+  },
+  nav: SchemaTypes.Double,
+  remarks: String,
+  Portfolio: String,
+  InvestFor:String,
+  AssetType:String,
+  VRClass:String
+});
+
+mfinvSchemaTemp.plugin(integerValidator);
+var mfinvModelTemp = mongoose.model('mfinvtempdetls', mfinvSchemaTemp);
+
 /*
 ------------------------------------------------------------------------------------------------------------------------
 * Get Data Methods
@@ -140,6 +168,24 @@ async function findOneInvDetUpd(query, desc) {
     return err;
   }
 };
+
+
+/********************************************************************************************************
+ * Temporary functions. To be cleaned up later 
+ *******************************************************************************************************/
+async function findAllTemp() {
+  try {
+    let invdet
+    invdet = await mfinvModelTemp.find();
+
+    return invdet;
+  } catch (err) {
+
+    return err;
+  }
+};
+
+
 
 /*
 ------------------------------------------------------------------------------------------------------------------------
@@ -255,9 +301,9 @@ async function postManyInvDet(mfinvdetls, user) {
 }
 
 /*
-------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
 * Get Aggregate Data Methods
-------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
 */
 
 async function getAggregation(aggr) {
@@ -498,3 +544,5 @@ module.exports.findOneInvDet = findOneInvDet;
 module.exports.findOneInvDetUpd = findOneInvDetUpd
 module.exports.deleteInv = deleteInv;
 module.exports.postManyInvDet = postManyInvDet;
+
+module.exports.findAllTemp = findAllTemp;

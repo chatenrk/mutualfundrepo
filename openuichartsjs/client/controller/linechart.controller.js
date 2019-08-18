@@ -51,6 +51,14 @@ sap.ui.define([
 
     },
 
+    onSelectionChange: function (oEvt) {
+      var selkey = oEvt.getSource().mProperties.selectedKey;
+
+
+      // Adjust and update chart
+
+    },
+
     _getnavsuccess: function(dbdata, that) {
 
       var labels = [],
@@ -59,9 +67,10 @@ sap.ui.define([
       var lineData = {},
         dsValues = {};
       for (var i = 0; i < dbdata.length; i++) {
-        labels.push(dbdata[i].date);
-        chtdata.push(dbdata[i].nav);
-
+        if (i % 15 == 0) {
+          labels.push(dbdata[i].date);
+          chtdata.push(dbdata[i].nav);
+        }
       }
 
       dsValues.label = "Sample NAV Line";

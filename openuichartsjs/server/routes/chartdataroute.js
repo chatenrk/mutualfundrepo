@@ -45,4 +45,35 @@ router.get('/legenddata', async (req, res, next) => {
 
 });
 
+// Route to get pie details
+router.get('/piedetails', async (req, res, next) => {
+
+  try {
+    navdetls = await chtdatamodel.findAllPie();
+    res.send(navdetls);
+  } catch (err) {
+    return res.status(500).send(err);
+  }
+
+
+});
+
+
+// Route to get pie details
+router.get('/projdetails', async (req, res, next) => {
+
+  try {
+    navdetls = await chtdatamodel.getProjData();
+    res.send(navdetls);
+  } catch (err) {
+    return res.status(500).send(err);
+  }
+
+
+});
+
+
+
+
+
 module.exports = router;
