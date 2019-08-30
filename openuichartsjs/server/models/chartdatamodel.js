@@ -37,9 +37,16 @@ var legendSchema = mongoose.Schema({
 
 });
 
+var pieSchema = mongoose.Schema({
+  type: String,
+  amount: SchemaTypes.Double
+
+});
+
 var navLineModel = mongoose.model('navlinedetls', navLineSchema);
 var mulLineModel = mongoose.model('mullinecmpdetls', mulLineSchema);
 var legendModel = mongoose.model('legenddetls', legendSchema);
+var pieModel = mongoose.model('piedetls', pieSchema);
 
 //This route gets all the documents
 async function findAll() {
@@ -54,6 +61,22 @@ async function findAll() {
     return err;
   }
 };
+
+
+//This route gets all the documents
+async function findAllPie() {
+  try {
+
+    let navdetls
+    navdetls = await pieModel.find();
+
+    return navdetls;
+  } catch (err) {
+
+    return err;
+  }
+};
+
 
 
 //This route gets all the documents
@@ -150,7 +173,24 @@ async function getLegendData() {
   }
 };
 
+// Get proj details
+async function getProjData() {
+  try {
+
+    
+
+    let navdetls
+    navdetls = await navLineModel.find();
+
+    return navdetls;
+  } catch (err) {
+
+    return err;
+  }
+};
+
 
 module.exports.findAll = findAll;
 module.exports.findAllMulLineData = findAllMulLineData;
 module.exports.getLegendData = getLegendData;
+module.exports.findAllPie = findAllPie;

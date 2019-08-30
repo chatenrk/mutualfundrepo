@@ -12,6 +12,35 @@ const config = require('../config/database');
 const helpers = require('../helpers/helpers.js');
 const calchelpers = require('../helpers/calchelpers.js');
 
+/*
+New code
+*/
+// Get all schemes that are relevant for the selected scheme category(Multicap,midcap etc)
+router.get('/projschcat', async (req, res, next) => {
+  try {
+
+    var schcat = await projmodel.findAllSchCat();
+
+    if (schcat.length > 0) {
+      res.send(schcat);
+    } else {
+      return res.status(200).send("No data found for query");
+    }
+
+  } catch (err) {
+
+    return res.status(500).send(err);
+  }
+
+});
+
+
+
+
+/*
+Code below needs to be relooked if required or not
+*/
+
 // Get invested versus current projection
 router.get('/invvscurr', async (req, res, next) => {
 
@@ -59,16 +88,15 @@ router.get('/invvscurr', async (req, res, next) => {
       projdetobj = {};
 
       // Check if this is the last loop pass. if so add the current value data
-      if (i == invdet.length - 1)
-      {
-          debugger;
-          var currval = await calchelpers.currval(scode,projdet[i].totunits);
-          projdetobj.totamnt = projdet[i].totamnt;
-          projdetobj.totunits = projdet[i].totunits;
-          projdetobj.currval = currval.currvalamnt;
-          projdetobj.projdate = currval.lastNavDate;
-          projdet.push(projdetobj);
-          projdetobj = {};
+      if (i == invdet.length - 1) {
+        debugger;
+        var currval = await calchelpers.currval(scode, projdet[i].totunits);
+        projdetobj.totamnt = projdet[i].totamnt;
+        projdetobj.totunits = projdet[i].totunits;
+        projdetobj.currval = currval.currvalamnt;
+        projdetobj.projdate = currval.lastNavDate;
+        projdet.push(projdetobj);
+        projdetobj = {};
       }
 
     }
@@ -231,5 +259,26 @@ router.get('/projvalues', async (req, res, next) => {
 //     return res.status(500).send(err);
 //   }
 // });
+
+
+// Charts related routes
+router.get("/projchartdet", async (req, res, next) => {
+  projdet = await projmodel.findAllChartDetls();
+  res.send(projdet);
+});
+
+
+router.get('/projpush', async (req, res, next) => {
+  var schtype = req.query.schtype;
+
+  if (schtype) {
+    var query = {
+      schtype: schtype
+    }
+  } else {
+    return res.status(500).send("Invalid Get Parameters");
+  }
+
+});
 
 module.exports = router;

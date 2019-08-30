@@ -1,0 +1,56 @@
+<core:FragmentDefinition
+		height="100%"
+		xmlns:layout="sap.ui.layout"
+		xmlns:form="sap.ui.layout.form"
+		xmlns:core="sap.ui.core"
+		xmlns="sap.m">
+		<Page id="wizardBranchingReviewPage" showHeader="false">
+			<content>
+				<form:SimpleForm
+						title="1. Selected Scheme Category"
+						minWidth="1024"
+						editable="false"
+						layout="ResponsiveGridLayout">
+					<form:content>
+						<Label text="Chosen Scheme Category"/>
+						<Text text="{finalModel>schCat}"/>
+						<Link press="_navBackToPaymentType" text="Edit" />
+					</form:content>
+				</form:SimpleForm>
+
+				<form:SimpleForm
+						title="2. Selected Scheme"
+						minWidth="1024"
+						editable="false"
+						layout="ResponsiveGridLayout">
+					<form:content>
+						<Label text="Chosen Scheme"/>
+						<Text text="{/selectedPayment}"/>
+						<Link press="_navBackToPaymentType" text="Edit" />
+					</form:content>
+				</form:SimpleForm>
+
+		
+				<form:SimpleForm
+						title="3. Reference Fund Check"
+						minWidth="1024"
+						editable="false"
+						layout="ResponsiveGridLayout">
+					<form:content>
+						<Label text="Is Reference Fund"/>
+						<Text text="{/selectedPayment}"/>
+						<Link press="_navBackToPaymentType" text="Edit" />
+					</form:content>
+				</form:SimpleForm>
+
+			</content>
+			<footer>
+				<Bar>
+					<contentRight>
+						<Button text="Submit" press="handleWizardSubmit"/>
+						<Button text="Cancel" press="handleWizardCancel"/>
+					</contentRight>
+				</Bar>
+			</footer>
+		</Page>
+</core:FragmentDefinition>

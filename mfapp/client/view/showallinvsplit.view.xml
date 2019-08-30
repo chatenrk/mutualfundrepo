@@ -1,37 +1,22 @@
-<mvc:View controllerName="simple_hello.Controller.showallinvsplit" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns="sap.m">
-	<semantic:FullscreenPage id="page" navButtonPress="onNavBack" showNavButton="true" title="{i18n>mfinvdisp}" floatingFooter="true">
+<mvc:View controllerName="simple_hello.Controller.showallinvsplit" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.f.semantic" xmlns="sap.m">
+	<semantic:SemanticPage id="page" navButtonPress="onNavBack" showNavButton="true" title="{i18n>mfinvdisp}" showFooter="false">
 		<semantic:content>
 			<IconTabBar id="iconTabBar" select="onQuickFilter" class="sapUiResponsiveContentPadding" showOverflowSelectList="true">
 				<content>
-					<Table
-						id="invtable"
-						BackgroundDesign="Solid"
-						updateFinished="onUpdateFinished"
-						class="sapUiResponsiveMargin sapUiNoMarginTop"
-						growing="true"
-						growingScrollToLoad="true"
-						noDataText="{worklistView>/tableNoDataText}"
-						width="auto"
-						items="{manageinv_model>/}">
-						<headerToolbar>
-							<Toolbar>
-								<ToolbarSpacer/>
-								<SearchField id="searchField" liveChange="onSearch" tooltip="{i18n>worklistSearchTooltip}" width="auto"/>
-							</Toolbar>
-						</headerToolbar>
+					<Table id="invtable" alternateRowColors="true" updateFinished="onUpdateFinished" class="sapUiResponsiveMargin" noDataText="{worklistView>/tableNoDataText}" width="auto" items="{manageinv_model>/}" visibleRowCount="5">
 						<columns>
 							<Column hAlign="Center" vAlign="Center">
 								<Text text="{i18n>sname}"/>
 							</Column>
-							<Column hAlign="Center" vAlign="Center">
+							<Column hAlign="Center" vAlign="Center" width="15%">
 								<Text text="{i18n>totInv}"/>
 							</Column>
 
-							<Column hAlign="Center" vAlign="Center">
+							<Column hAlign="Center" vAlign="Center" width="30%">
 								<Text text="{i18n>currVal}"/>
 							</Column>
 
-							<Column hAlign="Center" vAlign="Center">
+							<Column hAlign="Center" vAlign="Center" width="15%">
 								<Text text="{i18n>gainloss}"/>
 							</Column>
 
@@ -50,8 +35,5 @@
 				</content>
 			</IconTabBar>
 		</semantic:content>
-		<semantic:customFooterContent>
-			<Label text="Sample Footer" design="Bold"/>
-		</semantic:customFooterContent>
-	</semantic:FullscreenPage>
+	</semantic:SemanticPage>
 </mvc:View>

@@ -30,6 +30,11 @@
 			<Text  text="{i18n>RupeeSymbol}{schinvaggr_model>/currVal} (As on {schinvaggr_model>/lnavDate}) " />
 		</layout:VerticalLayout>
 
+		<layout:VerticalLayout class="sapUiSmallMarginEnd">
+			<Label text="{i18n>gainloss}" design="Bold"/>
+			<Text  text= "{i18n>RupeeSymbol}{schinvaggr_model>/gainloss} (As on {schinvaggr_model>/lnavDate}) " />
+		</layout:VerticalLayout>
+
 		</layout:HorizontalLayout>
 	</forms:SimpleForm>
 </mvc:View>

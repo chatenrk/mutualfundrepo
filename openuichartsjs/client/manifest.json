@@ -58,6 +58,9 @@
       },
       "schtypename_model": {
         "type": "sap.ui.model.json.JSONModel"
+      },
+      "piechart_model": {
+        "type": "sap.ui.model.json.JSONModel"
       }
 
 
@@ -94,6 +97,12 @@
           "name": "invvallinechart",
           "target": "invvallinechart"
 
+        },
+        {
+          "pattern": "piechart",
+          "name": "piechart",
+          "target": "piechart"
+
         }
 
 
@@ -113,6 +122,10 @@
         },
         "invvallinechart": {
           "viewName": "invvallinechart",
+          "viewLevel": 1
+        },
+        "piechart": {
+          "viewName": "piechart",
           "viewLevel": 1
         }
 

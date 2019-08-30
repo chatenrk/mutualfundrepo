@@ -1,50 +1,52 @@
-[{
-
-
-				"id":"lgn_id",
-				"text": "Login",
-				"key": "login",
-				"icon": "sap-icon://account",
-				"usr_log_flag":false
-			},
-			{
-				"id":"rgstr_id",
-				"text": "Register",
-				"key": "register",
-				"icon": "sap-icon://role",
-				"usr_log_flag":false
-			},
-			{
-
-				"id":"dshbrd_id",
-				"text": "Dashboard",
-				"key": "dashboard",
-				"icon": "sap-icon://bbyd-dashboard",
-				"usr_log_flag":true
-			},
-			{
-
-				"id":"admin_id",
-				"text": "Admin",
-				"key": "admin",
-				"icon": "sap-icon://bbyd-dashboard",
-				"usr_log_flag":true
-			},
-			{
-
-				"id":"chatenmf_id",
-				"text": "MF Dashboard",
-				"key": "chatenmf",
-				"icon": "sap-icon://bbyd-dashboard",
-				"usr_log_flag":true
-			},
-			{
-
-				"id":"documents",
-				"text": "Documents",
-				"key": "documents",
-				"icon": "sap-icon://bbyd-dashboard",
-				"usr_log_flag":true
-			}
-
+[
+  {
+    "id": "lgn_id",
+    "text": "Login",
+    "key": "login",
+    "icon": "sap-icon://account",
+    "usr_log_flag": false
+  },
+  {
+    "id": "rgstr_id",
+    "text": "Register",
+    "key": "register",
+    "icon": "sap-icon://role",
+    "usr_log_flag": false
+  },
+  {
+    "id": "dshbrd_id",
+    "text": "Dashboard",
+    "key": "dashboard",
+    "icon": "sap-icon://bbyd-dashboard",
+    "usr_log_flag": true
+  },
+  {
+    "id": "admin_id",
+    "text": "Admin",
+    "key": "admin",
+    "icon": "sap-icon://bbyd-dashboard",
+    "usr_log_flag": true
+  },
+  {
+    "id": "chatenmf_id",
+    "text": "MF Dashboard",
+    "key": "chatenmf",
+    "icon": "sap-icon://bbyd-dashboard",
+    "usr_log_flag": true
+  },
+  
+  {
+    "id": "charts",
+    "text": "Charts Dashboard",
+    "key": "charts",
+    "icon": "sap-icon://bbyd-dashboard",
+    "usr_log_flag": true
+  },
+  {
+    "id": "projections",
+    "text": "Projection Dashboard",
+    "key": "projections",
+    "icon": "sap-icon://bbyd-dashboard",
+    "usr_log_flag": true
+  }
 ]

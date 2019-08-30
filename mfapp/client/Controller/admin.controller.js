@@ -48,8 +48,13 @@ sap.ui
                   this._oRouter.navTo("manageinv");
                   break;
                 case "shownav":
-                  this._oRouter.navTo("shownavsch");
-                  break;
+
+                    this._oRouter.navTo("shownavsch");
+                    break;
+               case "addnavdetnew":
+                    this._oRouter.navTo("addnavdetnew");
+                    break;     
+
                 default:
                   break;
               }

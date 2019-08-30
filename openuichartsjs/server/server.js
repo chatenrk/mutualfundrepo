@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const cors = require('cors');
 
 const mongoose = require('mongoose');
 const config = require('./config/database');
@@ -14,10 +15,14 @@ mongoose.connection.on('error', function(){
 	console.log('Error connecting to DB '+config.database);
 })
 
-const chtdata = require('./routes/chartdataroute');
-
 const app = express();
 const port = 3000;
+
+app.use(cors());
+
+const chtdata = require('./routes/chartdataroute');
+
+
 
 app.use(express.static(path.join(__dirname,'../client')));
 app.use('/chtdata',chtdata);

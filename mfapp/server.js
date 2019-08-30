@@ -23,6 +23,7 @@ const port = 3000;
 mongoose.connect(config.database, {useMongoClient: true});
 mongoose.connection.on('connected', function(){
 	console.log('Connected to DB '+config.database);
+	
 });
 mongoose.connection.on('error', function(){
 	console.log('Error connecting to DB '+config.database);

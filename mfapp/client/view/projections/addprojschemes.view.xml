@@ -1,0 +1,82 @@
+<mvc:View height="100%" controllerName="simple_hello.Controller.projections.addprojschemes" 
+    xmlns:form="sap.ui.layout.form" 
+    xmlns:core="sap.ui.core" 
+    xmlns:u="sap.ui.unified" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m">
+    <NavContainer id="wizardNavContainer">
+        <pages>
+            <Page id="wizardContentPage" showHeader="true" title="{i18n>addprojschemes}" showNavButton="true" navButtonPress="onNavBack">
+                <content>
+                    <Wizard id="AddProjectionSchemeWizard" complete="completedHandler">
+                        <WizardStep id="SchTypeStep" title="{i18n>schcat}" validated="false">
+                            <HBox width="100%" class="sapUiSmallMarginTop">
+                                <items>
+                                    <MessageStrip class="sapUiSmallMarginBottom" text="{i18n>selSchTypeText}" showIcon="true"/>
+                                </items>
+                            </HBox>
+                            <HBox alignItems="Center" justifyContent="Center" width="100%">
+                                <items>
+                                    <HBox width="20%" class="alignDropdownAlign sapMFlexItemAlignCenter">
+                                        <Label text="{i18n>schcat}" width="auto" class="LabelText"/>
+                                    </HBox>
+                                    <VBox width="80%" direction="Column">
+                                        <items>
+                                            <ComboBox id="cbfname" width="300px" items="{projschcatfilt_model>/}" selectionChange="onFHChange">
+                                                <items>
+                                                    <core:Item key="{projschcatfilt_model>schcat}" text="{projschcatfilt_model>schtype}"/>
+                                                </items>
+                                            </ComboBox>
+                                        </items>
+                                    </VBox>
+                                </items>
+                            </HBox>
+                        </WizardStep>
+                        <WizardStep id="SelScheme" validated="false" title="{i18n>sname}">
+                            <HBox width="100%" class="sapUiSmallMarginTop">
+                                <items>
+                                    <MessageStrip class="sapUiSmallMarginBottom" text="{i18n>selScheme}" showIcon="true"/>
+                                </items>
+                            </HBox>
+                            <HBox width="100%" class="sapUiSmallMarginTop">
+                                <items>
+                                    <Button class="sapUiSmallMarginBottom" text="{i18n>sname}" press="handleSelectSchemeDialog"/>
+                                </items>
+                            </HBox>
+                            <HBox id="selSchHBox" width="100%" alignItems="Center" class="sapUiSmallMarginRight" visible="false">
+                                <items>
+                                    <Label text="{i18n>sname}:" width="auto" class="LabelText" />
+                                    <Label id="mfname" width="auto" class="LabelText" />
+                                </items>
+                            </HBox>
+                        </WizardStep>
+                        <WizardStep id="SelRefFund" validated="false" title="{i18n>reffund}" activate="finalValidation">
+                            <HBox width="100%" class="sapUiSmallMarginTop">
+                                <items>
+                                    <MessageStrip class="sapUiSmallMarginBottom" text="{i18n>isRefFund}" showIcon="true"/>
+                                </items>
+                            </HBox>
+                            <HBox alignItems="Center" justifyContent="Center" width="100%">
+                                <items>
+                                    <HBox width="50%" class="alignDropdownAlign sapMFlexItemAlignCenter">
+                                        <Label text="Should the above fund be used as reference for the category" width="auto" class="LabelText" />
+                                    </HBox>
+                                    <VBox width="50%" direction="Column">
+                                        <items>
+                                            <Switch state="false" customTextOn="Yes" customTextOff="No">
+                                                <layoutData>
+                                                    <FlexItemData growFactor="1" />
+                                                </layoutData>
+                                            </Switch>
+                                        </items>
+                                    </VBox>
+                                </items>
+                            </HBox>
+                           
+                        </WizardStep>
+                    </Wizard>
+                </content>
+            </Page>
+        </pages>
+    </NavContainer>
+</mvc:View>

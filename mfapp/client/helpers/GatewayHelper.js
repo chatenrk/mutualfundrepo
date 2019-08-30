@@ -2,7 +2,6 @@ sap.ui.define([], function() {
   "use strict";
 
   return {
-
     /*
      *---------------------------------------------------------------------*
      *---------------------------------------------------------------------*
@@ -10,7 +9,6 @@ sap.ui.define([], function() {
      *---------------------------------------------------------------------*
      *---------------------------------------------------------------------*
      */
-
 
     /*---------------------------------------------------------------------*
      * Get Request Methods
@@ -24,29 +22,24 @@ sap.ui.define([], function() {
        * @return promise
        */
 
-
       // if user is not available, get all user details
       if (!user) {
         var userdeturl = "http://localhost:3000/users/userdet";
         var that = this;
         var deferred = jQuery.Deferred();
 
-
         $.ajax({
           url: userdeturl,
-          type: 'GET',
-          dataType: 'json',
+          type: "GET",
+          dataType: "json",
           success: function(data) {
             deferred.resolve(data);
-
           },
           error: function(err) {
             deferred.reject(err);
           }
-
         }); //AJAX call close
         return deferred.promise();
-
       }
     },
 
@@ -70,7 +63,6 @@ sap.ui.define([], function() {
      * Get Request Methods
      *---------------------------------------------------------------------*/
     _getOwnInvestments: function(invBy) {
-
       /**
        * @desc This is a helper function which recieves the invested By and gets all the investments for that user
        * @param string invBy
@@ -83,25 +75,20 @@ sap.ui.define([], function() {
 
       $.ajax({
         url: invdeturl,
-        type: 'GET',
-        dataType: 'json',
+        type: "GET",
+        dataType: "json",
         success: function(data) {
           deferred.resolve(data);
         },
         error: function(err) {
           deferred.reject(err);
-
         }
-
       }); //AJAX call close
 
       return deferred.promise();
-
-
     },
 
     getInvestFor: function(username) {
-
       /**
        * @desc This method will be called on the initialization of this view.
        *       It is used to fetch the Goals that are created for the particular user
@@ -115,22 +102,18 @@ sap.ui.define([], function() {
       var that = this;
       var deferred = jQuery.Deferred();
 
-
       $.ajax({
         url: authurl,
-        type: 'GET',
-        dataType: 'json',
+        type: "GET",
+        dataType: "json",
         success: function(data) {
           deferred.resolve(data);
-
         },
         error: function(err) {
           deferred.reject(err);
         }
-
       }); //AJAX call close
       return deferred.promise();
-
     },
 
     _getInvBySchCodeInvFor: function(scode, invBy, invFor, desc) {
@@ -143,28 +126,30 @@ sap.ui.define([], function() {
        * @return promise
        */
 
-
-      var invdeturl = "http://localhost:3000/mfinv/mfinvdet?scode=" + scode + "&invBy=" + invBy + "&invFor=" + encodeURIComponent(invFor) + "&desc=" + desc;
+      var invdeturl =
+        "http://localhost:3000/mfinv/mfinvdet?scode=" +
+        scode +
+        "&invBy=" +
+        invBy +
+        "&invFor=" +
+        encodeURIComponent(invFor) +
+        "&desc=" +
+        desc;
       var that = this;
       var deferred = jQuery.Deferred();
 
-
       $.ajax({
         url: invdeturl,
-        type: 'GET',
-        dataType: 'json',
+        type: "GET",
+        dataType: "json",
         success: function(data) {
           deferred.resolve(data);
-
         },
         error: function(err) {
           deferred.reject(err);
         }
-
       }); //AJAX call close
       return deferred.promise();
-
-
     },
 
     getInvSchemeAggr: function(invBy) {
@@ -179,25 +164,21 @@ sap.ui.define([], function() {
       var that = this;
       var deferred = jQuery.Deferred();
 
-
       $.ajax({
         url: schagrurl,
-        type: 'GET',
-        dataType: 'json',
+        type: "GET",
+        dataType: "json",
         success: function(data) {
           deferred.resolve(data);
-
         },
         error: function(err) {
           deferred.reject(err);
         }
-
       }); //AJAX call close
       return deferred.promise();
     },
 
     getCurrentValue: function(scode, units) {
-
       /**
        * @desc This method is a gateway helper to retrieve the current value of an investment
        *       based on scheme code and total units
@@ -206,22 +187,24 @@ sap.ui.define([], function() {
        * @return promise
        */
 
-      var authurl = "http://localhost:3000/mfinv/currval?scode=" + scode + "&units=" + units;
+      var authurl =
+        "http://localhost:3000/mfinv/currval?scode=" +
+        scode +
+        "&units=" +
+        units;
       var that = this;
       var deferred = jQuery.Deferred();
 
       $.ajax({
         url: authurl,
-        type: 'GET',
-        dataType: 'json',
+        type: "GET",
+        dataType: "json",
         success: function(data) {
           deferred.resolve(data);
-
         },
         error: function(err) {
           deferred.reject(err);
         }
-
       }); //AJAX call close
 
       return deferred.promise();
@@ -231,7 +214,6 @@ sap.ui.define([], function() {
      * Post Requests Methods
      *---------------------------------------------------------------------*/
     postOneInvest: function(logdata) {
-
       /**
        * @desc This helper method is used to post one Investment details of a user to the database
        * @param logdata referring to data that needs to be inserted
@@ -245,21 +227,17 @@ sap.ui.define([], function() {
 
       $.ajax({
         url: authurl,
-        type: 'POST',
+        type: "POST",
         data: logdata,
-        dataType: 'json',
+        dataType: "json",
         success: function(data) {
           deferred.resolve(data);
-
         },
         error: function(err) {
           deferred.reject(err);
-
         }
-
       }); //AJAX call close
       return deferred.promise();
-
     },
     _postMultiInvest: function(file, user) {
       /**
@@ -273,26 +251,22 @@ sap.ui.define([], function() {
       var multiinvposturl = "http://localhost:3000/mfinv/csvinv?user=" + user;
 
       var fd = new FormData();
-      fd.append('file', file);
+      fd.append("file", file);
 
       $.ajax({
         url: multiinvposturl,
         processData: false, // important
         contentType: false, // important
         data: fd,
-        type: 'POST',
+        type: "POST",
         cache: false,
-
 
         success: function(data) {
           deferred.resolve(data);
-
         },
         error: function(err) {
           deferred.reject(err);
-
         }
-
       }); //AJAX call close
 
       return deferred.promise();
@@ -317,21 +291,17 @@ sap.ui.define([], function() {
 
       $.ajax({
         url: invdelurl,
-        type: 'DELETE',
+        type: "DELETE",
         success: function(data) {
           deferred.resolve(data);
-
         },
         error: function(err) {
           deferred.reject(err);
-
         }
-
       }); //AJAX call close
 
       return deferred.promise();
     },
-
 
     /*
      *---------------------------------------------------------------------*
@@ -346,7 +316,6 @@ sap.ui.define([], function() {
      *---------------------------------------------------------------------*/
 
     getAMCs: function() {
-
       /**
        * @desc This helper method is used to fetch all the AMC's from the database
        *       It performs an AJAX call and fetches the data
@@ -360,20 +329,16 @@ sap.ui.define([], function() {
 
       $.ajax({
         url: amcurl,
-        type: 'GET',
-        dataType: 'json',
+        type: "GET",
+        dataType: "json",
         success: function(data) {
           deferred.resolve(data);
-
         },
         error: function(err) {
           deferred.reject(err);
-
         }
-
       }); //AJAX call close
       return deferred.promise();
-
     },
 
     /*---------------------------------------------------------------------*
@@ -415,21 +380,17 @@ sap.ui.define([], function() {
 
       $.ajax({
         url: schurl,
-        type: 'GET',
+        type: "GET",
         data: data,
-        dataType: 'json',
+        dataType: "json",
         success: function(data) {
           deferred.resolve(data);
-
         },
         error: function(err) {
           deferred.reject(err);
-
         }
-
       }); //AJAX call close
       return deferred.promise();
-
     },
 
     getAllSchemes: function() {
@@ -444,21 +405,16 @@ sap.ui.define([], function() {
       var allschurl = "http://localhost:3000/schemes/all";
       $.ajax({
         url: allschurl,
-        type: 'GET',
-        dataType: 'json',
+        type: "GET",
+        dataType: "json",
         success: function(data) {
           deferred.resolve(data);
-
         },
         error: function(err) {
           deferred.reject(err);
-
         }
-
       }); //AJAX call close
       return deferred.promise();
-
-
     },
 
     _getSchemeDetails: function(scode) {
@@ -474,20 +430,16 @@ sap.ui.define([], function() {
 
       var schurl = "http://localhost:3000/schemes/sdet?scode=" + scode;
 
-
       $.ajax({
         url: schurl,
-        type: 'GET',
-        dataType: 'json',
+        type: "GET",
+        dataType: "json",
         success: function(data) {
           deferred.resolve(data);
-
         },
         error: function(err) {
           deferred.reject(err);
-
         }
-
       }); //AJAX call close
       return deferred.promise();
     },
@@ -508,26 +460,22 @@ sap.ui.define([], function() {
       var schdetposturl = "http://localhost:3000/schemes/csvSchDet";
 
       var fd = new FormData();
-      fd.append('file', file);
+      fd.append("file", file);
 
       $.ajax({
         url: schdetposturl,
         processData: false, // important
         contentType: false, // important
         data: fd,
-        type: 'POST',
+        type: "POST",
         cache: false,
-
 
         success: function(data) {
           deferred.resolve(data);
-
         },
         error: function(err) {
           deferred.reject(err);
-
         }
-
       }); //AJAX call close
 
       return deferred.promise();
@@ -542,27 +490,22 @@ sap.ui.define([], function() {
 
       $.ajax({
         url: url,
-        type: 'POST',
+        type: "POST",
         data: schupddata,
-        dataType: 'json',
+        dataType: "json",
         success: function(data) {
           deferred.resolve(data);
-
         },
         error: function(err) {
           deferred.reject(err);
-
         }
-
       }); //AJAX call close
       return deferred.promise();
     },
 
-
     /*---------------------------------------------------------------------*
      * Delete Requests Methods
      *---------------------------------------------------------------------*/
-
 
     /*
     *---------------------------------------------------------------------*
@@ -588,25 +531,22 @@ sap.ui.define([], function() {
       var that = this;
       var deferred = jQuery.Deferred();
 
-
-      var authurl = "http://localhost:3000/nav/navdet?scode=" + scode + "&date=" + invdate;
+      var authurl =
+        "http://localhost:3000/nav/navdet?scode=" + scode + "&date=" + invdate;
       var that = this;
 
       $.ajax({
         url: authurl,
-        type: 'GET',
-        dataType: 'json',
+        type: "GET",
+        dataType: "json",
         success: function(data) {
           deferred.resolve(data);
-
         },
         error: function(err) {
           deferred.reject(err);
         }
-
       }); //AJAX call close
       return deferred.promise();
-
     },
 
     getFewNav: function(scode, limit, sorder) {
@@ -621,24 +561,26 @@ sap.ui.define([], function() {
       var that = this;
       var deferred = jQuery.Deferred();
 
-      var fewnavurl = "http://localhost:3000/nav/navlimit?scode=" + scode + "&limit=" + limit + "&sorder=" + sorder;
+      var fewnavurl =
+        "http://localhost:3000/nav/navlimit?scode=" +
+        scode +
+        "&limit=" +
+        limit +
+        "&sorder=" +
+        sorder;
 
       $.ajax({
         url: fewnavurl,
-        type: 'GET',
-        dataType: 'json',
+        type: "GET",
+        dataType: "json",
         success: function(data) {
           deferred.resolve(data);
-
         },
         error: function(err) {
           deferred.reject(err);
-
         }
-
       }); //AJAX call close
       return deferred.promise();
-
     },
 
     getNavBtwn: function(scode, sdate, edate) {
@@ -653,24 +595,26 @@ sap.ui.define([], function() {
       var that = this;
       var deferred = jQuery.Deferred();
 
-      var navbetnurl = "http://localhost:3000/nav/navbetn?scode=" + scode + "&sdate=" + sdate + "&edate=" + edate;
+      var navbetnurl =
+        "http://localhost:3000/nav/navbetn?scode=" +
+        scode +
+        "&sdate=" +
+        sdate +
+        "&edate=" +
+        edate;
 
       $.ajax({
         url: navbetnurl,
-        type: 'GET',
-        dataType: 'json',
+        type: "GET",
+        dataType: "json",
         success: function(data) {
           deferred.resolve(data);
-
         },
         error: function(err) {
           deferred.reject(err);
-
         }
-
       }); //AJAX call close
       return deferred.promise();
-
     },
 
     /*---------------------------------------------------------------------*
@@ -689,32 +633,26 @@ sap.ui.define([], function() {
       var authurl = "http://localhost:3000/nav/navfile";
 
       var fd = new FormData();
-      fd.append('file', file);
+      fd.append("file", file);
 
       $.ajax({
         url: authurl,
         processData: false, // important
         contentType: false, // important
         data: fd,
-        type: 'POST',
+        type: "POST",
         cache: false,
-
 
         success: function(data) {
           deferred.resolve(data);
-
         },
         error: function(err) {
           deferred.reject(err);
-
         }
-
       }); //AJAX call close
 
       return deferred.promise();
-
     },
-
 
     /*
     *---------------------------------------------------------------------*
@@ -729,6 +667,55 @@ sap.ui.define([], function() {
      * Get Requests Methods
      *---------------------------------------------------------------------*/
 
+    /**
+     * @desc This helper method gets all the Projection Scheme Categories
+     * @return Returns a promise object
+     */
+
+    _getProjSchCat: function() {
+      var that = this;
+      var deferred = jQuery.Deferred();
+
+      var url = "http://localhost:3000/proj/projschcat";
+
+      $.ajax({
+        url: url,
+        type: "GET",
+        dataType: "json",
+        success: function(data) {
+          deferred.resolve(data);
+        },
+        error: function(err) {
+          deferred.reject(err);
+        }
+      }); //AJAX call close
+      return deferred.promise();
+    },
+
+    /**
+     * @desc This helper method gets all the projection categories and its funds
+     * @return Returns a promise object
+     */
+
+    _getprojcatandfunds: function() {
+      var that = this;
+      var deferred = jQuery.Deferred();
+
+      var url = "http://localhost:3000/proj/schcat";
+
+      $.ajax({
+        url: url,
+        type: "GET",
+        dataType: "json",
+        success: function(data) {
+          deferred.resolve(data);
+        },
+        error: function(err) {
+          deferred.reject(err);
+        }
+      }); //AJAX call close
+      return deferred.promise();
+    },
     _getinvvscurrval: function(scode, invBy, invFor) {
       /**
        * @desc This helper method gets the investment versus current value figures for a scheme code-user-goal combination
@@ -741,24 +728,53 @@ sap.ui.define([], function() {
       var that = this;
       var deferred = jQuery.Deferred();
 
-      var url = "http://localhost:3000/proj/invvscurr?scode=" + scode + "&invFor=" + encodeURIComponent(invFor) + "&invBy=" + invBy;
+      var url =
+        "http://localhost:3000/proj/invvscurr?scode=" +
+        scode +
+        "&invFor=" +
+        encodeURIComponent(invFor) +
+        "&invBy=" +
+        invBy;
 
       $.ajax({
         url: url,
-        type: 'GET',
-        dataType: 'json',
+        type: "GET",
+        dataType: "json",
         success: function(data) {
           deferred.resolve(data);
-
         },
         error: function(err) {
           deferred.reject(err);
-
         }
+      }); //AJAX call close
+      return deferred.promise();
+    },
 
+    getChartDetails: function(amccode) {
+      /**
+       * @desc This helper method is used to fetch all the schemes from the database
+       *       It performs an AJAX call and fetches the data
+       * @param amccode referring to the selected AMC Code
+       * @return This returns the AMC's found in the database(amcs collection) as a JSON Array
+       */
+
+      var that = this;
+      var deferred = jQuery.Deferred();
+
+      var schurl = "http://localhost:3000/proj/projchartdet";
+
+      $.ajax({
+        url: schurl,
+        type: "GET",
+        dataType: "json",
+        success: function(data) {
+          deferred.resolve(data);
+        },
+        error: function(err) {
+          deferred.reject(err);
+        }
       }); //AJAX call close
       return deferred.promise();
     }
-
-  }
+  };
 });

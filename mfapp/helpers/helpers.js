@@ -267,6 +267,83 @@ async function getAMCName(amccode) {
   }
 }
 
+/**
+* @desc This function converts the raw data that is retrieved from AMFI into a readable JSON format.
+* The raw format from AMFI is as follows
+*	1. Scheme code -- this needs to be converted to integer
+*   2. Scheme Name -- no conversion required
+*   3. NAV value --  needs conversion to double
+*	4. Repurchase Price -- ignored as not required
+*   5. Sale Price -- ignored as not required
+*   6. Date of NAV -- convert to ISO date
+* @param mfnavs referring to raw data
+* @param convISODate referring to boolean which checks if ISO Date conversion is required
+* @returns mfnavjson referring to the processed JSON file
+*/
+
+function convtojson(mfnavs, convISODate) {
+  if (typeof convISODate == "undefined") {
+    convISODate = true;
+  }
+
+  var hdr = [],
+    bdy = [],
+    json = [],
+	that = this;
+
+  var arr = mfnavs.split("\r\n");
+
+  // Get first row for column headers
+  hdr = arr.shift().split(";");
+
+  arr.forEach(function(d) {
+    // Loop through each row
+
+    tmp = {};
+    col = d.split(";");
+
+    if (col.length > 1) {
+      for (var i = 0; i < hdr.length; i++) {
+        switch (i) {
+          case 0:
+            //  Column 1 is Scheme code, needs to be converted into integer
+            tmp["scode"] = parseInt(col[i]);
+            break;
+          case 1:
+            // Column 2 is scheme code, pass it as it is
+            tmp["sname"] = col[i];
+            break;
+
+          case 2:
+            // Column 3 is NAV, needs conversion to double
+            tmp["nav"] = parseFloat(col[i]);
+            break;
+
+          case 3:
+            // Column 4 is not required
+            break;
+
+          case 4:
+            // Column 5 is not required
+            break;
+
+          case 5:
+            // Column 6 is NAV date, convert this to ISODate format for Mongo insertion
+            tmp["date"] = that.datetoISODate(col[i]);
+            break;
+
+          default:
+            break;
+        }
+      }
+      // Add object to list
+      json.push(tmp);
+    }
+  });
+
+  return json;
+}
+
 
 module.exports.parseOutput = parseOutput;
 module.exports.parsetextNAV = parsetextNAV;
@@ -281,3 +358,4 @@ module.exports.isodatetodate = isodatetodate;
 module.exports.getNAV = getNAV;
 module.exports.getSchCode = getSchCode;
 module.exports.getAMCName = getAMCName;
+module.exports.convtojson = convtojson;
