@@ -1,4 +1,5 @@
 const moment = require('moment');
+const _ = require('lodash');
 const navhelpers = require('./navhelpers');
 
 /**
@@ -64,7 +65,7 @@ async function computeProjections(refscheme, nonrefschemes, refschinvdetls) {
     // todo clean this code up
     // projdbobj = popProjArray(projsch);
     projdbarr.push(projsch);
-    projdbobj = {};
+    projsch = {};
 
     // now do the same for all the non reference schemes one by one
     for (var j = 0; j < nonrefschemes.length; j++) {
@@ -95,16 +96,17 @@ async function computeProjections(refscheme, nonrefschemes, refschinvdetls) {
       // todo clean this code up
       //   projdbobj = popProjArray(projsch);
       projdbarr.push(projsch);
-      projdbobj = {};
+      projsch = {};
     }
 
     // todo Complete the logic for computing entries between
     // todo last Investment date and Last recorded NAV Date
     // Last Entry Check
     if (i === refschinvdetls.length - 1) {
+      computeEntriesBtwnLNDAndLID(computeEntriesBtwnLNDAndLID);
     }
   }
-
+  projdbarr = sortBy(projdbarr);
   return projdbarr;
 }
 /**
@@ -154,6 +156,11 @@ function flatten(array) {
   }, []); // we initialize the accumulator on an empty array to collect all the elements
 }
 
+function sortBy(projdbarr) {
+  // Use loadash module and _.sortBy
+  return _.sortBy(projdbarr, ['scode']);
+}
+
 function popProjArray(projsch) {
   var projdbobj = {};
   projdbobj.scode = projsch.scode;
@@ -169,7 +176,7 @@ function popProjArray(projsch) {
  * @desc This method computes the delta entries between Last Investment Date and
  *       last NAV Date
  */
-function computeEntriesBtwnLNDAndLID() {
+function computeEntriesBtwnLNDAndLID(projdbarr) {
   // TODO Complete this function and invoke the same in compute projections
   // lastInvDate = isodatetodate(refschinvdetls[i].invdate);
   //       lastNavDate = isodatetodate(lastNavDetls[0].lastNavDate);

@@ -12,6 +12,7 @@
   "dependencies": {
     "cors": "^2.8.4",
     "express": "^4.16.3",
+    "lodash": "^4.17.15",
     "moment": "^2.22.2",
     "mongoose": "^5.2.7",
     "mongoose-double": "0.0.1",
