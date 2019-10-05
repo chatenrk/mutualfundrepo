@@ -8,15 +8,12 @@ const calchelpers = require('../helpers/calchelpers');
 const testprojhelpers = require('../helpers/testprojhelpers');
 
 router.get('/projinfo', async (req, res, next) => {
-
   // First get the relevant schemes based on the scheme category passed
   try {
-    debugger;
     var schcat = req.query.schcat;
-    if (schcat && schcat != "") {
-
+    if (schcat && schcat != '') {
       // Get the Reference scheme details
-      var refscheme = await projhelpers.findRefScheme(schcat, "TRUE");
+      var refscheme = await projhelpers.findRefScheme(schcat, 'TRUE');
       if (refscheme.length > 1) {
         // More than one reference schemes, report the error
       } else if (refscheme.length === 0) {
@@ -24,25 +21,35 @@ router.get('/projinfo', async (req, res, next) => {
       } else {
         // Get all investments for the reference scheme
         var refschquery = {
-          "scode": refscheme[0].scode,
-          "invBy": "Chaitanya Rayabharam"
-        }
+          scode: refscheme[0].scode,
+          invBy: 'Chaitanya Rayabharam'
+        };
         var refschinvdetls = await invhelpers.findInvDetls(refschquery);
         if (refschinvdetls.length > 0) {
           //  Get all non reference schemes for computations
-          var nonrefschemes = await projhelpers.findRefScheme(schcat, "FALSE");
-          var projdetls = await calchelpers.computeProjections(refscheme, nonrefschemes, refschinvdetls);
+          var nonrefschemes = await projhelpers.findRefScheme(schcat, 'FALSE');
+          var projdetls = await calchelpers.computeProjections(
+            refscheme,
+            nonrefschemes,
+            refschinvdetls
+          );
           if (projdetls.length > 0) {
             res.send(projdetls);
           } else {
-            return res.status(200).send("Issue computing projection details. Please contact admin");
+            return res
+              .status(200)
+              .send('Issue computing projection details. Please contact admin');
           }
         } else {
-          return res.status(200).send("No data found for reference scheme. Please contact admin");
+          return res
+            .status(200)
+            .send('No data found for reference scheme. Please contact admin');
         }
       }
     } else {
-      return res.status(200).send("Please pass mandatory field scheme category");
+      return res
+        .status(200)
+        .send('Please pass mandatory field scheme category');
     }
   } catch (err) {
     return res.status(500).send(err);
@@ -50,24 +57,21 @@ router.get('/projinfo', async (req, res, next) => {
 });
 
 router.get('/testprojinfo', async (req, res, next) => {
-    try {
-      debugger;
+  try {
+    debugger;
     var schcat = await testprojhelpers.findAll();
 
     if (schcat.length > 0) {
       res.send(schcat);
     } else {
-      return res.status(200).send("No data found for query");
+      return res.status(200).send('No data found for query');
     }
-
   } catch (err) {
-
     return res.status(500).send(err);
   }
 });
 
-
-
+// TODO: Check and clean this dead code
 // // Get all schemes that are relevant for the selected scheme category(Multicap,midcap etc)
 // router.get('/schcat', async (req, res, next) => {
 //   try {
@@ -110,7 +114,7 @@ router.get('/testprojinfo', async (req, res, next) => {
 
 // // Get last NAV for a scheme
 // router.get('/schNNAV', async (req, res, next) => {
- 
+
 //   try {
 //     var scode = parseInt(req.query.scode);
 //     var limit = parseInt(req.query.limit);
@@ -146,7 +150,7 @@ router.get('/testprojinfo', async (req, res, next) => {
 //     var isRefFund = req.query.isRefFund;
 
 //     if(schcat && schcat!= ""){
-    
+
 //       const refscheme = await projhelpers.findRefScheme(schcat,isRefFund);
 
 //       if (refscheme.length > 0) {
@@ -155,14 +159,12 @@ router.get('/testprojinfo', async (req, res, next) => {
 //         return res.status(200).send("No data found for query");
 //       }
 //     }
- 
+
 //   } catch (err) {
 
 //     return res.status(500).send(err);
 //   }
 
 // });
-
-
 
 module.exports = router;
