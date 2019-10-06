@@ -1,4 +1,3 @@
 module.exports = {
-	database:'mongodb://localhost/mfdb',
-	useNewUrlParser:true
-}
+  database: 'mongodb://localhost:27017/mfdb'
+};

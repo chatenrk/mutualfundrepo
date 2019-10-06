@@ -3,12 +3,13 @@ const path = require('path');
 const cors = require('cors');
 
 const chtdata = require('./routes/chartdataroute');
+const navauto = require('./routes/navautopoproute');
 
 const mongoose = require('mongoose');
 const config = require('./config/database');
 
 // Connect to MongoDB using mongoose to retrieve data
-mongoose.connect(config.database);
+mongoose.connect(config.database, { useNewUrlParser: true });
 mongoose.connection.on('connected', function() {
   console.log('Connected to DB ' + config.database);
 });
@@ -23,6 +24,7 @@ app.use(cors());
 
 app.use(express.static(path.join(__dirname, '../client')));
 app.use('/chtdata', chtdata);
+app.use('/navauto', navauto);
 
 app.get('/', function(req, res) {
   res.send('Please pass the correct route');

@@ -7,6 +7,14 @@ const invhelpers = require('../helpers/invhelpers');
 const calchelpers = require('../helpers/calchelpers');
 const testprojhelpers = require('../helpers/testprojhelpers');
 
+router.get('/dateCheck', async (req, res, next) => {
+  const date = {};
+  date.EOM = calchelpers.endOfMonth(req.query.date);
+  date.nextDate = calchelpers.nextDate(req.query.date);
+  date.nextMonthFirstDate = calchelpers.nextDate(date.EOM);
+  res.send(date);
+});
+
 router.get('/projinfo', async (req, res, next) => {
   // First get the relevant schemes based on the scheme category passed
   try {

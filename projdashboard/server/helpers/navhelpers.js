@@ -4,16 +4,14 @@ const SchemaTypes = mongoose.Schema.Types;
 
 // Schema declaration
 const mfnavSchema = mongoose.Schema({
-
-    scode: Number,
-    sname: String,
-    nav: SchemaTypes.Double,
-    date: Date
+  scode: Number,
+  sname: String,
+  nav: SchemaTypes.Double,
+  date: Date
 });
 
 // Model Declaration
 const mfnavModel = mongoose.model('navdetls', mfnavSchema);
-
 
 /**
  * @desc This method gets the last NAV for the scheme code that is passed
@@ -21,42 +19,36 @@ const mfnavModel = mongoose.model('navdetls', mfnavSchema);
  * @return {JSON} aggrres - Aggregate result of the last scheme NAV
  */
 async function getLastNav(scode) {
+  try {
+    let aggrres;
+    aggrres = await mfnavModel.aggregate([
+      {
+        $match: {
+          scode: {
+            $eq: scode
+          }
+        }
+      },
+      {
+        $group: {
+          _id: {
+            sname: '$sname',
+            scode: '$scode'
+          },
+          lastNavDate: {
+            $last: '$date'
+          },
+          lastNavValue: {
+            $last: '$nav'
+          }
+        }
+      }
+    ]);
 
-    try {
-
-        let aggrres;
-        aggrres = await mfnavModel.aggregate([
-
-
-            {
-                $match: {
-                    scode: {
-                        $eq: scode
-                    }
-                }
-            },
-            {
-                $group: {
-                    _id: {
-                        sname: "$sname",
-                        scode: "$scode"
-                    },
-                    lastNavDate: {
-                        $last: "$date"
-                    },
-                    lastNavValue: {
-                        $last: "$nav"
-                    }
-                }
-            }
-
-        ]);
-
-        return aggrres;
-    } catch (err) {
-
-        return err;
-    }
+    return aggrres;
+  } catch (err) {
+    return err;
+  }
 }
 
 /**
@@ -67,23 +59,33 @@ async function getLastNav(scode) {
  */
 // Find  NAV according to limit in the collection
 async function findNNAV(id, limit) {
-    
-    try {
-        let navdetls
-        if (!limit) {
-            navdetls = await mfnavModel.find(id);
-        } else {
-            navdetls = await mfnavModel.find(id).limit(limit);
-        }
-        return navdetls;
-
-    } catch (err) {
-        return err;
+  try {
+    let navdetls;
+    if (!limit) {
+      navdetls = await mfnavModel.find(id);
+    } else {
+      navdetls = await mfnavModel.find(id).limit(limit);
     }
-
+    return navdetls;
+  } catch (err) {
+    return err;
+  }
 }
 
+//This route gets the NAV based on query passed to it
+async function findOneNav(id) {
+  try {
+    let navdetls;
+    navdetls = await mfnavModel.find(id);
+    return navdetls;
+  } catch (err) {
+    return err;
+  }
+}
 
 // Module Exports
-module.exports.getLastNav = getLastNav;
-module.exports.findNNAV = findNNAV;
+module.exports = {
+  getLastNav: getLastNav,
+  findNNAV: findNNAV,
+  findOneNav: findOneNav
+};

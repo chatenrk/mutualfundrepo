@@ -26,6 +26,10 @@ async function computeProjections(refscheme, nonrefschemes, refschinvdetls) {
   var refscode = parseInt(refscheme[0].scode);
   lastNavDetls = await navhelpers.getLastNav(refscode);
 
+  //TODO Temp code for finding delta
+
+  //   todo End of temp code
+
   // Get NAV's for reference scheme
   var navquery = {
     scode: refscode
@@ -103,7 +107,12 @@ async function computeProjections(refscheme, nonrefschemes, refschinvdetls) {
     // todo last Investment date and Last recorded NAV Date
     // Last Entry Check
     if (i === refschinvdetls.length - 1) {
-      computeEntriesBtwnLNDAndLID(computeEntriesBtwnLNDAndLID);
+      lastInvDate = refschinvdetls[i].invdate;
+      computeEntriesBtwnLNDAndLID(
+        lastInvDate,
+        isodatetodate(lastNavDetls.nav.date),
+        refscheme
+      );
     }
   }
   projdbarr = sortBy(projdbarr);
@@ -129,18 +138,7 @@ function datetoisodate(date) {
   return isodate;
 }
 
-//   TODO Clean this code as the ES6 Find function is faster
-// function findNAVNonRefScheme(scode, date, navdetlsarray) {
-//   for (var i = 0; i < navdetlsarray.length; i++) {
-//     if (
-//       scode === navdetlsarray[i].scode &&
-//       date === isodatetodate(navdetlsarray[i].date)
-//     ) {
-//       return navdetlsarray[i];
-//     }
-//   }
-// }
-
+// TODO Generalise the sort function
 function findNAVNonRefSchemeUpd(scode, date, navdetlsarray) {
   return navdetlsarray.find(
     x => scode === x.scode && date === isodatetodate(x.date)
@@ -176,12 +174,58 @@ function popProjArray(projsch) {
  * @desc This method computes the delta entries between Last Investment Date and
  *       last NAV Date
  */
-function computeEntriesBtwnLNDAndLID(projdbarr) {
+function computeEntriesBtwnLNDAndLID(lastInvDate, lastNavDate, refscheme) {
+  let lastCompDate = lastInvDate;
+  let tempArray = [];
   // TODO Complete this function and invoke the same in compute projections
-  // lastInvDate = isodatetodate(refschinvdetls[i].invdate);
-  //       lastNavDate = isodatetodate(lastNavDetls[0].lastNavDate);
-  //       // Now project for all entries in between this lastInvDate and lastNavDate
-  //       while (lastInvDate <= lastNavDate) {}
+  //   Get End of month from last InvDate
+  while (lastCompDate <= lastNavDate) {
+    if (lastCompDate === lastNavDate) {
+      lastCompDate = lastNavDate;
+      //   Add this to the array
+      tempArray.push(lastCompDate);
+    } else {
+      // Get the first date of next month
+      lastCompDate = endOfMonth(lastCompDate);
+      lastCompDate = nextDate(lastCompDate);
+      //   Check if we have shot past the last available NAV date,
+      // if so use last Nav date for computation
+      if (lastCompDate > lastNavDate) {
+        lastCompDate = lastNavDate;
+        // Add this to array
+        tempArray.push(lastCompDate);
+      } else {
+        //   Check if there is a NAV for that date for the refscheme
+        const checkNavQuery = { scode: refscode };
+        const checkNav = navhelpers.findOneNav(checkNavQuery);
+
+        if (!checkNav.nav.value !== 'undefined') {
+          tempArray.push(lastCompDate);
+        }
+      }
+    }
+  }
+  return tempArray;
 }
 
-module.exports.computeProjections = computeProjections;
+function endOfMonth(currentDate) {
+  return moment(currentDate)
+    .endOf('month')
+    .format('DD-MMM-YYYY');
+}
+
+function nextDate(currentDate) {
+  return moment(currentDate)
+    .add(1, 'd')
+    .format('DD-MMM-YYYY');
+}
+
+function tempComputeDelta() {}
+
+module.exports = {
+  computeProjections: computeProjections,
+  computeEntriesBtwnLNDAndLID: computeEntriesBtwnLNDAndLID,
+  endOfMonth: endOfMonth,
+  nextDate: nextDate,
+  tempComputeDelta: tempComputeDelta
+};
