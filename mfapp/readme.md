@@ -252,6 +252,18 @@ To run mongodb on MacOS(OS X) navigate to the following path before using any of
 /usr/local/var/mongodb
 ```  
 
+To Kill an existing session of MongoDB on windows,find PID using the following command
+```
+netstat -a -n -o | find "27017"
+```
+
+Next kill the process using the following command
+```
+taskkill /F /PID pid_number
+```
+
+Alternatively the task can be killed from Task Manager using CTRL+ALT+DEL
+
 #### COMPONENTS
 
 - mongod - The database server.
