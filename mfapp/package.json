@@ -23,7 +23,7 @@
     "fs": "0.0.1-security",
     "hoek": "^5.0.3",
     "jsonwebtoken": "*",
-    "moment": "^2.20.1",
+    "moment": "^2.29.4",
     "mongoose": "*",
     "mongoose-double": "0.0.1",
     "mongoose-integer": "^0.1.1",
